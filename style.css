@@ -12,6 +12,7 @@
   --black-color-lighten: hsl(220, 20%, 18%);
   --white-color: #fff;
   --body-color: hsl(220, 100%, 97%);
+  --red-color : #EB2125;
 
   /*========== Font and typography ==========*/
   /*.5rem = 8px | 1rem = 16px ...*/
@@ -20,7 +21,7 @@
 
   /*========== Font weight ==========*/
   --font-regular: 400;
-  --font-semi-bold: 600;
+  --font-semi-bold: 700;
 
   /*========== z index ==========*/
   --z-tooltip: 10;
@@ -442,6 +443,145 @@ footer {
 .dropdown__sublink {
   background-color: var(--black-color-lighten);
 }
+
+/* ======== SEJARAH ========= */
+.sejarah_hero {
+  display: flex;
+  flex-direction: column;
+}
+
+.directory_wrapper {
+  display: flex;
+  flex-direction: row;
+  justify-content: left;
+  align-items: center;
+  padding-top: 150px;
+  padding-left: 45px;
+}
+
+.directory_wrapper h5 {
+  margin: 0px 5px;
+}
+
+.sejarahc_2 {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+
+.sejarah_header {
+  display: flex;
+  flex-direction: column;
+  margin-top: 10px;
+  width: 500px;
+}
+
+.sejarah_header::before {
+  content: '';
+  position: absolute;
+  width: 900px;
+  height: 10px;
+  background-color: #252525;
+  margin-left: 300px;
+  margin-top: 450px;
+  rotate: 90deg;
+
+}
+
+.sejarah_header h2 {
+  text-transform: uppercase;
+  letter-spacing: 5px;
+  font-weight: var(--font-semi-bold);
+  font-size: var(--header-height);
+  font-family: var(--body-font);
+}
+
+.sejarah_header p {
+  font-size: var(--normal-font-size);
+  line-height: 25px;
+}
+
+.timeline1 {
+  display: flex;
+  flex-direction: column;
+  margin-left: 400px;
+  padding: 50px;
+  width: 450px;
+  background-color: #252525;
+  border-radius: 15px;
+}
+
+.content_timeline1 h1 {
+  color: var(--red-color);
+  font-weight: var(--font-semi-bold);
+  margin-bottom: 10px;
+}
+
+.content_timeline1 p {
+  color: var(--white-color);
+  line-height: 24px;
+  font-size: var(--normal-font-size);
+}
+
+.content_timeline1::before {
+  content: '';
+  position: absolute;
+  width: 0;
+	height: 0;
+	border-top: 20px solid transparent;
+	border-right: 40px solid #252525;
+	border-bottom: 20px solid transparent;
+  margin-left: -80px;
+  margin-top: 68px;
+}
+
+.wrapper_timeline2 {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 625px;
+}
+
+.timeline2 {
+  display: flex;
+  flex-direction: column;
+  padding: 50px;
+  width: 525px;
+  background-color: #252525;
+  border-radius: 15px;
+  margin-top: 60px;
+}
+
+.content_timeline2 h1 {
+  color: var(--red-color);
+  font-weight: var(--font-semi-bold);
+  margin-bottom: 10px;
+}
+
+.content_timeline2 p {
+  color: var(--white-color);
+  line-height: 24px;
+  font-size: var(--normal-font-size);
+}
+
+.content_timeline2::before {
+  content: '';
+  position: absolute;
+  width: 0;
+	height: 0;
+	border-top: 20px solid transparent;
+	border-left: 40px solid #252525;
+	border-bottom: 20px solid transparent;
+  margin-top: 140px;
+  margin-left: 470px;
+
+}
+
+
+
+
+
 
 /*=============== BREAKPOINTS ===============*/
 /* For small devices */
