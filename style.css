@@ -136,7 +136,7 @@ nav img {
 .nav__close {
   opacity: 0;
 }
-video {
+.landing_video {
   position: absolute;
   top: 0;
   left: 0;
@@ -444,6 +444,74 @@ footer {
   background-color: var(--black-color-lighten);
 }
 
+/* ======== GALERI ========= */
+.container1 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 130px 20px 0 20px;
+}
+
+.container1 .box {
+  display: flex;
+  flex-direction: row;
+  margin: 1px;
+  padding: 1px;
+  /* align-items: center; */
+}
+
+.container1 .box .dream {
+  padding: 1px;
+}
+
+.image img, video {
+  display: flex;
+  flex-direction: column;
+  padding: 1.5px;
+  width: 32.5%; 
+  width: 100%;     
+  margin: 1px;
+  -webkit-filter:grayscale(1);
+  filter: grayscale(1);
+  transition: .3s;
+}
+
+.dream .image img:hover {
+  -webkit-filter:grayscale(0);
+  filter: grayscale(0);
+}
+
+.dream .image video:hover {
+  -webkit-filter:grayscale(0);
+  filter: grayscale(0);
+}
+
+.image p {
+  opacity: 0;
+  z-index: 1;
+  position: absolute;
+  padding: 8px 0 0 8px;
+  margin-left: 5px;
+  color: azure;
+  font-weight: bolder;
+  transition: .3s;
+}
+
+.image:hover p {
+  opacity: 100;
+}
+
+.btn {
+  margin-top: 10px;
+  padding: 10px;
+  cursor: pointer;
+  color: rgb(214, 205, 205);
+  background-color: rgb(149, 149, 233);
+
+}
+
+
 /* ======== SEJARAH ========= */
 .sejarah_hero {
   display: flex;
@@ -734,5 +802,15 @@ footer {
     top: 0;
     pointer-events: initial;
     transition: top 0.3s;
+  }
+}
+
+/* RESPONSIVE GALERI */
+@media only screen and (max-width: 769px){
+  .container1 .box {
+      flex-direction: column;
+  }
+  .container1 .box .dream {
+      width: 100%; 
   }
 }
