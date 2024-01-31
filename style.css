@@ -456,11 +456,13 @@ footer {
 .container1 .box {
   display: flex;
   flex-direction: row;
+  margin: 1px;
+  padding: 1px;
   /* align-items: center; */
 }
 
 .container1 .box .dream {
-  margin: 1.5px;
+  padding: 1px;
 }
 
 .image img, video {
@@ -469,7 +471,7 @@ footer {
   padding: 1.5px;
   width: 32.5%; 
   width: 100%;     
-  margin: 1.5px;
+  margin: 1px;
   -webkit-filter:grayscale(1);
   filter: grayscale(1);
   transition: .3s;
@@ -490,6 +492,7 @@ footer {
   z-index: 1;
   position: absolute;
   padding: 8px 0 0 8px;
+  margin-left: 5px;
   color: azure;
   font-weight: bolder;
   transition: .3s;
@@ -790,4 +793,12 @@ footer {
   }
 }
 
-
+/* RESPONSIVE GALERI */
+@media only screen and (max-width: 769px){
+  .container1 .box {
+      flex-direction: column;
+  }
+  .container1 .box .dream {
+      width: 100%; 
+  }
+}
