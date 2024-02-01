@@ -450,7 +450,7 @@ footer {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  margin: 130px 20px 0 20px;
+  margin: 5px 20px 0 20px;
 }
 
 .container1 .box {
@@ -465,7 +465,19 @@ footer {
   padding: 1px;
 }
 
-.image img, video {
+.image img {
+  display: flex;
+  flex-direction: column;
+  padding: 1.5px;
+  width: 32.5%; 
+  width: 100%;     
+  margin: 1px;
+  -webkit-filter:grayscale(1);
+  filter: grayscale(1);
+  transition: .3s;
+}
+
+.image video {
   display: flex;
   flex-direction: column;
   padding: 1.5px;
@@ -502,13 +514,9 @@ footer {
   opacity: 100;
 }
 
-.btn {
-  margin-top: 10px;
-  padding: 10px;
-  cursor: pointer;
-  color: rgb(214, 205, 205);
-  background-color: rgb(149, 149, 233);
-
+.heading {
+  margin: 120px 0 0 32px;
+  text-transform: uppercase;
 }
 
 
@@ -808,9 +816,6 @@ footer {
 
 /* RESPONSIVE GALERI */
 @media only screen and (max-width: 769px){
-  nav img {
-    width: 50px;
-  }
   .container1 .box {
       flex-direction: column;
   }
