@@ -722,7 +722,7 @@ footer {
   flex-direction: column;
   /* justify-content: center;
   align-items: center; */
-  padding-top: 200px;
+  padding-top: 150px;
 }
 
 .welcome_text {
@@ -734,6 +734,23 @@ footer {
 .directory_content {
   display: flex;
   justify-content: left;
+  align-items: center;
+  font-size: var(--normal-font-size);
+  margin-bottom: 10px;
+}
+
+.directory_content h5 {
+  margin: 0 5px;
+}
+
+.sejarah_welcome {
+  display: flex;
+  flex-direction: column;
+}
+
+.sejarah_welcome h2 {
+  text-transform: uppercase;
+  font-size: 3rem;
 }
 
 .timeline_hero {
@@ -768,14 +785,14 @@ footer {
 }
 
 .timeline_item {
-  margin-bottom: 50px;
+  margin-bottom: 60px;
   width: 100%;
   position: relative;
 }
 
-.timeline_item:last-child{
+/* .timeline_item:last-child{
   margin-bottom: 0;
-}
+} */
 
 .timeline_items:nth-child(odd) .timeline_item {
   padding-right: calc(50% + 30px);
@@ -793,7 +810,6 @@ footer {
   border-radius: 50%;
   position: absolute;
   left: calc(50% - 9.5px);
-  top: 3.5px;
 }
 
 .timeline_content {
@@ -813,6 +829,10 @@ footer {
 .timeline_date {
   color: #252525;
   margin-bottom: 10px;
+}
+
+.timeline_date i {
+  font-size: 2rem;
 }
 
 
