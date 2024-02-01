@@ -546,13 +546,22 @@ footer {
   margin: 0 5px;
 }
 
+.directory_content a {
+  margin: 0 5px;
+  text-decoration: none;
+  color: #252525;
+  font-family: "Montserrat";
+}
+
 .sejarah_welcome {
   display: flex;
   flex-direction: column;
+  max-width: 700px;
 }
 
 .sejarah_welcome h2 {
   text-transform: uppercase;
+  letter-spacing: 5px;
   font-size: 3rem;
 }
 
@@ -623,10 +632,13 @@ footer {
 
 .timeline_content h1 {
   color: #EB2125;
+  margin-bottom: 10px;
+  letter-spacing: 3px;
 }
 
 .timeline_content p {
   color: #ffffff;
+  line-height: 25px;
 }
 
 .timeline_date {
@@ -636,6 +648,19 @@ footer {
 
 .timeline_date i {
   font-size: 2rem;
+}
+
+.segitiga {
+  content: '';
+  position: absolute;
+  width: 0;
+  height: 0;
+  border-left: 15px solid transparent;
+	border-right: 15px solid transparent;
+	border-bottom: 25px solid #252525;
+  rotate: 180deg;
+  margin-top: 1315px;
+  margin-left: 3.45px;
 }
 
 
