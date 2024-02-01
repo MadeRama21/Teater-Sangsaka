@@ -465,7 +465,19 @@ footer {
   padding: 1px;
 }
 
-.image img, video {
+.image img {
+  display: flex;
+  flex-direction: column;
+  padding: 1.5px;
+  width: 32.5%; 
+  width: 100%;     
+  margin: 1px;
+  -webkit-filter:grayscale(1);
+  filter: grayscale(1);
+  transition: .3s;
+}
+
+.image video {
   display: flex;
   flex-direction: column;
   padding: 1.5px;
@@ -790,7 +802,7 @@ footer {
 }
 
 /* RESPONSIVE GALERI */
-@media only screen and (max-width: 769px){
+@media only screen and (max-width: 430px){
   .container1 .box {
       flex-direction: column;
   }
