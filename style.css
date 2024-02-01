@@ -28,6 +28,11 @@
   --z-fixed: 100;
 }
 
+@font-face {
+  font-family: LemonMilk;
+  src: url(font/LEMONMILK-Regular.ttf.otf);
+}
+
 /*========== Responsive typography ==========*/
 @media screen and (min-width: 1024px) {
   :root {
@@ -634,6 +639,8 @@ footer {
   color: #EB2125;
   margin-bottom: 10px;
   letter-spacing: 3px;
+  font-family: LemonMilk;
+  font-weight: 900;
 }
 
 .timeline_content p {
