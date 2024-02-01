@@ -521,7 +521,7 @@ footer {
 
 
 /* ======== SEJARAH ========= */
-.sejarah_hero {
+/* .sejarah_hero {
   display: flex;
   flex-direction: column;
 }
@@ -693,6 +693,18 @@ footer {
   font-size: var(--normal-font-size);
 }
 
+.content_timeline3::before {
+  content: '';
+  position: absolute;
+  width: 0;
+	height: 0;
+	border-top: 20px solid transparent;
+	border-right: 40px solid #252525;
+	border-bottom: 20px solid transparent;
+  margin-left: -80px;
+  margin-top: 170px;
+}
+
 .content_timeline3::after {
   content: '';
   position: absolute;
@@ -702,8 +714,9 @@ footer {
   margin-left: -293.5px;
   margin-top: 28px;
   background-color:#252525;
-}
+} */
 
+/* =============SEJARAH VERSI 2============== */
 
 
 
