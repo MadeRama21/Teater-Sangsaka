@@ -450,7 +450,7 @@ footer {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  margin: 130px 20px 0 20px;
+  margin: 5px 20px 0 20px;
 }
 
 .container1 .box {
@@ -502,13 +502,9 @@ footer {
   opacity: 100;
 }
 
-.btn {
-  margin-top: 10px;
-  padding: 10px;
-  cursor: pointer;
-  color: rgb(214, 205, 205);
-  background-color: rgb(149, 149, 233);
-
+.heading {
+  margin: 120px 0 0 32px;
+  text-transform: uppercase;
 }
 
 
