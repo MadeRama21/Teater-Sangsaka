@@ -368,7 +368,7 @@ footer {
 /* Show menu */
 .show-menu {
   opacity: 1;
-  top: 3.5rem;
+  top: 4.4rem;
   pointer-events: initial;
 }
 
@@ -808,6 +808,9 @@ footer {
 
 /* RESPONSIVE GALERI */
 @media only screen and (max-width: 769px){
+  nav img {
+    width: 50px;
+  }
   .container1 .box {
       flex-direction: column;
   }
