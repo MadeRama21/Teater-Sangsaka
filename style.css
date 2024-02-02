@@ -226,6 +226,9 @@ nav img {
   font-weight: 50;
 }
 
+
+/* Footer */
+
 footer {
   margin-top: 3rem;
   display: flex;
@@ -239,6 +242,9 @@ footer {
 
 .footer-U1 img {
   width: 80px;
+}
+.main-u2 {
+  display: flex;
 }
 
 .footer-U1 p {
@@ -329,6 +335,7 @@ footer {
 .copyrigth a {
   color: white;
 }
+/* Footer end */
 
 /* Navigation for mobile devices */
 @media screen and (max-width: 1118px) {
@@ -768,7 +775,7 @@ footer {
   }
 }
 
-/* RESPONSIVE GALERI */
+/* RESPONSIVE TAB */
 @media only screen and (max-width: 769px) {
   .container1 .box {
     flex-direction: column;
