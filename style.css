@@ -814,8 +814,17 @@ footer {
   }
 }
 
-/* RESPONSIVE GALERI */
+/* RESPONSIVE max-width: 430px */
 @media only screen and (max-width: 430px){
+  .container1 .box {
+      flex-direction: column;
+  }
+  .container1 .box .dream {
+      width: 100%; 
+  }
+}
+
+@media only screen and (max-width: 360px){
   .container1 .box {
       flex-direction: column;
   }
