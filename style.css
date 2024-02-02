@@ -775,7 +775,7 @@ footer {
   }
 }
 
-/* RESPONSIVE TAB */
+/* RESPONSIVE GALERI */
 @media only screen and (max-width: 769px) {
   .container1 .box {
     flex-direction: column;
@@ -895,5 +895,14 @@ footer {
 
   .dropdown__sublink {
     background-color: var(--black-color-lighten);
+  }
+}
+
+@media only screen and (max-width: 360px){
+  .container1 .box {
+      flex-direction: column;
+  }
+  .container1 .box .dream {
+      width: 100%; 
   }
 }
