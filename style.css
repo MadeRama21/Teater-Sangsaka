@@ -519,7 +519,17 @@ footer {
 .heading {
   margin: 120px 0 0 32px;
   text-transform: uppercase;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  margin: 140px 0 40px 0;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: bolder;
+  line-height: normal;
+  letter-spacing: 2.4px;
 }
+
 
 
 /* ======== SEJARAH ========= */
@@ -776,6 +786,26 @@ footer {
   .container1 .box .dream {
     width: 100%;
   }
+  .heading {
+    margin: 120px 0 0 32px;
+    text-transform: uppercase;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin: 120px 0 40px 0;
+    font-size: 30px;
+  }
+  .image p {
+    opacity: 0;
+    z-index: 1;
+    position: absolute;
+    font-size: 25px;
+    padding: 10px 0 0 8px;
+    margin-left: 5px;
+    color: azure;
+    font-weight: bolder;
+    transition: 0.3s;
+  }
 
   .nav__menu {
     position: absolute;
@@ -898,4 +928,5 @@ footer {
   .container1 .box .dream {
       width: 100%; 
   }
+  
 }
