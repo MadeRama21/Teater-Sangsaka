@@ -676,8 +676,6 @@ footer {
   margin-top: 1150px;
 }
 
-/* =============SEJARAH VERSI 2============== */
-
 /*=============== BREAKPOINTS ===============*/
 /* For small devices */
 @media screen and (max-width: 390px) {
@@ -1094,6 +1092,43 @@ footer {
   }
 
   /* Box-Content end */
+
+  /* ===== RESPONSIVE SEJARAH===== */
+  .welcome_text {
+    margin-left: 0;
+  }
+
+  .timeline_items {
+    max-width: 800px;
+    background-color: var(--body-color);
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    position: relative;
+  }
+
+  .timeline_items:nth-child(odd) .timeline_item {
+    padding-left: calc(10% - 100px);
+  }
+  
+  .timeline_items:nth-child(even) .timeline_item {
+    padding-left: calc(50% + 10px);
+  }
+
+  .timeline_items::before {
+    content: '';
+    position: absolute;
+    width: 3px;
+    height: 100%;
+    background-color: #252525d7;
+    left: calc(10%);
+  }
+
+  .timeline_dot {
+    left: calc(10% - 15.5px);
+  }
+
+
 
   /* Footer */
 
