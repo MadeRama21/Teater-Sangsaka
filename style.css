@@ -905,6 +905,7 @@ footer {
   }
 
   .container1 .box {
+    display: block;
     flex-direction: column;
   }
   .container1 .box .dream {
