@@ -572,8 +572,9 @@ footer {
 
 .sejarah_welcome h2 {
   text-transform: uppercase;
-  letter-spacing: 5px;
+  letter-spacing: 8px;
   font-size: 3rem;
+  font-family: LemonMilk;
 }
 
 .timeline_hero {
