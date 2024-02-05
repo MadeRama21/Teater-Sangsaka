@@ -192,10 +192,9 @@ nav img {
 }
 
 .box-content h1 {
-  color: #eb2125;
-  font-weight: bolder;
-  font-family: LemonMilk;
-  font-style: italic;
+  color:#EB2125;
+  font-weight:bolder;
+  font-family: "Montserrat", sans-serif;
   text-transform: uppercase;
   font-size: 5rem;
   letter-spacing: 8px;
@@ -539,9 +538,10 @@ footer {
 }
 
 /* ======== SEJARAH ========= */
-/* .sejarah_hero {
+.welcome_text {
   display: flex;
   flex-direction: column;
+  padding-top: 150px;
   margin-left: 50px;
 }
 
@@ -613,9 +613,9 @@ footer {
   position: relative;
 }
 
-/* .timeline_item:last-child{
+.timeline_item:last-child{
   margin-bottom: 0;
-} */
+}
 
 .timeline_items:nth-child(odd) .timeline_item {
   padding-right: calc(50% + 30px);
@@ -668,22 +668,12 @@ footer {
   position: absolute;
   width: 0;
   height: 0;
-  border-top: 20px solid transparent;
-  border-right: 40px solid #252525;
-  border-bottom: 20px solid transparent;
-  margin-left: -80px;
-  margin-top: 170px;
-}
-
-.content_timeline3::after {
-  content: "";
-  position: absolute;
-  width: 24px;
-  height: 24px;
-  border-radius: 50%;
-  margin-left: -293.5px;
-  margin-top: 28px;
-  background-color: #252525;
+  border-top: 16px solid transparent;
+  border-right: 30px solid #252525;
+  border-bottom: 16px solid transparent;
+  rotate: -90deg;
+  margin-left: 2.5px;
+  margin-top: 1150px;
 }
 
 /* =============SEJARAH VERSI 2============== */
