@@ -572,8 +572,9 @@ footer {
 
 .sejarah_welcome h2 {
   text-transform: uppercase;
-  letter-spacing: 5px;
+  letter-spacing: 8px;
   font-size: 3rem;
+  font-family: LemonMilk;
 }
 
 .timeline_hero {
@@ -603,7 +604,7 @@ footer {
   position: absolute;
   width: 3px;
   height: 100%;
-  background-color: #252525d7;
+  background-color: #252525f4;
   left: calc(50%);
 }
 
@@ -613,9 +614,9 @@ footer {
   position: relative;
 }
 
-.timeline_item:last-child {
+.timeline_item:last-child{
   margin-bottom: 0;
-}
+} */
 
 .timeline_items:nth-child(odd) .timeline_item {
   padding-right: calc(50% + 30px);
@@ -631,14 +632,30 @@ footer {
   height: 22px;
   background-color: #eb2125;
   border-radius: 50%;
+  border: 1px #252525;
   position: absolute;
   left: calc(50% - 9.5px);
 }
 
 .timeline_content {
-  background-color: #252525;
+  /* background-image: linear-gradient(to right, #171717, #910002); */
+  /* background-image: linear-gradient(90deg, #252525 0%, #910d0d 40%, #520606 80%, #252525 100%); */
+  background-image: linear-gradient(90deg, #5c0707 0%, #252525 40%, #520606 80%, #252525 100%);
+  animation: gradient 5s infinite;
+  animation: floating 5s infinite;
+  background-size: 400% 400%;
   padding: 30px;
   border-radius: 8px;
+}
+
+@keyframes gradient {
+  0%, 100% {
+    background-position: 0% 50% ;
+  }
+
+  50% {
+    background-position: 50% 0%;
+  }
 }
 
 .timeline_content h1 {
@@ -672,11 +689,9 @@ footer {
   border-right: 30px solid #252525;
   border-bottom: 16px solid transparent;
   rotate: -90deg;
-  margin-left: 2.5px;
-  margin-top: 1150px;
+  margin-top: 500px;
+  left: calc(45% + 42px);
 }
-
-/* =============SEJARAH VERSI 2============== */
 
 /*=============== BREAKPOINTS ===============*/
 /* For small devices */
@@ -895,6 +910,7 @@ footer {
   }
 
   .container1 .box {
+    display: block;
     flex-direction: column;
   }
   .container1 .box .dream {
@@ -1094,6 +1110,52 @@ footer {
   }
 
   /* Box-Content end */
+
+  /* ===== RESPONSIVE SEJARAH===== */
+  .welcome_text {
+    margin-left: 0;
+  }
+
+  .timeline_items {
+    max-width: 1000px;
+    background-color: var(--body-color);
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    position: relative;
+  }
+
+  .timeline_items:nth-child(odd) .timeline_item {
+    padding-right: 0;
+    text-align: left;
+  }
+
+  
+  .timeline_items:nth-child(even) .timeline_item, 
+  .timeline_items:nth-child(odd) .timeline_item {
+    padding-left: 100px;
+  }
+
+  .timeline_items::before {
+    content: '';
+    position: absolute;
+    width: 3px;
+    height: 100%;
+    background-color: #252525f4;
+    left: calc(10%);
+  }
+
+  .timeline_dot {
+    width: 25px;
+    height: 25px;
+    left: calc(8.4%);
+  }
+
+  .segitiga {
+    margin-top: 420px;
+    left: calc(8% + 1px);
+  }
+
 
   /* Footer */
 
