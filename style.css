@@ -581,9 +581,6 @@ footer {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-}
-
-.timeline_hero {
   background-color: var(--body-color);
   min-height: 100vh;
   padding: 100px 15px;
