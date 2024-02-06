@@ -673,8 +673,8 @@ footer {
   border-right: 30px solid #252525;
   border-bottom: 16px solid transparent;
   rotate: -90deg;
-  margin-left: 2.5px;
-  margin-top: 1150px;
+  margin-top: 50px;
+  left: calc(45% + 42px);
 }
 
 /*=============== BREAKPOINTS ===============*/
@@ -1136,8 +1136,7 @@ footer {
   }
 
   .segitiga {
-    margin-bottom: -90px;
-    margin-right: 524.5px;
+    left: calc(8% + 1px);
   }
 
 
