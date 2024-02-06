@@ -90,7 +90,7 @@ nav.scrolling-active {
   height: var(--header-height);
 }
 nav img {
-  width: 80px;
+  width: 60px;
 }
 
 .nav__logo,
@@ -192,8 +192,8 @@ nav img {
 }
 
 .box-content h1 {
-  color:#EB2125;
-  font-weight:bolder;
+  color: #eb2125;
+  font-weight: bolder;
   font-family: "Montserrat", sans-serif;
   text-transform: uppercase;
   font-size: 5rem;
@@ -599,7 +599,7 @@ footer {
 }
 
 .timeline_items::before {
-  content: '';
+  content: "";
   position: absolute;
   width: 3px;
   height: 100%;
@@ -613,7 +613,7 @@ footer {
   position: relative;
 }
 
-.timeline_item:last-child{
+.timeline_item:last-child {
   margin-bottom: 0;
 }
 
@@ -703,8 +703,8 @@ footer {
     max-width: 100%;
   }
 
-  .footer-U1 img {
-    width: 80px;
+  nav img {
+    width: 60px;
   }
   .main-u2 {
     display: block;
@@ -1110,7 +1110,7 @@ footer {
   }
 
   .footer-U1 img {
-    width: 80px;
+    width: 70px;
   }
   .main-u2 {
     display: flex;
@@ -1145,7 +1145,7 @@ footer {
   }
 
   .footer-U2 h2 {
-    font-size: 1.1rem;
+    font-size: 0.9rem;
   }
 
   .wadah-U2 {
