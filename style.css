@@ -90,7 +90,7 @@ nav.scrolling-active {
   height: var(--header-height);
 }
 nav img {
-  width: 60px;
+  width: 75px;
 }
 
 .nav__logo,
@@ -151,32 +151,122 @@ nav img {
   z-index: -1;
   filter: brightness(0.7);
 }
-.Landing {
+
+.main-content-index {
   min-height: 100vh;
+}
+
+.main-quotes i:nth-last-child(1) {
+  align-self: flex-end;
+}
+
+.landing-k {
+  margin-top: 8rem;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 5rem;
+}
+
+.main-quotes {
+  max-width: 50%;
+  display: flex;
+}
+/* .quotes {
+  display: flex;
+  justify-content: center;
   align-items: center;
+} */
+.quotes p {
+  font-weight: 700;
+  font-style: italic;
+  text-align: center;
+  letter-spacing: 2px;
+  margin: 0 5px;
+}
+.mengapa-text {
+  width: 30%;
+}
+
+.mengapa-text p {
+  margin-bottom: 10px;
+  line-height: 25px;
+  text-align: right;
+}
+.mengapa-gambar img {
+  width: 600px;
+  box-shadow: 8px 8px 4px #2525258d;
+  margin-left: 3rem;
+}
+
+.mengapa-text span {
+  color: #eb2125;
+}
+.mengapa-text h1 {
+  text-align: end;
+  font-family: LemonMilk;
+  margin-top: 2rem;
+  font-size: 3rem;
+  font-weight: bolder;
+  margin-bottom: 10px;
+}
+.mengapa-main {
+  display: flex;
+  justify-content: center;
+  margin-top: 3rem;
+}
+
+.siapa-text {
+  width: 30%;
+}
+.siapa-text span {
+  color: #eb2125;
+}
+.siapa-text h1 {
+  font-family: LemonMilk;
+  margin-top: 2rem;
+  font-size: 3rem;
+  font-weight: bolder;
+  margin-bottom: 10px;
+}
+.siapa-text p {
+  margin-bottom: 10px;
+  line-height: 25px;
+}
+.siapa-main {
+  display: flex;
+  justify-content: center;
+}
+.siapa-gambar img {
+  width: 600px;
+  box-shadow: 8px 8px 4px #2525258d;
+  margin-right: 3rem;
+}
+
+.main-quotes i {
+  font-size: 1.5rem;
 }
 .Landing a {
   text-align: center;
 }
 .info {
+  animation: move 2s infinite ease-in-out;
   display: flex;
   flex-direction: column;
   padding-top: 180px;
 }
 .info i {
-  animation: move 2s infinite ease-in-out;
   font-size: 2rem;
   color: rgba(255, 255, 255, 0.847);
 }
 @keyframes move {
   0% {
-    margin-top: 0;
+    transform: translateY(0);
   }
   50% {
-    margin-top: 27px;
+    transform: translateY(27px);
   }
   100% {
-    margin-top: 0;
+    transform: translateY(0);
   }
 }
 
@@ -194,7 +284,8 @@ nav img {
 .box-content h1 {
   color: #eb2125;
   font-weight: bolder;
-  font-family: "Montserrat", sans-serif;
+  font-family: LemonMilk;
+  font-style: italic;
   text-transform: uppercase;
   font-size: 5rem;
   letter-spacing: 8px;
@@ -246,14 +337,17 @@ footer {
 .main-u2 {
   display: flex;
 }
-
-.footer-U1 p {
+.footer-U1 h1 {
+  text-transform: uppercase;
+  font-weight: bolder;
   font-size: 1rem;
-  margin-top: 25px;
+  margin-top: 15px;
+}
+.footer-U1 p {
+  font-size: 0.8rem;
+  margin-top: 5px;
   font-family: "Urbanist", sans-serif;
   text-align: justify;
-  text-transform: uppercase;
-  font-weight: bold;
   color: #fcfcfc;
 }
 
@@ -603,12 +697,54 @@ footer {
 
 /* ====== CONTACT end ======= */
 
-/* ======== SEJARAH ========= */
+/* ======== TENTANG KITA ========= */
+.hero_sambutan {
+  /* padding-top: 150px; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #F9FDFF;
+  min-height: 115vh;
+}
+
+.sambutan_content {
+  display: flex;
+}
+
+.kata_sambutan {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  max-width: 800px;
+}
+
+.isi_sambutan h2 {
+  font-family: LemonMilk;
+  letter-spacing: 4px;
+  font-size: 2.5rem;
+}
+
+.isi_sambutan p {
+  line-height: 26px;
+}
+
+.nama_pembina {
+  display: flex;
+  flex-direction: column;
+}
+
+.hero_sejarah {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  min-height: 100vh;
+}
+
 .welcome_text {
   display: flex;
   flex-direction: column;
-  padding-top: 150px;
   margin-left: 50px;
+  /* padding-top: 100px; */
 }
 
 .directory_content {
@@ -637,8 +773,9 @@ footer {
 }
 
 .sejarah_welcome h2 {
+  font-family: LemonMilk;
   text-transform: uppercase;
-  letter-spacing: 5px;
+  letter-spacing: 4px;
   font-size: 3rem;
 }
 
@@ -757,11 +894,58 @@ footer {
   border-right: 30px solid #252525;
   border-bottom: 16px solid transparent;
   rotate: -90deg;
-  margin-left: 2.5px;
-  margin-top: 1150px;
+  left: calc(50% - 13px);
+  margin-top: 500px;
 }
 
 /* =============SEJARAH VERSI 2============== */
+
+
+/* =============EVENTS SANGSAKA==============  */
+.main-events {
+  text-transform: uppercase;
+  font-weight: 900;
+  font-family: LemonMilk;
+}
+
+.banner-events img {
+  width: 100%;
+  margin-bottom: 3rem;
+}
+
+.h1 {
+  font-size: 3rem;
+  text-align: center;
+  align-items: center;
+  margin-bottom: 3rem;
+}
+
+.vertical-events .carousel {
+  display: grid;
+  grid-auto-flow: column;
+  grid-auto-columns: calc((100% / 4) - 12px);
+  gap: 16px;
+  list-style: none;
+  margin: 0 2rem;
+  overflow-x: hidden;
+}
+
+.carousel .card {
+  cursor: pointer;
+  display: flex;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.carousel .img img {
+  width: 76%;
+  border-radius: 10px;
+}
+
+
+
 
 /*=============== BREAKPOINTS ===============*/
 /* For small devices */
