@@ -539,10 +539,12 @@ footer {
 
 /* ======== TENTANG KITA ========= */
 .hero_sambutan {
-  padding-top: 130px;
+  /* padding-top: 150px; */
   display: flex;
   justify-content: center;
+  align-items: center;
   background-color: #F9FDFF;
+  min-height: 115vh;
 }
 
 .sambutan_content {
@@ -558,9 +560,8 @@ footer {
 
 .isi_sambutan h2 {
   font-family: LemonMilk;
-  text-transform: uppercase;
   letter-spacing: 4px;
-  font-size: 2rem;
+  font-size: 2.5rem;
 }
 
 .isi_sambutan p {
@@ -583,6 +584,7 @@ footer {
   display: flex;
   flex-direction: column;
   margin-left: 50px;
+  /* padding-top: 100px; */
 }
 
 .directory_content {
