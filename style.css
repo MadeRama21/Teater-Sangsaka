@@ -740,6 +740,53 @@ footer {
 
 /* =============SEJARAH VERSI 2============== */
 
+
+/* =============EVENTS SANGSAKA==============  */
+.main-events {
+  text-transform: uppercase;
+  font-weight: 900;
+  font-family: LemonMilk;
+}
+
+.banner-events img {
+  width: 100%;
+  margin-bottom: 3rem;
+}
+
+.h1 {
+  font-size: 3rem;
+  text-align: center;
+  align-items: center;
+  margin-bottom: 3rem;
+}
+
+.vertical-events .carousel {
+  display: grid;
+  grid-auto-flow: column;
+  grid-auto-columns: calc((100% / 4) - 12px);
+  gap: 16px;
+  list-style: none;
+  margin: 0 2rem;
+  overflow-x: hidden;
+}
+
+.carousel .card {
+  cursor: pointer;
+  display: flex;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.carousel .img img {
+  width: 76%;
+  border-radius: 10px;
+}
+
+
+
+
 /*=============== BREAKPOINTS ===============*/
 /* For small devices */
 @media screen and (max-width: 390px) {
