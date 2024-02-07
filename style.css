@@ -537,11 +537,51 @@ footer {
   letter-spacing: 2.4px;
 }
 
-/* ======== SEJARAH ========= */
+/* ======== TENTANG KITA ========= */
+.hero_sambutan {
+  padding-top: 130px;
+  display: flex;
+  justify-content: center;
+  background-color: #F9FDFF;
+}
+
+.sambutan_content {
+  display: flex;
+}
+
+.kata_sambutan {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  max-width: 800px;
+}
+
+.isi_sambutan h2 {
+  font-family: LemonMilk;
+  text-transform: uppercase;
+  letter-spacing: 4px;
+  font-size: 2rem;
+}
+
+.isi_sambutan p {
+  line-height: 26px;
+}
+
+.nama_pembina {
+  display: flex;
+  flex-direction: column;
+}
+
+.hero_sejarah {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  min-height: 100vh;
+}
+
 .welcome_text {
   display: flex;
   flex-direction: column;
-  padding-top: 150px;
   margin-left: 50px;
 }
 
@@ -571,8 +611,9 @@ footer {
 }
 
 .sejarah_welcome h2 {
+  font-family: LemonMilk;
   text-transform: uppercase;
-  letter-spacing: 5px;
+  letter-spacing: 4px;
   font-size: 3rem;
 }
 
@@ -691,8 +732,8 @@ footer {
   border-right: 30px solid #252525;
   border-bottom: 16px solid transparent;
   rotate: -90deg;
-  margin-left: 2.5px;
-  margin-top: 1150px;
+  left: calc(50% - 13px);
+  margin-top: 500px;
 }
 
 /* =============SEJARAH VERSI 2============== */
