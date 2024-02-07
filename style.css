@@ -631,12 +631,54 @@ footer {
   letter-spacing: 2.4px;
 }
 
-/* ======== SEJARAH ========= */
+/* ======== TENTANG KITA ========= */
+.hero_sambutan {
+  /* padding-top: 150px; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #F9FDFF;
+  min-height: 115vh;
+}
+
+.sambutan_content {
+  display: flex;
+}
+
+.kata_sambutan {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  max-width: 800px;
+}
+
+.isi_sambutan h2 {
+  font-family: LemonMilk;
+  letter-spacing: 4px;
+  font-size: 2.5rem;
+}
+
+.isi_sambutan p {
+  line-height: 26px;
+}
+
+.nama_pembina {
+  display: flex;
+  flex-direction: column;
+}
+
+.hero_sejarah {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  min-height: 100vh;
+}
+
 .welcome_text {
   display: flex;
   flex-direction: column;
-  padding-top: 150px;
   margin-left: 50px;
+  /* padding-top: 100px; */
 }
 
 .directory_content {
@@ -665,8 +707,9 @@ footer {
 }
 
 .sejarah_welcome h2 {
+  font-family: LemonMilk;
   text-transform: uppercase;
-  letter-spacing: 5px;
+  letter-spacing: 4px;
   font-size: 3rem;
 }
 
@@ -675,9 +718,6 @@ footer {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-}
-
-.timeline_hero {
   background-color: var(--body-color);
   min-height: 100vh;
   padding: 100px 15px;
@@ -730,9 +770,31 @@ footer {
 }
 
 .timeline_content {
-  background-color: #252525;
+  background-image: linear-gradient(90deg, #5c0707 0%, #252525 40%, #520606 80%, #252525 100%);
+  animation: gradient 5s infinite;
+  background-size: 400% 400%;
   padding: 30px;
   border-radius: 8px;
+}
+
+@keyframes floating {
+  0%, 100% {
+    transform: translateY(-3px);
+  }
+
+  50% {
+    transform: translateY(3px);
+  }
+}
+
+@keyframes gradient {
+  0%, 100% {
+    background-position: 0% 50% ;
+  }
+
+  50% {
+    background-position: 50% 0%;
+  }
 }
 
 .timeline_content h1 {
@@ -766,11 +828,58 @@ footer {
   border-right: 30px solid #252525;
   border-bottom: 16px solid transparent;
   rotate: -90deg;
-  margin-left: 2.5px;
-  margin-top: 1150px;
+  left: calc(50% - 13px);
+  margin-top: 500px;
 }
 
 /* =============SEJARAH VERSI 2============== */
+
+
+/* =============EVENTS SANGSAKA==============  */
+.main-events {
+  text-transform: uppercase;
+  font-weight: 900;
+  font-family: LemonMilk;
+}
+
+.banner-events img {
+  width: 100%;
+  margin-bottom: 3rem;
+}
+
+.h1 {
+  font-size: 3rem;
+  text-align: center;
+  align-items: center;
+  margin-bottom: 3rem;
+}
+
+.vertical-events .carousel {
+  display: grid;
+  grid-auto-flow: column;
+  grid-auto-columns: calc((100% / 4) - 12px);
+  gap: 16px;
+  list-style: none;
+  margin: 0 2rem;
+  overflow-x: hidden;
+}
+
+.carousel .card {
+  cursor: pointer;
+  display: flex;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.carousel .img img {
+  width: 76%;
+  border-radius: 10px;
+}
+
+
+
 
 /*=============== BREAKPOINTS ===============*/
 /* For small devices */
@@ -1188,6 +1297,52 @@ footer {
   }
 
   /* Box-Content end */
+
+  /* ===== RESPONSIVE SEJARAH===== */
+  .welcome_text {
+    margin-left: 0;
+  }
+
+  .timeline_items {
+    max-width: 1000px;
+    background-color: var(--body-color);
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    position: relative;
+  }
+
+  .timeline_items:nth-child(odd) .timeline_item {
+    padding-right: 0;
+    text-align: left;
+  }
+
+
+  .timeline_items:nth-child(even) .timeline_item, 
+  .timeline_items:nth-child(odd) .timeline_item {
+    padding-left: 100px;
+  }
+
+  .timeline_items::before {
+    content: '';
+    position: absolute;
+    width: 3px;
+    height: 100%;
+    background-color: #252525f4;
+    left: calc(10%);
+  }
+
+  .timeline_dot {
+    width: 25px;
+    height: 25px;
+    left: calc(8.4%);
+  }
+
+  .segitiga {
+    margin-top: 420px;
+    left: calc(8% + 1px);
+  }
+
 
   /* Footer */
 
