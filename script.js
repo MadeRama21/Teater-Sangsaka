@@ -46,13 +46,13 @@ const dragging = (e) => {
   carousel.scrollLeft = startScrollleft - (e.pageX - startX);
 }
 
-const dragStop = (e) => {
+const dragStop = () => {
   isDragging = false;
   carousel.classList.remove("dragging");
 }
 
 const autoPlay = () => {
-  if(window.innerWidth < 800) return;
+  if(window.innerWidth < 400) return;
   timeoutId = setTimeout(() => carousel.scrollLeft += firstCardWidth, 3000);
 }
 autoPlay();
