@@ -630,6 +630,72 @@ footer {
   line-height: normal;
   letter-spacing: 2.4px;
 }
+/* ======== GALERi end ========= */
+
+/* ======== CONTACT ========= */
+.contact_container {
+  height: 120vh;
+  display: flex;
+}
+
+.contact_text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  /* padding-top: 200px; */
+  width: 50%;
+  min-height: 120vh;
+}
+
+.contact_text h1 {
+  font-size: 64px;
+}
+
+.contact_text p {
+  font-size: 20px;
+}
+
+.wa_button {
+  display: flex;
+  transition: 0.3s;
+  padding-top: 10px;
+  margin-top: 10px;
+}
+
+.wa_button {
+  padding: 10px;
+  padding-right: 20px;
+  padding-left: 20px;
+  color: white;
+  background-color: #25D366;
+  border-radius: 5px;
+  text-decoration: none;
+  font-weight: 500;
+  width: 230px;
+}
+
+.wa_button i {
+  font-size: 40px;
+}
+
+.wa_button p {
+  font-size: 20px;
+}
+
+.wa_button:hover {
+  transform: translateY(-3px);
+  transition: 0.3s;
+}
+
+.wa_icon {
+  font-size: 40px;
+}
+
+.wa_number {
+  
+}
+
+/* ====== CONTACT end ======= */
 
 /* ======== TENTANG KITA ========= */
 .hero_sambutan {
@@ -854,32 +920,39 @@ footer {
   margin-bottom: 3rem;
 }
 
-.vertical-events .carousel {
+.vertical-events .carousel, .horizontal-events .carousel {
   display: grid;
   grid-auto-flow: column;
   grid-auto-columns: calc((100% / 4) - 12px);
-  gap: 16px;
+  gap: 15px;
   list-style: none;
   margin: 0 2rem;
   overflow-x: hidden;
+  margin-bottom: 5rem;
 }
 
 .carousel .card {
   cursor: pointer;
   display: flex;
+  margin: 5px 0 5px;
   text-align: center;
   align-items: center;
   justify-content: center;
   flex-direction: column;
+  width: 85%;
+  border-radius: 10px;
+  box-shadow: 0 0 5px rgba(0, 0, 0, .23);
 }
 
 .carousel .img img {
-  width: 76%;
-  border-radius: 10px;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  margin: 0;
+  padding: 0;
+  border-radius: 10px;  
 }
-
-
-
+/* =============EVENTS SANGSAKA==============  */
 
 /*=============== BREAKPOINTS ===============*/
 /* For small devices */
@@ -1468,3 +1541,4 @@ footer {
     width: 100%;
   }
 }
+
