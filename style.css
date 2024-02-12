@@ -90,7 +90,7 @@ nav.scrolling-active {
   height: var(--header-height);
 }
 nav img {
-  width: 75px;
+  width: 70px;
 }
 
 .nav__logo,
@@ -122,8 +122,8 @@ nav img {
 
 .nav__toggle {
   position: relative;
-  width: 32px;
-  height: 32px;
+  width: 40px;
+  height: 40px;
 }
 
 .nav__burger,
@@ -185,6 +185,7 @@ nav img {
 }
 .mengapa-text {
   width: 30%;
+  text-align: right;
 }
 
 .mengapa-text p {
@@ -192,6 +193,17 @@ nav img {
   line-height: 25px;
   text-align: right;
 }
+
+.mengapa-text a {
+  margin-bottom: 10px;
+  line-height: 25px;
+  color: #eb2125;
+  font-weight: bolder;
+}
+.mengapa-text a:hover {
+  color: #520606;
+}
+
 .mengapa-gambar img {
   width: 600px;
   box-shadow: 8px 8px 4px #2525258d;
@@ -323,6 +335,7 @@ nav img {
 footer {
   margin-top: 3rem;
   display: flex;
+  flex-direction: column;
   justify-content: center;
   background-color: #252525;
   color: #fff;
@@ -355,8 +368,8 @@ footer {
   display: flex;
   justify-content: space-between;
   padding-top: 20px;
-  padding-left: 20px;
-  padding-right: 20px;
+  padding-left: 60px;
+  padding-right: 60px;
   padding-bottom: 4rem;
 }
 .footer-U1 {
@@ -373,7 +386,7 @@ footer {
 
 .wadah-U2 {
   flex-direction: column;
-  margin-left: 8rem;
+  margin-left: 6rem;
 }
 
 .footer-S .social-media a i {
@@ -572,7 +585,6 @@ footer {
   display: flex;
   flex-direction: column;
   padding: 1.5px;
-  width: 32.5%;
   width: 100%;
   margin: 1px;
   -webkit-filter: grayscale(1);
@@ -584,20 +596,24 @@ footer {
   display: flex;
   flex-direction: column;
   padding: 1.5px;
-  width: 32.5%;
   width: 100%;
+  height: 100%;
   margin: 1px;
   -webkit-filter: grayscale(1);
   filter: grayscale(1);
   transition: 0.3s;
 }
 
-.dream .image img:hover {
+.dream {
+  max-width: 450px;
+}
+
+.dream img:hover {
   -webkit-filter: grayscale(0);
   filter: grayscale(0);
 }
 
-.dream .image video:hover {
+.dream video:hover {
   -webkit-filter: grayscale(0);
   filter: grayscale(0);
 }
@@ -704,7 +720,7 @@ footer {
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: #F9FDFF;
+  background-color: #f9fdff;
   min-height: 115vh;
 }
 
@@ -846,7 +862,8 @@ footer {
 }
 
 @keyframes floating {
-  0%, 100% {
+  0%,
+  100% {
     transform: translateY(-3px);
   }
 
@@ -856,8 +873,9 @@ footer {
 }
 
 @keyframes gradient {
-  0%, 100% {
-    background-position: 0% 50% ;
+  0%,
+  100% {
+    background-position: 0% 50%;
   }
 
   50% {
@@ -959,17 +977,37 @@ footer {
   display: grid;
   grid-auto-flow: column;
   grid-auto-columns: calc((100% / 4) - 12px);
-  gap: 15px;
+  gap: 16px;
   list-style: none;
   margin: 0 2rem;
   overflow-x: hidden;
   margin-bottom: 5rem;
 }
+.carousel::-webkit-scrollbar {
+  display: none;
+}
+.carousel :where(.card, .img) {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.carousel.no-transition {
+  scroll-behavior: auto;
+}
+.carousel.dragging {
+  scroll-snap-type: none;
+  scroll-behavior: auto;
+}
+.carousel.dragging .card {
+  cursor: grab;
+  user-select: none;
+}
 
 .carousel .card {
   cursor: pointer;
+  scroll-snap-align: start;
   display: flex;
-  margin: 5px 0 5px;
   text-align: center;
   align-items: center;
   justify-content: center;
@@ -987,11 +1025,10 @@ footer {
   padding: 0;
   border-radius: 10px;  
 }
-/* =============EVENTS SANGSAKA==============  */
 
 /*=============== BREAKPOINTS ===============*/
 /* For small devices */
-@media screen and (max-width: 390px) {
+@media screen and (max-width: 600px) {
   .container {
     margin-inline: 1rem;
   }
@@ -1026,7 +1063,6 @@ footer {
     font-size: 1rem;
     margin-top: 25px;
     font-family: "Urbanist", sans-serif;
-    text-align: justify;
     text-transform: uppercase;
     font-weight: bold;
     color: #fcfcfc;
@@ -1091,7 +1127,7 @@ footer {
     width: 100%;
     height: 0.2px;
     background-color: #fff;
-    margin-bottom: 3rem;
+    margin-bottom: 1rem;
   }
 
   .copyrigth {
@@ -1116,7 +1152,7 @@ footer {
 }
 
 /* For large devices */
-@media screen and (min-width: 1118px) {
+@media screen and (min-width: 900px) {
   .container {
     margin-inline: auto;
   }
@@ -1440,14 +1476,13 @@ footer {
     text-align: left;
   }
 
-
-  .timeline_items:nth-child(even) .timeline_item, 
+  .timeline_items:nth-child(even) .timeline_item,
   .timeline_items:nth-child(odd) .timeline_item {
     padding-left: 100px;
   }
 
   .timeline_items::before {
-    content: '';
+    content: "";
     position: absolute;
     width: 3px;
     height: 100%;
@@ -1465,7 +1500,6 @@ footer {
     margin-top: 420px;
     left: calc(8% + 1px);
   }
-
 
   /* Footer */
 
@@ -1492,7 +1526,6 @@ footer {
     font-size: 1rem;
     margin-top: 25px;
     font-family: "Urbanist", sans-serif;
-    text-align: justify;
     text-transform: uppercase;
     font-weight: bold;
     color: #fcfcfc;
@@ -1559,7 +1592,7 @@ footer {
     width: 100%;
     height: 0.2px;
     background-color: #fff;
-    margin-bottom: 3rem;
+    margin-bottom: 1.5rem;
   }
 
   .copyrigth {
@@ -1581,14 +1614,45 @@ footer {
     color: white;
   }
   /* Footer end */
+  
+  .h1 {
+    font-size: 2.2rem;
+  }
+
+  .vertical-events {
+    margin-top: 1rem;
+  }
+
+  .vertical-events .carousel {
+    grid-auto-columns: calc((100% / 3) - 9px);
+  }
+
+  .card img {
+    width: 100%;
+  }
 }
 
-@media only screen and (max-width: 360px) {
+@media only screen and (max-width: 600px) {
   .container1 .box {
     flex-direction: column;
   }
   .container1 .box .dream {
     width: 100%;
   }
-}
 
+  .h1 {
+    font-size: 1.8rem;
+  }
+
+  .vertical-events .carousel {
+    grid-auto-columns: calc((100% / 2) - 1px);
+  }
+
+  .vertical-events {
+    margin-top: 1rem;
+  }
+
+  .card img {
+    width: 50%;
+  }
+}

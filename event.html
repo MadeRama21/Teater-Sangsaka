@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Events | Sangsaka</title>
     <link rel="icon" href="logo/sangsaka.png" type="image/x-icon">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style.css?v=2">
     <link href="https://cdn.jsdelivr.net/npm/remixicon@3.2.0/fonts/remixicon.css" rel="stylesheet">
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@mdi/font@7.4.47/css/materialdesignicons.min.css">
@@ -28,32 +28,11 @@
             <!-- nav-menu -->
             <div class="nav__menu" id="nav-menu">
                 <ul class="nav__list">
-                    <li><a href="index.html" class="nav__link">Beranda</a></li>
+                    <li><a href="#" class="nav__link">Beranda</a></li>
 
                     <!--=============== DROPDOWN 1 ===============-->
-                    <li class="dropdown__item">
-                        <div class="nav__link">
-                            Tentang Kita <i class="ri-arrow-down-s-line dropdown__arrow"></i>
-                        </div>
-
-                        <ul class="dropdown__menu">
-                            <li>
-                                <a href="sejarah.html" class="dropdown__link">
-                                    Sejarah
-                                </a>
-                            </li>
-                            <li>
-                                <a href="#" class="dropdown__link">
-                                    Profil Anggota
-                                </a>
-                            </li>
-                            <li>
-                                <a href="#" class="dropdown__link">
-                                    Opini
-                                </a>
-                            </li>
-
-                        </ul>
+                    <li>
+                        <a href="tentang kita.html" class="nav__link">Tentang Kita</a>
                     </li>
 
                     <li><a href="event.html" class="nav__link">Events</a></li>
@@ -94,66 +73,47 @@
 
 
     <!-- =============== MAIN CONTENT START =============== -->
-    <section class="main-events">
+    <main class="main-events">
         <div class="banner-events">
             <img src="img/11.JPG" alt="">
         </div>
 
         <h1 class="h1"> EVENTS SANGSAKA </h1>
 
-        <main class="main-vertical">
+        <section class="main-vertical" id="main-vertical">
             <div class="vertical-events">
                 <ul class="carousel">
                     <li class="card">
-                        <div class="img"> <img src="img/111.JPG" alt="img" title="BOBOIBOY LUMUT"> </div>
+                        <div class="img"> <img src="img/111.JPG" alt="img" title="BOBOIBOY LUMUT" draggable="false"> </div>
                     </li>
 
                     <li class="card">
-                        <div class="img"> <img src="img/111.JPG" alt="img" title="BOBOIBOY LUMUT"> </div>
+                        <div class="img"> <img src="img/111.JPG" alt="img" title="BOBOIBOY LUMUT" draggable="false"> </div>
                     </li>
 
                     <li class="card">
-                        <div class="img"> <img src="img/111.JPG" alt="img" title="BOBOIBOY LUMUT"> </div>
+                        <div class="img"> <img src="img/111.JPG" alt="img" title="BOBOIBOY LUMUT" draggable="false"> </div>
                     </li>
 
                     <li class="card">
-                        <div class="img"> <img src="img/111.JPG" alt="img" title="BOBOIBOY LUMUT"> </div>
+                        <div class="img"> <img src="img/111.JPG" alt="img" title="BOBOIBOY LUMUT" draggable="false"> </div>
                     </li>
 
                     <li class="card">
-                        <div class="img"> <img src="img/111.JPG" alt="img" title="BOBOIBOY LUMUT"> </div>
+                        <div class="img"> <img src="img/111.JPG" alt="img" title="BOBOIBOY LUMUT" draggable="false"> </div>
+                    </li>
+
+                    <li class="card">
+                        <div class="img"> <img src="img/111.JPG" alt="img" title="BOBOIBOY LUMUT" draggable="false"> </div>
+                    </li>
+
+                    <li class="card">
+                        <div class="img"> <img src="img/111.JPG" alt="img" title="BOBOIBOY LUMUT" draggable="false"> </div>
                     </li>
                 </ul>
             </div>
-        </main>
-
-
-        <main class="main-horizontal">
-            <div class="horizontal-events">
-                <ul class="carousel">
-                    <li class="card">
-                        <div class="img"> <img src="img/5.jpg" alt="img" title="BOBOIBOY LUMUT"> </div>
-                    </li>
-
-                    <li class="card">
-                        <div class="img"> <img src="img/5.jpg" alt="img" title="BOBOIBOY LUMUT"> </div>
-                    </li>
-
-                    <li class="card">
-                        <div class="img"> <img src="img/5.jpg" alt="img" title="BOBOIBOY LUMUT"> </div>
-                    </li>
-
-                    <li class="card">
-                        <div class="img"> <img src="img/5.jpg" alt="img" title="BOBOIBOY LUMUT"> </div>
-                    </li>
-
-                    <li class="card">
-                        <div class="img"> <img src="img/5.jpg" alt="img" title="BOBOIBOY LUMUT"> </div>
-                    </li>
-                </ul>
-            </div>
-        </main>
-    </section>
+        </section>
+    </main>
     <!-- =============== MAIN CONTENT END =============== -->
     
 
@@ -163,6 +123,7 @@
             <div class="footer-U">
                 <div class="footer-U1">
                     <img src="logo/sangsaka.png" alt="">
+                    <h1>Teater Sangsaka</h1>
                     <p>Juara Hidup, Hidup Juara!</p>
                 </div>
                 <div class="main-u2">
@@ -237,16 +198,19 @@
 
             </div>
             <div class="garis"> </div>
+        </div>
+
+        <div class="copyrigth">
+            <p>
+                &copy; Copyright 2024
+            </p>
+            <a target="_blank" href="https://linktr.ee/Pemuda_Kodya?utm_source=linktree_admin_share">
+                -HarmoniX Squad x Teater Sangsaka-
+            </a>
+        </div>
+
 
     </footer>
-    <div class="copyrigth">
-        <p>
-            &copy; Copyright 2024. Made by
-        </p>
-        <a target="_blank" href="https://linktr.ee/Pemuda_Kodya?utm_source=linktree_admin_share">
-            -HarmoniX Squad x Teater Sangsaka-
-        </a>
-    </div>
     <!-- =============== FOOTER END =============== -->
 
 <script src="script.js"></script>
