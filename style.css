@@ -936,7 +936,7 @@ footer {
 .vertical-events .carousel {
   display: grid;
   grid-auto-flow: column;
-  grid-auto-columns: calc((100% / 4) - 12px);
+  grid-auto-columns: calc((100% / 4) - 9px);
   gap: 15px;
   list-style: none;
   /* margin: 0 5rem; */
@@ -978,15 +978,19 @@ footer {
   flex-direction: column;
   width: 100%;
   border-radius: 10px;
+  aspect-ratio: 16 / 9;
+  /* height: 300px;
+  overflow-y: hidden; */
   /* box-shadow: 0 0 5px rgba(0, 0, 0, .23); */
 }
 
 .carousel .img img {
-  width: 80%;
+  width: 85%;
   object-fit: cover;
+  aspect-ratio: 3 / 4;
   margin: 0;
   padding: 0;
-  border-radius: 10px; 
+  border-radius: 8px;
   box-shadow: 0 0 5px rgba(0, 0, 0, .23); 
 }
 /* =============EVENTS SANGSAKA==============  */
@@ -1569,6 +1573,8 @@ footer {
   }
   /* Footer end */
   
+
+  /*=============== RESPONSIVE CAROUSEL EVENTS START ===============*/
   .h1 {
     font-size: 2.2rem;
   }
@@ -1578,13 +1584,14 @@ footer {
   }
 
   .vertical-events .carousel {
-    grid-auto-columns: calc((100% / 3) - 9px);
+    grid-auto-columns: calc((100% / 3) - 11px);
   }
 
   .card img {
     width: 100%;
   }
 }
+/*=============== RESPONSIVE CAROUSEL EVENTS START ===============*/
 
 @media only screen and (max-width: 600px) {
   .container1 .box {
@@ -1598,8 +1605,13 @@ footer {
     font-size: 1.8rem;
   }
 
+/*=============== RESPONSIVE CAROUSEL EVENTS START ===============*/
+  .main-events {
+    margin-top: 2rem;
+  }
+
   .vertical-events .carousel {
-    grid-auto-columns: calc((100% / 2) - 1px);
+    grid-auto-columns: calc((100% / 2) - 8px);
   }
 
   .vertical-events {
@@ -1609,5 +1621,6 @@ footer {
   .card img {
     width: 50%;
   }
+/*=============== RESPONSIVE CAROUSEL EVENTS END ===============*/
 }
 
