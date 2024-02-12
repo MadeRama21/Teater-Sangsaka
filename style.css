@@ -634,6 +634,78 @@ footer {
   line-height: normal;
   letter-spacing: 2.4px;
 }
+
+#image1 {
+  height: 543px;
+  overflow: hidden;
+  object-fit: cover;
+}
+
+#image2 {
+  height: 274px;
+  overflow: hidden;
+  object-fit: cover;
+}
+
+#image3 {
+  height: 388px;
+  overflow: hidden;
+  object-fit: cover;
+}
+
+#image4 {
+  height: 198px;
+  overflow: hidden;
+  object-fit: cover;
+}
+
+#image5 {
+  height: 361px;
+  overflow: hidden;
+  object-fit: cover;
+}
+
+#image6 {
+  height: 606px;
+  overflow: hidden;
+  object-fit: cover;
+}
+
+#image7 {
+  height: 285px;
+  overflow: hidden;
+  object-fit: cover;
+}
+
+#image8 {
+  height: 151px;
+  overflow: hidden;
+  object-fit: cover;
+}
+
+#image9 {
+  height: 446px;
+  overflow: hidden;
+  object-fit: cover;
+}
+
+#image10 {
+  height: 255px;
+  overflow: hidden;
+  object-fit: cover;
+}
+
+#image11 {
+  height: 168px;
+  overflow: hidden;
+  object-fit: cover;
+}
+
+#image12 {
+  height: 534px;
+  overflow: hidden;
+  object-fit: cover;
+}
 /* ======== GALERi end ========= */
 
 /* ======== CONTACT ========= */
