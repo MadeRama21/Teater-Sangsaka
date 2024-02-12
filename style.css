@@ -1442,69 +1442,6 @@ footer {
 
   /* Box-Content end */
 
-  /* ===== RESPONSIVE SEJARAH===== */
-  .sambutan_content {
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-  }
-
-  .foto_pembina img {
-    width: 500px;
-    height: 450px;
-  }
-
-  .isi_sambutan h2 {
-    font-size: 2rem;
-  }
-
-  .welcome_text {
-    margin-left: 0;
-  }
-
-  .timeline_items {
-    max-width: 1000px;
-    background-color: var(--body-color);
-    margin: auto;
-    display: flex;
-    flex-wrap: wrap;
-    position: relative;
-  }
-
-  .timeline_items:nth-child(odd) .timeline_item {
-    padding-right: 0;
-    text-align: left;
-  }
-
-  .timeline_items:nth-child(even) .timeline_item,
-  .timeline_items:nth-child(odd) .timeline_item {
-    padding-left: 100px;
-  }
-
-  .timeline_items::before {
-    content: "";
-    position: absolute;
-    width: 3px;
-    height: 100%;
-    background-color: #252525f4;
-    left: calc(10%);
-  }
-
-  .timeline_dot {
-    width: 25px;
-    height: 25px;
-    left: calc(8.4%);
-  }
-
-  .segitiga {
-    margin-top: 420px;
-    left: calc(8% + 1px);
-  }
-
-  .frame_foto img {
-    width: 19%;
-  }
-
   /* Footer */
 
   footer {
@@ -1658,5 +1595,68 @@ footer {
 
   .card img {
     width: 50%;
+  }
+
+  /* =======RESPONSIF SEJARAH======= */
+  .sambutan_content {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .foto_pembina img {
+    width: 500px;
+    height: 450px;
+  }
+
+  .isi_sambutan h2 {
+    font-size: 2rem;
+  }
+
+  .welcome_text {
+    margin-left: 0;
+  }
+
+  .timeline_items {
+    max-width: 1000px;
+    background-color: var(--body-color);
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    position: relative;
+  }
+
+  .timeline_items:nth-child(odd) .timeline_item {
+    padding-right: 0;
+    text-align: left;
+  }
+
+  .timeline_items:nth-child(even) .timeline_item,
+  .timeline_items:nth-child(odd) .timeline_item {
+    padding-left: 100px;
+  }
+
+  .timeline_items::before {
+    content: "";
+    position: absolute;
+    width: 3px;
+    height: 100%;
+    background-color: #252525f4;
+    left: calc(10%);
+  }
+
+  .timeline_dot {
+    width: 25px;
+    height: 25px;
+    left: calc(8.4%);
+  }
+
+  .segitiga {
+    margin-top: 420px;
+    left: calc(8% + 1px);
+  }
+
+  .frame_foto img {
+    width: 19%;
   }
 }
