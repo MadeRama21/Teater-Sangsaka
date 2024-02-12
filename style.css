@@ -774,17 +774,19 @@ footer {
 /* ====== CONTACT end ======= */
 
 /* ======== TENTANG KITA ========= */
+
 .hero_sambutan {
   /* padding-top: 150px; */
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: #F9FDFF;
+  background-color: #f9fdff;
   min-height: 115vh;
 }
 
 .sambutan_content {
   display: flex;
+  gap: 25px;
 }
 
 .kata_sambutan {
@@ -884,13 +886,9 @@ footer {
 }
 
 .timeline_item {
-  margin-bottom: 75px;
+  margin-bottom: 50px;
   width: 100%;
   position: relative;
-}
-
-.timeline_item:last-child {
-  margin-bottom: 0;
 }
 
 .timeline_items:nth-child(odd) .timeline_item {
@@ -920,7 +918,8 @@ footer {
 }
 
 @keyframes floating {
-  0%, 100% {
+  0%,
+  100% {
     transform: translateY(-3px);
   }
 
@@ -930,8 +929,9 @@ footer {
 }
 
 @keyframes gradient {
-  0%, 100% {
-    background-position: 0% 50% ;
+  0%,
+  100% {
+    background-position: 0% 50%;
   }
 
   50% {
@@ -970,11 +970,45 @@ footer {
   border-right: 30px solid #252525;
   border-bottom: 16px solid transparent;
   rotate: -90deg;
+  margin-top: 30px;
   left: calc(50% - 13px);
-  margin-top: 500px;
 }
 
-/* =============SEJARAH VERSI 2============== */
+.hero_petinggisangsaka {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.title_petinggisangsaka {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 25px;
+}
+
+.title_petinggisangsaka h2 {
+  font-family:  LemonMilk;
+  text-transform: uppercase;
+  letter-spacing: 4px;
+  font-size: 2.5rem;
+}
+
+.frame_foto {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 3px;
+}
+
+.frame_foto img {
+  position: relative;
+  width: 14%;
+}
 
 
 /* =============EVENTS SANGSAKA==============  */
