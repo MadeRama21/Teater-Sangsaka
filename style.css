@@ -90,7 +90,7 @@ nav.scrolling-active {
   height: var(--header-height);
 }
 nav img {
-  width: 75px;
+  width: 70px;
 }
 
 .nav__logo,
@@ -122,8 +122,8 @@ nav img {
 
 .nav__toggle {
   position: relative;
-  width: 32px;
-  height: 32px;
+  width: 40px;
+  height: 40px;
 }
 
 .nav__burger,
@@ -185,6 +185,7 @@ nav img {
 }
 .mengapa-text {
   width: 30%;
+  text-align: right;
 }
 
 .mengapa-text p {
@@ -192,6 +193,17 @@ nav img {
   line-height: 25px;
   text-align: right;
 }
+
+.mengapa-text a {
+  margin-bottom: 10px;
+  line-height: 25px;
+  color: #eb2125;
+  font-weight: bolder;
+}
+.mengapa-text a:hover {
+  color: #520606;
+}
+
 .mengapa-gambar img {
   width: 600px;
   box-shadow: 8px 8px 4px #2525258d;
@@ -323,6 +335,7 @@ nav img {
 footer {
   margin-top: 3rem;
   display: flex;
+  flex-direction: column;
   justify-content: center;
   background-color: #252525;
   color: #fff;
@@ -355,8 +368,8 @@ footer {
   display: flex;
   justify-content: space-between;
   padding-top: 20px;
-  padding-left: 20px;
-  padding-right: 20px;
+  padding-left: 60px;
+  padding-right: 60px;
   padding-bottom: 4rem;
 }
 .footer-U1 {
@@ -373,7 +386,7 @@ footer {
 
 .wadah-U2 {
   flex-direction: column;
-  margin-left: 8rem;
+  margin-left: 6rem;
 }
 
 .footer-S .social-media a i {
@@ -572,7 +585,6 @@ footer {
   display: flex;
   flex-direction: column;
   padding: 1.5px;
-  width: 32.5%;
   width: 100%;
   margin: 1px;
   -webkit-filter: grayscale(1);
@@ -584,8 +596,8 @@ footer {
   display: flex;
   flex-direction: column;
   padding: 1.5px;
-  width: 32.5%;
   width: 100%;
+  height: 100%;
   margin: 1px;
   -webkit-filter: grayscale(1);
   filter: grayscale(1);
@@ -596,12 +608,12 @@ footer {
   max-width: 450px;
 }
 
-.dream .image img:hover {
+.dream img:hover {
   -webkit-filter: grayscale(0);
   filter: grayscale(0);
 }
 
-.dream .image video:hover {
+.dream video:hover {
   -webkit-filter: grayscale(0);
   filter: grayscale(0);
 }
@@ -702,17 +714,19 @@ footer {
 /* ====== CONTACT end ======= */
 
 /* ======== TENTANG KITA ========= */
+
 .hero_sambutan {
   /* padding-top: 150px; */
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: #F9FDFF;
+  background-color: #f9fdff;
   min-height: 115vh;
 }
 
 .sambutan_content {
   display: flex;
+  gap: 25px;
 }
 
 .kata_sambutan {
@@ -812,13 +826,9 @@ footer {
 }
 
 .timeline_item {
-  margin-bottom: 75px;
+  margin-bottom: 50px;
   width: 100%;
   position: relative;
-}
-
-.timeline_item:last-child {
-  margin-bottom: 0;
 }
 
 .timeline_items:nth-child(odd) .timeline_item {
@@ -848,7 +858,8 @@ footer {
 }
 
 @keyframes floating {
-  0%, 100% {
+  0%,
+  100% {
     transform: translateY(-3px);
   }
 
@@ -858,8 +869,9 @@ footer {
 }
 
 @keyframes gradient {
-  0%, 100% {
-    background-position: 0% 50% ;
+  0%,
+  100% {
+    background-position: 0% 50%;
   }
 
   50% {
@@ -898,12 +910,45 @@ footer {
   border-right: 30px solid #252525;
   border-bottom: 16px solid transparent;
   rotate: -90deg;
+  margin-top: 30px;
   left: calc(50% - 13px);
-  margin-top: 500px;
 }
 
-/* =============SEJARAH VERSI 2============== */
+.hero_petinggisangsaka {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
 
+.title_petinggisangsaka {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 25px;
+}
+
+.title_petinggisangsaka h2 {
+  font-family:  LemonMilk;
+  text-transform: uppercase;
+  letter-spacing: 4px;
+  font-size: 2.5rem;
+}
+
+.frame_foto {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 3px;
+}
+
+.frame_foto img {
+  position: relative;
+  width: 14%;
+}
 
 /* =============EVENTS SANGSAKA==============  */
 .main-events {
@@ -924,26 +969,14 @@ footer {
   margin-bottom: 3rem;
 }
 
-.vertical-events {
-  margin-top: 1rem;
-  display: flex;
-  width: 100%;
-  position: relative;
-  justify-content: center;
-  align-items: center;
-}
-
-.vertical-events .carousel {
+.vertical-events .carousel, .horizontal-events .carousel {
   display: grid;
   grid-auto-flow: column;
   grid-auto-columns: calc((100% / 4) - 9px);
   gap: 15px;
   list-style: none;
-  /* margin: 0 5rem; */
-  overflow-x: auto;
-  scroll-snap-type: x mandatory;
-  scroll-behavior: smooth;
-  scrollbar-width: 0;
+  margin: 0 2rem;
+  overflow-x: hidden;
   margin-bottom: 5rem;
 }
 .carousel::-webkit-scrollbar {
@@ -971,12 +1004,11 @@ footer {
   cursor: pointer;
   scroll-snap-align: start;
   display: flex;
-  margin: 5px 0 5px;
   text-align: center;
   align-items: center;
   justify-content: center;
   flex-direction: column;
-  width: 100%;
+  width: 85%;
   border-radius: 10px;
   aspect-ratio: 16 / 9;
   /* height: 300px;
@@ -986,14 +1018,20 @@ footer {
 
 .carousel .img img {
   width: 85%;
+  box-shadow: 0 0 5px rgba(0, 0, 0, .23);
+}
+
+.carousel .img img {
+  width: 100%;
+  height: 100%;
   object-fit: cover;
   aspect-ratio: 3 / 4;
   margin: 0;
   padding: 0;
   border-radius: 8px;
   box-shadow: 0 0 5px rgba(0, 0, 0, .23); 
+  border-radius: 10px;  
 }
-/* =============EVENTS SANGSAKA==============  */
 
 /*=============== BREAKPOINTS ===============*/
 /* For small devices */
@@ -1032,7 +1070,6 @@ footer {
     font-size: 1rem;
     margin-top: 25px;
     font-family: "Urbanist", sans-serif;
-    text-align: justify;
     text-transform: uppercase;
     font-weight: bold;
     color: #fcfcfc;
@@ -1097,7 +1134,7 @@ footer {
     width: 100%;
     height: 0.2px;
     background-color: #fff;
-    margin-bottom: 3rem;
+    margin-bottom: 1rem;
   }
 
   .copyrigth {
@@ -1412,52 +1449,6 @@ footer {
 
   /* Box-Content end */
 
-  /* ===== RESPONSIVE SEJARAH===== */
-  .welcome_text {
-    margin-left: 0;
-  }
-
-  .timeline_items {
-    max-width: 1000px;
-    background-color: var(--body-color);
-    margin: auto;
-    display: flex;
-    flex-wrap: wrap;
-    position: relative;
-  }
-
-  .timeline_items:nth-child(odd) .timeline_item {
-    padding-right: 0;
-    text-align: left;
-  }
-
-
-  .timeline_items:nth-child(even) .timeline_item, 
-  .timeline_items:nth-child(odd) .timeline_item {
-    padding-left: 100px;
-  }
-
-  .timeline_items::before {
-    content: '';
-    position: absolute;
-    width: 3px;
-    height: 100%;
-    background-color: #252525f4;
-    left: calc(10%);
-  }
-
-  .timeline_dot {
-    width: 25px;
-    height: 25px;
-    left: calc(8.4%);
-  }
-
-  .segitiga {
-    margin-top: 420px;
-    left: calc(8% + 1px);
-  }
-
-
   /* Footer */
 
   footer {
@@ -1483,7 +1474,6 @@ footer {
     font-size: 1rem;
     margin-top: 25px;
     font-family: "Urbanist", sans-serif;
-    text-align: justify;
     text-transform: uppercase;
     font-weight: bold;
     color: #fcfcfc;
@@ -1550,7 +1540,7 @@ footer {
     width: 100%;
     height: 0.2px;
     background-color: #fff;
-    margin-bottom: 3rem;
+    margin-bottom: 1.5rem;
   }
 
   .copyrigth {
@@ -1593,6 +1583,13 @@ footer {
 }
 /*=============== RESPONSIVE CAROUSEL EVENTS START ===============*/
 
+@media only screen and (max-width: 900px) {
+
+  .frame_foto img {
+    width: 19%;
+  }
+}
+
 @media only screen and (max-width: 600px) {
   .container1 .box {
     flex-direction: column;
@@ -1621,6 +1618,66 @@ footer {
   .card img {
     width: 50%;
   }
-/*=============== RESPONSIVE CAROUSEL EVENTS END ===============*/
-}
 
+  /* =======RESPONSIF SEJARAH======= */
+  .sambutan_content {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .foto_pembina img {
+    width: 500px;
+    height: 450px;
+  }
+
+  .isi_sambutan h2 {
+    font-size: 2rem;
+  }
+
+  .welcome_text {
+    margin-left: 0;
+  }
+
+  .timeline_items {
+    max-width: 1000px;
+    background-color: var(--body-color);
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    position: relative;
+  }
+
+  .timeline_items:nth-child(odd) .timeline_item {
+    padding-right: 0;
+    text-align: left;
+  }
+
+  .timeline_items:nth-child(even) .timeline_item,
+  .timeline_items:nth-child(odd) .timeline_item {
+    padding-left: 100px;
+  }
+
+  .timeline_items::before {
+    content: "";
+    position: absolute;
+    width: 3px;
+    height: 100%;
+    background-color: #252525f4;
+    left: calc(10%);
+  }
+
+  .timeline_dot {
+    width: 25px;
+    height: 25px;
+    left: calc(8%);
+  }
+
+  .segitiga {
+    left: calc(7% + 3.5px);
+  }
+
+  .frame_foto img {
+    width: 19%;
+  }
+}
