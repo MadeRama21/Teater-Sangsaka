@@ -323,6 +323,7 @@ nav img {
 footer {
   margin-top: 3rem;
   display: flex;
+  flex-direction: column;
   justify-content: center;
   background-color: #252525;
   color: #fff;
@@ -355,8 +356,8 @@ footer {
   display: flex;
   justify-content: space-between;
   padding-top: 20px;
-  padding-left: 20px;
-  padding-right: 20px;
+  padding-left: 60px;
+  padding-right: 60px;
   padding-bottom: 4rem;
 }
 .footer-U1 {
@@ -1680,8 +1681,7 @@ footer {
   .box .dream {
     max-width: 100%;
   }
-  .
-
+  
   .h1 {
     font-size: 1.8rem;
   }
