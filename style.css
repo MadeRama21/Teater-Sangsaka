@@ -683,7 +683,7 @@ footer {
   padding-right: 20px;
   padding-left: 20px;
   color: white;
-  background-color: #25D366;
+  background-color: #25d366;
   border-radius: 5px;
   text-decoration: none;
   font-weight: 500;
@@ -708,7 +708,6 @@ footer {
 }
 
 .wa_number {
-  
 }
 
 /* ====== CONTACT end ======= */
@@ -937,7 +936,8 @@ footer {
   margin-bottom: 3rem;
 }
 
-.vertical-events .carousel, .horizontal-events .carousel {
+.vertical-events .carousel,
+.horizontal-events .carousel {
   display: grid;
   grid-auto-flow: column;
   grid-auto-columns: calc((100% / 4) - 12px);
@@ -978,7 +978,7 @@ footer {
   flex-direction: column;
   width: 85%;
   border-radius: 10px;
-  box-shadow: 0 0 5px rgba(0, 0, 0, .23);
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.23);
 }
 
 .carousel .img img {
@@ -987,7 +987,7 @@ footer {
   object-fit: cover;
   margin: 0;
   padding: 0;
-  border-radius: 10px;  
+  border-radius: 10px;
 }
 
 /*=============== BREAKPOINTS ===============*/
@@ -1005,6 +1005,7 @@ footer {
 
   footer {
     margin-top: 3rem;
+    flex-direction: column;
     display: flex;
     background-color: #252525;
     color: #fff;
@@ -1457,6 +1458,7 @@ footer {
     display: flex;
     background-color: #252525;
     color: #fff;
+    flex-direction: column;
     max-width: 100%;
   }
   .main-footer {
@@ -1563,7 +1565,7 @@ footer {
     color: white;
   }
   /* Footer end */
-  
+
   .h1 {
     font-size: 2.2rem;
   }
