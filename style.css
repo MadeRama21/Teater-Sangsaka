@@ -826,13 +826,9 @@ footer {
 }
 
 .timeline_item {
-  margin-bottom: 75px;
+  margin-bottom: 50px;
   width: 100%;
   position: relative;
-}
-
-.timeline_item:last-child {
-  margin-bottom: 0;
 }
 
 .timeline_items:nth-child(odd) .timeline_item {
@@ -914,8 +910,8 @@ footer {
   border-right: 30px solid #252525;
   border-bottom: 16px solid transparent;
   rotate: -90deg;
+  margin-top: 30px;
   left: calc(50% - 13px);
-  margin-top: 500px;
 }
 
 .hero_petinggisangsaka {
@@ -1573,6 +1569,13 @@ footer {
   }
 }
 
+@media only screen and (max-width: 900px) {
+
+  .frame_foto img {
+    width: 19%;
+  }
+}
+
 @media only screen and (max-width: 600px) {
   .container1 .box {
     flex-direction: column;
@@ -1648,12 +1651,11 @@ footer {
   .timeline_dot {
     width: 25px;
     height: 25px;
-    left: calc(8.4%);
+    left: calc(8%);
   }
 
   .segitiga {
-    margin-top: 420px;
-    left: calc(8% + 1px);
+    left: calc(7% + 3.5px);
   }
 
   .frame_foto img {
