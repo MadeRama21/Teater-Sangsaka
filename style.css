@@ -1584,7 +1584,7 @@ footer {
   }
 
   .vertical-events .carousel {
-    grid-auto-columns: calc((100% / 3) - 11px);
+    grid-auto-columns: calc((100% / 3) - 10px);
   }
 
   .card img {
