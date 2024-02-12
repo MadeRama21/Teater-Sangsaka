@@ -1647,6 +1647,11 @@ footer {
   
 
   /*=============== RESPONSIVE CAROUSEL EVENTS START ===============*/
+  .banner-events img {
+    height: 500px;
+    object-fit: cover;
+  }
+
   .h1 {
     font-size: 2.2rem;
   }
@@ -1656,7 +1661,7 @@ footer {
   }
 
   .vertical-events .carousel {
-    grid-auto-columns: calc((100% / 3) - 11px);
+    grid-auto-columns: calc((100% / 3) - 10px);
   }
 
   .card img {
@@ -1687,6 +1692,12 @@ footer {
 /*=============== RESPONSIVE CAROUSEL EVENTS START ===============*/
   .main-events {
     margin-top: 2rem;
+    margin-bottom: -2rem;
+  }
+
+  .banner-events img {
+    height: 300px;
+    object-fit: cover;
   }
 
   .vertical-events .carousel {
