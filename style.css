@@ -1694,12 +1694,14 @@ footer {
 }
 
 @media only screen and (max-width: 600px) {
-  .container1 .box {
+  .box {
     flex-direction: column;
+    max-width: 100%;
   }
-  .container1 .box .dream {
-    width: 100%;
+  .box .dream {
+    max-width: 100%;
   }
+  .
 
   .h1 {
     font-size: 1.8rem;
