@@ -1501,6 +1501,10 @@ footer {
     left: calc(8% + 1px);
   }
 
+  .frame_foto img {
+    width: 19%;
+  }
+
   /* Footer */
 
   footer {
