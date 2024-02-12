@@ -592,6 +592,10 @@ footer {
   transition: 0.3s;
 }
 
+.dream {
+  max-width: 450px;
+}
+
 .dream .image img:hover {
   -webkit-filter: grayscale(0);
   filter: grayscale(0);
