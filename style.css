@@ -634,78 +634,6 @@ footer {
   line-height: normal;
   letter-spacing: 2.4px;
 }
-
-#image1 {
-  height: 543px;
-  overflow: hidden;
-  object-fit: cover;
-}
-
-#image2 {
-  height: 274px;
-  overflow: hidden;
-  object-fit: cover;
-}
-
-#image3 {
-  height: 388px;
-  overflow: hidden;
-  object-fit: cover;
-}
-
-#image4 {
-  height: 198px;
-  overflow: hidden;
-  object-fit: cover;
-}
-
-#image5 {
-  height: 361px;
-  overflow: hidden;
-  object-fit: cover;
-}
-
-#image6 {
-  height: 606px;
-  overflow: hidden;
-  object-fit: cover;
-}
-
-#image7 {
-  height: 285px;
-  overflow: hidden;
-  object-fit: cover;
-}
-
-#image8 {
-  height: 151px;
-  overflow: hidden;
-  object-fit: cover;
-}
-
-#image9 {
-  height: 446px;
-  overflow: hidden;
-  object-fit: cover;
-}
-
-#image10 {
-  height: 255px;
-  overflow: hidden;
-  object-fit: cover;
-}
-
-#image11 {
-  height: 168px;
-  overflow: hidden;
-  object-fit: cover;
-}
-
-#image12 {
-  height: 534px;
-  overflow: hidden;
-  object-fit: cover;
-}
 /* ======== GALERi end ========= */
 
 /* ======== CONTACT ========= */
@@ -1647,11 +1575,6 @@ footer {
   
 
   /*=============== RESPONSIVE CAROUSEL EVENTS START ===============*/
-  .banner-events img {
-    height: 500px;
-    object-fit: cover;
-  }
-
   .h1 {
     font-size: 2.2rem;
   }
@@ -1661,7 +1584,7 @@ footer {
   }
 
   .vertical-events .carousel {
-    grid-auto-columns: calc((100% / 3) - 10px);
+    grid-auto-columns: calc((100% / 3) - 11px);
   }
 
   .card img {
@@ -1692,12 +1615,6 @@ footer {
 /*=============== RESPONSIVE CAROUSEL EVENTS START ===============*/
   .main-events {
     margin-top: 2rem;
-    margin-bottom: -2rem;
-  }
-
-  .banner-events img {
-    height: 300px;
-    object-fit: cover;
   }
 
   .vertical-events .carousel {
@@ -1711,67 +1628,6 @@ footer {
   .card img {
     width: 50%;
   }
-  /*=============== RESPONSIVE CAROUSEL EVENTS START ===============*/
-
-  /* =======RESPONSIF SEJARAH======= */
-  .sambutan_content {
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-  }
-
-  .foto_pembina img {
-    width: 500px;
-    height: 450px;
-  }
-
-  .isi_sambutan h2 {
-    font-size: 2rem;
-  }
-
-  .welcome_text {
-    margin-left: 0;
-  }
-
-  .timeline_items {
-    max-width: 1000px;
-    background-color: var(--body-color);
-    margin: auto;
-    display: flex;
-    flex-wrap: wrap;
-    position: relative;
-  }
-
-  .timeline_items:nth-child(odd) .timeline_item {
-    padding-right: 0;
-    text-align: left;
-  }
-
-  .timeline_items:nth-child(even) .timeline_item,
-  .timeline_items:nth-child(odd) .timeline_item {
-    padding-left: 100px;
-  }
-
-  .timeline_items::before {
-    content: "";
-    position: absolute;
-    width: 3px;
-    height: 100%;
-    background-color: #252525f4;
-    left: calc(10%);
-  }
-
-  .timeline_dot {
-    width: 25px;
-    height: 25px;
-    left: calc(8%);
-  }
-
-  .segitiga {
-    left: calc(7% + 3.5px);
-  }
-
-  .frame_foto img {
-    width: 19%;
-  }
+/*=============== RESPONSIVE CAROUSEL EVENTS END ===============*/
 }
+
