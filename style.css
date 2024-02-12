@@ -585,7 +585,6 @@ footer {
   display: flex;
   flex-direction: column;
   padding: 1.5px;
-  width: 32.5%;
   width: 100%;
   margin: 1px;
   -webkit-filter: grayscale(1);
@@ -597,20 +596,24 @@ footer {
   display: flex;
   flex-direction: column;
   padding: 1.5px;
-  width: 32.5%;
   width: 100%;
+  height: 100%;
   margin: 1px;
   -webkit-filter: grayscale(1);
   filter: grayscale(1);
   transition: 0.3s;
 }
 
-.dream .image img:hover {
+.dream {
+  max-width: 450px;
+}
+
+.dream img:hover {
   -webkit-filter: grayscale(0);
   filter: grayscale(0);
 }
 
-.dream .image video:hover {
+.dream video:hover {
   -webkit-filter: grayscale(0);
   filter: grayscale(0);
 }
@@ -643,6 +646,72 @@ footer {
   line-height: normal;
   letter-spacing: 2.4px;
 }
+/* ======== GALERi end ========= */
+
+/* ======== CONTACT ========= */
+.contact_container {
+  height: 120vh;
+  display: flex;
+}
+
+.contact_text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  /* padding-top: 200px; */
+  width: 50%;
+  min-height: 120vh;
+}
+
+.contact_text h1 {
+  font-size: 64px;
+}
+
+.contact_text p {
+  font-size: 20px;
+}
+
+.wa_button {
+  display: flex;
+  transition: 0.3s;
+  padding-top: 10px;
+  margin-top: 10px;
+}
+
+.wa_button {
+  padding: 10px;
+  padding-right: 20px;
+  padding-left: 20px;
+  color: white;
+  background-color: #25D366;
+  border-radius: 5px;
+  text-decoration: none;
+  font-weight: 500;
+  width: 230px;
+}
+
+.wa_button i {
+  font-size: 40px;
+}
+
+.wa_button p {
+  font-size: 20px;
+}
+
+.wa_button:hover {
+  transform: translateY(-3px);
+  transition: 0.3s;
+}
+
+.wa_icon {
+  font-size: 40px;
+}
+
+.wa_number {
+  
+}
+
+/* ====== CONTACT end ======= */
 
 /* ======== TENTANG KITA ========= */
 .hero_sambutan {
@@ -868,7 +937,7 @@ footer {
   margin-bottom: 3rem;
 }
 
-.vertical-events .carousel {
+.vertical-events .carousel, .horizontal-events .carousel {
   display: grid;
   grid-auto-flow: column;
   grid-auto-columns: calc((100% / 4) - 12px);
@@ -876,25 +945,54 @@ footer {
   list-style: none;
   margin: 0 2rem;
   overflow-x: hidden;
+  margin-bottom: 5rem;
+}
+.carousel::-webkit-scrollbar {
+  display: none;
+}
+.carousel :where(.card, .img) {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.carousel.no-transition {
+  scroll-behavior: auto;
+}
+.carousel.dragging {
+  scroll-snap-type: none;
+  scroll-behavior: auto;
+}
+.carousel.dragging .card {
+  cursor: grab;
+  user-select: none;
 }
 
 .carousel .card {
   cursor: pointer;
+  scroll-snap-align: start;
   display: flex;
   text-align: center;
   align-items: center;
   justify-content: center;
   flex-direction: column;
+  width: 85%;
+  border-radius: 10px;
+  box-shadow: 0 0 5px rgba(0, 0, 0, .23);
 }
 
 .carousel .img img {
-  width: 76%;
-  border-radius: 10px;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  margin: 0;
+  padding: 0;
+  border-radius: 10px;  
 }
 
 /*=============== BREAKPOINTS ===============*/
 /* For small devices */
-@media screen and (max-width: 390px) {
+@media screen and (max-width: 600px) {
   .container {
     margin-inline: 1rem;
   }
@@ -1018,7 +1116,7 @@ footer {
 }
 
 /* For large devices */
-@media screen and (min-width: 1118px) {
+@media screen and (min-width: 900px) {
   .container {
     margin-inline: auto;
   }
@@ -1465,13 +1563,45 @@ footer {
     color: white;
   }
   /* Footer end */
+  
+  .h1 {
+    font-size: 2.2rem;
+  }
+
+  .vertical-events {
+    margin-top: 1rem;
+  }
+
+  .vertical-events .carousel {
+    grid-auto-columns: calc((100% / 3) - 9px);
+  }
+
+  .card img {
+    width: 100%;
+  }
 }
 
-@media only screen and (max-width: 360px) {
+@media only screen and (max-width: 600px) {
   .container1 .box {
     flex-direction: column;
   }
   .container1 .box .dream {
     width: 100%;
+  }
+
+  .h1 {
+    font-size: 1.8rem;
+  }
+
+  .vertical-events .carousel {
+    grid-auto-columns: calc((100% / 2) - 1px);
+  }
+
+  .vertical-events {
+    margin-top: 1rem;
+  }
+
+  .card img {
+    width: 50%;
   }
 }
