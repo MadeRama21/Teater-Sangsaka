@@ -572,6 +572,13 @@ footer {
   /* align-items: center; */
 }
 
+#moreImage img {
+  filter: grayscale(0);
+  height: 400px;
+  overflow: hidden;
+  object-fit: cover;
+}
+
 .container1 .box .dream {
   padding: 1px;
 }
@@ -580,7 +587,6 @@ footer {
   display: flex;
   flex-direction: column;
   padding: 1.5px;
-  width: 32.5%;
   width: 100%;
   margin: 1px;
   -webkit-filter: grayscale(1);
@@ -601,7 +607,7 @@ footer {
 }
 
 .dream {
-  max-width: 450px;
+  max-width: 100%;
 }
 
 .dream .image img:hover {
@@ -715,13 +721,6 @@ footer {
   object-fit: cover;
 }
 
-#imageM {
-  width: 450px;
-  height: 300px;
-  overflow: hidden;
-  object-fit: cover;
-  filter: grayscale(0);
-}
 /* ======== GALERi end ========= */
 
 /* ======== CONTACT ========= */
@@ -1342,7 +1341,13 @@ footer {
   }
 
   .container1 .box {
+    display: flex;
     flex-direction: column;
+    width: 100%;
+  }
+  #moreImage {
+    flex-direction: column;
+    width: 100%;
   }
   .container1 .box .dream {
     width: 100%;
@@ -1790,5 +1795,6 @@ footer {
     max-width: 100%;
   }
 }
+
 
 /* RESPONSIVE GALERI KHUSUS END */
