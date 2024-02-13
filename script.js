@@ -1,8 +1,3 @@
-// AOS JS
-
-AOS.init();
-
-// AOS END
 
 /*=============== SHOW MENU START ===============*/
 const showMenu = (toggleId, navId) => {

@@ -205,10 +205,10 @@ nav img {
   margin-left: 3rem;
 }
 
-.mengapa-text span {
+.Header-Mengapa span {
   color: #eb2125;
 }
-.mengapa-text h1 {
+.Header-Mengapa h1 {
   text-align: end;
   font-family: LemonMilk;
   margin-top: 2rem;
@@ -225,10 +225,11 @@ nav img {
 .siapa-text {
   width: 30%;
 }
-.siapa-text span {
+
+.Header-Siapa span {
   color: #eb2125;
 }
-.siapa-text h1 {
+.Header-Siapa h1 {
   font-family: LemonMilk;
   margin-top: 2rem;
   font-size: 3rem;
@@ -564,7 +565,8 @@ footer {
   margin: 5px 20px 0 20px;
 }
 
-.container1 .box, #moreImage{
+.container1 .box,
+#moreImage {
   display: flex;
   flex-direction: row;
   margin: 1px;
@@ -993,7 +995,7 @@ footer {
 }
 
 .title_petinggisangsaka h2 {
-  font-family:  LemonMilk;
+  font-family: LemonMilk;
   text-transform: uppercase;
   letter-spacing: 4px;
   font-size: 2.5rem;
@@ -1010,7 +1012,6 @@ footer {
   position: relative;
   width: 14%;
 }
-
 
 /* =============EVENTS SANGSAKA==============  */
 .main-events {
@@ -1243,12 +1244,9 @@ footer {
     min-height: 250vh;
   }
 
-  
   .timeline_hero {
     width: 95%;
   }
-
-  
 }
 
 /* For large devices */
@@ -1728,7 +1726,8 @@ footer {
     width: 19%;
   }
 
-  .box, #imageM {
+  .box,
+  #imageM {
     flex-direction: column;
     max-width: 100%;
   }
@@ -1738,7 +1737,8 @@ footer {
 }
 
 @media only screen and (max-width: 600px) {
-  .box, #imageM {
+  .box,
+  #imageM {
     flex-direction: column;
     max-width: 100%;
   }
@@ -1769,10 +1769,10 @@ footer {
   /*=============== RESPONSIVE CAROUSEL EVENTS END ===============*/
 }
 
-
 /* RESPONSIVE GALERI KHUSUS */
 @media only screen and (max-width: 1000px) {
-  .box, #imageM {
+  .box,
+  #imageM {
     flex-direction: row;
     max-width: 100%;
   }
@@ -1782,7 +1782,8 @@ footer {
 }
 
 @media only screen and (max-width: 1395px) {
-  .box, #imageM {
+  .box,
+  #imageM {
     flex-direction: row;
     max-width: 100%;
   }
