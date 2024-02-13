@@ -79,3 +79,15 @@ carousel.addEventListener("scroll", infiniteScroll);
 vertical.addEventListener("mouseenter", () => clearTimeout(timeoutId));
 vertical.addEventListener("mouseleave", autoPlay);
 /*=============== CAROUSEL EVENTS END ===============*/
+
+function toggleText() {
+  var moreImage = document.getElementById("moreImage");
+
+  if (moreImage.style.display === "none") {
+      moreImage.style.display = "flex";
+      document.getElementById("textButton").innerText = "Show Less";
+  } else {
+      moreImage.style.display = "none";
+      document.getElementById("textButton").innerText = "Show More";
+  }
+}
