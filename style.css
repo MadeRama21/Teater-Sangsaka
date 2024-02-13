@@ -783,6 +783,10 @@ footer {
 /* ====== CONTACT end ======= */
 
 /* ======== TENTANG KITA ========= */
+.hero_tentangkita {
+  overflow-x: hidden;
+}
+
 .hero_sambutan {
   /* padding-top: 150px; */
   display: flex;
