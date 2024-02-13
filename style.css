@@ -557,7 +557,7 @@ footer {
   margin: 5px 20px 0 20px;
 }
 
-.container1 .box {
+.container1 .box, #moreImage{
   display: flex;
   flex-direction: row;
   margin: 1px;
@@ -706,6 +706,14 @@ footer {
   height: 534px;
   overflow: hidden;
   object-fit: cover;
+}
+
+#imageM {
+  width: 450px;
+  height: 300px;
+  overflow: hidden;
+  object-fit: cover;
+  filter: grayscale(0);
 }
 /* ======== GALERi end ========= */
 
@@ -1710,10 +1718,18 @@ footer {
   .frame_foto img {
     width: 19%;
   }
+
+  .box, #imageM {
+    flex-direction: column;
+    max-width: 100%;
+  }
+  .box .dream {
+    max-width: 100%;
+  }
 }
 
 @media only screen and (max-width: 600px) {
-  .box {
+  .box, #imageM {
     flex-direction: column;
     max-width: 100%;
   }
@@ -1744,3 +1760,26 @@ footer {
 /*=============== RESPONSIVE CAROUSEL EVENTS END ===============*/
 }
 
+
+/* RESPONSIVE GALERI KHUSUS */
+@media only screen and (max-width: 1000px) {
+  .box, #imageM {
+    flex-direction: row;
+    max-width: 100%;
+  }
+  .box .dream {
+    max-width: 100%;
+  }
+}
+
+@media only screen and (max-width: 1395px) {
+  .box, #imageM {
+    flex-direction: row;
+    max-width: 100%;
+  }
+  .box .dream {
+    max-width: 100%;
+  }
+}
+
+/* RESPONSIVE GALERI KHUSUS END */
