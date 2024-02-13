@@ -185,8 +185,15 @@ nav img {
 }
 .mengapa-text {
   width: 30%;
+  text-align: right;
 }
-
+.mengapa-text a {
+  color: #eb2125;
+  font-weight: bold;
+}
+.mengapa-text a:hover {
+  color: #5c0707;
+}
 .mengapa-text p {
   margin-bottom: 10px;
   line-height: 25px;
@@ -672,7 +679,7 @@ footer {
   padding-right: 20px;
   padding-left: 20px;
   color: white;
-  background-color: #25D366;
+  background-color: #25d366;
   border-radius: 5px;
   text-decoration: none;
   font-weight: 500;
@@ -697,7 +704,6 @@ footer {
 }
 
 .wa_number {
-  
 }
 
 /* ====== CONTACT end ======= */
@@ -708,7 +714,7 @@ footer {
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: #F9FDFF;
+  background-color: #f9fdff;
   min-height: 115vh;
 }
 
@@ -849,7 +855,8 @@ footer {
 }
 
 @keyframes floating {
-  0%, 100% {
+  0%,
+  100% {
     transform: translateY(-3px);
   }
 
@@ -859,8 +866,9 @@ footer {
 }
 
 @keyframes gradient {
-  0%, 100% {
-    background-position: 0% 50% ;
+  0%,
+  100% {
+    background-position: 0% 50%;
   }
 
   50% {
@@ -904,7 +912,6 @@ footer {
 }
 
 /* =============SEJARAH VERSI 2============== */
-
 
 /* =============EVENTS SANGSAKA==============  */
 .main-events {
@@ -992,7 +999,7 @@ footer {
   margin: 0;
   padding: 0;
   border-radius: 8px;
-  box-shadow: 0 0 5px rgba(0, 0, 0, .23); 
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.23);
 }
 /* =============EVENTS SANGSAKA==============  */
 
@@ -1432,14 +1439,13 @@ footer {
     text-align: left;
   }
 
-
-  .timeline_items:nth-child(even) .timeline_item, 
+  .timeline_items:nth-child(even) .timeline_item,
   .timeline_items:nth-child(odd) .timeline_item {
     padding-left: 100px;
   }
 
   .timeline_items::before {
-    content: '';
+    content: "";
     position: absolute;
     width: 3px;
     height: 100%;
@@ -1457,7 +1463,6 @@ footer {
     margin-top: 420px;
     left: calc(8% + 1px);
   }
-
 
   /* Footer */
 
@@ -1573,7 +1578,6 @@ footer {
     color: white;
   }
   /* Footer end */
-  
 
   /*=============== RESPONSIVE CAROUSEL EVENTS START ===============*/
   .h1 {
@@ -1595,7 +1599,6 @@ footer {
 /*=============== RESPONSIVE CAROUSEL EVENTS START ===============*/
 
 @media only screen and (max-width: 900px) {
-
   .frame_foto img {
     width: 19%;
   }
@@ -1609,12 +1612,12 @@ footer {
   .box .dream {
     max-width: 100%;
   }
-  
+
   .h1 {
     font-size: 1.8rem;
   }
 
-/*=============== RESPONSIVE CAROUSEL EVENTS START ===============*/
+  /*=============== RESPONSIVE CAROUSEL EVENTS START ===============*/
   .main-events {
     margin-top: 2rem;
   }
@@ -1630,6 +1633,5 @@ footer {
   .card img {
     width: 50%;
   }
-/*=============== RESPONSIVE CAROUSEL EVENTS END ===============*/
+  /*=============== RESPONSIVE CAROUSEL EVENTS END ===============*/
 }
-
