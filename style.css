@@ -356,8 +356,8 @@ footer {
   display: flex;
   justify-content: space-between;
   padding-top: 20px;
-  padding-left: 20px;
-  padding-right: 20px;
+  padding-left: 60px;
+  padding-right: 60px;
   padding-bottom: 4rem;
 }
 .footer-U1 {
@@ -744,7 +744,7 @@ footer {
   padding-right: 20px;
   padding-left: 20px;
   color: white;
-  background-color: #25d366;
+  background-color: #25D366;
   border-radius: 5px;
   text-decoration: none;
   font-weight: 500;
@@ -769,24 +769,23 @@ footer {
 }
 
 .wa_number {
+  
 }
 
 /* ====== CONTACT end ======= */
 
 /* ======== TENTANG KITA ========= */
-
 .hero_sambutan {
   /* padding-top: 150px; */
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: #f9fdff;
+  background-color: #F9FDFF;
   min-height: 115vh;
 }
 
 .sambutan_content {
   display: flex;
-  gap: 25px;
 }
 
 .kata_sambutan {
@@ -886,9 +885,13 @@ footer {
 }
 
 .timeline_item {
-  margin-bottom: 50px;
+  margin-bottom: 75px;
   width: 100%;
   position: relative;
+}
+
+.timeline_item:last-child {
+  margin-bottom: 0;
 }
 
 .timeline_items:nth-child(odd) .timeline_item {
@@ -918,8 +921,7 @@ footer {
 }
 
 @keyframes floating {
-  0%,
-  100% {
+  0%, 100% {
     transform: translateY(-3px);
   }
 
@@ -929,9 +931,8 @@ footer {
 }
 
 @keyframes gradient {
-  0%,
-  100% {
-    background-position: 0% 50%;
+  0%, 100% {
+    background-position: 0% 50% ;
   }
 
   50% {
@@ -970,45 +971,11 @@ footer {
   border-right: 30px solid #252525;
   border-bottom: 16px solid transparent;
   rotate: -90deg;
-  margin-top: 30px;
   left: calc(50% - 13px);
+  margin-top: 500px;
 }
 
-.hero_petinggisangsaka {
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-}
-
-.title_petinggisangsaka {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  gap: 10px;
-  margin-bottom: 25px;
-}
-
-.title_petinggisangsaka h2 {
-  font-family:  LemonMilk;
-  text-transform: uppercase;
-  letter-spacing: 4px;
-  font-size: 2.5rem;
-}
-
-.frame_foto {
-  display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
-  gap: 3px;
-}
-
-.frame_foto img {
-  position: relative;
-  width: 14%;
-}
+/* =============SEJARAH VERSI 2============== */
 
 
 /* =============EVENTS SANGSAKA==============  */
@@ -1030,7 +997,16 @@ footer {
   margin-bottom: 3rem;
 }
 
-.vertical-events .carousel, .horizontal-events .carousel {
+.vertical-events {
+  margin-top: 1rem;
+  display: flex;
+  width: 100%;
+  position: relative;
+  justify-content: center;
+  align-items: center;
+}
+
+.vertical-events .carousel {
   display: grid;
   grid-auto-flow: column;
   grid-auto-columns: calc((100% / 4) - 9px);
@@ -1075,7 +1051,10 @@ footer {
   flex-direction: column;
   width: 100%;
   border-radius: 10px;
-  box-shadow: 0 0 5px rgba(0, 0, 0, .23);
+  aspect-ratio: 16 / 9;
+  /* height: 300px;
+  overflow-y: hidden; */
+  /* box-shadow: 0 0 5px rgba(0, 0, 0, .23); */
 }
 
 .carousel .img img {
@@ -1084,7 +1063,8 @@ footer {
   aspect-ratio: 3 / 4;
   margin: 0;
   padding: 0;
-  border-radius: 10px;  
+  border-radius: 8px;
+  box-shadow: 0 0 5px rgba(0, 0, 0, .23); 
 }
 /* =============EVENTS SANGSAKA==============  */
 
@@ -1103,7 +1083,6 @@ footer {
 
   footer {
     margin-top: 3rem;
-    flex-direction: column;
     display: flex;
     background-color: #252525;
     color: #fff;
@@ -1559,7 +1538,6 @@ footer {
     display: flex;
     background-color: #252525;
     color: #fff;
-    flex-direction: column;
     max-width: 100%;
   }
   .main-footer {
@@ -1668,6 +1646,8 @@ footer {
   }
   /* Footer end */
   
+
+  /*=============== RESPONSIVE CAROUSEL EVENTS START ===============*/
   .h1 {
     font-size: 2.2rem;
   }
@@ -1677,7 +1657,7 @@ footer {
   }
 
   .vertical-events .carousel {
-    grid-auto-columns: calc((100% / 3) - 11px);
+    grid-auto-columns: calc((100% / 3) - 10px);
   }
 
   .card img {
@@ -1694,13 +1674,14 @@ footer {
 }
 
 @media only screen and (max-width: 600px) {
-  .container1 .box {
+  .box {
     flex-direction: column;
+    max-width: 100%;
   }
-  .container1 .box .dream {
-    width: 100%;
+  .box .dream {
+    max-width: 100%;
   }
-
+  
   .h1 {
     font-size: 1.8rem;
   }
@@ -1721,67 +1702,6 @@ footer {
   .card img {
     width: 50%;
   }
-  /*=============== RESPONSIVE CAROUSEL EVENTS START ===============*/
-
-  /* =======RESPONSIF SEJARAH======= */
-  .sambutan_content {
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-  }
-
-  .foto_pembina img {
-    width: 500px;
-    height: 450px;
-  }
-
-  .isi_sambutan h2 {
-    font-size: 2rem;
-  }
-
-  .welcome_text {
-    margin-left: 0;
-  }
-
-  .timeline_items {
-    max-width: 1000px;
-    background-color: var(--body-color);
-    margin: auto;
-    display: flex;
-    flex-wrap: wrap;
-    position: relative;
-  }
-
-  .timeline_items:nth-child(odd) .timeline_item {
-    padding-right: 0;
-    text-align: left;
-  }
-
-  .timeline_items:nth-child(even) .timeline_item,
-  .timeline_items:nth-child(odd) .timeline_item {
-    padding-left: 100px;
-  }
-
-  .timeline_items::before {
-    content: "";
-    position: absolute;
-    width: 3px;
-    height: 100%;
-    background-color: #252525f4;
-    left: calc(10%);
-  }
-
-  .timeline_dot {
-    width: 25px;
-    height: 25px;
-    left: calc(8%);
-  }
-
-  .segitiga {
-    left: calc(7% + 3.5px);
-  }
-
-  .frame_foto img {
-    width: 19%;
-  }
+/*=============== RESPONSIVE CAROUSEL EVENTS END ===============*/
 }
+
