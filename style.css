@@ -190,8 +190,15 @@ nav img {
 }
 .mengapa-text {
   width: 30%;
+  text-align: right;
 }
-
+.mengapa-text a {
+  color: #eb2125;
+  font-weight: bold;
+}
+.mengapa-text a:hover {
+  color: #5c0707;
+}
 .mengapa-text p {
   margin-bottom: 10px;
   line-height: 25px;
@@ -203,10 +210,10 @@ nav img {
   margin-left: 3rem;
 }
 
-.mengapa-text span {
+.Header-Mengapa span {
   color: #eb2125;
 }
-.mengapa-text h1 {
+.Header-Mengapa h1 {
   text-align: end;
   font-family: LemonMilk;
   margin-top: 2rem;
@@ -223,10 +230,11 @@ nav img {
 .siapa-text {
   width: 30%;
 }
-.siapa-text span {
+
+.Header-Siapa span {
   color: #eb2125;
 }
-.siapa-text h1 {
+.Header-Siapa h1 {
   font-family: LemonMilk;
   margin-top: 2rem;
   font-size: 3rem;
@@ -562,12 +570,20 @@ footer {
   margin: 5px 20px 0 20px;
 }
 
-.container1 .box, #moreImage{
+.container1 .box,
+#moreImage {
   display: flex;
   flex-direction: row;
   margin: 1px;
   padding: 1px;
   /* align-items: center; */
+}
+
+#moreImage img {
+  filter: grayscale(0);
+  height: 400px;
+  overflow: hidden;
+  object-fit: cover;
 }
 
 .container1 .box .dream {
@@ -578,7 +594,6 @@ footer {
   display: flex;
   flex-direction: column;
   padding: 1.5px;
-  width: 32.5%;
   width: 100%;
   margin: 1px;
   -webkit-filter: grayscale(1);
@@ -599,7 +614,7 @@ footer {
 }
 
 .dream {
-  max-width: 450px;
+  max-width: 100%;
 }
 
 .dream .image img:hover {
@@ -713,13 +728,6 @@ footer {
   object-fit: cover;
 }
 
-#imageM {
-  width: 450px;
-  height: 300px;
-  overflow: hidden;
-  object-fit: cover;
-  filter: grayscale(0);
-}
 /* ======== GALERi end ========= */
 
 /* ======== CONTACT ========= */
@@ -757,7 +765,7 @@ footer {
   padding-right: 20px;
   padding-left: 20px;
   color: white;
-  background-color: #25D366;
+  background-color: #25d366;
   border-radius: 5px;
   text-decoration: none;
   font-weight: 500;
@@ -782,7 +790,6 @@ footer {
 }
 
 .wa_number {
-  
 }
 
 /* ====== CONTACT end ======= */
@@ -797,7 +804,7 @@ footer {
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: #F9FDFF;
+  background-color: #f9fdff;
   min-height: 115vh;
 }
 
@@ -918,7 +925,8 @@ footer {
 }
 
 @keyframes floating {
-  0%, 100% {
+  0%,
+  100% {
     transform: translateY(-3px);
   }
 
@@ -928,8 +936,9 @@ footer {
 }
 
 @keyframes gradient {
-  0%, 100% {
-    background-position: 0% 50% ;
+  0%,
+  100% {
+    background-position: 0% 50%;
   }
 
   50% {
@@ -990,7 +999,7 @@ footer {
 }
 
 .title_petinggisangsaka h2 {
-  font-family:  LemonMilk;
+  font-family: LemonMilk;
   text-transform: uppercase;
   letter-spacing: 4px;
   font-size: 2.5rem;
@@ -1007,7 +1016,6 @@ footer {
   position: relative;
   width: 14%;
 }
-
 
 /* =============EVENTS SANGSAKA==============  */
 .main-events {
@@ -1294,7 +1302,6 @@ footer {
     min-height: 250vh;
   }
 
-  
   .timeline_hero {
     width: 95%;
   }
@@ -1408,7 +1415,13 @@ footer {
   }
 
   .container1 .box {
+    display: flex;
     flex-direction: column;
+    width: 100%;
+  }
+  #moreImage {
+    flex-direction: column;
+    width: 100%;
   }
   .container1 .box .dream {
     width: 100%;
@@ -1631,14 +1644,13 @@ footer {
     text-align: left;
   }
 
-
-  .timeline_items:nth-child(even) .timeline_item, 
+  .timeline_items:nth-child(even) .timeline_item,
   .timeline_items:nth-child(odd) .timeline_item {
     padding-left: 100px;
   }
 
   .timeline_items::before {
-    content: '';
+    content: "";
     position: absolute;
     width: 3px;
     height: 100%;
@@ -1655,7 +1667,6 @@ footer {
   .segitiga {
     left: calc(8% + 1px);
   }
-
 
   /* Footer */
 
@@ -1771,7 +1782,6 @@ footer {
     color: white;
   }
   /* Footer end */
-  
 
   /*=============== RESPONSIVE CAROUSEL EVENTS START ===============*/
   .h1 {
@@ -1797,7 +1807,8 @@ footer {
     width: 19%;
   }
 
-  .box, #imageM {
+  .box,
+  #imageM {
     flex-direction: column;
     max-width: 100%;
   }
@@ -1807,19 +1818,20 @@ footer {
 }
 
 @media only screen and (max-width: 600px) {
-  .box, #imageM {
+  .box,
+  #imageM {
     flex-direction: column;
     max-width: 100%;
   }
   .box .dream {
     max-width: 100%;
   }
-  
+
   .h1 {
     font-size: 1.8rem;
   }
 
-/*=============== RESPONSIVE CAROUSEL EVENTS START ===============*/
+  /*=============== RESPONSIVE CAROUSEL EVENTS START ===============*/
   .main-events {
     margin-top: 2rem;
   }
@@ -1835,13 +1847,13 @@ footer {
   .card img {
     width: 50%;
   }
-/*=============== RESPONSIVE CAROUSEL EVENTS END ===============*/
+  /*=============== RESPONSIVE CAROUSEL EVENTS END ===============*/
 }
-
 
 /* RESPONSIVE GALERI KHUSUS */
 @media only screen and (max-width: 1000px) {
-  .box, #imageM {
+  .box,
+  #imageM {
     flex-direction: row;
     max-width: 100%;
   }
@@ -1851,7 +1863,8 @@ footer {
 }
 
 @media only screen and (max-width: 1395px) {
-  .box, #imageM {
+  .box,
+  #imageM {
     flex-direction: row;
     max-width: 100%;
   }
@@ -1859,5 +1872,6 @@ footer {
     max-width: 100%;
   }
 }
+
 
 /* RESPONSIVE GALERI KHUSUS END */
