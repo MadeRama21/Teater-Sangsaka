@@ -29,6 +29,11 @@
 }
 
 @font-face {
+  font-family: Monserrat;
+  src: url(font/MontserratAlternates-ExtraBold.otf);
+}
+
+@font-face {
   font-family: LemonMilk;
   src: url(font/LEMONMILK-Regular.ttf.otf);
 }
@@ -205,10 +210,10 @@ nav img {
   margin-left: 3rem;
 }
 
-.mengapa-text span {
+.Header-Mengapa span {
   color: #eb2125;
 }
-.mengapa-text h1 {
+.Header-Mengapa h1 {
   text-align: end;
   font-family: LemonMilk;
   margin-top: 2rem;
@@ -225,10 +230,11 @@ nav img {
 .siapa-text {
   width: 30%;
 }
-.siapa-text span {
+
+.Header-Siapa span {
   color: #eb2125;
 }
-.siapa-text h1 {
+.Header-Siapa h1 {
   font-family: LemonMilk;
   margin-top: 2rem;
   font-size: 3rem;
@@ -564,7 +570,8 @@ footer {
   margin: 5px 20px 0 20px;
 }
 
-.container1 .box, #moreImage{
+.container1 .box,
+#moreImage {
   display: flex;
   flex-direction: row;
   margin: 1px;
@@ -993,7 +1000,7 @@ footer {
 }
 
 .title_petinggisangsaka h2 {
-  font-family:  LemonMilk;
+  font-family: LemonMilk;
   text-transform: uppercase;
   letter-spacing: 4px;
   font-size: 2.5rem;
@@ -1010,7 +1017,6 @@ footer {
   position: relative;
   width: 14%;
 }
-
 
 /* =============EVENTS SANGSAKA==============  */
 .main-events {
@@ -1078,7 +1084,7 @@ footer {
   cursor: pointer;
   scroll-snap-align: start;
   display: flex;
-  margin: 5px 0 5px;
+  margin: 10px 0;
   text-align: center;
   align-items: center;
   justify-content: center;
@@ -1087,14 +1093,68 @@ footer {
   border-radius: 10px;
 }
 
-.carousel .img img {
+.carousel .img {
   width: 85%;
+}
+
+.carousel .img img {
+  width: 100%;
   object-fit: cover;
   aspect-ratio: 3 / 4;
   margin: 0;
   padding: 0;
   border-radius: 8px;
-  box-shadow: 0 0 5px rgba(0, 0, 0, 0.23);
+  box-shadow: 0 0 5px rgba(0, 0, 0, .23); 
+}
+
+.card .img {
+  transition: .5s ease-out;
+}
+
+.card {
+  position: relative;
+}
+
+.card .name-events {
+  position: absolute;
+  width: 80%;
+  justify-content: center;
+  align-items: center;
+}
+
+.card .name-events h1 {
+  font-family: Monserrat;
+  line-height: 1.5rem;
+  margin-bottom: 3px;
+  font-size: 1.8rem;
+  color: #eb2125;
+  font-weight: bolder;
+  opacity: 0;
+  transition: .3s ease-in-out;
+  filter: drop-shadow(0 0 3px #252525);
+}
+
+.card .name-events h4 {
+  font-size: .8rem;
+  color: white;
+  letter-spacing: 2px;
+  font-weight: 900;
+  opacity: 0;
+  transform: scale(0);
+  filter: drop-shadow(0 0 1px #252525);
+  transition: .5s ease-out;
+}
+
+.card:hover .img {
+  filter: blur(5px);
+}
+
+.card:hover .name-events h1, .card:hover .name-events h4 {
+  opacity: 1;
+}
+
+.card:hover .name-events h4 {
+  transform: scale(1);
 }
 /* =============EVENTS SANGSAKA==============  */
 
@@ -1243,11 +1303,17 @@ footer {
     min-height: 250vh;
   }
 
-  
   .timeline_hero {
     width: 95%;
   }
 
+  .card .name-events h1 {
+    font-size: 1rem;
+  }
+  
+  .card .name-events h4 {
+    font-size: .5rem;
+  }
   
 }
 
@@ -1326,6 +1392,14 @@ footer {
     pointer-events: initial;
     transition: top 0.3s;
   }
+}
+
+.card .name-events h1 {
+  font-size: 1.2rem;
+}
+
+.card .name-events h4 {
+  font-size: .5rem;
 }
 
 /* RESPONSIVE GALERI */
@@ -1734,7 +1808,8 @@ footer {
     width: 19%;
   }
 
-  .box, #imageM {
+  .box,
+  #imageM {
     flex-direction: column;
     max-width: 100%;
   }
@@ -1744,7 +1819,8 @@ footer {
 }
 
 @media only screen and (max-width: 600px) {
-  .box, #imageM {
+  .box,
+  #imageM {
     flex-direction: column;
     max-width: 100%;
   }
@@ -1775,10 +1851,10 @@ footer {
   /*=============== RESPONSIVE CAROUSEL EVENTS END ===============*/
 }
 
-
 /* RESPONSIVE GALERI KHUSUS */
 @media only screen and (max-width: 1000px) {
-  .box, #imageM {
+  .box,
+  #imageM {
     flex-direction: row;
     max-width: 100%;
   }
@@ -1788,7 +1864,8 @@ footer {
 }
 
 @media only screen and (max-width: 1395px) {
-  .box, #imageM {
+  .box,
+  #imageM {
     flex-direction: row;
     max-width: 100%;
   }
