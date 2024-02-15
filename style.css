@@ -1388,6 +1388,10 @@ button:hover {
 
 /* For large devices */
 @media screen and (min-width: 900px) {
+  .wadah-U2 {
+    margin-left: 3rem;
+  }
+
   .container {
     margin-inline: auto;
   }
@@ -1460,6 +1464,12 @@ button:hover {
     top: 0;
     pointer-events: initial;
     transition: top 0.3s;
+  }
+}
+
+@media only screen and (max-width: 897px) {
+  .wadah-U2 {
+    margin-left: 3rem;
   }
 }
 
