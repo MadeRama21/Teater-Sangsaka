@@ -643,6 +643,10 @@ footer {
   opacity: 100;
 }
 
+#moreImage p {
+  opacity: 100;
+}
+
 .heading {
   margin: 120px 0 0 32px;
   text-transform: uppercase;
