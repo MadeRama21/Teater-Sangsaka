@@ -29,6 +29,11 @@
 }
 
 @font-face {
+  font-family: Monserrat;
+  src: url(font/MontserratAlternates-ExtraBold.otf);
+}
+
+@font-face {
   font-family: LemonMilk;
   src: url(font/LEMONMILK-Regular.ttf.otf);
 }
@@ -185,8 +190,15 @@ nav img {
 }
 .mengapa-text {
   width: 30%;
+  text-align: right;
 }
-
+.mengapa-text a {
+  color: #eb2125;
+  font-weight: bold;
+}
+.mengapa-text a:hover {
+  color: #5c0707;
+}
 .mengapa-text p {
   margin-bottom: 10px;
   line-height: 25px;
@@ -198,10 +210,10 @@ nav img {
   margin-left: 3rem;
 }
 
-.mengapa-text span {
+.Header-Mengapa span {
   color: #eb2125;
 }
-.mengapa-text h1 {
+.Header-Mengapa h1 {
   text-align: end;
   font-family: LemonMilk;
   margin-top: 2rem;
@@ -218,10 +230,11 @@ nav img {
 .siapa-text {
   width: 30%;
 }
-.siapa-text span {
+
+.Header-Siapa span {
   color: #eb2125;
 }
-.siapa-text h1 {
+.Header-Siapa h1 {
   font-family: LemonMilk;
   margin-top: 2rem;
   font-size: 3rem;
@@ -323,6 +336,7 @@ nav img {
 footer {
   margin-top: 3rem;
   display: flex;
+  flex-direction: column;
   justify-content: center;
   background-color: #252525;
   color: #fff;
@@ -355,8 +369,8 @@ footer {
   display: flex;
   justify-content: space-between;
   padding-top: 20px;
-  padding-left: 20px;
-  padding-right: 20px;
+  padding-left: 60px;
+  padding-right: 60px;
   padding-bottom: 4rem;
 }
 .footer-U1 {
@@ -556,12 +570,20 @@ footer {
   margin: 5px 20px 0 20px;
 }
 
-.container1 .box {
+.container1 .box,
+#moreImage {
   display: flex;
   flex-direction: row;
   margin: 1px;
   padding: 1px;
   /* align-items: center; */
+}
+
+#moreImage img {
+  filter: grayscale(0);
+  height: 400px;
+  overflow: hidden;
+  object-fit: cover;
 }
 
 .container1 .box .dream {
@@ -572,7 +594,6 @@ footer {
   display: flex;
   flex-direction: column;
   padding: 1.5px;
-  width: 32.5%;
   width: 100%;
   margin: 1px;
   -webkit-filter: grayscale(1);
@@ -590,6 +611,11 @@ footer {
   -webkit-filter: grayscale(1);
   filter: grayscale(1);
   transition: 0.3s;
+}
+
+.dream {
+  max-width: 100%;
+  width: 500px;
 }
 
 .dream .image img:hover {
@@ -617,6 +643,10 @@ footer {
   opacity: 100;
 }
 
+#moreImage p {
+  opacity: 100;
+}
+
 .heading {
   margin: 120px 0 0 32px;
   text-transform: uppercase;
@@ -630,6 +660,92 @@ footer {
   line-height: normal;
   letter-spacing: 2.4px;
 }
+
+#image1 {
+  height: 543px;
+  overflow: hidden;
+  object-fit: cover;
+}
+
+#image2 {
+  height: 274px;
+  overflow: hidden;
+  object-fit: cover;
+}
+
+#image3 {
+  height: 388px;
+  overflow: hidden;
+  object-fit: cover;
+}
+
+#image4 {
+  height: 198px;
+  overflow: hidden;
+  object-fit: cover;
+}
+
+#image5 {
+  height: 361px;
+  overflow: hidden;
+  object-fit: cover;
+}
+
+#image6 {
+  height: 606px;
+  overflow: hidden;
+  object-fit: cover;
+}
+
+#image7 {
+  height: 285px;
+  overflow: hidden;
+  object-fit: cover;
+}
+
+#image8 {
+  height: 151px;
+  overflow: hidden;
+  object-fit: cover;
+}
+
+#image9 {
+  height: 446px;
+  overflow: hidden;
+  object-fit: cover;
+}
+
+#image10 {
+  height: 255px;
+  overflow: hidden;
+  object-fit: cover;
+}
+
+#image11 {
+  height: 168px;
+  overflow: hidden;
+  object-fit: cover;
+}
+
+#image12 {
+  height: 534px;
+  overflow: hidden;
+  object-fit: cover;
+}
+
+#textButton {
+  background-color: #252525; 
+  color: #FCFCFC;
+  padding: 10px 20px;
+  margin-top: 20px;
+  text-align: center; 
+  text-decoration: none; 
+  display: inline-block;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer; 
+}
+
 /* ======== GALERi end ========= */
 
 /* ======== CONTACT ========= */
@@ -677,7 +793,7 @@ footer {
   padding-right: 20px;
   padding-left: 20px;
   color: white;
-  background-color: #25D366;
+  background-color: #25d366;
   border-radius: 5px;
   text-decoration: none;
   font-weight: 500;
@@ -756,17 +872,22 @@ button:hover {
 /* ====== CONTACT end ======= */
 
 /* ======== TENTANG KITA ========= */
+.hero_tentangkita {
+  overflow-x: hidden;
+}
+
 .hero_sambutan {
   /* padding-top: 150px; */
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: #F9FDFF;
+  background-color: #f9fdff;
   min-height: 115vh;
 }
 
 .sambutan_content {
   display: flex;
+  gap: 15px;
 }
 
 .kata_sambutan {
@@ -795,36 +916,17 @@ button:hover {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  min-height: 100vh;
+  /* background-color: #25D366; */
+  min-height: 250vh;
 }
 
 .welcome_text {
   display: flex;
   flex-direction: column;
-  margin-left: 50px;
-  /* padding-top: 100px; */
-}
-
-.directory_content {
-  display: flex;
-  justify-content: left;
-  align-items: center;
-  font-size: var(--normal-font-size);
-  margin-bottom: 10px;
-}
-
-.directory_content h5 {
-  margin: 0 5px;
-}
-
-.directory_content a {
-  margin: 0 5px;
-  text-decoration: none;
-  color: #252525;
-  font-family: "Montserrat";
 }
 
 .sejarah_welcome {
+  padding-left: 50px;
   display: flex;
   flex-direction: column;
   max-width: 700px;
@@ -844,6 +946,7 @@ button:hover {
   align-items: center;
   background-color: var(--body-color);
   min-height: 100vh;
+  /* background-color: #25D366; */
   padding: 100px 15px;
 }
 
@@ -853,6 +956,7 @@ button:hover {
   margin: auto;
   display: flex;
   flex-wrap: wrap;
+  /* background-color: #25D366; */
   position: relative;
 }
 
@@ -869,10 +973,6 @@ button:hover {
   margin-bottom: 75px;
   width: 100%;
   position: relative;
-}
-
-.timeline_item:last-child {
-  margin-bottom: 0;
 }
 
 .timeline_items:nth-child(odd) .timeline_item {
@@ -902,7 +1002,8 @@ button:hover {
 }
 
 @keyframes floating {
-  0%, 100% {
+  0%,
+  100% {
     transform: translateY(-3px);
   }
 
@@ -912,8 +1013,9 @@ button:hover {
 }
 
 @keyframes gradient {
-  0%, 100% {
-    background-position: 0% 50% ;
+  0%,
+  100% {
+    background-position: 0% 50%;
   }
 
   50% {
@@ -952,12 +1054,45 @@ button:hover {
   border-right: 30px solid #252525;
   border-bottom: 16px solid transparent;
   rotate: -90deg;
+  margin-top: 50px;
   left: calc(50% - 13px);
-  margin-top: 500px;
 }
 
-/* =============SEJARAH VERSI 2============== */
+.hero_petinggisangsaka {
+  min-height: 110vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
 
+.title_petinggisangsaka {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 25px;
+}
+
+.title_petinggisangsaka h2 {
+  font-family: LemonMilk;
+  text-transform: uppercase;
+  letter-spacing: 4px;
+  font-size: 2.5rem;
+}
+
+.frame_foto {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 3px;
+}
+
+.frame_foto img {
+  position: relative;
+  width: 14%;
+}
 
 /* =============EVENTS SANGSAKA==============  */
 .main-events {
@@ -978,36 +1113,131 @@ button:hover {
   margin-bottom: 3rem;
 }
 
+.vertical-events {
+  margin-top: 1rem;
+  display: flex;
+  width: 100%;
+  position: relative;
+  justify-content: center;
+  align-items: center;
+}
+
 .vertical-events .carousel {
   display: grid;
   grid-auto-flow: column;
-  grid-auto-columns: calc((100% / 4) - 12px);
-  gap: 16px;
+  grid-auto-columns: calc((100% / 4) - 9px);
+  gap: 15px;
   list-style: none;
-  margin: 0 2rem;
-  overflow-x: hidden;
+  /* margin: 0 5rem; */
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  scroll-behavior: smooth;
+  scrollbar-width: 0;
+  margin-bottom: 5rem;
 }
-
-.carousel .card {
-  cursor: pointer;
+.carousel::-webkit-scrollbar {
+  display: none;
+}
+.carousel :where(.card, .img) {
   display: flex;
-  text-align: center;
   align-items: center;
   justify-content: center;
   flex-direction: column;
 }
+.carousel.no-transition {
+  scroll-behavior: auto;
+}
+.carousel.dragging {
+  scroll-snap-type: none;
+  scroll-behavior: auto;
+}
+.carousel.dragging .card {
+  cursor: grab;
+  user-select: none;
+}
 
-.carousel .img img {
-  width: 76%;
+.carousel .card {
+  cursor: pointer;
+  scroll-snap-align: start;
+  display: flex;
+  margin: 10px 0;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  width: 100%;
   border-radius: 10px;
 }
 
+.carousel .img {
+  width: 85%;
+}
 
+.carousel .img img {
+  width: 100%;
+  object-fit: cover;
+  aspect-ratio: 3 / 4;
+  margin: 0;
+  padding: 0;
+  border-radius: 8px;
+  box-shadow: 0 0 5px rgba(0, 0, 0, .23); 
+}
 
+.card .img {
+  transition: .5s ease-out;
+}
+
+.card {
+  position: relative;
+}
+
+.card .name-events {
+  position: absolute;
+  width: 80%;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.card .name-events h1 {
+  font-family: Monserrat;
+  line-height: 1.5rem;
+  margin-bottom: 3px;
+  font-size: 1.8rem;
+  color: #eb2125;
+  font-weight: bolder;
+  opacity: 0;
+  transition: .3s ease-in-out;
+  filter: drop-shadow(0 0 3px #252525);
+}
+
+.card .name-events h4 {
+  font-size: .8rem;
+  color: white;
+  letter-spacing: 2px;
+  font-weight: 900;
+  opacity: 0;
+  transform: scale(0);
+  filter: drop-shadow(0 0 1px #252525);
+  transition: .5s ease-out;
+}
+
+.card:hover .img {
+  filter: blur(5px);
+}
+
+.card:hover .name-events h1, .card:hover .name-events h4 {
+  opacity: 1;
+}
+
+.card:hover .name-events h4 {
+  transform: scale(1);
+}
+/* =============EVENTS SANGSAKA==============  */
 
 /*=============== BREAKPOINTS ===============*/
 /* For small devices */
-@media screen and (max-width: 390px) {
+@media screen and (max-width: 600px) {
   .container {
     margin-inline: 1rem;
   }
@@ -1129,10 +1359,35 @@ button:hover {
     color: white;
   }
   /* Footer end */
+
+  /* RESPONSIVE TENTANG KITA */
+  .hero_sambutan {
+    min-height: 160vh;
+  }
+
+  .sambutan_content {
+    justify-self: center;
+    align-items: center;
+    flex-direction: column;
+    width: 95%;
+  }
+
+  .isi_sambutan {
+    width: 98%;
+  }
+
+  .hero_sejarah {
+    min-height: 250vh;
+  }
+
+  .timeline_hero {
+    width: 95%;
+  }
+  
 }
 
 /* For large devices */
-@media screen and (min-width: 1118px) {
+@media screen and (min-width: 900px) {
   .container {
     margin-inline: auto;
   }
@@ -1208,6 +1463,7 @@ button:hover {
   }
 }
 
+
 /* RESPONSIVE GALERI */
 @media only screen and (max-width: 769px) {
   .landing_video {
@@ -1222,7 +1478,13 @@ button:hover {
   }
 
   .container1 .box {
+    display: flex;
     flex-direction: column;
+    width: 100%;
+  }
+  #moreImage {
+    flex-direction: column;
+    width: 100%;
   }
   .container1 .box .dream {
     width: 100%;
@@ -1427,6 +1689,10 @@ button:hover {
     margin-left: 0;
   }
 
+  .sambutan_content {
+    width: 100%;
+  }
+
   .timeline_items {
     max-width: 1000px;
     background-color: var(--body-color);
@@ -1441,14 +1707,13 @@ button:hover {
     text-align: left;
   }
 
-
-  .timeline_items:nth-child(even) .timeline_item, 
+  .timeline_items:nth-child(even) .timeline_item,
   .timeline_items:nth-child(odd) .timeline_item {
     padding-left: 100px;
   }
 
   .timeline_items::before {
-    content: '';
+    content: "";
     position: absolute;
     width: 3px;
     height: 100%;
@@ -1463,10 +1728,8 @@ button:hover {
   }
 
   .segitiga {
-    margin-top: 420px;
     left: calc(8% + 1px);
   }
-
 
   /* Footer */
 
@@ -1584,12 +1847,113 @@ button:hover {
   /* Footer end */
 }
 
-@media only screen and (max-width: 360px) {
-  .container1 .box {
-    flex-direction: column;
+@media only screen and (max-width: 900px) {
+  .frame_foto img {
+    width: 19%;
   }
-  .container1 .box .dream {
-    width: 100%;
+
+  .box,
+  #imageM {
+    flex-direction: column;
+    max-width: 100%;
+  }
+  .box .dream {
+    max-width: 100%;
+  }
+
+    /*=============== RESPONSIVE CAROUSEL EVENTS START ===============*/
+    .h1 {
+      font-size: 2.2rem;
+    }
+  
+    .vertical-events {
+      margin-top: 1rem;
+    }
+  
+    .vertical-events .carousel {
+      grid-auto-columns: calc((100% / 3) - 10px);
+    }
+  
+    .card img {
+      width: 100%;
+    }
+
+  .card .name-events h1 {
+    font-size: 1.35rem;
+  }
+  
+  .card .name-events h4 {
+    font-size: .6rem;
+    line-height: 12px;
+  }
+  /*=============== RESPONSIVE CAROUSEL EVENTS END ===============*/
+
+}
+
+@media only screen and (max-width: 600px) {
+  .box,
+  #imageM {
+    flex-direction: column;
+    max-width: 100%;
+  }
+  .box .dream {
+    max-width: 100%;
+  }
+
+  .h1 {
+    font-size: 1.8rem;
+  }
+
+  /*=============== RESPONSIVE CAROUSEL EVENTS START ===============*/
+  .main-events {
+    margin-top: 2rem;
+  }
+
+  .vertical-events .carousel {
+    grid-auto-columns: calc((100% / 2) - 8px);
+  }
+
+  .vertical-events {
+    margin-top: 1rem;
+  }
+
+  .card img {
+    width: 50%;
+  }
+
+  .card .name-events h1 {
+    font-size: .8rem;
+    line-height: 13px;
+  }
+  
+  .card .name-events h4 {
+    font-size: .4rem;
+  }
+  /*=============== RESPONSIVE CAROUSEL EVENTS END ===============*/
+}
+
+/* RESPONSIVE GALERI KHUSUS */
+@media only screen and (max-width: 1000px) {
+  .box,
+  #imageM {
+    flex-direction: row;
+    max-width: 100%;
+  }
+  .box .dream {
+    max-width: 100%;
   }
 }
 
+@media only screen and (max-width: 1395px) {
+  .box,
+  #imageM {
+    flex-direction: row;
+    max-width: 100%;
+  }
+  .box .dream {
+    max-width: 100%;
+  }
+}
+
+
+/* RESPONSIVE GALERI KHUSUS END */
