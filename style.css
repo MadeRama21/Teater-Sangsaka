@@ -608,6 +608,7 @@ footer {
 
 .dream {
   max-width: 100%;
+  width: 500px;
 }
 
 .dream .image img:hover {
