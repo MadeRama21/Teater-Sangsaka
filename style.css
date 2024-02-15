@@ -1137,6 +1137,7 @@ footer {
   width: 80%;
   justify-content: center;
   align-items: center;
+  text-align: center;
 }
 
 .card .name-events h1 {
@@ -1323,14 +1324,6 @@ footer {
   .timeline_hero {
     width: 95%;
   }
-
-  .card .name-events h1 {
-    font-size: 1rem;
-  }
-  
-  .card .name-events h4 {
-    font-size: .5rem;
-  }
   
 }
 
@@ -1411,13 +1404,6 @@ footer {
   }
 }
 
-.card .name-events h1 {
-  font-size: 1.2rem;
-}
-
-.card .name-events h4 {
-  font-size: .5rem;
-}
 
 /* RESPONSIVE GALERI */
 @media only screen and (max-width: 769px) {
@@ -1800,25 +1786,7 @@ footer {
     color: white;
   }
   /* Footer end */
-
-  /*=============== RESPONSIVE CAROUSEL EVENTS START ===============*/
-  .h1 {
-    font-size: 2.2rem;
-  }
-
-  .vertical-events {
-    margin-top: 1rem;
-  }
-
-  .vertical-events .carousel {
-    grid-auto-columns: calc((100% / 3) - 10px);
-  }
-
-  .card img {
-    width: 100%;
-  }
 }
-/*=============== RESPONSIVE CAROUSEL EVENTS START ===============*/
 
 @media only screen and (max-width: 900px) {
   .frame_foto img {
@@ -1833,6 +1801,34 @@ footer {
   .box .dream {
     max-width: 100%;
   }
+
+    /*=============== RESPONSIVE CAROUSEL EVENTS START ===============*/
+    .h1 {
+      font-size: 2.2rem;
+    }
+  
+    .vertical-events {
+      margin-top: 1rem;
+    }
+  
+    .vertical-events .carousel {
+      grid-auto-columns: calc((100% / 3) - 10px);
+    }
+  
+    .card img {
+      width: 100%;
+    }
+
+  .card .name-events h1 {
+    font-size: 1.35rem;
+  }
+  
+  .card .name-events h4 {
+    font-size: .6rem;
+    line-height: 12px;
+  }
+  /*=============== RESPONSIVE CAROUSEL EVENTS END ===============*/
+
 }
 
 @media only screen and (max-width: 600px) {
@@ -1864,6 +1860,15 @@ footer {
 
   .card img {
     width: 50%;
+  }
+
+  .card .name-events h1 {
+    font-size: .8rem;
+    line-height: 13px;
+  }
+  
+  .card .name-events h4 {
+    font-size: .4rem;
   }
   /*=============== RESPONSIVE CAROUSEL EVENTS END ===============*/
 }
