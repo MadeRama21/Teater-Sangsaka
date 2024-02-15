@@ -750,8 +750,12 @@ footer {
 
 /* ======== CONTACT ========= */
 .contact_container {
-  height: 120vh;
+  margin-top: 9rem;
+  margin-left: 7rem;
+  margin-right: 7rem;
   display: flex;
+  justify-content: space-between;
+  flex-direction: row;
 }
 
 .contact_text {
@@ -759,8 +763,8 @@ footer {
   flex-direction: column;
   justify-content: center;
   /* padding-top: 200px; */
-  width: 50%;
-  min-height: 120vh;
+  width: 30%;
+
 }
 
 .contact_text h1 {
@@ -769,6 +773,12 @@ footer {
 
 .contact_text p {
   font-size: 20px;
+}
+
+.sosmed {
+  display: flex;
+  flex-direction: row;
+  gap: 30px;
 }
 
 .wa_button {
@@ -791,7 +801,7 @@ footer {
 }
 
 .wa_button i {
-  font-size: 40px;
+  font-size: 50px;
 }
 
 .wa_button p {
@@ -803,11 +813,60 @@ footer {
   transition: 0.3s;
 }
 
-.wa_icon {
-  font-size: 40px;
+.form_outer h1 {
+  display: flex;
+  justify-content: center;
+  font-weight: 700;
+  
 }
 
-.wa_number {
+.contact_form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0 3px 12px rgba(0, 0, 0, .23);
+  border-radius: 20px;
+  padding: 20px;
+}
+
+.form {
+  background-color: #fff;
+}
+
+.form, button, input, textarea {
+  font-weight: 500;
+  border-style: none;
+}
+
+.form_nama, .form_kelas, .form_nomor, .form_alasan, button {
+  display: block;
+  margin: 20px;
+}
+
+input, textarea {
+  background-color: gainsboro;
+  width: 50%;
+  resize: none;
+  width: 600px;
+  padding: 20px;
+  border-radius: 15px;
+}
+
+button {
+  color: #fff;
+  background-color: #EB2125;
+  
+  border-radius: 5px;
+  padding: 10px;
+  padding-left: 290px;
+  padding-right: 290px;
+  transition: transform 0.3s;
+}
+
+button:hover {
+  transform: translateY(-3px);
+  transition: 0.3s;
 }
 
 /* ====== CONTACT end ======= */
@@ -1137,6 +1196,7 @@ footer {
   width: 80%;
   justify-content: center;
   align-items: center;
+  text-align: center;
 }
 
 .card .name-events h1 {
@@ -1323,14 +1383,6 @@ footer {
   .timeline_hero {
     width: 95%;
   }
-
-  .card .name-events h1 {
-    font-size: 1rem;
-  }
-  
-  .card .name-events h4 {
-    font-size: .5rem;
-  }
   
 }
 
@@ -1411,13 +1463,6 @@ footer {
   }
 }
 
-.card .name-events h1 {
-  font-size: 1.2rem;
-}
-
-.card .name-events h4 {
-  font-size: .5rem;
-}
 
 /* RESPONSIVE GALERI */
 @media only screen and (max-width: 769px) {
@@ -1800,25 +1845,7 @@ footer {
     color: white;
   }
   /* Footer end */
-
-  /*=============== RESPONSIVE CAROUSEL EVENTS START ===============*/
-  .h1 {
-    font-size: 2.2rem;
-  }
-
-  .vertical-events {
-    margin-top: 1rem;
-  }
-
-  .vertical-events .carousel {
-    grid-auto-columns: calc((100% / 3) - 10px);
-  }
-
-  .card img {
-    width: 100%;
-  }
 }
-/*=============== RESPONSIVE CAROUSEL EVENTS START ===============*/
 
 @media only screen and (max-width: 900px) {
   .frame_foto img {
@@ -1833,6 +1860,34 @@ footer {
   .box .dream {
     max-width: 100%;
   }
+
+    /*=============== RESPONSIVE CAROUSEL EVENTS START ===============*/
+    .h1 {
+      font-size: 2.2rem;
+    }
+  
+    .vertical-events {
+      margin-top: 1rem;
+    }
+  
+    .vertical-events .carousel {
+      grid-auto-columns: calc((100% / 3) - 10px);
+    }
+  
+    .card img {
+      width: 100%;
+    }
+
+  .card .name-events h1 {
+    font-size: 1.35rem;
+  }
+  
+  .card .name-events h4 {
+    font-size: .6rem;
+    line-height: 12px;
+  }
+  /*=============== RESPONSIVE CAROUSEL EVENTS END ===============*/
+
 }
 
 @media only screen and (max-width: 600px) {
@@ -1864,6 +1919,15 @@ footer {
 
   .card img {
     width: 50%;
+  }
+
+  .card .name-events h1 {
+    font-size: .8rem;
+    line-height: 13px;
+  }
+  
+  .card .name-events h4 {
+    font-size: .4rem;
   }
   /*=============== RESPONSIVE CAROUSEL EVENTS END ===============*/
 }
