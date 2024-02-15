@@ -87,6 +87,11 @@ vertical.addEventListener("mouseleave", autoPlay);
 /*=============== CAROUSEL EVENTS END ===============*/
 
 
+window.onload = function() {
+  toggleText();
+};
+
+// Fungsi toggleText() tidak berubah
 function toggleText() {
   var moreImage = document.getElementById("moreImage");
 
