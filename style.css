@@ -29,6 +29,11 @@
 }
 
 @font-face {
+  font-family: Monserrat;
+  src: url(font/MontserratAlternates-ExtraBold.otf);
+}
+
+@font-face {
   font-family: LemonMilk;
   src: url(font/LEMONMILK-Regular.ttf.otf);
 }
@@ -608,6 +613,7 @@ footer {
 
 .dream {
   max-width: 100%;
+  width: 500px;
 }
 
 .dream .image img:hover {
@@ -632,6 +638,10 @@ footer {
 }
 
 .image:hover p {
+  opacity: 100;
+}
+
+#moreImage p {
   opacity: 100;
 }
 
@@ -721,12 +731,29 @@ footer {
   object-fit: cover;
 }
 
+#textButton {
+  background-color: #252525; 
+  color: #FCFCFC;
+  padding: 10px 20px;
+  margin-top: 20px;
+  text-align: center; 
+  text-decoration: none; 
+  display: inline-block;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer; 
+}
+
 /* ======== GALERi end ========= */
 
 /* ======== CONTACT ========= */
 .contact_container {
-  height: 120vh;
+  margin-top: 9rem;
+  margin-left: 7rem;
+  margin-right: 7rem;
   display: flex;
+  justify-content: space-between;
+  flex-direction: row;
 }
 
 .contact_text {
@@ -734,8 +761,8 @@ footer {
   flex-direction: column;
   justify-content: center;
   /* padding-top: 200px; */
-  width: 50%;
-  min-height: 120vh;
+  width: 30%;
+
 }
 
 .contact_text h1 {
@@ -744,6 +771,12 @@ footer {
 
 .contact_text p {
   font-size: 20px;
+}
+
+.sosmed {
+  display: flex;
+  flex-direction: row;
+  gap: 30px;
 }
 
 .wa_button {
@@ -766,7 +799,7 @@ footer {
 }
 
 .wa_button i {
-  font-size: 40px;
+  font-size: 50px;
 }
 
 .wa_button p {
@@ -778,11 +811,60 @@ footer {
   transition: 0.3s;
 }
 
-.wa_icon {
-  font-size: 40px;
+.form_outer h1 {
+  display: flex;
+  justify-content: center;
+  font-weight: 700;
+  
 }
 
-.wa_number {
+.contact_form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0 3px 12px rgba(0, 0, 0, .23);
+  border-radius: 20px;
+  padding: 20px;
+}
+
+.form {
+  background-color: #fff;
+}
+
+.form, button, input, textarea {
+  font-weight: 500;
+  border-style: none;
+}
+
+.form_nama, .form_kelas, .form_nomor, .form_alasan, button {
+  display: block;
+  margin: 20px;
+}
+
+input, textarea {
+  background-color: gainsboro;
+  width: 50%;
+  resize: none;
+  width: 600px;
+  padding: 20px;
+  border-radius: 15px;
+}
+
+button {
+  color: #fff;
+  background-color: #EB2125;
+  
+  border-radius: 5px;
+  padding: 10px;
+  padding-left: 290px;
+  padding-right: 290px;
+  transition: transform 0.3s;
+}
+
+button:hover {
+  transform: translateY(-3px);
+  transition: 0.3s;
 }
 
 /* ====== CONTACT end ======= */
@@ -1076,7 +1158,7 @@ footer {
   cursor: pointer;
   scroll-snap-align: start;
   display: flex;
-  margin: 5px 0 5px;
+  margin: 10px 0;
   text-align: center;
   align-items: center;
   justify-content: center;
@@ -1085,14 +1167,69 @@ footer {
   border-radius: 10px;
 }
 
-.carousel .img img {
+.carousel .img {
   width: 85%;
+}
+
+.carousel .img img {
+  width: 100%;
   object-fit: cover;
   aspect-ratio: 3 / 4;
   margin: 0;
   padding: 0;
   border-radius: 8px;
-  box-shadow: 0 0 5px rgba(0, 0, 0, 0.23);
+  box-shadow: 0 0 5px rgba(0, 0, 0, .23); 
+}
+
+.card .img {
+  transition: .5s ease-out;
+}
+
+.card {
+  position: relative;
+}
+
+.card .name-events {
+  position: absolute;
+  width: 80%;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.card .name-events h1 {
+  font-family: Monserrat;
+  line-height: 1.5rem;
+  margin-bottom: 3px;
+  font-size: 1.8rem;
+  color: #eb2125;
+  font-weight: bolder;
+  opacity: 0;
+  transition: .3s ease-in-out;
+  filter: drop-shadow(0 0 3px #252525);
+}
+
+.card .name-events h4 {
+  font-size: .8rem;
+  color: white;
+  letter-spacing: 2px;
+  font-weight: 900;
+  opacity: 0;
+  transform: scale(0);
+  filter: drop-shadow(0 0 1px #252525);
+  transition: .5s ease-out;
+}
+
+.card:hover .img {
+  filter: blur(5px);
+}
+
+.card:hover .name-events h1, .card:hover .name-events h4 {
+  opacity: 1;
+}
+
+.card:hover .name-events h4 {
+  transform: scale(1);
 }
 /* =============EVENTS SANGSAKA==============  */
 
@@ -1299,10 +1436,14 @@ footer {
   .timeline_hero {
     width: 95%;
   }
+  
 }
 
 /* For large devices */
 @media screen and (min-width: 1116px) {
+  .wadah-U2 {
+    margin-left: 3rem;
+  }
   .container {
     margin-inline: auto;
   }
@@ -1377,6 +1518,13 @@ footer {
     transition: top 0.3s;
   }
 }
+
+@media only screen and (max-width: 897px) {
+  .wadah-U2 {
+    margin-left: 3rem;
+  }
+}
+
 
 /* RESPONSIVE GALERI */
 @media only screen and (max-width: 769px) {
@@ -1758,25 +1906,7 @@ footer {
     color: white;
   }
   /* Footer end */
-
-  /*=============== RESPONSIVE CAROUSEL EVENTS START ===============*/
-  .h1 {
-    font-size: 2.2rem;
-  }
-
-  .vertical-events {
-    margin-top: 1rem;
-  }
-
-  .vertical-events .carousel {
-    grid-auto-columns: calc((100% / 3) - 10px);
-  }
-
-  .card img {
-    width: 100%;
-  }
 }
-/*=============== RESPONSIVE CAROUSEL EVENTS START ===============*/
 
 @media only screen and (max-width: 900px) {
   .frame_foto img {
@@ -1791,6 +1921,34 @@ footer {
   .box .dream {
     max-width: 100%;
   }
+
+    /*=============== RESPONSIVE CAROUSEL EVENTS START ===============*/
+    .h1 {
+      font-size: 2.2rem;
+    }
+  
+    .vertical-events {
+      margin-top: 1rem;
+    }
+  
+    .vertical-events .carousel {
+      grid-auto-columns: calc((100% / 3) - 10px);
+    }
+  
+    .card img {
+      width: 100%;
+    }
+
+  .card .name-events h1 {
+    font-size: 1.35rem;
+  }
+  
+  .card .name-events h4 {
+    font-size: .6rem;
+    line-height: 12px;
+  }
+  /*=============== RESPONSIVE CAROUSEL EVENTS END ===============*/
+
 }
 
 @media only screen and (max-width: 600px) {
@@ -1822,6 +1980,15 @@ footer {
 
   .card img {
     width: 50%;
+  }
+
+  .card .name-events h1 {
+    font-size: .8rem;
+    line-height: 13px;
+  }
+  
+  .card .name-events h4 {
+    font-size: .4rem;
   }
   /*=============== RESPONSIVE CAROUSEL EVENTS END ===============*/
 }
