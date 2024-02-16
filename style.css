@@ -2025,6 +2025,10 @@ button:hover {
   }
 
     /*=============== RESPONSIVE CAROUSEL EVENTS START ===============*/
+    .banner-events img {
+      height: 350px;
+    }
+
     .h1 {
       font-size: 2.2rem;
     }
@@ -2070,6 +2074,10 @@ button:hover {
   /*=============== RESPONSIVE CAROUSEL EVENTS START ===============*/
   .main-events {
     margin-top: 2rem;
+  }
+
+  .banner-events img {
+    height: 400px;
   }
 
   .vertical-events .carousel {
