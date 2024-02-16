@@ -10,6 +10,7 @@
     <link href="https://cdn.jsdelivr.net/npm/remixicon@3.2.0/fonts/remixicon.css" rel="stylesheet">
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@mdi/font@7.4.47/css/materialdesignicons.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 </head>
 <body>
 
@@ -76,15 +77,15 @@
     <!-- =============== MAIN CONTENT START =============== -->
     <main class="main-events">
         <div class="banner-events">
-            <img src="img/11.JPG" alt="">
+            <img src="img/landing.JPG" alt="">
         </div>
 
-        <h1 class="h1"> EVENTS SANGSAKA </h1>
+        <h1 class="h1"  data-aos="fade-down" data-aos-easing="ease-in-out" data-oas-duration="1500" data-aos-once="true"> EVENTS SANGSAKA </h1>
 
         <section class="main-vertical" id="main-vertical">
             <div class="vertical-events">
                 <ul class="carousel">
-                    <li class="card">
+                    <li class="card" data-aos="fade-in" data-aos-easing="ease-in" data-aos-duration="500" data-aos-once="true">
                         <div class="img"> <img src="event/mario_boros.jpg" alt="img" title="MARIO BOROS" draggable="false"> </div>
 
                         <div class="name-events">
@@ -93,7 +94,7 @@
                         </div>
                     </li>
 
-                    <li class="card">
+                    <li class="card" data-aos="fade-in" data-aos-easing="ease-in" data-aos-duration="500" data-aos-delay="300" data-aos-once="true">
                         <div class="img"> <img src="event/abu_abu-abu.jpg" alt="img" title="ABU ABU-ABU" draggable="false"> </div>
 
                         <div class="name-events">
@@ -102,7 +103,7 @@
                         </div>
                     </li>
 
-                    <li class="card">
+                    <li class="card" data-aos="fade-in" data-aos-easing="ease-in" data-aos-duration="500" data-aos-delay="600" data-aos-once="true">
                         <div class="img"> <img src="event/pantomime_the_power_of_love.jpg" alt="img" title="THE POWER OF LOVE" draggable="false"> </div>
 
                         <div class="name-events">
@@ -111,7 +112,7 @@
                         </div>
                     </li>
 
-                    <li class="card">
+                    <li class="card" data-aos="fade-in" data-aos-easing="ease-in" data-aos-duration="500" data-aos-delay="900" data-aos-once="true">
                         <div class="img"> <img src="event/muspus_teater_sangsaka.jpg" alt="img" title="MUSPUS TEATER SANGSAKA" draggable="false"> </div>
 
                         <div class="name-events">
@@ -654,6 +655,10 @@
 
     <!-- =============== FOOTER END =============== -->
 
+<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+<script>
+  AOS.init();
+</script>
 <script src="script.js"></script>
 </body>
 </html>
