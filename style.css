@@ -967,6 +967,67 @@ footer {
   left: calc(50% - 13px);
 }
 
+.hero_filosofi-logo {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  min-height: 100vh;
+  background-color: #25D366;
+}
+
+.title_filosofi-logo {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 40px;
+  font-size: 1.7rem;
+  text-transform: uppercase;
+}
+
+.content_filosofi-logo {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.logo_sangsaka img {
+  width: 500px;
+}
+
+.container_makna-logo {
+  width: 620px;
+}
+
+.m-wrapper {
+  margin: 20px 0;
+}
+
+.m-title {
+  display: flex;
+  align-items: start;
+  gap: 10px;
+}
+
+.m-title i {
+  font-size: 2rem;
+}
+
+.m-content {
+  font-family: "Montserrat";
+}
+
+.m-content h4 {
+  font-size: 1.5rem;
+}
+
+.garis_warna {
+  content: "";
+  position: absolute;
+  width: 10px;
+  height: 5px;
+  background-color: #252525;
+}
+
+
 .hero_petinggisangsaka {
   min-height: 110vh;
   display: flex;
