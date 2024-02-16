@@ -885,20 +885,29 @@ button:hover {
 
 .sambutan_content {
   display: flex;
-  gap: 15px;
+  gap: 60px;
+}
+
+.foto_pembina img {
+  width: 400px;
+  height: 400px;
+  border-radius: 100%;
+  border-style: solid;
 }
 
 .kata_sambutan {
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
-  max-width: 800px;
+  justify-content: space-around;
+  max-width: 550px;
 }
 
 .isi_sambutan h2 {
-  font-family: LemonMilk;
-  letter-spacing: 4px;
-  font-size: 2.5rem;
+  font-family: "Poppins", sans-serif;
+  font-weight: 700;
+  font-size: 3rem;
+  text-transform: uppercase;
+  letter-spacing: 2px;
 }
 
 .isi_sambutan p {
@@ -908,6 +917,16 @@ button:hover {
 .nama_pembina {
   display: flex;
   flex-direction: column;
+}
+
+.np_1 {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+}
+
+.np_1 i {
+  font-size: 2rem;
 }
 
 .hero_sejarah {
@@ -931,10 +950,11 @@ button:hover {
 }
 
 .sejarah_welcome h2 {
-  font-family: LemonMilk;
-  text-transform: uppercase;
-  letter-spacing: 4px;
+  font-family: "Poppins", sans-serif;
+  font-weight: 700;
   font-size: 3rem;
+  text-transform: uppercase;
+  letter-spacing: 2px;
 }
 
 .timeline_hero {
@@ -1024,9 +1044,11 @@ button:hover {
 .timeline_content h1 {
   color: #eb2125;
   margin-bottom: 10px;
-  letter-spacing: 3px;
-  font-family: LemonMilk;
-  font-weight: 900;
+  font-family: "Poppins", sans-serif;
+  font-weight: 700;
+  font-size: 3rem;
+  text-transform: uppercase;
+  letter-spacing: 2px;
 }
 
 .timeline_content p {
@@ -1068,8 +1090,14 @@ button:hover {
   display: flex;
   justify-content: center;
   margin-bottom: 40px;
-  font-size: 1.7rem;
+}
+
+.title_filosofi-logo h2 {
+  font-family: "Poppins", sans-serif;
+  font-weight: 700;
+  font-size: 3rem;
   text-transform: uppercase;
+  letter-spacing: 2px;
 }
 
 .content_filosofi-logo {
@@ -1121,6 +1149,8 @@ button:hover {
 }
 
 .m-content h4 {
+  font-family: "Poppins", sans-serif;
+  font-weight: 700;
   font-size: 1.5rem;
   margin-bottom: 5px;
 }
@@ -1143,10 +1173,11 @@ button:hover {
 }
 
 .title_petinggisangsaka h2 {
-  font-family: LemonMilk;
+  font-family: "Poppins", sans-serif;
+  font-weight: 700;
+  font-size: 3rem;
   text-transform: uppercase;
-  letter-spacing: 4px;
-  font-size: 2.5rem;
+  letter-spacing: 2px;
 }
 
 .frame_foto {
