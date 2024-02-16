@@ -1,3 +1,4 @@
+
 /*=============== SHOW MENU START ===============*/
 const showMenu = (toggleId, navId) => {
   const toggle = document.getElementById(toggleId),
@@ -15,22 +16,27 @@ const showMenu = (toggleId, navId) => {
 showMenu("nav-toggle", "nav-menu");
 /*=============== SHOW MENU END ===============*/
 
-
 /*=============== CAROUSEL EVENTS START ===============*/
 const vertical = document.querySelector(".main-vertical");
 const carousel = document.querySelector(".carousel");
 const carouselChildrens = [...carousel.children];
 const firstCardWidth = carousel.querySelector(".card").offsetWidth;
 
-let isDragging = false, startX, startScrollleft, timeoutId;
+let isDragging = false,
+  startX,
+  startScrollleft,
+  timeoutId;
 
 let cardPerView = Math.round(carousel.offsetWidth / firstCardWidth);
 
-carouselChildrens.slice(-cardPerView).reverse().forEach(card => {
-  carousel.insertAdjacentHTML("afterbegin", card.outerHTML);
-});
+carouselChildrens
+  .slice(-cardPerView)
+  .reverse()
+  .forEach((card) => {
+    carousel.insertAdjacentHTML("afterbegin", card.outerHTML);
+  });
 
-carouselChildrens.slice(0, cardPerView).forEach(card => {
+carouselChildrens.slice(0, cardPerView).forEach((card) => {
   carousel.insertAdjacentHTML("beforeend", card.outerHTML);
 });
 
@@ -39,38 +45,38 @@ const dragStart = (e) => {
   carousel.classList.add("dragging");
   startX = e.pageX;
   startScrollleft = carousel.scrollLeft;
-}
+};
 
 const dragging = (e) => {
-  if(!isDragging) return;
+  if (!isDragging) return;
   carousel.scrollLeft = startScrollleft - (e.pageX - startX);
-}
+};
 
 const dragStop = () => {
   isDragging = false;
   carousel.classList.remove("dragging");
-}
+};
 
 const autoPlay = () => {
-  if(window.innerWidth < 400) return;
-  timeoutId = setTimeout(() => carousel.scrollLeft += firstCardWidth, 3000);
-}
+  if (window.innerWidth < 400) return;
+  timeoutId = setTimeout(() => (carousel.scrollLeft += firstCardWidth), 3000);
+};
 autoPlay();
 
 const infiniteScroll = () => {
-  if(carousel.scrollLeft === 0) {
+  if (carousel.scrollLeft === 0) {
     carousel.classList.add("no-transition");
-    carousel.scrollLeft = carousel.scrollWidth - (2 * carousel.offsetWidth);
+    carousel.scrollLeft = carousel.scrollWidth - 2 * carousel.offsetWidth;
     carousel.classList.remove("no-transition");
-  } else if(Math.ceil(carousel.scrollLeft) === carousel.scrollWidth - carousel.offsetWidth) {
+  } else if (Math.ceil(carousel.scrollLeft) === carousel.scrollWidth - carousel.offsetWidth) {
     carousel.classList.add("no-transition");
     carousel.scrollLeft = carousel.offsetWidth;
     carousel.classList.remove("no-transition");
   }
 
   clearTimeout(timeoutId);
-  if(!vertical.matches(":hover")) autoPlay();
-}
+  if (!vertical.matches(":hover")) autoPlay();
+};
 
 carousel.addEventListener("mousedown", dragStart);
 carousel.addEventListener("mousemove", dragging);
@@ -80,6 +86,12 @@ vertical.addEventListener("mouseenter", () => clearTimeout(timeoutId));
 vertical.addEventListener("mouseleave", autoPlay);
 /*=============== CAROUSEL EVENTS END ===============*/
 
+
+window.onload = function() {
+  toggleText();
+};
+
+// Fungsi toggleText() tidak berubah
 function toggleText() {
   var moreImage = document.getElementById("moreImage");
 

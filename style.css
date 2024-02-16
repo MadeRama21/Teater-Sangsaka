@@ -29,6 +29,11 @@
 }
 
 @font-face {
+  font-family: Monserrat;
+  src: url(font/MontserratAlternates-ExtraBold.otf);
+}
+
+@font-face {
   font-family: LemonMilk;
   src: url(font/LEMONMILK-Regular.ttf.otf);
 }
@@ -65,7 +70,13 @@ a {
 
 /*=============== REUSABLE CSS CLASSES ===============*/
 .container {
-  max-width: 90rem;
+  max-width: 100%;
+}
+.nav__menu {
+  margin-right: 3rem;
+}
+.nav__data {
+  margin-left: 3rem;
 }
 
 /*=============== HEADER ===============*/
@@ -141,6 +152,9 @@ nav img {
 .nav__close {
   opacity: 0;
 }
+
+/* Beranda */
+
 .landing_video {
   position: absolute;
   top: 0;
@@ -183,25 +197,33 @@ nav img {
   letter-spacing: 2px;
   margin: 0 5px;
 }
-.mengapa-text {
-  width: 30%;
+.grid-content1 {
+  margin-bottom: 9rem;
 }
-
+.mengapa-text {
+  text-align: right;
+}
+.mengapa-text a {
+  color: #eb2125;
+  font-weight: bold;
+}
+.mengapa-text a:hover {
+  color: #5c0707;
+}
 .mengapa-text p {
   margin-bottom: 10px;
   line-height: 25px;
   text-align: right;
 }
 .mengapa-gambar img {
-  width: 600px;
+  width: 550px;
   box-shadow: 8px 8px 4px #2525258d;
-  margin-left: 3rem;
 }
 
-.mengapa-text span {
+.Header-Mengapa span {
   color: #eb2125;
 }
-.mengapa-text h1 {
+.Header-Mengapa h1 {
   text-align: end;
   font-family: LemonMilk;
   margin-top: 2rem;
@@ -210,18 +232,47 @@ nav img {
   margin-bottom: 10px;
 }
 .mengapa-main {
-  display: flex;
-  justify-content: center;
-  margin-top: 3rem;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, 550px);
+  column-gap: 3rem;
+  place-content: center;
 }
 
-.siapa-text {
-  width: 30%;
+.main-tampil {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
 }
-.siapa-text span {
+.bungkus-tampil {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.gambar-tampil p:nth-child(2) {
+  font-weight: bolder;
+  font-size: 1.2rem;
+  font-style: italic;
+}
+.gambar-tampil p:nth-child(3) {
+  font-weight: bolder;
+  font-size: 1.2rem;
   color: #eb2125;
 }
-.siapa-text h1 {
+
+.header-tampil {
+  display: flex;
+  justify-content: right;
+  margin-bottom: 3rem;
+}
+.header-tampil h1 {
+  margin-right: 9rem;
+  width: 40%;
+}
+
+.Header-Siapa span {
+  color: #eb2125;
+}
+.Header-Siapa h1 {
   font-family: LemonMilk;
   margin-top: 2rem;
   font-size: 3rem;
@@ -233,13 +284,25 @@ nav img {
   line-height: 25px;
 }
 .siapa-main {
-  display: flex;
-  justify-content: center;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, 550px);
+  column-gap: 3rem;
+  place-content: center;
+  margin-bottom: 3rem;
 }
 .siapa-gambar img {
-  width: 600px;
+  width: 550px;
   box-shadow: 8px 8px 4px #2525258d;
-  margin-right: 3rem;
+}
+
+.main.tampil {
+  display: flex;
+}
+
+.gambar-tampil img {
+  box-shadow: 8px 8px 4px #2525258d;
+  width: 470px;
+  margin-bottom: 1rem;
 }
 
 .main-quotes i {
@@ -317,6 +380,8 @@ nav img {
   letter-spacing: 8px;
   font-weight: 50;
 }
+
+/* Beranda end */
 
 /* Footer */
 
@@ -432,60 +497,6 @@ footer {
 }
 /* Footer end */
 
-/* Navigation for mobile devices */
-@media screen and (max-width: 1118px) {
-  .nav__menu {
-    position: absolute;
-    left: 0;
-    top: 2.5rem;
-    width: 100%;
-    height: calc(100vh - 3.5rem);
-    overflow: auto;
-    pointer-events: none;
-    opacity: 0;
-    transition: top 0.4s, opacity 0.3s;
-  }
-  .nav__menu::-webkit-scrollbar {
-    width: 0;
-  }
-  .nav__list {
-    background-color: var(--black-color);
-    padding-top: 1rem;
-  }
-}
-
-.nav__link {
-  color: var(--white-color);
-  background-color: var(--black-color);
-  font-weight: var(--font-semi-bold);
-  padding: 1.25rem 1.5rem;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  transition: background-color 0.3s;
-}
-
-.nav__link:hover {
-  background-color: var(--black-color-light);
-}
-
-/* Show menu */
-.show-menu {
-  opacity: 1;
-  top: 4.4rem;
-  pointer-events: initial;
-}
-
-/* Show icon */
-.show-icon .nav__burger {
-  opacity: 0;
-  transform: rotate(90deg);
-}
-.show-icon .nav__close {
-  opacity: 1;
-  transform: rotate(90deg);
-}
-
 /*=============== DROPDOWN ===============*/
 .dropdown__item {
   cursor: pointer;
@@ -557,12 +568,20 @@ footer {
   margin: 5px 20px 0 20px;
 }
 
-.container1 .box, #moreImage{
+.container1 .box,
+#moreImage {
   display: flex;
   flex-direction: row;
   margin: 1px;
   padding: 1px;
   /* align-items: center; */
+}
+
+#moreImage img {
+  filter: grayscale(0);
+  height: 400px;
+  overflow: hidden;
+  object-fit: cover;
 }
 
 .container1 .box .dream {
@@ -573,7 +592,6 @@ footer {
   display: flex;
   flex-direction: column;
   padding: 1.5px;
-  width: 32.5%;
   width: 100%;
   margin: 1px;
   -webkit-filter: grayscale(1);
@@ -594,7 +612,8 @@ footer {
 }
 
 .dream {
-  max-width: 450px;
+  max-width: 100%;
+  width: 500px;
 }
 
 .dream .image img:hover {
@@ -619,6 +638,10 @@ footer {
 }
 
 .image:hover p {
+  opacity: 100;
+}
+
+#moreImage p {
   opacity: 100;
 }
 
@@ -708,19 +731,29 @@ footer {
   object-fit: cover;
 }
 
-#imageM {
-  width: 450px;
-  height: 300px;
-  overflow: hidden;
-  object-fit: cover;
-  filter: grayscale(0);
+#textButton {
+  background-color: #252525; 
+  color: #FCFCFC;
+  padding: 10px 20px;
+  margin-top: 20px;
+  text-align: center; 
+  text-decoration: none; 
+  display: inline-block;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer; 
 }
+
 /* ======== GALERi end ========= */
 
 /* ======== CONTACT ========= */
 .contact_container {
-  height: 120vh;
+  margin-top: 9rem;
+  margin-left: 7rem;
+  margin-right: 7rem;
   display: flex;
+  justify-content: space-between;
+  flex-direction: row;
 }
 
 .contact_text {
@@ -728,8 +761,8 @@ footer {
   flex-direction: column;
   justify-content: center;
   /* padding-top: 200px; */
-  width: 50%;
-  min-height: 120vh;
+  width: 30%;
+
 }
 
 .contact_text h1 {
@@ -738,6 +771,12 @@ footer {
 
 .contact_text p {
   font-size: 20px;
+}
+
+.sosmed {
+  display: flex;
+  flex-direction: row;
+  gap: 30px;
 }
 
 .wa_button {
@@ -752,7 +791,7 @@ footer {
   padding-right: 20px;
   padding-left: 20px;
   color: white;
-  background-color: #25D366;
+  background-color: #25d366;
   border-radius: 5px;
   text-decoration: none;
   font-weight: 500;
@@ -760,7 +799,7 @@ footer {
 }
 
 .wa_button i {
-  font-size: 40px;
+  font-size: 50px;
 }
 
 .wa_button p {
@@ -772,12 +811,60 @@ footer {
   transition: 0.3s;
 }
 
-.wa_icon {
-  font-size: 40px;
+.form_outer h1 {
+  display: flex;
+  justify-content: center;
+  font-weight: 700;
+  
 }
 
-.wa_number {
+.contact_form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0 3px 12px rgba(0, 0, 0, .23);
+  border-radius: 20px;
+  padding: 20px;
+}
+
+.form {
+  background-color: #fff;
+}
+
+.form, button, input, textarea {
+  font-weight: 500;
+  border-style: none;
+}
+
+.form_nama, .form_kelas, .form_nomor, .form_alasan, button {
+  display: block;
+  margin: 20px;
+}
+
+input, textarea {
+  background-color: gainsboro;
+  width: 50%;
+  resize: none;
+  width: 600px;
+  padding: 20px;
+  border-radius: 15px;
+}
+
+button {
+  color: #fff;
+  background-color: #EB2125;
   
+  border-radius: 5px;
+  padding: 10px;
+  padding-left: 290px;
+  padding-right: 290px;
+  transition: transform 0.3s;
+}
+
+button:hover {
+  transform: translateY(-3px);
+  transition: 0.3s;
 }
 
 /* ====== CONTACT end ======= */
@@ -792,7 +879,7 @@ footer {
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: #F9FDFF;
+  background-color: #f9fdff;
   min-height: 115vh;
 }
 
@@ -913,7 +1000,8 @@ footer {
 }
 
 @keyframes floating {
-  0%, 100% {
+  0%,
+  100% {
     transform: translateY(-3px);
   }
 
@@ -923,8 +1011,9 @@ footer {
 }
 
 @keyframes gradient {
-  0%, 100% {
-    background-position: 0% 50% ;
+  0%,
+  100% {
+    background-position: 0% 50%;
   }
 
   50% {
@@ -1046,7 +1135,7 @@ footer {
 }
 
 .title_petinggisangsaka h2 {
-  font-family:  LemonMilk;
+  font-family: LemonMilk;
   text-transform: uppercase;
   letter-spacing: 4px;
   font-size: 2.5rem;
@@ -1063,7 +1152,6 @@ footer {
   position: relative;
   width: 14%;
 }
-
 
 /* =============EVENTS SANGSAKA==============  */
 .main-events {
@@ -1131,7 +1219,7 @@ footer {
   cursor: pointer;
   scroll-snap-align: start;
   display: flex;
-  margin: 5px 0 5px;
+  margin: 10px 0;
   text-align: center;
   align-items: center;
   justify-content: center;
@@ -1140,8 +1228,12 @@ footer {
   border-radius: 10px;
 }
 
-.carousel .img img {
+.carousel .img {
   width: 85%;
+}
+
+.carousel .img img {
+  width: 100%;
   object-fit: cover;
   aspect-ratio: 3 / 4;
   margin: 0;
@@ -1149,9 +1241,115 @@ footer {
   border-radius: 8px;
   box-shadow: 0 0 5px rgba(0, 0, 0, .23); 
 }
+
+.card .img {
+  transition: .5s ease-out;
+}
+
+.card {
+  position: relative;
+}
+
+.card .name-events {
+  position: absolute;
+  width: 80%;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.card .name-events h1 {
+  font-family: Monserrat;
+  line-height: 1.5rem;
+  margin-bottom: 3px;
+  font-size: 1.8rem;
+  color: #eb2125;
+  font-weight: bolder;
+  opacity: 0;
+  transition: .3s ease-in-out;
+  filter: drop-shadow(0 0 3px #252525);
+}
+
+.card .name-events h4 {
+  font-size: .8rem;
+  color: white;
+  letter-spacing: 2px;
+  font-weight: 900;
+  opacity: 0;
+  transform: scale(0);
+  filter: drop-shadow(0 0 1px #252525);
+  transition: .5s ease-out;
+}
+
+.card:hover .img {
+  filter: blur(5px);
+}
+
+.card:hover .name-events h1, .card:hover .name-events h4 {
+  opacity: 1;
+}
+
+.card:hover .name-events h4 {
+  transform: scale(1);
+}
 /* =============EVENTS SANGSAKA==============  */
 
 /*=============== BREAKPOINTS ===============*/
+
+/* Navigation for mobile devices */
+@media screen and (max-width: 1116px) {
+  .nav__menu {
+    position: absolute;
+    left: 0;
+    top: 2.5rem;
+    width: 100%;
+    height: calc(100vh - 3.5rem);
+    overflow: auto;
+    pointer-events: none;
+    opacity: 0;
+    transition: top 0.4s, opacity 0.3s;
+  }
+  .nav__menu::-webkit-scrollbar {
+    width: 0;
+  }
+  .nav__list {
+    background-color: var(--black-color);
+    padding-top: 1rem;
+  }
+}
+
+.nav__link {
+  color: var(--white-color);
+  background-color: var(--black-color);
+  font-weight: var(--font-semi-bold);
+  padding: 1.25rem 1.5rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  transition: background-color 0.3s;
+}
+
+.nav__link:hover {
+  background-color: var(--black-color-light);
+}
+
+/* Show menu */
+.show-menu {
+  opacity: 1;
+  top: 4.4rem;
+  pointer-events: initial;
+}
+
+/* Show icon */
+.show-icon .nav__burger {
+  opacity: 0;
+  transform: rotate(90deg);
+}
+.show-icon .nav__close {
+  opacity: 1;
+  transform: rotate(90deg);
+}
+
 /* For small devices */
 @media screen and (max-width: 600px) {
   .container {
@@ -1296,16 +1494,17 @@ footer {
     min-height: 250vh;
   }
 
-  
   .timeline_hero {
     width: 95%;
   }
-
   
 }
 
 /* For large devices */
-@media screen and (min-width: 900px) {
+@media screen and (min-width: 1116px) {
+  .wadah-U2 {
+    margin-left: 3rem;
+  }
   .container {
     margin-inline: auto;
   }
@@ -1381,13 +1580,19 @@ footer {
   }
 }
 
+@media only screen and (max-width: 897px) {
+  .wadah-U2 {
+    margin-left: 3rem;
+  }
+}
+
+
 /* RESPONSIVE GALERI */
 @media only screen and (max-width: 769px) {
   .landing_video {
     position: absolute;
     top: 0;
     left: 0;
-    max-width: 100vh;
     max-height: 100vh;
     object-fit: cover;
     z-index: -1;
@@ -1395,7 +1600,13 @@ footer {
   }
 
   .container1 .box {
+    display: flex;
     flex-direction: column;
+    width: 100%;
+  }
+  #moreImage {
+    flex-direction: column;
+    width: 100%;
   }
   .container1 .box .dream {
     width: 100%;
@@ -1618,14 +1829,13 @@ footer {
     text-align: left;
   }
 
-
-  .timeline_items:nth-child(even) .timeline_item, 
+  .timeline_items:nth-child(even) .timeline_item,
   .timeline_items:nth-child(odd) .timeline_item {
     padding-left: 100px;
   }
 
   .timeline_items::before {
-    content: '';
+    content: "";
     position: absolute;
     width: 3px;
     height: 100%;
@@ -1642,7 +1852,6 @@ footer {
   .segitiga {
     left: calc(8% + 1px);
   }
-
 
   /* Footer */
 
@@ -1758,55 +1967,66 @@ footer {
     color: white;
   }
   /* Footer end */
-  
-
-  /*=============== RESPONSIVE CAROUSEL EVENTS START ===============*/
-  .h1 {
-    font-size: 2.2rem;
-  }
-
-  .vertical-events {
-    margin-top: 1rem;
-  }
-
-  .vertical-events .carousel {
-    grid-auto-columns: calc((100% / 3) - 10px);
-  }
-
-  .card img {
-    width: 100%;
-  }
 }
-/*=============== RESPONSIVE CAROUSEL EVENTS START ===============*/
 
 @media only screen and (max-width: 900px) {
   .frame_foto img {
     width: 19%;
   }
 
-  .box, #imageM {
+  .box,
+  #imageM {
     flex-direction: column;
     max-width: 100%;
   }
   .box .dream {
     max-width: 100%;
   }
+
+    /*=============== RESPONSIVE CAROUSEL EVENTS START ===============*/
+    .h1 {
+      font-size: 2.2rem;
+    }
+  
+    .vertical-events {
+      margin-top: 1rem;
+    }
+  
+    .vertical-events .carousel {
+      grid-auto-columns: calc((100% / 3) - 10px);
+    }
+  
+    .card img {
+      width: 100%;
+    }
+
+  .card .name-events h1 {
+    font-size: 1.35rem;
+  }
+  
+  .card .name-events h4 {
+    font-size: .6rem;
+    line-height: 12px;
+  }
+  /*=============== RESPONSIVE CAROUSEL EVENTS END ===============*/
+
 }
 
 @media only screen and (max-width: 600px) {
-  .box, #imageM {
+  .box,
+  #imageM {
     flex-direction: column;
     max-width: 100%;
   }
   .box .dream {
     max-width: 100%;
   }
-  
+
   .h1 {
     font-size: 1.8rem;
   }
 
-/*=============== RESPONSIVE CAROUSEL EVENTS START ===============*/
+  /*=============== RESPONSIVE CAROUSEL EVENTS START ===============*/
   .main-events {
     margin-top: 2rem;
   }
@@ -1822,13 +2042,22 @@ footer {
   .card img {
     width: 50%;
   }
-/*=============== RESPONSIVE CAROUSEL EVENTS END ===============*/
-}
 
+  .card .name-events h1 {
+    font-size: .8rem;
+    line-height: 13px;
+  }
+  
+  .card .name-events h4 {
+    font-size: .4rem;
+  }
+  /*=============== RESPONSIVE CAROUSEL EVENTS END ===============*/
+}
 
 /* RESPONSIVE GALERI KHUSUS */
 @media only screen and (max-width: 1000px) {
-  .box, #imageM {
+  .box,
+  #imageM {
     flex-direction: row;
     max-width: 100%;
   }
@@ -1838,7 +2067,8 @@ footer {
 }
 
 @media only screen and (max-width: 1395px) {
-  .box, #imageM {
+  .box,
+  #imageM {
     flex-direction: row;
     max-width: 100%;
   }
