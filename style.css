@@ -65,7 +65,13 @@ a {
 
 /*=============== REUSABLE CSS CLASSES ===============*/
 .container {
-  max-width: 90rem;
+  max-width: 100%;
+}
+.nav__menu {
+  margin-right: 3rem;
+}
+.nav__data {
+  margin-left: 3rem;
 }
 
 /*=============== HEADER ===============*/
@@ -141,6 +147,9 @@ nav img {
 .nav__close {
   opacity: 0;
 }
+
+/* Beranda */
+
 .landing_video {
   position: absolute;
   top: 0;
@@ -183,8 +192,10 @@ nav img {
   letter-spacing: 2px;
   margin: 0 5px;
 }
+.grid-content1 {
+  margin-bottom: 9rem;
+}
 .mengapa-text {
-  width: 30%;
   text-align: right;
 }
 .mengapa-text a {
@@ -200,9 +211,8 @@ nav img {
   text-align: right;
 }
 .mengapa-gambar img {
-  width: 600px;
+  width: 550px;
   box-shadow: 8px 8px 4px #2525258d;
-  margin-left: 3rem;
 }
 
 .Header-Mengapa span {
@@ -217,13 +227,41 @@ nav img {
   margin-bottom: 10px;
 }
 .mengapa-main {
-  display: flex;
-  justify-content: center;
-  margin-top: 3rem;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, 550px);
+  column-gap: 3rem;
+  place-content: center;
 }
 
-.siapa-text {
-  width: 30%;
+.main-tampil {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+.bungkus-tampil {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.gambar-tampil p:nth-child(2) {
+  font-weight: bolder;
+  font-size: 1.2rem;
+  font-style: italic;
+}
+.gambar-tampil p:nth-child(3) {
+  font-weight: bolder;
+  font-size: 1.2rem;
+  color: #eb2125;
+}
+
+.header-tampil {
+  display: flex;
+  justify-content: right;
+  margin-bottom: 3rem;
+}
+.header-tampil h1 {
+  margin-right: 9rem;
+  width: 40%;
 }
 
 .Header-Siapa span {
@@ -241,13 +279,25 @@ nav img {
   line-height: 25px;
 }
 .siapa-main {
-  display: flex;
-  justify-content: center;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, 550px);
+  column-gap: 3rem;
+  place-content: center;
+  margin-bottom: 3rem;
 }
 .siapa-gambar img {
-  width: 600px;
+  width: 550px;
   box-shadow: 8px 8px 4px #2525258d;
-  margin-right: 3rem;
+}
+
+.main.tampil {
+  display: flex;
+}
+
+.gambar-tampil img {
+  box-shadow: 8px 8px 4px #2525258d;
+  width: 470px;
+  margin-bottom: 1rem;
 }
 
 .main-quotes i {
@@ -325,6 +375,8 @@ nav img {
   letter-spacing: 8px;
   font-weight: 50;
 }
+
+/* Beranda end */
 
 /* Footer */
 
@@ -439,60 +491,6 @@ footer {
   color: white;
 }
 /* Footer end */
-
-/* Navigation for mobile devices */
-@media screen and (max-width: 1118px) {
-  .nav__menu {
-    position: absolute;
-    left: 0;
-    top: 2.5rem;
-    width: 100%;
-    height: calc(100vh - 3.5rem);
-    overflow: auto;
-    pointer-events: none;
-    opacity: 0;
-    transition: top 0.4s, opacity 0.3s;
-  }
-  .nav__menu::-webkit-scrollbar {
-    width: 0;
-  }
-  .nav__list {
-    background-color: var(--black-color);
-    padding-top: 1rem;
-  }
-}
-
-.nav__link {
-  color: var(--white-color);
-  background-color: var(--black-color);
-  font-weight: var(--font-semi-bold);
-  padding: 1.25rem 1.5rem;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  transition: background-color 0.3s;
-}
-
-.nav__link:hover {
-  background-color: var(--black-color-light);
-}
-
-/* Show menu */
-.show-menu {
-  opacity: 1;
-  top: 4.4rem;
-  pointer-events: initial;
-}
-
-/* Show icon */
-.show-icon .nav__burger {
-  opacity: 0;
-  transform: rotate(90deg);
-}
-.show-icon .nav__close {
-  opacity: 1;
-  transform: rotate(90deg);
-}
 
 /*=============== DROPDOWN ===============*/
 .dropdown__item {
@@ -1099,6 +1097,61 @@ footer {
 /* =============EVENTS SANGSAKA==============  */
 
 /*=============== BREAKPOINTS ===============*/
+
+/* Navigation for mobile devices */
+@media screen and (max-width: 1116px) {
+  .nav__menu {
+    position: absolute;
+    left: 0;
+    top: 2.5rem;
+    width: 100%;
+    height: calc(100vh - 3.5rem);
+    overflow: auto;
+    pointer-events: none;
+    opacity: 0;
+    transition: top 0.4s, opacity 0.3s;
+  }
+  .nav__menu::-webkit-scrollbar {
+    width: 0;
+  }
+  .nav__list {
+    background-color: var(--black-color);
+    padding-top: 1rem;
+  }
+}
+
+.nav__link {
+  color: var(--white-color);
+  background-color: var(--black-color);
+  font-weight: var(--font-semi-bold);
+  padding: 1.25rem 1.5rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  transition: background-color 0.3s;
+}
+
+.nav__link:hover {
+  background-color: var(--black-color-light);
+}
+
+/* Show menu */
+.show-menu {
+  opacity: 1;
+  top: 4.4rem;
+  pointer-events: initial;
+}
+
+/* Show icon */
+.show-icon .nav__burger {
+  opacity: 0;
+  transform: rotate(90deg);
+}
+.show-icon .nav__close {
+  opacity: 1;
+  transform: rotate(90deg);
+}
+
 /* For small devices */
 @media screen and (max-width: 600px) {
   .container {
@@ -1249,7 +1302,7 @@ footer {
 }
 
 /* For large devices */
-@media screen and (min-width: 900px) {
+@media screen and (min-width: 1116px) {
   .container {
     margin-inline: auto;
   }
@@ -1331,7 +1384,6 @@ footer {
     position: absolute;
     top: 0;
     left: 0;
-    max-width: 100vh;
     max-height: 100vh;
     object-fit: cover;
     z-index: -1;
@@ -1796,6 +1848,5 @@ footer {
     max-width: 100%;
   }
 }
-
 
 /* RESPONSIVE GALERI KHUSUS END */
