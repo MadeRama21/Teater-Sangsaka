@@ -641,10 +641,6 @@ footer {
   opacity: 100;
 }
 
-#moreImage p {
-  opacity: 100;
-}
-
 .heading {
   margin: 120px 0 0 32px;
   text-transform: uppercase;
@@ -1592,6 +1588,9 @@ button:hover {
   .wadah-U2 {
     margin-left: 3rem;
   }
+  .dream .image p {
+    font-size: 12px;
+  }
 }
 
 
@@ -1618,6 +1617,9 @@ button:hover {
   }
   .container1 .box .dream {
     width: 100%;
+  }
+  .dream p {
+    font-size: 2px;
   }
   .heading {
     margin: 120px 0 0 32px;
@@ -2060,6 +2062,12 @@ button:hover {
   }
   .box .dream {
     max-width: 100%;
+  }
+  .dream .image p {
+    font-size: 20px;
+  }
+  .heading h2 {
+    font-size: 30px;
   }
 
   .h1 {
