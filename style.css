@@ -797,15 +797,17 @@ footer {
   border-radius: 5px;
   text-decoration: none;
   font-weight: 500;
-  width: 230px;
+  width: 3000px;
+  gap: 15px;
 }
 
 .wa_button i {
-  font-size: 50px;
+  background-color: #25d366;
+  font-size: 45px;
 }
 
 .wa_button p {
-  font-size: 20px;
+  font-size: 15px;
 }
 
 .wa_button:hover {
@@ -816,14 +818,17 @@ footer {
 .form_outer h1 {
   display: flex;
   justify-content: center;
+  margin-bottom: 150px;
   font-weight: 700;
   
 }
 
+
+
 .contact_form {
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: space-evenly;
   align-items: center;
   box-shadow: 0 3px 12px rgba(0, 0, 0, .23);
   border-radius: 20px;
