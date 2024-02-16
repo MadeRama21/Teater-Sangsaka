@@ -1061,7 +1061,7 @@ button:hover {
   flex-direction: column;
   justify-content: center;
   min-height: 100vh;
-  background-color: #25D366;
+  background-color: #f9fdff;
 }
 
 .title_filosofi-logo {
@@ -1087,13 +1087,29 @@ button:hover {
 }
 
 .m-wrapper {
+  display: flex;
+  flex-wrap: wrap;
   margin: 20px 0;
+  /* background-color: #252525; */
+  box-shadow: 0 0 8px rgba(0, 0, 0, .23); 
+  border-radius: 10px;
+  padding: 25px;
+  transition: all 0.5s ease-in-out;
+  cursor: pointer;
+}
+
+.m-wrapper:hover {
+  color: #FCFCFC;
+  background-image: linear-gradient(90deg, #5c0707 0%, #252525 40%, #520606 80%, #252525 100%);
+  animation: gradient 3s infinite;
+  background-size: 300% 300%;
+  transition: all 0.5s ease-in-out;
 }
 
 .m-title {
   display: flex;
   align-items: start;
-  gap: 10px;
+  gap: 15px;
 }
 
 .m-title i {
@@ -1106,16 +1122,8 @@ button:hover {
 
 .m-content h4 {
   font-size: 1.5rem;
+  margin-bottom: 5px;
 }
-
-.garis_warna {
-  content: "";
-  position: absolute;
-  width: 10px;
-  height: 5px;
-  background-color: #252525;
-}
-
 
 .hero_petinggisangsaka {
   min-height: 110vh;
@@ -1970,6 +1978,38 @@ button:hover {
 }
 
 @media only screen and (max-width: 900px) {
+  /* TENTANG KITA */
+  .hero_filosofi-logo {
+    min-height: 140vh;
+  }
+
+  .container_makna-logo {
+    display: flex;
+    flex-wrap: wrap;
+    width: 785px;
+  }
+
+  .m-wrapper {
+    display: flex;
+    width: 240px;
+    margin: 40px 10px;
+  }
+
+  .m-title {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+
+  .content_filosofi-logo {
+    flex-direction: column;
+  }
+
+  .logo_sangsaka img {
+    width: 400px;
+  }
+
   .frame_foto img {
     width: 19%;
   }
