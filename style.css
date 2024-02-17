@@ -153,7 +153,6 @@ nav img {
   opacity: 0;
 }
 
-
 /* Beranda */
 
 .landing_video {
@@ -829,16 +828,16 @@ footer {
 }
 
 #textButton {
-  background-color: #252525; 
-  color: #FCFCFC;
+  background-color: #252525;
+  color: #fcfcfc;
   padding: 10px 20px;
   margin-top: 20px;
-  text-align: center; 
-  text-decoration: none; 
+  text-align: center;
+  text-decoration: none;
   display: inline-block;
   border-radius: 5px;
   font-size: 16px;
-  cursor: pointer; 
+  cursor: pointer;
 }
 
 /* ======== GALERi end ========= */
@@ -859,7 +858,6 @@ footer {
   justify-content: center;
   /* padding-top: 200px; */
   width: 30%;
-
 }
 
 .contact_text h1 {
@@ -915,17 +913,14 @@ footer {
   justify-content: center;
   margin-bottom: 150px;
   font-weight: 700;
-  
 }
-
-
 
 .contact_form {
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
   align-items: center;
-  box-shadow: 0 3px 12px rgba(0, 0, 0, .23);
+  box-shadow: 0 3px 12px rgba(0, 0, 0, 0.23);
   border-radius: 20px;
   padding: 20px;
 }
@@ -934,17 +929,25 @@ footer {
   background-color: #fff;
 }
 
-.form, button, input, textarea {
+.form,
+button,
+input,
+textarea {
   font-weight: 500;
   border-style: none;
 }
 
-.form_nama, .form_kelas, .form_nomor, .form_alasan, button {
+.form_nama,
+.form_kelas,
+.form_nomor,
+.form_alasan,
+button {
   display: block;
   margin: 20px;
 }
 
-input, textarea {
+input,
+textarea {
   background-color: gainsboro;
   width: 50%;
   resize: none;
@@ -955,8 +958,8 @@ input, textarea {
 
 button {
   color: #fff;
-  background-color: #EB2125;
-  
+  background-color: #eb2125;
+
   border-radius: 5px;
   padding: 10px;
   padding-left: 290px;
@@ -1221,7 +1224,7 @@ button:hover {
   flex-wrap: wrap;
   margin: 20px 0;
   /* background-color: #252525; */
-  box-shadow: 0 0 8px rgba(0, 0, 0, .23); 
+  box-shadow: 0 0 8px rgba(0, 0, 0, 0.23);
   border-radius: 10px;
   padding: 25px;
   transition: all 0.5s ease-in-out;
@@ -1229,7 +1232,7 @@ button:hover {
 }
 
 .m-wrapper:hover {
-  color: #FCFCFC;
+  color: #fcfcfc;
   background-image: linear-gradient(90deg, #5c0707 0%, #252525 40%, #520606 80%, #252525 100%);
   animation: gradient 3s infinite;
   background-size: 300% 300%;
@@ -1381,11 +1384,11 @@ button:hover {
   margin: 0;
   padding: 0;
   border-radius: 8px;
-  box-shadow: 0 0 5px rgba(0, 0, 0, .23); 
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.23);
 }
 
 .card .img {
-  transition: .5s ease-out;
+  transition: 0.5s ease-out;
 }
 
 .card {
@@ -1408,26 +1411,27 @@ button:hover {
   color: #eb2125;
   font-weight: bolder;
   opacity: 0;
-  transition: .3s ease-in-out;
+  transition: 0.3s ease-in-out;
   filter: drop-shadow(0 0 3px #252525);
 }
 
 .card .name-events h4 {
-  font-size: .8rem;
+  font-size: 0.8rem;
   color: white;
   letter-spacing: 2px;
   font-weight: 900;
   opacity: 0;
   transform: scale(0);
   filter: drop-shadow(0 0 1px #252525);
-  transition: .5s ease-out;
+  transition: 0.5s ease-out;
 }
 
 .card:hover .img {
   filter: blur(5px);
 }
 
-.card:hover .name-events h1, .card:hover .name-events h4 {
+.card:hover .name-events h1,
+.card:hover .name-events h4 {
   opacity: 1;
 }
 
@@ -1639,7 +1643,6 @@ button:hover {
   .timeline_hero {
     width: 95%;
   }
-  
 }
 
 /* For large devices */
@@ -1730,7 +1733,6 @@ button:hover {
     font-size: 12px;
   }
 }
-
 
 /* RESPONSIVE GALERI */
 @media only screen and (max-width: 769px) {
@@ -2118,6 +2120,20 @@ button:hover {
 }
 
 @media only screen and (max-width: 900px) {
+  /* Beranda */
+  .main-tampil {
+    display: flex;
+    justify-content: center;
+  }
+  .bungkus-tampil {
+    display: flex;
+    flex-direction: column;
+
+    justify-content: space-evenly;
+  }
+
+  /* Beranda End */
+
   /* TENTANG KITA */
   .hero_filosofi-logo {
     min-height: 140vh;
@@ -2163,37 +2179,36 @@ button:hover {
     max-width: 100%;
   }
 
-    /*=============== RESPONSIVE CAROUSEL EVENTS START ===============*/
-    .banner-events img {
-      height: 350px;
-    }
+  /*=============== RESPONSIVE CAROUSEL EVENTS START ===============*/
+  .banner-events img {
+    height: 350px;
+  }
 
-    .h1 {
-      font-size: 2.2rem;
-    }
-  
-    .vertical-events {
-      margin-top: 1rem;
-    }
-  
-    .vertical-events .carousel {
-      grid-auto-columns: calc((100% / 3) - 10px);
-    }
-  
-    .card img {
-      width: 100%;
-    }
+  .h1 {
+    font-size: 2.2rem;
+  }
+
+  .vertical-events {
+    margin-top: 1rem;
+  }
+
+  .vertical-events .carousel {
+    grid-auto-columns: calc((100% / 3) - 10px);
+  }
+
+  .card img {
+    width: 100%;
+  }
 
   .card .name-events h1 {
     font-size: 1.35rem;
   }
-  
+
   .card .name-events h4 {
-    font-size: .6rem;
+    font-size: 0.6rem;
     line-height: 12px;
   }
   /*=============== RESPONSIVE CAROUSEL EVENTS END ===============*/
-
 }
 
 @media only screen and (max-width: 600px) {
@@ -2238,12 +2253,12 @@ button:hover {
   }
 
   .card .name-events h1 {
-    font-size: .8rem;
+    font-size: 0.8rem;
     line-height: 13px;
   }
-  
+
   .card .name-events h4 {
-    font-size: .4rem;
+    font-size: 0.4rem;
   }
   /*=============== RESPONSIVE CAROUSEL EVENTS END ===============*/
 }
