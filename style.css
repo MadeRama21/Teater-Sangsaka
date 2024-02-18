@@ -1729,8 +1729,19 @@ button:hover {
   .wadah-U2 {
     margin-left: 3rem;
   }
-  .dream .image p {
-    font-size: 12px;
+  .main-tampil {
+    display: flex;
+    justify-content: center;
+  }
+  .grid-content2 {
+    display: flex;
+    justify-content: center;
+  }
+  .bungkus-tampil {
+    display: flex;
+    flex-direction: column;
+
+    justify-content: space-evenly;
   }
 }
 
