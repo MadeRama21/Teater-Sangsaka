@@ -1462,6 +1462,33 @@ button:hover {
     background-color: var(--black-color);
     padding-top: 1rem;
   }
+  .main-tampil {
+    display: flex;
+    justify-content: center;
+  }
+  .grid-content2 {
+    display: flex;
+    justify-content: center;
+  }
+  .bungkus-tampil {
+    display: flex;
+    flex-direction: column;
+
+    justify-content: space-evenly;
+  }
+  .header-tampil {
+    width: 100%;
+    position: static;
+    display: flex;
+    justify-content: right;
+    margin-bottom: 3rem;
+    justify-content: center;
+  }
+  .header-tampil h1 {
+    width: 70%;
+    text-align: center;
+    margin-right: 0;
+  }
 }
 
 .nav__link {
