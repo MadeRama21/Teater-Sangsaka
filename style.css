@@ -1736,15 +1736,73 @@ button:hover {
 
 /* RESPONSIVE GALERI */
 @media only screen and (max-width: 769px) {
+  .main-tampil {
+    display: flex;
+    justify-content: center;
+  }
+  .bungkus-tampil {
+    display: flex;
+    flex-direction: column;
+
+    justify-content: space-evenly;
+  }
+
   .landing_video {
     position: absolute;
     top: 0;
     left: 0;
-    max-height: 100vh;
     object-fit: cover;
     z-index: -1;
     filter: brightness(0.7);
   }
+  /* Box-content */
+
+  .box-content .info p {
+    font-size: 0.9rem;
+    color: rgba(255, 255, 255, 0.847);
+  }
+  .info a {
+    text-decoration: none;
+  }
+
+  .box-content h1 {
+    color: #eb2125;
+    font-weight: bolder;
+    font-family: LemonMilk;
+    font-style: italic;
+    text-transform: uppercase;
+    font-size: 2rem;
+    letter-spacing: 8px;
+    margin-left: 3rem;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+  }
+  .box-content h1 span {
+    color: #fcfcfc;
+  }
+
+  .box-content h2 {
+    color: rgba(255, 255, 255, 0.847);
+    font-family: "Montserrat", sans-serif;
+    letter-spacing: 2px;
+    font-size: 1.4rem;
+    text-transform: uppercase;
+  }
+  .box-content h1 span {
+    display: block;
+  }
+
+  .box-content p {
+    /* margin-top: 1rem; */
+    color: rgba(255, 255, 255, 0.847);
+    font-family: Metropolis2;
+    text-transform: uppercase;
+    font-size: 0.5rem;
+    margin-left: 3rem;
+    letter-spacing: 8px;
+    font-weight: 50;
+  }
+
+  /* Box-Content end */
 
   .container1 .box {
     display: flex;
@@ -1903,58 +1961,6 @@ button:hover {
   .nav__link {
     padding-inline: 1rem;
   }
-
-  /* Box-content */
-
-  .box-content .info p {
-    font-size: 0.9rem;
-    color: rgba(255, 255, 255, 0.847);
-  }
-  .info a {
-    text-decoration: none;
-  }
-  .box-content {
-    margin-top: 35vh;
-  }
-
-  .box-content h1 {
-    color: #eb2125;
-    font-weight: bolder;
-    font-family: LemonMilk;
-    font-style: italic;
-    text-transform: uppercase;
-    font-size: 2rem;
-    letter-spacing: 8px;
-    margin-left: 3rem;
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
-  }
-  .box-content h1 span {
-    color: #fcfcfc;
-  }
-
-  .box-content h2 {
-    color: rgba(255, 255, 255, 0.847);
-    font-family: "Montserrat", sans-serif;
-    letter-spacing: 2px;
-    font-size: 1.4rem;
-    text-transform: uppercase;
-  }
-  .box-content h1 span {
-    display: block;
-  }
-
-  .box-content .slogan p {
-    /* margin-top: 1rem; */
-    color: rgba(255, 255, 255, 0.847);
-    font-family: Metropolis2;
-    text-transform: uppercase;
-    font-size: 0.5rem;
-    margin-left: 3rem;
-    letter-spacing: 8px;
-    font-weight: 50;
-  }
-
-  /* Box-Content end */
 
   /* ===== RESPONSIVE SEJARAH===== */
   .welcome_text {
