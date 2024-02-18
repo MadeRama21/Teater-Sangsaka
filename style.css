@@ -1498,6 +1498,46 @@ button:hover {
 
 /* For small devices */
 @media screen and (max-width: 600px) {
+  .siapa-main {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, 450px);
+    column-gap: 3rem;
+    place-content: center;
+    margin-bottom: 3rem;
+  }
+  .siapa-gambar img {
+    width: 450px;
+    box-shadow: 8px 8px 4px #2525258d;
+  }
+
+  .mengapa-main {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, 450px);
+    column-gap: 3rem;
+    place-content: center;
+    margin-bottom: 3rem;
+  }
+  .mengapa-gambar img {
+    width: 450px;
+    box-shadow: 8px 8px 4px #2525258d;
+  }
+
+  .main-tampil {
+    display: flex;
+    justify-content: center;
+  }
+  .bungkus-tampil {
+    display: flex;
+    flex-direction: column;
+
+    justify-content: space-evenly;
+  }
+  .bungkus-tampil figcaption:nth-child(2) {
+    margin-top: 4rem;
+  }
+
   .container {
     margin-inline: 1rem;
   }
