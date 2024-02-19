@@ -753,6 +753,8 @@ footer {
 
 #seemore {
   display: none;
+  justify-content: center;
+  align-items: center;
 }
 
 #moreImage {
@@ -760,6 +762,8 @@ footer {
   grid-template-columns: repeat(3, 1fr);
   grid-gap: 4px;
   grid-auto-flow: dense;
+  margin-left: 10px;
+  margin-right: 10px;
 }
 
 .wadah-foto {
@@ -905,8 +909,8 @@ footer {
 /* ======== CONTACT ========= */
 .contact_container {
   margin-top: 9rem;
-  margin-left: 7rem;
-  margin-right: 7rem;
+  margin-left: 9rem;
+  margin-right: 9rem;
   display: flex;
   justify-content: space-between;
   flex-direction: row;
@@ -921,7 +925,7 @@ footer {
 }
 
 .contact_text h1 {
-  font-size: 64px;
+  font-size: 50px;
 }
 
 .contact_text p {
@@ -971,9 +975,13 @@ footer {
 .form_outer h1 {
   display: flex;
   justify-content: center;
-  margin-bottom: 150px;
+  margin-bottom: 60px;
   font-weight: 700;
 }
+.form_outer i {
+  font-size: 30px;
+}
+
 
 .contact_form {
   display: flex;
@@ -983,6 +991,39 @@ footer {
   box-shadow: 0 3px 12px rgba(0, 0, 0, 0.23);
   border-radius: 20px;
   padding: 20px;
+}
+
+.label_row {
+  display: flex;
+  flex-direction: row;
+  padding-bottom: 5px;
+}
+
+.label_icon {
+  display: flex;
+}
+
+.label_text {
+  display: flex;
+  align-items: center;
+  padding-left: 2px;
+}
+
+.disclaimer_row {
+  display: flex;
+  flex-direction: row;
+  padding-left: 20px;
+  color: #EB2125;
+}
+
+.disclaimer_icon {
+  display: flex;
+}
+
+.disclaimer_text {
+  display: flex;
+  align-items: center;
+  padding-left: 2px;
 }
 
 .form {
@@ -1016,7 +1057,7 @@ textarea {
   border-radius: 15px;
 }
 
-button {
+button .button-contact {
   color: #fff;
   background-color: #eb2125;
 
@@ -1027,7 +1068,7 @@ button {
   transition: transform 0.3s;
 }
 
-button:hover {
+button .button-contact:hover {
   transform: translateY(-3px);
   transition: 0.3s;
 }
@@ -1374,6 +1415,8 @@ button:hover {
 
 /* =============EVENTS SANGSAKA==============  */
 .main-events {
+  display: flex;
+  flex-direction: column;
   text-transform: uppercase;
   font-weight: 900;
   font-family: LemonMilk;
@@ -1390,6 +1433,14 @@ button:hover {
   text-align: center;
   align-items: center;
   margin-bottom: 3rem;
+}
+
+.main-vertical a {
+  text-decoration: none;
+  color: #eb2125;
+  display: flex;
+  justify-content: flex-end;
+  margin-right: 1.5rem;
 }
 
 .vertical-events {
@@ -1512,6 +1563,68 @@ button:hover {
 
 .card:hover .name-events h4 {
   transform: scale(1);
+}
+
+.see-more {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.main-photos {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  row-gap: 30px;
+  margin-bottom: 1.5rem;
+}
+
+.any-card .img img {
+  width: 75%;
+  height: 30%;
+  aspect-ratio: 3 / 4;
+  border-radius: 5px;
+}
+
+.name-of-event h1 {
+  font-family: Monserrat;
+  line-height: 1.5rem;
+  margin-bottom: 3px;
+  font-size: 1.3rem;
+  color: #eb2125;
+  font-weight: bolder;
+}
+
+.main-see {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.back-events {
+  display: flex;
+  background-color: #eb2125;
+  text-decoration: none;
+  font-family: LemonMilk;
+  font-size: 1rem;
+  width: 7%;
+  height: 35px;
+  border-radius: 3px;
+  color: #f9fdff;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  transform: translateY(0);
+  transition: .3s ease-in-out;
+}
+
+.back-events:hover {
+  transform: translateY(-5px);
+}
+
+.events-see-more {
+  display: none;
 }
 /* =============EVENTS SANGSAKA==============  */
 
@@ -2538,7 +2651,7 @@ button:hover {
   }
 
   .vertical-events {
-    margin-top: 1rem;
+    margin-top: .5rem;
   }
 
   .vertical-events .carousel {
@@ -2563,6 +2676,8 @@ button:hover {
 @media only screen and (max-width: 600px) {
   #moreImage {
     grid-template-columns: repeat(1, 1fr);
+    margin-left: 22px;
+    margin-right: 22px;
   }
   .box {
     flex-direction: column;
@@ -2596,7 +2711,7 @@ button:hover {
   }
 
   .vertical-events {
-    margin-top: 1rem;
+    margin-top: .5rem;
   }
 
   .card img {
