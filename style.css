@@ -289,10 +289,14 @@ nav img {
   font-size: 1.2rem;
   font-style: italic;
 }
-.gambar-tampil p:nth-child(3) {
+.gambar-tampil a:nth-child(3) {
   font-weight: bolder;
   font-size: 1.2rem;
   color: #eb2125;
+}
+.gambar-tampil a:nth-child(3):hover {
+  color: #792427;
+  cursor: pointer;
 }
 
 .header-tampil {
@@ -1844,7 +1848,6 @@ button:hover {
   .timeline_hero {
     width: 95%;
   }
-  
 }
 
 /* For large devices */
@@ -2230,7 +2233,6 @@ button:hover {
   .hero_sambutan {
     min-height: 150vh;
   }
-  
 
   .sambutan_content {
     flex-direction: column;
@@ -2256,7 +2258,7 @@ button:hover {
   .hero_sejarah {
     min-height: 275vh;
   }
-  
+
   .welcome_text {
     margin-left: 0;
   }
@@ -2287,7 +2289,7 @@ button:hover {
   .hero_sejarah {
     min-height: 275vh;
   }
-  
+
   .welcome_text {
     margin-left: 0;
   }
@@ -2537,7 +2539,7 @@ button:hover {
     align-items: baseline;
   }
   /* TENTANG KITA END */
-    
+
   #moreImage {
     grid-template-columns: repeat(3, 1fr);
   }
@@ -2774,7 +2776,7 @@ button:hover {
   .timeline_hero {
     width: 400px;
   }
-  
+
   .timeline_item {
     width: 65%;
   }
@@ -2803,8 +2805,7 @@ button:hover {
     min-height: 110vh;
   }
 }
-  /*=============== RESPONSIVE CAROUSEL EVENTS END ===============*/
-
+/*=============== RESPONSIVE CAROUSEL EVENTS END ===============*/
 
 /* RESPONSIVE GALERI KHUSUS */
 @media only screen and (max-width: 1000px) {
