@@ -198,7 +198,7 @@ nav img {
   align-items: center;
 } */
 .quotes p {
-  font-weight: 700;
+  font-weight: 500;
   font-style: italic;
   text-align: center;
   letter-spacing: 2px;
@@ -754,7 +754,6 @@ footer {
   grid-template-columns: repeat(3, 1fr);
   grid-gap: 4px;
   grid-auto-flow: dense;
-   
 }
 
 .wadah-foto {
@@ -1897,10 +1896,6 @@ button:hover {
     transition: opacity 0.3s, top 0.3s;
   }
 
-  .dropdown__link,
-  .dropdown__sublink {
-  }
-
   .dropdown__subitem .dropdown__link {
     padding-inline: 1rem;
   }
@@ -1950,6 +1945,9 @@ button:hover {
 
 /* RESPONSIVE GALERI */
 @media only screen and (max-width: 769px) {
+  .nav {
+    height: 5.5rem;
+  }
   .grid-content3 {
     width: 80%;
   }
@@ -2137,7 +2135,7 @@ button:hover {
 
   .dropdown__link:hover,
   .dropdown__sublink:hover {
-    background-color: var(--black-color);
+    background-color: var(--red-pastel);
   }
 
   .dropdown__menu,
