@@ -8,7 +8,8 @@
   /*========== Colors ==========*/
   /*Color mode HSL(hue, saturation, lightness)*/
   --black-color: #252525;
-  --black-color-light: hsl(220, 24%, 15%);
+  --red-pastel: #c33f41;
+  --black-color-light: hsl(225, 4%, 18%);
   --black-color-lighten: hsl(220, 20%, 18%);
   --white-color: #fff;
   --body-color: hsl(220, 100%, 97%);
@@ -669,7 +670,7 @@ footer {
 
 .dropdown__link:hover,
 .dropdown__sublink:hover {
-  background-color: var(--black-color);
+  background-color: var(--red-pastel);
 }
 
 .dropdown__menu,
@@ -1559,6 +1560,7 @@ button:hover {
   }
 
   .nav__menu {
+    z-index: -1;
     position: absolute;
     left: 0;
     top: 2.5rem;
@@ -1819,7 +1821,7 @@ button:hover {
 /* For large devices */
 @media screen and (min-width: 1116px) {
   .container {
-    margin-inline: auto;
+    margin-inline: 1rem;
   }
 
   .nav {
@@ -2023,6 +2025,7 @@ button:hover {
   }
 
   .nav__menu {
+    z-index: -1;
     position: absolute;
     left: 0;
     top: 2.5rem;
