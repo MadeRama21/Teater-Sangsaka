@@ -241,10 +241,11 @@ nav img {
 }
 .header-mengapa h1 {
   text-align: end;
-  font-family: LemonMilk;
+  font-family: "Poppins", sans-serif;
+  text-transform: uppercase;
+  font-weight: 700;
   margin-top: 2rem;
   font-size: 3rem;
-  font-weight: bolder;
 }
 .mengapa-main {
   width: 100%;
@@ -289,10 +290,14 @@ nav img {
   font-size: 1.2rem;
   font-style: italic;
 }
-.gambar-tampil p:nth-child(3) {
+.gambar-tampil a:nth-child(3) {
   font-weight: bolder;
   font-size: 1.2rem;
   color: #eb2125;
+}
+.gambar-tampil a:nth-child(3):hover {
+  color: #792427;
+  cursor: pointer;
 }
 
 .header-tampil {
@@ -303,7 +308,9 @@ nav img {
   margin-bottom: 3rem;
 }
 .header-tampil h1 {
-  text-shadow: 3px 3px 4px #2525258d;
+  font-family: "Poppins", sans-serif;
+  text-transform: uppercase;
+  font-weight: 700;
   font-size: 2rem;
   font-weight: bolder;
   margin-right: 10%;
@@ -317,7 +324,9 @@ nav img {
   color: #eb2125;
 }
 .header-siapa h1 {
-  font-family: LemonMilk;
+  font-family: "Poppins", sans-serif;
+  text-transform: uppercase;
+  font-weight: 700;
   margin-top: 2rem;
   font-size: 3rem;
   font-weight: bolder;
@@ -422,8 +431,9 @@ nav img {
 }
 .box-content h1 {
   color: #eb2125;
-  font-weight: bolder;
-  font-family: LemonMilk;
+  font-family: "Poppins", sans-serif;
+  text-transform: uppercase;
+  font-weight: 800;
   font-style: italic;
   text-transform: uppercase;
   font-size: 5rem;
@@ -435,13 +445,6 @@ nav img {
   color: #fcfcfc;
 }
 
-.box-content h2 {
-  color: rgba(255, 255, 255, 0.847);
-  font-family: "Montserrat", sans-serif;
-  letter-spacing: 2px;
-  font-size: 1.4rem;
-  text-transform: uppercase;
-}
 .box-content h1 span {
   display: block;
 }
@@ -464,6 +467,9 @@ nav img {
   justify-content: center;
 }
 .header-pementasan h1 {
+  font-family: "Poppins", sans-serif;
+  text-transform: uppercase;
+  font-weight: 700;
   color: #eb2125;
 }
 
@@ -747,6 +753,8 @@ footer {
 
 #seemore {
   display: none;
+  justify-content: center;
+  align-items: center;
 }
 
 #moreImage {
@@ -754,6 +762,8 @@ footer {
   grid-template-columns: repeat(3, 1fr);
   grid-gap: 4px;
   grid-auto-flow: dense;
+  margin-left: 10px;
+  margin-right: 10px;
 }
 
 .wadah-foto {
@@ -899,8 +909,8 @@ footer {
 /* ======== CONTACT ========= */
 .contact_container {
   margin-top: 9rem;
-  margin-left: 7rem;
-  margin-right: 7rem;
+  margin-left: 9rem;
+  margin-right: 9rem;
   display: flex;
   justify-content: space-between;
   flex-direction: row;
@@ -915,7 +925,7 @@ footer {
 }
 
 .contact_text h1 {
-  font-size: 64px;
+  font-size: 50px;
 }
 
 .contact_text p {
@@ -965,9 +975,13 @@ footer {
 .form_outer h1 {
   display: flex;
   justify-content: center;
-  margin-bottom: 150px;
+  margin-bottom: 60px;
   font-weight: 700;
 }
+.form_outer i {
+  font-size: 30px;
+}
+
 
 .contact_form {
   display: flex;
@@ -977,6 +991,39 @@ footer {
   box-shadow: 0 3px 12px rgba(0, 0, 0, 0.23);
   border-radius: 20px;
   padding: 20px;
+}
+
+.label_row {
+  display: flex;
+  flex-direction: row;
+  padding-bottom: 5px;
+}
+
+.label_icon {
+  display: flex;
+}
+
+.label_text {
+  display: flex;
+  align-items: center;
+  padding-left: 2px;
+}
+
+.disclaimer_row {
+  display: flex;
+  flex-direction: row;
+  padding-left: 20px;
+  color: #EB2125;
+}
+
+.disclaimer_icon {
+  display: flex;
+}
+
+.disclaimer_text {
+  display: flex;
+  align-items: center;
+  padding-left: 2px;
 }
 
 .form {
@@ -1010,7 +1057,7 @@ textarea {
   border-radius: 15px;
 }
 
-button {
+button .button-contact {
   color: #fff;
   background-color: #eb2125;
 
@@ -1021,7 +1068,7 @@ button {
   transition: transform 0.3s;
 }
 
-button:hover {
+button .button-contact:hover {
   transform: translateY(-3px);
   transition: 0.3s;
 }
@@ -1417,6 +1464,8 @@ img {
 
 /* =============EVENTS SANGSAKA==============  */
 .main-events {
+  display: flex;
+  flex-direction: column;
   text-transform: uppercase;
   font-weight: 900;
   font-family: LemonMilk;
@@ -1433,6 +1482,14 @@ img {
   text-align: center;
   align-items: center;
   margin-bottom: 3rem;
+}
+
+.main-vertical a {
+  text-decoration: none;
+  color: #eb2125;
+  display: flex;
+  justify-content: flex-end;
+  margin-right: 1.5rem;
 }
 
 .vertical-events {
@@ -1555,6 +1612,68 @@ img {
 
 .card:hover .name-events h4 {
   transform: scale(1);
+}
+
+.see-more {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.main-photos {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  row-gap: 30px;
+  margin-bottom: 1.5rem;
+}
+
+.any-card .img img {
+  width: 75%;
+  height: 30%;
+  aspect-ratio: 3 / 4;
+  border-radius: 5px;
+}
+
+.name-of-event h1 {
+  font-family: Monserrat;
+  line-height: 1.5rem;
+  margin-bottom: 3px;
+  font-size: 1.3rem;
+  color: #eb2125;
+  font-weight: bolder;
+}
+
+.main-see {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.back-events {
+  display: flex;
+  background-color: #eb2125;
+  text-decoration: none;
+  font-family: LemonMilk;
+  font-size: 1rem;
+  width: 7%;
+  height: 35px;
+  border-radius: 3px;
+  color: #f9fdff;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  transform: translateY(0);
+  transition: .3s ease-in-out;
+}
+
+.back-events:hover {
+  transform: translateY(-5px);
+}
+
+.events-see-more {
+  display: none;
 }
 /* =============EVENTS SANGSAKA==============  */
 
@@ -1893,7 +2012,6 @@ img {
   .timeline_hero {
     width: 95%;
   }
-  
 }
 
 /* For large devices */
@@ -2044,13 +2162,6 @@ img {
     color: #fcfcfc;
   }
 
-  .box-content h2 {
-    color: rgba(255, 255, 255, 0.847);
-    font-family: "Montserrat", sans-serif;
-    letter-spacing: 2px;
-    font-size: 1.4rem;
-    text-transform: uppercase;
-  }
   .box-content h1 span {
     display: block;
   }
@@ -2237,11 +2348,6 @@ img {
   }
 
   .box-content h1 {
-    color: #eb2125;
-    font-weight: bolder;
-    font-family: LemonMilk;
-    font-style: italic;
-    text-transform: uppercase;
     font-size: 2rem;
     letter-spacing: 8px;
     margin-left: 3rem;
@@ -2251,13 +2357,6 @@ img {
     color: #fcfcfc;
   }
 
-  .box-content h2 {
-    color: rgba(255, 255, 255, 0.847);
-    font-family: "Montserrat", sans-serif;
-    letter-spacing: 2px;
-    font-size: 1.4rem;
-    text-transform: uppercase;
-  }
   .box-content h1 span {
     display: block;
   }
@@ -2265,8 +2364,6 @@ img {
   .box-content .slogan p {
     /* margin-top: 1rem; */
     color: rgba(255, 255, 255, 0.847);
-    font-family: Metropolis2;
-    text-transform: uppercase;
     font-size: 0.5rem;
     margin-left: 3rem;
     letter-spacing: 8px;
@@ -2279,7 +2376,6 @@ img {
   .hero_sambutan {
     min-height: 150vh;
   }
-  
 
   .sambutan_content {
     flex-direction: column;
@@ -2305,7 +2401,7 @@ img {
   .hero_sejarah {
     min-height: 275vh;
   }
-  
+
   .welcome_text {
     margin-left: 0;
   }
@@ -2336,7 +2432,7 @@ img {
   .hero_sejarah {
     min-height: 275vh;
   }
-  
+
   .welcome_text {
     margin-left: 0;
   }
@@ -2586,7 +2682,7 @@ img {
     align-items: baseline;
   }
   /* TENTANG KITA END */
-    
+
   #moreImage {
     grid-template-columns: repeat(3, 1fr);
   }
@@ -2604,7 +2700,7 @@ img {
   }
 
   .vertical-events {
-    margin-top: 1rem;
+    margin-top: .5rem;
   }
 
   .vertical-events .carousel {
@@ -2629,6 +2725,8 @@ img {
 @media only screen and (max-width: 600px) {
   #moreImage {
     grid-template-columns: repeat(1, 1fr);
+    margin-left: 22px;
+    margin-right: 22px;
   }
   .box {
     flex-direction: column;
@@ -2662,7 +2760,7 @@ img {
   }
 
   .vertical-events {
-    margin-top: 1rem;
+    margin-top: .5rem;
   }
 
   .card img {
@@ -2824,7 +2922,7 @@ img {
   .timeline_hero {
     width: 400px;
   }
-  
+
   .timeline_item {
     width: 65%;
   }
@@ -2853,8 +2951,7 @@ img {
     min-height: 110vh;
   }
 }
-  /*=============== RESPONSIVE CAROUSEL EVENTS END ===============*/
-
+/*=============== RESPONSIVE CAROUSEL EVENTS END ===============*/
 
 /* RESPONSIVE GALERI KHUSUS */
 @media only screen and (max-width: 1000px) {
