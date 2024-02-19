@@ -84,6 +84,23 @@ document.addEventListener("mouseup", dragStop);
 carousel.addEventListener("scroll", infiniteScroll);
 vertical.addEventListener("mouseenter", () => clearTimeout(timeoutId));
 vertical.addEventListener("mouseleave", autoPlay);
+
+const seeMore = document.querySelector(".see-more");
+const content = document.querySelector(".main-vertical");
+const buttonSeeMoreMainContent = document.querySelector(".button-see-more");
+const buttonSeeMoreContent = document.querySelector(".back-events");
+
+buttonSeeMoreMainContent.addEventListener('click', function(e) {
+  e.preventDefault();
+  seeMore.classList.toggle('events-see-more');
+  content.classList.toggle('events-see-more');
+});
+
+buttonSeeMoreContent.addEventListener('click', function(e) {
+  e.preventDefault();
+  content.classList.toggle('events-see-more');
+  seeMore.classList.toggle('events-see-more');
+});
 /*=============== CAROUSEL EVENTS END ===============*/
 
 
@@ -93,7 +110,7 @@ window.onload = function() {
 
 // Fungsi toggleText() tidak berubah
 function toggleText() {
-  var moreImage = document.getElementById("moreImage");
+  var moreImage = document.getElementById("seemore");
 
   if (moreImage.style.display === "none") {
       moreImage.style.display = "flex";
