@@ -746,6 +746,8 @@ footer {
 
 #seemore {
   display: none;
+  justify-content: center;
+  align-items: center;
 }
 
 #moreImage {
@@ -753,7 +755,8 @@ footer {
   grid-template-columns: repeat(3, 1fr);
   grid-gap: 4px;
   grid-auto-flow: dense;
-   
+  margin-left: 10px;
+  margin-right: 10px;
 }
 
 .wadah-foto {
@@ -2413,6 +2416,8 @@ button:hover {
 @media only screen and (max-width: 600px) {
   #moreImage {
     grid-template-columns: repeat(1, 1fr);
+    margin-left: 22px;
+    margin-right: 22px;
   }
   .box {
     flex-direction: column;
