@@ -93,7 +93,7 @@ window.onload = function() {
 
 // Fungsi toggleText() tidak berubah
 function toggleText() {
-  var moreImage = document.getElementById("moreImage");
+  var moreImage = document.getElementById("seemore");
 
   if (moreImage.style.display === "none") {
       moreImage.style.display = "flex";
