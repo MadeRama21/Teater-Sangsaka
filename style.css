@@ -241,10 +241,11 @@ nav img {
 }
 .header-mengapa h1 {
   text-align: end;
-  font-family: LemonMilk;
+  font-family: "Poppins", sans-serif;
+  text-transform: uppercase;
+  font-weight: 700;
   margin-top: 2rem;
   font-size: 3rem;
-  font-weight: bolder;
 }
 .mengapa-main {
   width: 100%;
@@ -307,7 +308,9 @@ nav img {
   margin-bottom: 3rem;
 }
 .header-tampil h1 {
-  text-shadow: 3px 3px 4px #2525258d;
+  font-family: "Poppins", sans-serif;
+  text-transform: uppercase;
+  font-weight: 700;
   font-size: 2rem;
   font-weight: bolder;
   margin-right: 10%;
@@ -321,7 +324,9 @@ nav img {
   color: #eb2125;
 }
 .header-siapa h1 {
-  font-family: LemonMilk;
+  font-family: "Poppins", sans-serif;
+  text-transform: uppercase;
+  font-weight: 700;
   margin-top: 2rem;
   font-size: 3rem;
   font-weight: bolder;
@@ -426,8 +431,9 @@ nav img {
 }
 .box-content h1 {
   color: #eb2125;
-  font-weight: bolder;
-  font-family: LemonMilk;
+  font-family: "Poppins", sans-serif;
+  text-transform: uppercase;
+  font-weight: 800;
   font-style: italic;
   text-transform: uppercase;
   font-size: 5rem;
@@ -439,13 +445,6 @@ nav img {
   color: #fcfcfc;
 }
 
-.box-content h2 {
-  color: rgba(255, 255, 255, 0.847);
-  font-family: "Montserrat", sans-serif;
-  letter-spacing: 2px;
-  font-size: 1.4rem;
-  text-transform: uppercase;
-}
 .box-content h1 span {
   display: block;
 }
@@ -468,6 +467,9 @@ nav img {
   justify-content: center;
 }
 .header-pementasan h1 {
+  font-family: "Poppins", sans-serif;
+  text-transform: uppercase;
+  font-weight: 700;
   color: #eb2125;
 }
 
@@ -1998,13 +2000,6 @@ button:hover {
     color: #fcfcfc;
   }
 
-  .box-content h2 {
-    color: rgba(255, 255, 255, 0.847);
-    font-family: "Montserrat", sans-serif;
-    letter-spacing: 2px;
-    font-size: 1.4rem;
-    text-transform: uppercase;
-  }
   .box-content h1 span {
     display: block;
   }
@@ -2191,11 +2186,6 @@ button:hover {
   }
 
   .box-content h1 {
-    color: #eb2125;
-    font-weight: bolder;
-    font-family: LemonMilk;
-    font-style: italic;
-    text-transform: uppercase;
     font-size: 2rem;
     letter-spacing: 8px;
     margin-left: 3rem;
@@ -2205,13 +2195,6 @@ button:hover {
     color: #fcfcfc;
   }
 
-  .box-content h2 {
-    color: rgba(255, 255, 255, 0.847);
-    font-family: "Montserrat", sans-serif;
-    letter-spacing: 2px;
-    font-size: 1.4rem;
-    text-transform: uppercase;
-  }
   .box-content h1 span {
     display: block;
   }
@@ -2219,8 +2202,6 @@ button:hover {
   .box-content .slogan p {
     /* margin-top: 1rem; */
     color: rgba(255, 255, 255, 0.847);
-    font-family: Metropolis2;
-    text-transform: uppercase;
     font-size: 0.5rem;
     margin-left: 3rem;
     letter-spacing: 8px;
