@@ -39,7 +39,7 @@
 }
 
 /*========== Responsive typography ==========*/
-@media screen and (min-width: 1024px) {
+@media only screen and (min-width: 1024px) {
   :root {
     --normal-font-size: 1rem;
   }
@@ -889,6 +889,7 @@ button:hover {
 }
 
 .foto_pembina img {
+  display: flex;
   width: 400px;
   height: 400px;
   border-radius: 100%;
@@ -899,7 +900,7 @@ button:hover {
   display: flex;
   flex-direction: column;
   justify-content: space-around;
-  max-width: 550px;
+  width: 550px;
 }
 
 .isi_sambutan h2 {
@@ -1108,10 +1109,24 @@ button:hover {
 
 .logo_sangsaka img {
   width: 500px;
+  animation: move_sangsaka 4s infinite;
+  filter: drop-shadow(-15px 6px 2px #bbb);
+}
+
+@keyframes move_sangsaka {
+  0% {
+    transform: translateY(12px);
+  }
+  50% {
+    transform: translateY(-12px);
+  }
+  100% {
+    transform: translateY(12px);
+  }
 }
 
 .container_makna-logo {
-  width: 620px;
+  width: 45%;
 }
 
 .m-wrapper {
@@ -1122,7 +1137,7 @@ button:hover {
   box-shadow: 0 0 8px rgba(0, 0, 0, .23); 
   border-radius: 10px;
   padding: 25px;
-  transition: all 0.5s ease-in-out;
+  transition: all 1s ease-in-out;
   cursor: pointer;
 }
 
@@ -1131,7 +1146,7 @@ button:hover {
   background-image: linear-gradient(90deg, #5c0707 0%, #252525 40%, #520606 80%, #252525 100%);
   animation: gradient 3s infinite;
   background-size: 300% 300%;
-  transition: all 0.5s ease-in-out;
+  transition: all 1s ease-in-out;
 }
 
 .m-title {
@@ -1337,7 +1352,7 @@ button:hover {
 /*=============== BREAKPOINTS ===============*/
 
 /* Navigation for mobile devices */
-@media screen and (max-width: 1116px) {
+@media only screen and (max-width: 1116px) {
   .nav__menu {
     position: absolute;
     left: 0;
@@ -1388,160 +1403,10 @@ button:hover {
 .show-icon .nav__close {
   opacity: 1;
   transform: rotate(90deg);
-}
-
-/* For small devices */
-@media screen and (max-width: 600px) {
-  .container {
-    margin-inline: 1rem;
-  }
-
-  .nav__link {
-    padding-inline: 1rem;
-  }
-
-  /* Footer */
-
-  footer {
-    margin-top: 3rem;
-    display: flex;
-    background-color: #252525;
-    color: #fff;
-    max-width: 100%;
-  }
-  .main-footer {
-    margin-top: 2rem;
-    max-width: 100%;
-  }
-
-  nav img {
-    width: 60px;
-  }
-  .main-u2 {
-    display: block;
-    flex-direction: column;
-  }
-
-  .footer-U1 p {
-    font-size: 1rem;
-    margin-top: 25px;
-    font-family: "Urbanist", sans-serif;
-    text-align: justify;
-    text-transform: uppercase;
-    font-weight: bold;
-    color: #fcfcfc;
-  }
-
-  .footer-U {
-    display: flex;
-    flex-direction: column;
-    max-width: 100%;
-    justify-content: space-between;
-    padding-top: 20px;
-    padding-left: 20px;
-    padding-right: 20px;
-    padding-bottom: 4rem;
-  }
-  .footer-U1 {
-    margin-right: 7rem;
-  }
-
-  .footer-U2 {
-    display: block;
-  }
-
-  .footer-U2 h2 {
-    font-size: 1.1rem;
-  }
-
-  .wadah-U2 {
-    flex-direction: column;
-    margin-left: 8rem;
-  }
-
-  .footer-S .social-media a i {
-    margin-top: 12px;
-    font-size: 1.5rem;
-    gap: 14px;
-  }
-  .social-media {
-    margin-bottom: 1rem;
-  }
-  .smkn1 {
-    margin-bottom: 5px;
-  }
-
-  .footer-S a {
-    text-decoration: none;
-    color: #ffffff;
-    margin-top: 12px;
-    justify-content: center;
-    align-items: center;
-    text-align: left;
-    flex-direction: column;
-  }
-  .footer-S {
-    justify-content: left;
-    display: flex;
-    flex-direction: column;
-  }
-
-  .garis {
-    content: "";
-    width: 100%;
-    height: 0.2px;
-    background-color: #fff;
-    margin-bottom: 3rem;
-  }
-
-  .copyrigth {
-    display: flex;
-    justify-content: center;
-    text-align: left;
-    font-size: 12px;
-    padding-top: 15px;
-    background-color: black;
-    padding-bottom: 15px;
-  }
-
-  .copyrigth p {
-    color: white;
-    margin-right: 10px;
-  }
-
-  .copyrigth a {
-    color: white;
-  }
-  /* Footer end */
-
-  /* RESPONSIVE TENTANG KITA */
-  .hero_sambutan {
-    min-height: 160vh;
-  }
-
-  .sambutan_content {
-    justify-self: center;
-    align-items: center;
-    flex-direction: column;
-    width: 95%;
-  }
-
-  .isi_sambutan {
-    width: 98%;
-  }
-
-  .hero_sejarah {
-    min-height: 250vh;
-  }
-
-  .timeline_hero {
-    width: 95%;
-  }
-  
-}
+} 
 
 /* For large devices */
-@media screen and (min-width: 1116px) {
+@media only screen and (min-width: 1116px) {
   .wadah-U2 {
     margin-left: 3rem;
   }
@@ -1846,13 +1711,39 @@ button:hover {
 
   /* Box-Content end */
 
-  /* ===== RESPONSIVE SEJARAH===== */
-  .welcome_text {
-    margin-left: 0;
+  /* ===== RESPONSIVE TENTANG KITA===== */
+  .hero_sambutan {
+    min-height: 150vh;
   }
+  
 
   .sambutan_content {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
     width: 100%;
+  }
+
+  .foto_pembina img {
+    justify-content: center;
+    align-items: center;
+  }
+
+  .kata_sambutan {
+    width: 95%;
+  }
+
+  .isi_sambutan {
+    margin-bottom: 50px;
+  }
+
+  .hero_sejarah {
+    min-height: 275vh;
+  }
+  
+  .welcome_text {
+    margin-left: 0;
   }
 
   .timeline_items {
@@ -1862,6 +1753,10 @@ button:hover {
     display: flex;
     flex-wrap: wrap;
     position: relative;
+  }
+
+  .timeline_item {
+    width: 700px;
   }
 
   .timeline_items:nth-child(odd) .timeline_item {
@@ -1880,17 +1775,30 @@ button:hover {
     width: 3px;
     height: 100%;
     background-color: #252525f4;
-    left: calc(10%);
+    left: calc(6.4%);
   }
 
   .timeline_dot {
     width: 25px;
     height: 25px;
-    left: calc(8.4%);
+    left: calc(5.7%);
   }
 
   .segitiga {
-    left: calc(8% + 1px);
+    left: calc(5% + 3px);
+  }
+
+  .hero_filosofi-logo {
+    min-height: 550vh;
+  }
+
+  .container_makna-logo {
+    width: 100%;
+  }
+
+  .m-wrapper {
+    width: 10%;
+    align-items: baseline;
   }
 
   /* Footer */
@@ -2011,20 +1919,37 @@ button:hover {
 
 @media only screen and (max-width: 900px) {
   /* TENTANG KITA */
+  .hero_sambutan {
+    padding: 35px;
+  }
+
+  .isi_sambutan h2 {
+    line-height: 55px;
+  }
+
   .hero_filosofi-logo {
-    min-height: 140vh;
+    min-height: 150vh;
+  }
+
+  .timeline_items {
+    width: 800px;
   }
 
   .container_makna-logo {
     display: flex;
     flex-wrap: wrap;
-    width: 785px;
+    justify-content: center;
+    width: 100%;
+  }
+
+  .logo_sangsaka {
+    margin-bottom: 70px;
   }
 
   .m-wrapper {
     display: flex;
     width: 240px;
-    margin: 40px 10px;
+    margin: 10px 10px;
   }
 
   .m-title {
@@ -2038,6 +1963,10 @@ button:hover {
     flex-direction: column;
   }
 
+  .hero_petinggisangsaka {
+    min-height: 140vh;
+  }
+
   .logo_sangsaka img {
     width: 400px;
   }
@@ -2045,6 +1974,11 @@ button:hover {
   .frame_foto img {
     width: 19%;
   }
+
+  .m-wrapper {
+    align-items: baseline;
+  }
+  /* TENTANG KITA END */
 
   .box,
   #imageM {
@@ -2123,8 +2057,183 @@ button:hover {
   .card .name-events h4 {
     font-size: .4rem;
   }
-  /*=============== RESPONSIVE CAROUSEL EVENTS END ===============*/
+
+  .container {
+    margin-inline: 1rem;
+  }
+
+  .nav__link {
+    padding-inline: 1rem;
+  }
+
+  /* Footer */
+
+  footer {
+    margin-top: 3rem;
+    display: flex;
+    background-color: #252525;
+    color: #fff;
+    max-width: 100%;
+  }
+  .main-footer {
+    margin-top: 2rem;
+    max-width: 100%;
+  }
+
+  nav img {
+    width: 60px;
+  }
+  .main-u2 {
+    display: block;
+    flex-direction: column;
+  }
+
+  .footer-U1 p {
+    font-size: 1rem;
+    margin-top: 25px;
+    font-family: "Urbanist", sans-serif;
+    text-align: justify;
+    text-transform: uppercase;
+    font-weight: bold;
+    color: #fcfcfc;
+  }
+
+  .footer-U {
+    display: flex;
+    flex-direction: column;
+    max-width: 100%;
+    justify-content: space-between;
+    padding-top: 20px;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-bottom: 4rem;
+  }
+  .footer-U1 {
+    margin-right: 7rem;
+  }
+
+  .footer-U2 {
+    display: block;
+  }
+
+  .footer-U2 h2 {
+    font-size: 1.1rem;
+  }
+
+  .wadah-U2 {
+    flex-direction: column;
+    margin-left: 8rem;
+  }
+
+  .footer-S .social-media a i {
+    margin-top: 12px;
+    font-size: 1.5rem;
+    gap: 14px;
+  }
+  .social-media {
+    margin-bottom: 1rem;
+  }
+  .smkn1 {
+    margin-bottom: 5px;
+  }
+
+  .footer-S a {
+    text-decoration: none;
+    color: #ffffff;
+    margin-top: 12px;
+    justify-content: center;
+    align-items: center;
+    text-align: left;
+    flex-direction: column;
+  }
+  .footer-S {
+    justify-content: left;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .garis {
+    content: "";
+    width: 100%;
+    height: 0.2px;
+    background-color: #fff;
+    margin-bottom: 3rem;
+  }
+
+  .copyrigth {
+    display: flex;
+    justify-content: center;
+    text-align: left;
+    font-size: 12px;
+    padding-top: 15px;
+    background-color: black;
+    padding-bottom: 15px;
+  }
+
+  .copyrigth p {
+    color: white;
+    margin-right: 10px;
+  }
+
+  .copyrigth a {
+    color: white;
+  }
+  /* Footer end */
+
+  /* RESPONSIVE TENTANG KITA */
+  .hero_sambutan {
+    min-height: 190vh;
+  }
+
+  .sambutan_content {
+    justify-self: center;
+    align-items: center;
+    flex-direction: column;
+    width: 95%;
+  }
+
+  .isi_sambutan {
+    width: 98%;
+  }
+
+  .hero_sejarah {
+    min-height: 310vh;
+  }
+
+  .timeline_hero {
+    width: 400px;
+  }
+  
+  .timeline_item {
+    width: 65%;
+  }
+
+  .timeline_items::before {
+    left: calc(5.5%);
+  }
+
+  .timeline_dot {
+    left: calc(6.3%);
+  }
+
+  .segitiga {
+    left: calc(6%);
+  }
+
+  .hero_filosofi-logo {
+    min-height: 220vh;
+  }
+
+  .title_filosofi-logo {
+    text-align: center;
+  }
+
+  .hero_petinggisangsaka {
+    min-height: 110vh;
+  }
 }
+  /*=============== RESPONSIVE CAROUSEL EVENTS END ===============*/
+
 
 /* RESPONSIVE GALERI KHUSUS */
 @media only screen and (max-width: 1000px) {
