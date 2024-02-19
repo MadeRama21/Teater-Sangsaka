@@ -113,6 +113,7 @@ nav img {
 .nav__data {
   height: 100%;
   display: flex;
+  margin-left: 1rem;
   justify-content: space-between;
   align-items: center;
 }
@@ -144,7 +145,7 @@ nav img {
   height: max-content;
   inset: 0;
   margin: auto;
-  font-size: 1.25rem;
+  font-size: 1.8rem;
   cursor: pointer;
   transition: opacity 0.1s, transform 0.4s;
 }
@@ -172,6 +173,7 @@ nav img {
 }
 
 .main-content-index {
+  padding-top: 8rem;
   min-height: 100vh;
 }
 
@@ -180,14 +182,13 @@ nav img {
 }
 
 .landing-k {
-  margin-top: 8rem;
   display: flex;
   justify-content: center;
   margin-bottom: 5rem;
 }
 
 .main-quotes {
-  max-width: 50%;
+  width: 50%;
   display: flex;
 }
 /* .quotes {
@@ -202,12 +203,19 @@ nav img {
   letter-spacing: 2px;
   margin: 0 5px;
 }
-.grid-content1 {
+.grid-content2 {
   width: 100%;
-  margin-bottom: 9rem;
+  padding-top: 4rem;
 }
-.mengapa-text {
-  text-align: right;
+.grid-content1 {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+
+  margin-bottom: 7rem;
+}
+.hero-siapamengapa {
+  width: 85%;
 }
 .mengapa-text a {
   color: #eb2125;
@@ -223,25 +231,43 @@ nav img {
 }
 .mengapa-gambar img {
   width: 550px;
+  height: 100%;
   box-shadow: 8px 8px 4px #2525258d;
 }
 
-.Header-Mengapa span {
+.header-mengapa span {
   color: #eb2125;
 }
-.Header-Mengapa h1 {
+.header-mengapa h1 {
   text-align: end;
   font-family: LemonMilk;
   margin-top: 2rem;
   font-size: 3rem;
   font-weight: bolder;
-  margin-bottom: 10px;
 }
 .mengapa-main {
+  width: 100%;
   display: grid;
-  grid-template-columns: repeat(auto-fit, 550px);
+  grid-template-columns: 1fr 1fr;
+  grid-template-areas:
+    "header-mengapa mengapa-gambar"
+    "mengapa-text mengapa-gambar";
   column-gap: 3rem;
-  place-content: center;
+  margin-bottom: 3rem;
+}
+.header-mengapa {
+  grid-area: header-mengapa;
+}
+.mengapa-text {
+  width: 100%;
+  display: flex;
+  justify-content: right;
+  flex-direction: column;
+  grid-area: mengapa-text;
+  text-align: right;
+}
+.mengapa-gambar {
+  grid-area: mengapa-gambar;
 }
 
 .main-tampil {
@@ -254,10 +280,7 @@ nav img {
   justify-content: space-evenly;
 }
 .bungkus-tampil figcaption:nth-child(2) {
-  margin-top: 7.5rem;
-}
-.bungkus-tampil figcaption:nth-child(1) {
-  margin-top: 3rem;
+  margin-top: 3.5rem;
 }
 
 .gambar-tampil p:nth-child(2) {
@@ -289,10 +312,10 @@ nav img {
   color: #eb2125;
 }
 
-.Header-Siapa span {
+.header-siapa span {
   color: #eb2125;
 }
-.Header-Siapa h1 {
+.header-siapa h1 {
   font-family: LemonMilk;
   margin-top: 2rem;
   font-size: 3rem;
@@ -307,13 +330,28 @@ nav img {
 .siapa-main {
   width: 100%;
   display: grid;
-  grid-template-columns: repeat(auto-fit, 550px);
+  grid-template-columns: 1fr 1fr;
+  grid-template-areas:
+    "siapa-gambar header-siapa"
+    "siapa-gambar siapa-text";
   column-gap: 3rem;
   place-content: center;
   margin-bottom: 3rem;
 }
+.siapa-text {
+  grid-area: siapa-text;
+}
+.header-siapa {
+  grid-area: header-siapa;
+}
+.siapa-gambar {
+  grid-area: siapa-gambar;
+  display: flex;
+  justify-content: right;
+}
 .siapa-gambar img {
   width: 550px;
+  height: 90%;
   box-shadow: 8px 8px 4px #2525258d;
 }
 
@@ -339,12 +377,13 @@ nav img {
   text-align: center;
 }
 .info-wrapper {
-  display: flex;
-  justify-content: center;
+  position: absolute;
+  width: 100%;
+  top: 85%;
+  margin: auto;
 }
 
 .info {
-  width: 20%;
   animation: move 2s infinite ease-in-out;
   display: flex;
   flex-direction: column;
@@ -365,7 +404,7 @@ nav img {
   }
 }
 
-.box-content .info p {
+.info p {
   margin-left: 0;
   font-size: 0.9rem;
 
@@ -375,11 +414,11 @@ nav img {
   text-decoration: none;
 }
 .box-content {
-  top: 40%;
+  /* display: flex; */
+  top: 35%;
   position: relative;
   width: 100%;
 }
-
 .box-content h1 {
   color: #eb2125;
   font-weight: bolder;
@@ -423,6 +462,9 @@ nav img {
   display: flex;
   justify-content: center;
 }
+.header-pementasan h1 {
+  color: #eb2125;
+}
 
 .header-pementasan::after {
   content: "";
@@ -448,7 +490,7 @@ nav img {
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
 }
 .main-pementasan {
-  margin-top: 3rem;
+  margin-top: 8rem;
 }
 .card-pementasan {
   display: flex;
@@ -513,7 +555,6 @@ footer {
   font-size: 0.8rem;
   margin-top: 5px;
   font-family: "Urbanist", sans-serif;
-  text-align: justify;
   color: #fcfcfc;
 }
 
@@ -1443,7 +1484,80 @@ button:hover {
 /*=============== BREAKPOINTS ===============*/
 
 /* Navigation for mobile devices */
-@media screen and (max-width: 1116px) {
+@media screen and (max-width: 1117px) {
+  .nav {
+    height: 6.5rem;
+  }
+  .header-siapa h1 {
+    margin-top: 0;
+    margin-bottom: 1rem;
+  }
+  .siapa-gambar {
+    grid-area: siapa-gambar;
+    display: grid;
+    justify-content: center;
+    margin-bottom: 2rem;
+  }
+  .siapa-main {
+    column-gap: 0;
+    grid-template-areas:
+      "header-siapa header-siapa"
+      "siapa-gambar siapa-gambar"
+      "siapa-text siapa-text";
+  }
+  .siapa-gambar img {
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    box-shadow: 8px 8px 4px #2525258d;
+  }
+  .mengapa-gambar img {
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    box-shadow: 8px 8px 4px #2525258d;
+  }
+  .header-mengapa h1 {
+    margin-top: 0;
+    margin-bottom: 1rem;
+  }
+  .mengapa-gambar {
+    grid-area: mengapa-gambar;
+    display: grid;
+    justify-content: center;
+    margin-bottom: 2rem;
+  }
+  .mengapa-text {
+    text-align: left;
+    justify-content: left;
+  }
+  .mengapa-text p {
+    text-align: left;
+  }
+
+  .mengapa-main {
+    column-gap: 0;
+    grid-template-areas:
+      "header-mengapa header-mengapa"
+      "mengapa-gambar mengapa-gambar"
+      "mengapa-text mengapa-text";
+  }
+  .main-quotes {
+    width: 70%;
+  }
+  .gambar-tampil img {
+    box-shadow: 8px 8px 4px #2525258d;
+    width: 100%;
+    margin-bottom: 1rem;
+  }
+  .grid-content2 {
+    justify-content: center;
+    width: 100%;
+  }
+  .main-tampil {
+    width: 80%;
+  }
+
   .nav__menu {
     position: absolute;
     left: 0;
@@ -1481,7 +1595,7 @@ button:hover {
     position: static;
     display: flex;
     justify-content: right;
-    margin-bottom: 3rem;
+    margin-bottom: 0rem;
     justify-content: center;
   }
   .header-tampil h1 {
@@ -1525,30 +1639,21 @@ button:hover {
 
 /* For small devices */
 @media screen and (max-width: 600px) {
-  .siapa-main {
-    width: 100%;
-    display: grid;
-    grid-template-columns: repeat(auto-fit, 450px);
-    column-gap: 3rem;
-    place-content: center;
-    margin-bottom: 3rem;
+  .grid-content3 {
+    width: 80%;
   }
-  .siapa-gambar img {
-    width: 450px;
-    box-shadow: 8px 8px 4px #2525258d;
+  .siapa-main {
+    grid-template-areas:
+      "header-siapa header-siapa"
+      "siapa-gambar siapa-gambar"
+      "siapa-text siapa-text";
   }
 
   .mengapa-main {
-    width: 100%;
-    display: grid;
-    grid-template-columns: repeat(auto-fit, 450px);
-    column-gap: 3rem;
-    place-content: center;
-    margin-bottom: 3rem;
-  }
-  .mengapa-gambar img {
-    width: 450px;
-    box-shadow: 8px 8px 4px #2525258d;
+    grid-template-areas:
+      "header-mengapa header-mengapa"
+      "mengapa-gambar mengapa-gambar"
+      "mengapa-text mengapa-text";
   }
 
   .main-tampil {
@@ -1588,7 +1693,7 @@ button:hover {
   }
 
   nav img {
-    width: 60px;
+    width: 65px;
   }
   .main-u2 {
     display: block;
@@ -1599,7 +1704,6 @@ button:hover {
     font-size: 1rem;
     margin-top: 25px;
     font-family: "Urbanist", sans-serif;
-    text-align: justify;
     text-transform: uppercase;
     font-weight: bold;
     color: #fcfcfc;
@@ -1714,7 +1818,6 @@ button:hover {
 
 /* For large devices */
 @media screen and (min-width: 1116px) {
-  
   .container {
     margin-inline: auto;
   }
@@ -1812,6 +1915,9 @@ button:hover {
 
 /* RESPONSIVE GALERI */
 @media only screen and (max-width: 769px) {
+  .grid-content3 {
+    width: 80%;
+  }
   .main-tampil {
     display: flex;
     justify-content: center;
@@ -2110,7 +2216,6 @@ button:hover {
     font-size: 1rem;
     margin-top: 25px;
     font-family: "Urbanist", sans-serif;
-    text-align: justify;
     text-transform: uppercase;
     font-weight: bold;
     color: #fcfcfc;
