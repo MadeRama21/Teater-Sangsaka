@@ -749,8 +749,8 @@ footer {
 /* ======== CONTACT ========= */
 .contact_container {
   margin-top: 9rem;
-  margin-left: 7rem;
-  margin-right: 7rem;
+  margin-left: 9rem;
+  margin-right: 9rem;
   display: flex;
   justify-content: space-between;
   flex-direction: row;
@@ -766,7 +766,7 @@ footer {
 }
 
 .contact_text h1 {
-  font-size: 64px;
+  font-size: 50px;
 }
 
 .contact_text p {
@@ -816,12 +816,14 @@ footer {
 .form_outer h1 {
   display: flex;
   justify-content: center;
-  margin-bottom: 150px;
+  margin-bottom: 60px;
   font-weight: 700;
   
 }
 
-
+.form_outer i {
+  font-size: 30px;
+}
 
 .contact_form {
   display: flex;
@@ -831,6 +833,39 @@ footer {
   box-shadow: 0 3px 12px rgba(0, 0, 0, .23);
   border-radius: 20px;
   padding: 20px;
+}
+
+.label_row {
+  display: flex;
+  flex-direction: row;
+  padding-bottom: 5px;
+}
+
+.label_icon {
+  display: flex;
+}
+
+.label_text {
+  display: flex;
+  align-items: center;
+  padding-left: 2px;
+}
+
+.disclaimer_row {
+  display: flex;
+  flex-direction: row;
+  padding-left: 20px;
+  color: #EB2125;
+}
+
+.disclaimer_icon {
+  display: flex;
+}
+
+.disclaimer_text {
+  display: flex;
+  align-items: center;
+  padding-left: 2px;
 }
 
 .form {

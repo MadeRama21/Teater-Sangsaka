@@ -117,36 +117,69 @@
             
             <form action="#" method="post">
                 <div class="form_nama">
-                    <label for="Nama">
-                        Nama lengkap
-                    </label>
-                    <br>
+                    <div class="label_row">
+                        <div class="label_icon">
+                            <i class="ph ph-user-circle"></i>
+                        </div>
+                        <div class="label_text">
+                            <label for="Nama">
+                                Nama lengkap
+                            </label>
+                        </div>
+                    </div>
                     <input placeholder="Contoh : I Made Gerrald Wahyu Tidak Darmawan" id="Nama" name="Nama">
                     <br>
                 </div>
                 <div class="form_kelas">
-                    <label for="kelas">
-                        Kelas
-                    </label>
-                    <br>
+                    <div class="label_row">
+                        <div class="label_icon">
+                            <i class="ph ph-graduation-cap"></i>
+                        </div>
+                        <div class="label_text">
+                            <label for="kelas">
+                                Kelas
+                            </label>
+                        </div>
+                    </div>
                     <input placeholder="Contoh : XI RPL 3" id="Email" name="Email">
                     <br>
                 </div>
                 <div class="form_nomor">
-                    <label for="nomor">
-                        No. Telepon
-                    </label>
-                    <br>
+                    <div class="label_row">
+                        <div class="label_icon">
+                            <i class="ph ph-phone"></i>
+                        </div>
+                        <div class="label_text">
+                            <label for="nomor">
+                                No. Telepon
+                            </label>
+                        </div>
+                    </div>
                     <input placeholder="Yang terdaftar di Whatsapp yah 😘" id="Email" name="Email">
                     <br>
                 </div>
                 <div class="form_alasan">
-                    <label for="alasan">
-                        Alasan Bergabung
-                    </label>
-                    <br>
+                    <div class="label_row">
+                        <div class="label_icon">
+                            <i class="ph ph-question"></i>
+                        </div>
+                        <div class="label_text">
+                            <label for="alasan">
+                                Alasan Bergabung
+                            </label>
+                        </div>
+                    </div>
                     <textarea required cols="30" rows="10" placeholder="Yang paling bagus langsung jadi ketua 😎" name="Pesan" id="Pesan"></textarea>
-                    <br>
+                </div>
+                <div class="disclaimer_row">
+                    <div class="disclaimer_icon">
+                        <i class="ph ph-warning-circle"></i>
+                    </div>
+                    <div class="disclaimer_text">
+                        <p>
+                            Skensa only ya sayang
+                        </p>
+                    </div>
                 </div>
                 <button type="submit">
                     KIRIM
@@ -256,6 +289,7 @@
     <!-- Script JS -->
     <script src="script.js"></script>
     <script src="https://kit.fontawesome.com/3be7009fc0.js" crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/@phosphor-icons/web"></script>
 
 </body>
 
