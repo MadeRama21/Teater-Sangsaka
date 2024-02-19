@@ -568,20 +568,12 @@ footer {
   margin: 5px 20px 0 20px;
 }
 
-.container1 .box,
-#moreImage {
+.container1 .box {
   display: flex;
   flex-direction: row;
   margin: 1px;
   padding: 1px;
   /* align-items: center; */
-}
-
-#moreImage img {
-  filter: grayscale(0);
-  height: 400px;
-  overflow: hidden;
-  object-fit: cover;
 }
 
 .container1 .box .dream {
@@ -609,6 +601,27 @@ footer {
   -webkit-filter: grayscale(1);
   filter: grayscale(1);
   transition: 0.3s;
+}
+
+#seemore {
+  display: none;
+}
+
+#moreImage {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 4px;
+  grid-auto-flow: dense;
+   
+}
+
+.wadah-foto {
+  min-height: 250px;
+}
+
+.wadah-foto .image img {
+  -webkit-filter: grayscale(0);
+  filter: grayscale(0);
 }
 
 .dream {
@@ -1648,10 +1661,7 @@ button:hover {
     flex-direction: column;
     width: 100%;
   }
-  #moreImage {
-    flex-direction: column;
-    width: 100%;
-  }
+
   .container1 .box .dream {
     width: 100%;
   }
@@ -2053,10 +2063,12 @@ button:hover {
     width: 19%;
   }
 
-  .box,
-  #imageM {
+  .box {
     flex-direction: column;
     max-width: 100%;
+  }
+  #moreImage {
+    grid-template-columns: repeat(3, 1fr);
   }
   .box .dream {
     max-width: 100%;
@@ -2096,8 +2108,10 @@ button:hover {
 }
 
 @media only screen and (max-width: 600px) {
-  .box,
-  #imageM {
+  #moreImage {
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .box {
     flex-direction: column;
     max-width: 100%;
   }
