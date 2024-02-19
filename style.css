@@ -1095,7 +1095,7 @@ button:hover {
   flex-direction: column;
   justify-content: center;
   /* background-color: #25D366; */
-  min-height: 250vh;
+  min-height: 275vh;
 }
 
 .welcome_text {
@@ -2770,7 +2770,8 @@ button:hover {
   }
 
   .hero_sejarah {
-    min-height: 310vh;
+    min-height: 330vh;
+    width: 90%;
   }
 
   .timeline_hero {
