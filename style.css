@@ -1896,10 +1896,6 @@ button:hover {
     transition: opacity 0.3s, top 0.3s;
   }
 
-  .dropdown__link,
-  .dropdown__sublink {
-  }
-
   .dropdown__subitem .dropdown__link {
     padding-inline: 1rem;
   }
