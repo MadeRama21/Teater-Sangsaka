@@ -1551,7 +1551,6 @@ img {
   scroll-snap-type: x mandatory;
   scroll-behavior: smooth;
   scrollbar-width: 0;
-  margin-bottom: 5rem;
 }
 .carousel::-webkit-scrollbar {
   display: none;
@@ -1627,17 +1626,19 @@ img {
   transition: 0.3s ease-in-out;
   filter: drop-shadow(0 0 3px #252525);
   text-transform: uppercase;
+  letter-spacing: 0;
 }
 
 .card .name-events h4 {
   font-size: 0.8rem;
   color: white;
   letter-spacing: 2px;
-  font-weight: 900;
+  font-weight: 600;
   opacity: 0;
   transform: scale(0);
   filter: drop-shadow(0 0 1px #252525);
   transition: 0.5s ease-out;
+  letter-spacing: 0;
 }
 
 .card:hover .img {
@@ -1661,11 +1662,20 @@ img {
   text-align: center;
 }
 
+.button-see-more {
+  font-weight: 600;
+}
+
 .main-photos {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   row-gap: 30px;
   margin: 0 1rem 1.5rem;
+}
+
+.any-card .img {
+  display: flex;
+  justify-content: center;
 }
 
 .any-card .img img {
@@ -1708,27 +1718,6 @@ img {
   display: flex;
   flex-direction: column;
   align-items: center;
-}
-
-.back-events {
-  display: flex;
-  background-color: #eb2125;
-  text-decoration: none;
-  font-family: LemonMilk;
-  font-size: 1rem;
-  width: 7%;
-  height: 35px;
-  border-radius: 3px;
-  color: #f9fdff;
-  text-align: center;
-  align-items: center;
-  justify-content: center;
-  transform: translateY(0);
-  transition: 0.3s ease-in-out;
-}
-
-.back-events:hover {
-  transform: translateY(-5px);
 }
 
 .events-see-more {
@@ -2812,6 +2801,14 @@ img {
     margin-top: 2rem;
   }
 
+  .main-events .h1 {
+    margin-bottom: 1rem;
+  }
+
+  .button-see-more {
+    font-size: .8rem;
+  }
+
   .banner-events img {
     height: 400px;
   }
@@ -2821,7 +2818,7 @@ img {
   }
 
   .vertical-events {
-    margin-top: 0.5rem;
+    margin-top: 0;
   }
 
   .card img {
@@ -2829,12 +2826,12 @@ img {
   }
 
   .card .name-events h1 {
-    font-size: 0.8rem;
+    font-size: 1rem;
     line-height: 13px;
   }
 
   .card .name-events h4 {
-    font-size: 0.4rem;
+    font-size: 0.5rem;
   }
 
   .main-photos {
