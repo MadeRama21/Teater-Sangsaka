@@ -980,6 +980,17 @@ footer {
   font-size: 30px;
 }
 
+/* .form_title::before {
+  content: "";
+  position: absolute;
+  width: 70px;
+  height: 7px;
+  background-color: #EB2125;
+  border-radius: 10px;
+  left: calc(65%);
+  top: calc(31%);
+} */
+
 
 .contact_form {
   display: flex;
@@ -1055,10 +1066,9 @@ textarea {
   border-radius: 15px;
 }
 
-button .button-contact {
+.button-contact {
   color: #fff;
   background-color: #eb2125;
-
   border-radius: 5px;
   padding: 10px;
   padding-left: 290px;
@@ -1066,7 +1076,7 @@ button .button-contact {
   transition: transform 0.3s;
 }
 
-button .button-contact:hover {
+.button-contact:hover {
   transform: translateY(-3px);
   transition: 0.3s;
 }
@@ -2652,6 +2662,41 @@ button .button-contact:hover {
     align-items: baseline;
   }
   /* TENTANG KITA END */
+
+  /* Responsive contact */
+
+  .contact_container {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .contact_text {
+    padding-bottom: 50px;
+  }
+
+input,
+textarea {
+
+  width: 500px;
+  padding: 20px;
+  border-radius: 15px;
+}
+
+.contact_form {
+  
+}
+
+.button-contact {
+  color: #fff;
+  background-color: #eb2125;
+  border-radius: 5px;
+  padding: 10px;
+  padding-left: 290px;
+  padding-right: 290px;
+  transition: transform 0.3s;
+}
+
+  /* Responsive contact end */
 
   #moreImage {
     grid-template-columns: repeat(3, 1fr);
