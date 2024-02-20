@@ -88,18 +88,11 @@ vertical.addEventListener("mouseleave", autoPlay);
 const seeMore = document.querySelector(".see-more");
 const content = document.querySelector(".main-vertical");
 const buttonSeeMoreMainContent = document.querySelector(".button-see-more");
-const buttonSeeMoreContent = document.querySelector(".back-events");
 
 buttonSeeMoreMainContent.addEventListener('click', function(e) {
   e.preventDefault();
   seeMore.classList.toggle('events-see-more');
   content.classList.toggle('events-see-more');
-});
-
-buttonSeeMoreContent.addEventListener('click', function(e) {
-  e.preventDefault();
-  content.classList.toggle('events-see-more');
-  seeMore.classList.toggle('events-see-more');
 });
 /*=============== CAROUSEL EVENTS END ===============*/
 
