@@ -1103,13 +1103,13 @@ textarea {
   border-radius: 15px;
 }
 
-.button-contact {
+.button-contact, .my-btn {
   color: #fff;
   background-color: #eb2125;
   border-radius: 5px;
   padding: 10px;
-  padding-left: 290px;
-  padding-right: 290px;
+  width: 93.73%;
+  text-align: center;
   transition: transform 0.3s;
 }
 
@@ -1534,16 +1534,27 @@ textarea {
   margin-bottom: 3rem;
 }
 
-.main-vertical a {
-  text-decoration: none;
-  color: #eb2125;
+.main-vertical .button-see-more {
   display: flex;
   justify-content: flex-end;
+}
+
+.main-vertical .button-see-more a {
+  text-decoration: none;
+  color: #000;
   margin-right: 1.5rem;
+  font-weight: 600;
+  text-transform: capitalize;
+  filter: opacity(.5);
+  transition: .5s;
+}
+
+.main-vertical .button-see-more a:hover {
+  color: #eb2125;
+  filter: opacity(1);
 }
 
 .vertical-events {
-  margin-top: 1rem;
   display: flex;
   width: 100%;
   position: relative;
@@ -1671,10 +1682,6 @@ textarea {
   justify-content: center;
   align-items: center;
   text-align: center;
-}
-
-.button-see-more {
-  font-weight: 600;
 }
 
 .main-photos {
@@ -2713,10 +2720,6 @@ textarea {
     font-size: 2.2rem;
   }
 
-  .vertical-events {
-    margin-top: 0.5rem;
-  }
-
   .vertical-events .carousel {
     grid-auto-columns: calc((100% / 3) - 10px);
   }
@@ -2813,10 +2816,6 @@ textarea {
 
   .vertical-events .carousel {
     grid-auto-columns: calc((100% / 2) - 8px);
-  }
-
-  .vertical-events {
-    margin-top: 0;
   }
 
   .card img {
