@@ -115,7 +115,6 @@ nav img {
 .nav__data {
   height: 100%;
   display: flex;
-  margin-left: 1rem;
   justify-content: space-between;
   align-items: center;
 }
@@ -135,6 +134,7 @@ nav img {
 }
 
 .nav__toggle {
+  margin-right: 2rem;
   position: relative;
   width: 32px;
   height: 32px;
@@ -208,6 +208,7 @@ nav img {
 .grid-content2 {
   width: 100%;
   padding-top: 4rem;
+  padding-bottom: 3rem;
 }
 .grid-content1 {
   display: flex;
@@ -274,6 +275,7 @@ nav img {
 }
 
 .main-tampil {
+  width: 100%;
   display: flex;
   justify-content: center;
   flex-direction: column;
@@ -313,10 +315,23 @@ nav img {
   text-transform: uppercase;
   font-weight: 700;
   font-size: 2rem;
-  font-weight: bolder;
   margin-right: 10%;
   width: 40%;
 }
+
+.lihat-pementasan a {
+  border-bottom: 2px solid;
+  margin-left: 25%;
+  font-family: "Lato", sans-serif;
+  font-weight: 700;
+  font-size: 1.2rem;
+  text-decoration: none;
+  color: #252525;
+}
+.lihat-pementasan a:hover {
+  color: #c14848;
+}
+
 .header-tampil span {
   color: #eb2125;
 }
@@ -378,6 +393,9 @@ nav img {
 
 .main-quotes i {
   font-size: 1.5rem;
+}
+.main-quotes i:nth-child(1) {
+  transform: scaleX(-1);
 }
 .Landing {
   position: relative;
@@ -453,12 +471,12 @@ nav img {
 .box-content p {
   /* margin-top: 1rem; */
   color: rgba(255, 255, 255, 0.847);
-  font-family: Metropolis2;
+  font-family: Poppins, sans-serif;
   text-transform: uppercase;
   font-size: 1.3rem;
   margin-left: 3rem;
-  letter-spacing: 8px;
-  font-weight: 50;
+  letter-spacing: 4px;
+  font-weight: 500;
 }
 
 .header-pementasan {
@@ -518,6 +536,7 @@ nav img {
 }
 .card-pementasan h3 {
   margin: 1rem 0;
+  font-family: "Poppins", sans-serif;
   color: #eb2125;
   font-weight: bolder;
   /* margin: 1rem 0; */
@@ -584,6 +603,7 @@ footer {
 
 .footer-U2 h2 {
   font-size: 1.1rem;
+  color: #ffffff;
 }
 
 .wadah-U2 {
@@ -600,17 +620,32 @@ footer {
   margin-bottom: 1rem;
 }
 .smkn1 {
+  color: #999999;
   margin-bottom: 5px;
+}
+.smkn1:hover {
+  color: #ffffff;
+}
+
+.jam-buka {
+  color: #999999;
+}
+.jam-buka:hover {
+  color: #ffffff;
 }
 
 .footer-S a {
   text-decoration: none;
-  color: #ffffff;
+  color: #999999;
   margin-top: 12px;
   justify-content: center;
   align-items: center;
   text-align: left;
   flex-direction: column;
+}
+.footer-S a:hover {
+  cursor: pointer;
+  color: #fff;
 }
 .footer-S {
   justify-content: left;
@@ -983,7 +1018,6 @@ footer {
   font-size: 30px;
 }
 
-
 .contact_form {
   display: flex;
   flex-direction: column;
@@ -1014,7 +1048,7 @@ footer {
   display: flex;
   flex-direction: row;
   padding-left: 20px;
-  color: #EB2125;
+  color: #eb2125;
 }
 
 .disclaimer_icon {
@@ -1456,7 +1490,7 @@ img {
   opacity: 1;
 }
 
-.petinggi-text > * {
+.petinggi-text > *{
   transform: translateY(25px);
   transition: transform 0.8s;
 }
@@ -1668,7 +1702,7 @@ img {
   align-items: center;
   justify-content: center;
   transform: translateY(0);
-  transition: .3s ease-in-out;
+  transition: 0.3s ease-in-out;
 }
 
 .back-events:hover {
@@ -1684,6 +1718,14 @@ img {
 
 /* Navigation for mobile devices */
 @media screen and (max-width: 1117px) {
+  .lihat-pementasan {
+    margin-top: 2rem;
+    display: flex;
+    justify-content: center;
+  }
+  .lihat-pementasan a {
+    margin-left: 0;
+  }
   .nav {
     height: 6.5rem;
   }
@@ -1934,7 +1976,7 @@ img {
 
   .wadah-U2 {
     flex-direction: column;
-    margin-left: 8rem;
+    /* margin-left: 8rem; */
   }
 
   .footer-S .social-media a i {
@@ -1951,7 +1993,6 @@ img {
 
   .footer-S a {
     text-decoration: none;
-    color: #ffffff;
     margin-top: 12px;
     justify-content: center;
     align-items: center;
@@ -2019,9 +2060,6 @@ img {
 
 /* For large devices */
 @media only screen and (min-width: 1116px) {
-  .wadah-U2 {
-    margin-left: 3rem;
-  }
   .container {
     margin-inline: 1rem;
   }
@@ -2151,12 +2189,12 @@ img {
   }
 
   .box-content h1 {
+    font-size: 4rem;
     color: #eb2125;
     font-weight: bolder;
-    font-family: LemonMilk;
     font-style: italic;
+    line-height: 1.2em;
     text-transform: uppercase;
-    font-size: 2rem;
     letter-spacing: 8px;
     margin-left: 3rem;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
@@ -2172,12 +2210,10 @@ img {
   .box-content p {
     /* margin-top: 1rem; */
     color: rgba(255, 255, 255, 0.847);
-    font-family: Metropolis2;
-    text-transform: uppercase;
-    font-size: 0.5rem;
+    font-size: 1rem;
     margin-left: 3rem;
-    letter-spacing: 8px;
-    font-weight: 50;
+    letter-spacing: 5px;
+    font-weight: 500;
   }
 
   /* Box-Content end */
@@ -2215,6 +2251,12 @@ img {
     transition: 0.3s;
   }
 
+  .nav__toggle {
+    margin-right: 0;
+  }
+  .nav__data {
+    margin-left: 0.5rem;
+  }
   .nav__menu {
     z-index: -1;
     position: absolute;
@@ -2337,43 +2379,6 @@ img {
   .nav__link {
     padding-inline: 1rem;
   }
-  /* Box-content */
-
-  .box-content .info p {
-    font-size: 0.9rem;
-    color: rgba(255, 255, 255, 0.847);
-  }
-  .info a {
-    text-decoration: none;
-  }
-  .box-content {
-    margin-top: 35vh;
-  }
-
-  .box-content h1 {
-    font-size: 2rem;
-    letter-spacing: 8px;
-    margin-left: 3rem;
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
-  }
-  .box-content h1 span {
-    color: #fcfcfc;
-  }
-
-  .box-content h1 span {
-    display: block;
-  }
-
-  .box-content .slogan p {
-    /* margin-top: 1rem; */
-    color: rgba(255, 255, 255, 0.847);
-    font-size: 0.5rem;
-    margin-left: 3rem;
-    letter-spacing: 8px;
-    font-weight: 50;
-  }
-
-  /* Box-Content end */
 
   /* ===== RESPONSIVE TENTANG KITA===== */
   .hero_sambutan {
@@ -2568,7 +2573,6 @@ img {
 
   .footer-S a {
     text-decoration: none;
-    color: #ffffff;
     margin-top: 12px;
     justify-content: center;
     align-items: center;
@@ -2585,7 +2589,6 @@ img {
     content: "";
     width: 100%;
     height: 0.2px;
-    background-color: #fff;
     margin-bottom: 3rem;
   }
 
@@ -2600,7 +2603,6 @@ img {
   }
 
   .copyrigth p {
-    color: white;
     margin-right: 10px;
   }
 
@@ -2703,7 +2705,7 @@ img {
   }
 
   .vertical-events {
-    margin-top: .5rem;
+    margin-top: 0.5rem;
   }
 
   .vertical-events .carousel {
@@ -2726,6 +2728,26 @@ img {
 }
 
 @media only screen and (max-width: 600px) {
+  .lihat-pementasan a {
+    font-size: 1rem;
+  }
+  .grid-content1 {
+    margin-bottom: 5rem;
+  }
+  .box-content h1 {
+    font-size: 3rem;
+    color: #eb2125;
+    font-weight: bolder;
+    font-style: italic;
+    text-transform: uppercase;
+    letter-spacing: 8px;
+    margin-left: 1.2rem;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+  }
+  .box-content p {
+    margin-left: 1.2rem;
+  }
+
   #moreImage {
     grid-template-columns: repeat(1, 1fr);
     margin-left: 22px;
@@ -2763,7 +2785,7 @@ img {
   }
 
   .vertical-events {
-    margin-top: .5rem;
+    margin-top: 0.5rem;
   }
 
   .card img {
@@ -2830,7 +2852,8 @@ img {
     padding-bottom: 4rem;
   }
   .footer-U1 {
-    margin-right: 7rem;
+    margin-right: 0rem;
+    margin-left: 1rem;
   }
 
   .footer-U2 {
@@ -2843,7 +2866,7 @@ img {
 
   .wadah-U2 {
     flex-direction: column;
-    margin-left: 8rem;
+    margin-left: 2rem;
   }
 
   .footer-S .social-media a i {
@@ -2860,7 +2883,6 @@ img {
 
   .footer-S a {
     text-decoration: none;
-    color: #ffffff;
     margin-top: 12px;
     justify-content: center;
     align-items: center;
