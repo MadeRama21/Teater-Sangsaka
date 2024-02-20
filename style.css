@@ -846,9 +846,10 @@ footer {
   margin: 140px 0 40px 0;
   font-size: 20px;
   font-style: normal;
-  font-weight: bolder;
+  font-weight: 500;
   line-height: normal;
   letter-spacing: 2.4px;
+  font-family: "Poppins", sans-serif;
 }
 
 #image1 {
