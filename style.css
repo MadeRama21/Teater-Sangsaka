@@ -114,7 +114,6 @@ nav img {
 .nav__data {
   height: 100%;
   display: flex;
-  margin-left: 1rem;
   justify-content: space-between;
   align-items: center;
 }
@@ -134,6 +133,7 @@ nav img {
 }
 
 .nav__toggle {
+  margin-right: 2rem;
   position: relative;
   width: 32px;
   height: 32px;
@@ -207,6 +207,7 @@ nav img {
 .grid-content2 {
   width: 100%;
   padding-top: 4rem;
+  padding-bottom: 3rem;
 }
 .grid-content1 {
   display: flex;
@@ -241,10 +242,11 @@ nav img {
 }
 .header-mengapa h1 {
   text-align: end;
-  font-family: LemonMilk;
+  font-family: "Poppins", sans-serif;
+  text-transform: uppercase;
+  font-weight: 700;
   margin-top: 2rem;
   font-size: 3rem;
-  font-weight: bolder;
 }
 .mengapa-main {
   width: 100%;
@@ -272,6 +274,7 @@ nav img {
 }
 
 .main-tampil {
+  width: 100%;
   display: flex;
   justify-content: center;
   flex-direction: column;
@@ -307,12 +310,27 @@ nav img {
   margin-bottom: 3rem;
 }
 .header-tampil h1 {
-  text-shadow: 3px 3px 4px #2525258d;
+  font-family: "Poppins", sans-serif;
+  text-transform: uppercase;
+  font-weight: 700;
   font-size: 2rem;
-  font-weight: bolder;
   margin-right: 10%;
   width: 40%;
 }
+
+.lihat-pementasan a {
+  border-bottom: 2px solid;
+  margin-left: 25%;
+  font-family: "Lato", sans-serif;
+  font-weight: 700;
+  font-size: 1.2rem;
+  text-decoration: none;
+  color: #252525;
+}
+.lihat-pementasan a:hover {
+  color: #c14848;
+}
+
 .header-tampil span {
   color: #eb2125;
 }
@@ -321,7 +339,9 @@ nav img {
   color: #eb2125;
 }
 .header-siapa h1 {
-  font-family: LemonMilk;
+  font-family: "Poppins", sans-serif;
+  text-transform: uppercase;
+  font-weight: 700;
   margin-top: 2rem;
   font-size: 3rem;
   font-weight: bolder;
@@ -426,8 +446,9 @@ nav img {
 }
 .box-content h1 {
   color: #eb2125;
-  font-weight: bolder;
-  font-family: LemonMilk;
+  font-family: "Poppins", sans-serif;
+  text-transform: uppercase;
+  font-weight: 800;
   font-style: italic;
   text-transform: uppercase;
   font-size: 5rem;
@@ -439,13 +460,6 @@ nav img {
   color: #fcfcfc;
 }
 
-.box-content h2 {
-  color: rgba(255, 255, 255, 0.847);
-  font-family: "Montserrat", sans-serif;
-  letter-spacing: 2px;
-  font-size: 1.4rem;
-  text-transform: uppercase;
-}
 .box-content h1 span {
   display: block;
 }
@@ -453,12 +467,12 @@ nav img {
 .box-content p {
   /* margin-top: 1rem; */
   color: rgba(255, 255, 255, 0.847);
-  font-family: Metropolis2;
+  font-family: Poppins, sans-serif;
   text-transform: uppercase;
   font-size: 1.3rem;
   margin-left: 3rem;
-  letter-spacing: 8px;
-  font-weight: 50;
+  letter-spacing: 4px;
+  font-weight: 500;
 }
 
 .header-pementasan {
@@ -468,6 +482,9 @@ nav img {
   justify-content: center;
 }
 .header-pementasan h1 {
+  font-family: "Poppins", sans-serif;
+  text-transform: uppercase;
+  font-weight: 700;
   color: #eb2125;
 }
 
@@ -515,6 +532,7 @@ nav img {
 }
 .card-pementasan h3 {
   margin: 1rem 0;
+  font-family: "Poppins", sans-serif;
   color: #eb2125;
   font-weight: bolder;
   /* margin: 1rem 0; */
@@ -581,6 +599,7 @@ footer {
 
 .footer-U2 h2 {
   font-size: 1.1rem;
+  color: #ffffff;
 }
 
 .wadah-U2 {
@@ -597,17 +616,32 @@ footer {
   margin-bottom: 1rem;
 }
 .smkn1 {
+  color: #999999;
   margin-bottom: 5px;
+}
+.smkn1:hover {
+  color: #ffffff;
+}
+
+.jam-buka {
+  color: #999999;
+}
+.jam-buka:hover {
+  color: #ffffff;
 }
 
 .footer-S a {
   text-decoration: none;
-  color: #ffffff;
+  color: #999999;
   margin-top: 12px;
   justify-content: center;
   align-items: center;
   text-align: left;
   flex-direction: column;
+}
+.footer-S a:hover {
+  cursor: pointer;
+  color: #fff;
 }
 .footer-S {
   justify-content: left;
@@ -907,8 +941,8 @@ footer {
 /* ======== CONTACT ========= */
 .contact_container {
   margin-top: 9rem;
-  margin-left: 7rem;
-  margin-right: 7rem;
+  margin-left: 9rem;
+  margin-right: 9rem;
   display: flex;
   justify-content: space-between;
   flex-direction: row;
@@ -923,7 +957,7 @@ footer {
 }
 
 .contact_text h1 {
-  font-size: 64px;
+  font-size: 50px;
 }
 
 .contact_text p {
@@ -973,8 +1007,11 @@ footer {
 .form_outer h1 {
   display: flex;
   justify-content: center;
-  margin-bottom: 150px;
+  margin-bottom: 60px;
   font-weight: 700;
+}
+.form_outer i {
+  font-size: 30px;
 }
 
 .contact_form {
@@ -985,6 +1022,39 @@ footer {
   box-shadow: 0 3px 12px rgba(0, 0, 0, 0.23);
   border-radius: 20px;
   padding: 20px;
+}
+
+.label_row {
+  display: flex;
+  flex-direction: row;
+  padding-bottom: 5px;
+}
+
+.label_icon {
+  display: flex;
+}
+
+.label_text {
+  display: flex;
+  align-items: center;
+  padding-left: 2px;
+}
+
+.disclaimer_row {
+  display: flex;
+  flex-direction: row;
+  padding-left: 20px;
+  color: #eb2125;
+}
+
+.disclaimer_icon {
+  display: flex;
+}
+
+.disclaimer_text {
+  display: flex;
+  align-items: center;
+  padding-left: 2px;
 }
 
 .form {
@@ -1018,7 +1088,7 @@ textarea {
   border-radius: 15px;
 }
 
-button {
+button .button-contact {
   color: #fff;
   background-color: #eb2125;
 
@@ -1029,7 +1099,7 @@ button {
   transition: transform 0.3s;
 }
 
-button:hover {
+button .button-contact:hover {
   transform: translateY(-3px);
   transition: 0.3s;
 }
@@ -1362,6 +1432,11 @@ button:hover {
   letter-spacing: 2px;
 }
 
+.frame_container {
+  display: flex;
+  flex-direction: row;
+}
+
 .frame_foto {
   display: flex;
   justify-content: center;
@@ -1369,13 +1444,59 @@ button:hover {
   gap: 3px;
 }
 
-.frame_foto img {
+.card-content {
+  width: 14%;
+  position: relative;
+}
+
+img {
+  width: 100%;
+  display: block;
+  margin: 0;
+}
+
+.petinggi-text {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: rgba(0, 0, 0, 0.6);
+  color: #fcfcfc;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  opacity: 0;
+  transition: 0.6s;
+}
+
+.petinggi-text h3 {
+  color: #eb2125;
+}
+
+.petinggi-text:hover {
+  opacity: 1;
+}
+
+.petinggi-text > *{
+  transform: translateY(30px);
+  transition: transform 0.8s;
+}
+
+.petinggi-text:hover > *{
+  transform: translateY(0px);
+}
+
+/* .frame_foto img {
   position: relative;
   width: 14%;
-}
+} */
 
 /* =============EVENTS SANGSAKA==============  */
 .main-events {
+  display: flex;
+  flex-direction: column;
   text-transform: uppercase;
   font-weight: 900;
   font-family: LemonMilk;
@@ -1392,6 +1513,14 @@ button:hover {
   text-align: center;
   align-items: center;
   margin-bottom: 3rem;
+}
+
+.main-vertical a {
+  text-decoration: none;
+  color: #eb2125;
+  display: flex;
+  justify-content: flex-end;
+  margin-right: 1.5rem;
 }
 
 .vertical-events {
@@ -1515,12 +1644,82 @@ button:hover {
 .card:hover .name-events h4 {
   transform: scale(1);
 }
+
+.see-more {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.main-photos {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  row-gap: 30px;
+  margin-bottom: 1.5rem;
+}
+
+.any-card .img img {
+  width: 75%;
+  height: 30%;
+  aspect-ratio: 3 / 4;
+  border-radius: 5px;
+}
+
+.name-of-event h1 {
+  font-family: Monserrat;
+  line-height: 1.5rem;
+  margin-bottom: 3px;
+  font-size: 1.3rem;
+  color: #eb2125;
+  font-weight: bolder;
+}
+
+.main-see {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.back-events {
+  display: flex;
+  background-color: #eb2125;
+  text-decoration: none;
+  font-family: LemonMilk;
+  font-size: 1rem;
+  width: 7%;
+  height: 35px;
+  border-radius: 3px;
+  color: #f9fdff;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  transform: translateY(0);
+  transition: 0.3s ease-in-out;
+}
+
+.back-events:hover {
+  transform: translateY(-5px);
+}
+
+.events-see-more {
+  display: none;
+}
 /* =============EVENTS SANGSAKA==============  */
 
 /*=============== BREAKPOINTS ===============*/
 
 /* Navigation for mobile devices */
 @media screen and (max-width: 1117px) {
+  .lihat-pementasan {
+    margin-top: 2rem;
+    display: flex;
+    justify-content: center;
+  }
+  .lihat-pementasan a {
+    margin-left: 0;
+  }
   .nav {
     height: 6.5rem;
   }
@@ -1771,7 +1970,7 @@ button:hover {
 
   .wadah-U2 {
     flex-direction: column;
-    margin-left: 8rem;
+    /* margin-left: 8rem; */
   }
 
   .footer-S .social-media a i {
@@ -1788,7 +1987,6 @@ button:hover {
 
   .footer-S a {
     text-decoration: none;
-    color: #ffffff;
     margin-top: 12px;
     justify-content: center;
     align-items: center;
@@ -1856,9 +2054,6 @@ button:hover {
 
 /* For large devices */
 @media only screen and (min-width: 1116px) {
-  .wadah-U2 {
-    margin-left: 3rem;
-  }
   .container {
     margin-inline: 1rem;
   }
@@ -1988,12 +2183,12 @@ button:hover {
   }
 
   .box-content h1 {
+    font-size: 4rem;
     color: #eb2125;
     font-weight: bolder;
-    font-family: LemonMilk;
     font-style: italic;
+    line-height: 1.2em;
     text-transform: uppercase;
-    font-size: 2rem;
     letter-spacing: 8px;
     margin-left: 3rem;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
@@ -2002,13 +2197,6 @@ button:hover {
     color: #fcfcfc;
   }
 
-  .box-content h2 {
-    color: rgba(255, 255, 255, 0.847);
-    font-family: "Montserrat", sans-serif;
-    letter-spacing: 2px;
-    font-size: 1.4rem;
-    text-transform: uppercase;
-  }
   .box-content h1 span {
     display: block;
   }
@@ -2016,12 +2204,10 @@ button:hover {
   .box-content p {
     /* margin-top: 1rem; */
     color: rgba(255, 255, 255, 0.847);
-    font-family: Metropolis2;
-    text-transform: uppercase;
-    font-size: 0.5rem;
+    font-size: 1rem;
     margin-left: 3rem;
-    letter-spacing: 8px;
-    font-weight: 50;
+    letter-spacing: 5px;
+    font-weight: 500;
   }
 
   /* Box-Content end */
@@ -2059,6 +2245,12 @@ button:hover {
     transition: 0.3s;
   }
 
+  .nav__toggle {
+    margin-right: 0;
+  }
+  .nav__data {
+    margin-left: 0.5rem;
+  }
   .nav__menu {
     z-index: -1;
     position: absolute;
@@ -2181,57 +2373,6 @@ button:hover {
   .nav__link {
     padding-inline: 1rem;
   }
-  /* Box-content */
-
-  .box-content .info p {
-    font-size: 0.9rem;
-    color: rgba(255, 255, 255, 0.847);
-  }
-  .info a {
-    text-decoration: none;
-  }
-  .box-content {
-    margin-top: 35vh;
-  }
-
-  .box-content h1 {
-    color: #eb2125;
-    font-weight: bolder;
-    font-family: LemonMilk;
-    font-style: italic;
-    text-transform: uppercase;
-    font-size: 2rem;
-    letter-spacing: 8px;
-    margin-left: 3rem;
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
-  }
-  .box-content h1 span {
-    color: #fcfcfc;
-  }
-
-  .box-content h2 {
-    color: rgba(255, 255, 255, 0.847);
-    font-family: "Montserrat", sans-serif;
-    letter-spacing: 2px;
-    font-size: 1.4rem;
-    text-transform: uppercase;
-  }
-  .box-content h1 span {
-    display: block;
-  }
-
-  .box-content .slogan p {
-    /* margin-top: 1rem; */
-    color: rgba(255, 255, 255, 0.847);
-    font-family: Metropolis2;
-    text-transform: uppercase;
-    font-size: 0.5rem;
-    margin-left: 3rem;
-    letter-spacing: 8px;
-    font-weight: 50;
-  }
-
-  /* Box-Content end */
 
   /* ===== RESPONSIVE TENTANG KITA===== */
   .hero_sambutan {
@@ -2426,7 +2567,6 @@ button:hover {
 
   .footer-S a {
     text-decoration: none;
-    color: #ffffff;
     margin-top: 12px;
     justify-content: center;
     align-items: center;
@@ -2443,7 +2583,6 @@ button:hover {
     content: "";
     width: 100%;
     height: 0.2px;
-    background-color: #fff;
     margin-bottom: 3rem;
   }
 
@@ -2458,7 +2597,6 @@ button:hover {
   }
 
   .copyrigth p {
-    color: white;
     margin-right: 10px;
   }
 
@@ -2561,7 +2699,7 @@ button:hover {
   }
 
   .vertical-events {
-    margin-top: 1rem;
+    margin-top: 0.5rem;
   }
 
   .vertical-events .carousel {
@@ -2584,6 +2722,26 @@ button:hover {
 }
 
 @media only screen and (max-width: 600px) {
+  .lihat-pementasan a {
+    font-size: 1rem;
+  }
+  .grid-content1 {
+    margin-bottom: 5rem;
+  }
+  .box-content h1 {
+    font-size: 3rem;
+    color: #eb2125;
+    font-weight: bolder;
+    font-style: italic;
+    text-transform: uppercase;
+    letter-spacing: 8px;
+    margin-left: 1.2rem;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+  }
+  .box-content p {
+    margin-left: 1.2rem;
+  }
+
   #moreImage {
     grid-template-columns: repeat(1, 1fr);
     margin-left: 22px;
@@ -2621,7 +2779,7 @@ button:hover {
   }
 
   .vertical-events {
-    margin-top: 1rem;
+    margin-top: 0.5rem;
   }
 
   .card img {
@@ -2688,7 +2846,8 @@ button:hover {
     padding-bottom: 4rem;
   }
   .footer-U1 {
-    margin-right: 7rem;
+    margin-right: 0rem;
+    margin-left: 1rem;
   }
 
   .footer-U2 {
@@ -2701,7 +2860,7 @@ button:hover {
 
   .wadah-U2 {
     flex-direction: column;
-    margin-left: 8rem;
+    margin-left: 2rem;
   }
 
   .footer-S .social-media a i {
@@ -2718,7 +2877,6 @@ button:hover {
 
   .footer-S a {
     text-decoration: none;
-    color: #ffffff;
     margin-top: 12px;
     justify-content: center;
     align-items: center;

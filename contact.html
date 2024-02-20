@@ -10,7 +10,9 @@
     <link href="https://cdn.jsdelivr.net/npm/remixicon@3.2.0/fonts/remixicon.css" rel="stylesheet">
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@mdi/font@7.4.47/css/materialdesignicons.min.css">
-    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Source+Sans+3:ital,wght@0,200..900;1,200..900&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Source+Sans+3:ital,wght@0,200..900;1,200..900&display=swap"
+        rel="stylesheet">
 </head>
 
 <body>
@@ -29,43 +31,44 @@
             <!-- nav-menu -->
             <div class="nav__menu" id="nav-menu">
                 <ul class="nav__list">
-                    <li><a href="#" class="nav__link">Beranda</a></li>
-
+                    <li><a href="index.html" class="nav__link">Beranda</a></li>
                     <!--=============== DROPDOWN 1 ===============-->
-                    <li>
-                        <a href="tentang kita.html" class="nav__link">Tentang Kita</a>
-                    </li>
-
-                    <li><a href="event.html" class="nav__link">Events</a></li>
-
-                    <!--=============== DROPDOWN 2 ===============-->
                     <li class="dropdown__item">
                         <div class="nav__link">
-                            Media <i class="ri-arrow-down-s-line dropdown__arrow"></i>
+                            Tentang Kita <i class="ri-arrow-down-s-line dropdown__arrow"></i>
                         </div>
 
                         <ul class="dropdown__menu">
                             <li>
-                                <a href="index.html" class="dropdown__link">
-                                    Berita
+                                <a href="tentang kita.html#sambutan_page" class="dropdown__link">
+                                    Pembina
                                 </a>
                             </li>
 
                             <li>
-                                <a href="#" class="dropdown__link">
-                                    Pertunjukan
+                                <a href="tentang kita.html#sejarah_page" class="dropdown__link">
+                                    Sejarah
                                 </a>
                             </li>
 
                             <li>
-                                <a href="media.html" class="dropdown__link">
-                                    Galeri
+                                <a href="tentang kita.html#filosofi-logo_page" class="dropdown__link">
+                                    Filosofi Logo
+                                </a>
+                            </li>
+                            <li>
+                                <a href="tentang kita.html#petinggi-sangsaka_page" class="dropdown__link">
+                                    Pengurus Sangsaka
                                 </a>
                             </li>
                         </ul>
                     </li>
+                    <li><a href="event.html" class="nav__link">Events</a></li>
+                    <li>
+                        <a href="media.html" class="nav__link">Media</a>
+                    </li>
 
-                    <li><a href="#" class="nav__link">Contact</a></li>
+                    <li><a href="contact.html" class="nav__link">Contact</a></li>
                 </ul>
             </div>
         </nav>
@@ -80,9 +83,10 @@
             </h1>
             <p>
                 <br>
-                Daftar disini yah😘 
+                Daftar disini yah😘
                 <br><br>
-                Di Sangsaka kalian pasti bakalan dapat pengalaman yang seru dan menarik. Kalian juga bakalan ketemu banyak temen yang pastinya seru-seru juga. Asik kan!
+                Di Sangsaka kalian pasti bakalan dapat pengalaman yang seru dan menarik. Kalian juga bakalan ketemu
+                banyak temen yang pastinya seru-seru juga. Asik kan!
                 <br><br>
                 Jangan Ragu Jangan Bimbang Sangsaka nih boss!
                 <br><br>
@@ -97,65 +101,99 @@
                         (Adit)
                     </p>
                 </a>
-    
+
                 <a class="wa_button" href="https://line.me/ti/p/VAtZeXgKwV">
                     <i class="fa-brands fa-line"></i>
-                        <p>
-                            @abiiprtm
-                            <br>
-                            (Abi)
-                        </p>
+                    <p>
+                        @abiiprtm
+                        <br>
+                        (Abi)
+                    </p>
                 </a>
             </div>
         </div>
-    <div class="contact_form">
-        <div class="form_outer">
-            <div class="form_title">
-                <h1>
-                    ISI DISINI YUK BEB!
-                </h1>
+        <div class="contact_form">
+            <div class="form_outer">
+                <div class="form_title">
+                    <h1>
+                        ISI DISINI YUK BEB!
+                    </h1>
+                </div>
+
+                <form action="#" method="post">
+                    <div class="form_nama">
+                        <div class="label_row">
+                            <div class="label_icon">
+                                <i class="ph ph-user-circle"></i>
+                            </div>
+                            <div class="label_text">
+                                <label for="Nama">
+                                    Nama lengkap
+                                </label>
+                            </div>
+                        </div>
+                        <input placeholder="Contoh : I Made Gerrald Wahyu Tidak Darmawan" id="Nama" name="Nama">
+                        <br>
+                    </div>
+                    <div class="form_kelas">
+                        <div class="label_row">
+                            <div class="label_icon">
+                                <i class="ph ph-graduation-cap"></i>
+                            </div>
+                            <div class="label_text">
+                                <label for="kelas">
+                                    Kelas
+                                </label>
+                            </div>
+                        </div>
+                        <input placeholder="Contoh : XI RPL 3" id="Email" name="Email">
+                        <br>
+                    </div>
+                    <div class="form_nomor">
+                        <div class="label_row">
+                            <div class="label_icon">
+                                <i class="ph ph-phone"></i>
+                            </div>
+                            <div class="label_text">
+                                <label for="nomor">
+                                    No. Telepon
+                                </label>
+                            </div>
+                        </div>
+                        <input placeholder="Yang terdaftar di Whatsapp yah 😘" id="Email" name="Email">
+                        <br>
+                    </div>
+                    <div class="form_alasan">
+                        <div class="label_row">
+                            <div class="label_icon">
+                                <i class="ph ph-question"></i>
+                            </div>
+                            <div class="label_text">
+                                <label for="alasan">
+                                    Alasan Bergabung
+                                </label>
+                            </div>
+                        </div>
+                        <textarea required cols="30" rows="10" placeholder="Yang paling bagus langsung jadi ketua 😎"
+                            name="Pesan" id="Pesan"></textarea>
+                    </div>
+                    <div class="disclaimer_row">
+                        <div class="disclaimer_icon">
+                            <i class="ph ph-warning-circle"></i>
+                        </div>
+                        <div class="disclaimer_text">
+                            <p>
+                                Skensa only ya sayang
+                            </p>
+                        </div>
+                    </div>
+                    <button class="button-contact" type="submit">
+                        KIRIM
+                    </button>
+                </form>
             </div>
-            
-            <form action="#" method="post">
-                <div class="form_nama">
-                    <label for="Nama">
-                        Nama lengkap
-                    </label>
-                    <br>
-                    <input placeholder="Contoh : I Made Gerrald Wahyu Tidak Darmawan" id="Nama" name="Nama">
-                    <br>
-                </div>
-                <div class="form_kelas">
-                    <label for="kelas">
-                        Kelas
-                    </label>
-                    <br>
-                    <input placeholder="Contoh : XI RPL 3" id="Email" name="Email">
-                    <br>
-                </div>
-                <div class="form_nomor">
-                    <label for="nomor">
-                        No. Telepon
-                    </label>
-                    <br>
-                    <input placeholder="Yang terdaftar di Whatsapp yah 😘" id="Email" name="Email">
-                    <br>
-                </div>
-                <div class="form_alasan">
-                    <label for="alasan">
-                        Alasan Bergabung
-                    </label>
-                    <br>
-                    <textarea required cols="30" rows="10" placeholder="Yang paling bagus langsung jadi ketua 😎" name="Pesan" id="Pesan"></textarea>
-                    <br>
-                </div>
-                <button type="submit">
-                    KIRIM
-                </button>
-            </form>
         </div>
     </div>
-</div>
     <!-- contact end -->
 
     <!-- Footer  -->
@@ -170,37 +208,40 @@
                 <div class="main-u2">
                     <div class="wadah-U2">
                         <div class="footer-U2">
-                            <h2>Tentang Kami</h2>
+                            <h2>Tentang Kita</h2>
                         </div>
                         <div class="footer-S">
                             <a href="https://www.instagram.com/karungjantan/">
-                                Sejarah
+                                Pembina
                             </a>
                             <a href="https://www.tiktok.com/@karungjantan">
-                                Visi Misi
+                                Sejarah
                             </a>
                             <a href="https://shopee.co.id/tokokarungjantan?smtt=0.0.9">
-                                Profil Tim
+                                Filosofi Logo
                             </a>
                             <a
                                 href="https://api.whatsapp.com/send/?phone=%2B62895347235232&text&type=phone_number&app_absent=0">
-                                Opini
+                                Pengurus Sangsaka
                             </a>
                         </div>
                     </div>
                     <div class="wadah-U2">
                         <div class="footer-U2">
-                            <h2>Media</h2>
+                            <h2>Ringkasan</h2>
                         </div>
                         <div class="footer-S">
-                            <a href="https://www.instagram.com/karungjantan/">
-                                Berita
+                            <a href="index.html">
+                                Beranda
                             </a>
-                            <a href="https://www.tiktok.com/@karungjantan">
-                                Pertunjukan
+                            <a href="event.html">
+                                Events
                             </a>
-                            <a href="https://shopee.co.id/tokokarungjantan?smtt=0.0.9">
-                                Galleri
+                            <a href="media.html">
+                                Media
+                            </a>
+                            <a href="contact.html">
+                                Kontak
                             </a>
                         </div>
                     </div>
@@ -210,24 +251,28 @@
                         </div>
                         <div class="footer-S">
                             <div class="social-media">
-                                <a href="https://www.instagram.com/karungjantan/">
+                                <a
+                                    href="https://www.instagram.com/teatersangsaka?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==">
                                     <i class='bx bxl-instagram-alt'></i>
                                 </a>
-                                <a href="https://www.instagram.com/karungjantan/">
+                                <a href="https://www.youtube.com/@TeaterSangsaka">
                                     <i class='bx bxl-youtube'></i>
                                 </a>
                                 <a href="https://www.instagram.com/karungjantan/">
-                                    <i class='bx bxl-tiktok'></i>
+                                    <i class='bx bxs-envelope'></i>
+                                </a>
+                                <a href="https://teatersangsaka.blogspot.com/">
+                                    <i class='bx bxl-blogger'></i>
                                 </a>
                             </div>
                             <div class="smkn1">
-                                <span class="mdi mdi-map-marker"></span>
-                                <a href="https://www.tiktok.com/@karungjantan">
+                                <i class="ph-fill ph-map-pin"></i>
+                                <a href="https://g.co/kgs/4HjKYN2">
                                     SMKN 1 DENPASAR
                                 </a>
                             </div>
                             <div class="jam-buka">
-                                <span class="mdi mdi-clock-outline"></span>
+                                <i class="ph-fill ph-clock"></i>
                                 <a href="https://shopee.co.id/tokokarungjantan?smtt=0.0.9">
                                     Senin - Kiamat
                                 </a>
@@ -240,7 +285,6 @@
             </div>
             <div class="garis"> </div>
         </div>
-
         <div class="copyrigth">
             <p>
                 &copy; Copyright 2024
@@ -249,14 +293,13 @@
                 -HarmoniX Squad x Teater Sangsaka-
             </a>
         </div>
-
-
     </footer>
 
 
     <!-- Script JS -->
     <script src="script.js"></script>
     <script src="https://kit.fontawesome.com/3be7009fc0.js" crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/@phosphor-icons/web"></script>
 
 </body>
 
