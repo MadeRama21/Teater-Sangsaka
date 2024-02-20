@@ -393,6 +393,9 @@ nav img {
 .main-quotes i {
   font-size: 1.5rem;
 }
+.main-quotes i:nth-child(1) {
+  transform: scaleX(-1);
+}
 .Landing {
   position: relative;
   width: 100%;
@@ -1479,12 +1482,12 @@ img {
   opacity: 1;
 }
 
-.petinggi-text > *{
+.petinggi-text > * {
   transform: translateY(30px);
   transition: transform 0.8s;
 }
 
-.petinggi-text:hover > *{
+.petinggi-text:hover > * {
   transform: translateY(0px);
 }
 
