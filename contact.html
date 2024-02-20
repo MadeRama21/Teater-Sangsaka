@@ -35,7 +35,7 @@
                     <!--=============== DROPDOWN 1 ===============-->
                     <li class="dropdown__item">
                         <div class="nav__link">
-                            Tentang Kita <i class="ri-arrow-down-s-line dropdown__arrow"></i>
+                            Tentang Kami <i class="ri-arrow-down-s-line dropdown__arrow"></i>
                         </div>
 
                         <ul class="dropdown__menu">
@@ -120,7 +120,7 @@
                     </h1>
                 </div>
 
-                <form action="#" method="post">
+                <form action="#" method="post" name="sangsaka-contact-form">
                     <div class="form_nama">
                         <div class="label_row">
                             <div class="label_icon">
@@ -132,7 +132,7 @@
                                 </label>
                             </div>
                         </div>
-                        <input placeholder="Contoh : I Made Gerrald Wahyu Tidak Darmawan" id="Nama" name="Nama">
+                        <input placeholder="Contoh : I Made Gerrald Wahyu Tidak Darmawan" id="Nama" name="nama">
                         <br>
                     </div>
                     <div class="form_kelas">
@@ -146,7 +146,7 @@
                                 </label>
                             </div>
                         </div>
-                        <input placeholder="Contoh : XI RPL 3" id="Email" name="Email">
+                        <input placeholder="Contoh : XI RPL 3" id="Kelas" name="kelas">
                         <br>
                     </div>
                     <div class="form_nomor">
@@ -160,7 +160,7 @@
                                 </label>
                             </div>
                         </div>
-                        <input placeholder="Yang terdaftar di Whatsapp yah 😘" id="Email" name="Email">
+                        <input placeholder="Yang terdaftar di Whatsapp yah 😘" id="Nomor" name="no telp">
                         <br>
                     </div>
                     <div class="form_alasan">
@@ -175,7 +175,7 @@
                             </div>
                         </div>
                         <textarea required cols="30" rows="10" placeholder="Yang paling bagus langsung jadi ketua 😎"
-                            name="Pesan" id="Pesan"></textarea>
+                            name="pesan" id="pesan"></textarea>
                     </div>
                     <div class="disclaimer_row">
                         <div class="disclaimer_icon">
@@ -297,9 +297,20 @@
 
 
     <!-- Script JS -->
-    <script src="script.js"></script>
     <script src="https://kit.fontawesome.com/3be7009fc0.js" crossorigin="anonymous"></script>
     <script src="https://unpkg.com/@phosphor-icons/web"></script>
+    <script>
+        const scriptURL = 'https://script.google.com/macros/s/AKfycbx7SOkWaYWdhRMMyFsjI_IGmmlKUV_Mco6mBqZ0diyDLAwTsBn_olw_MnYF-i2VnFrM/exec'
+        const form = document.forms['sangsaka-contact-form']
+      
+        form.addEventListener('submit', e => {
+          e.preventDefault()
+          fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+            .then(response => console.log('Success!', response))
+            .catch(error => console.error('Error!', error.message))
+        })
+    </script>
+    <script src="script.js"></script>
 
 </body>
 
