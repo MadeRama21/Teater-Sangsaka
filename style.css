@@ -944,13 +944,24 @@ footer {
 /* ======== GALERi end ========= */
 
 /* ======== CONTACT ========= */
+
+.contact_main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  min-height: 180vh;
+}
+
 .contact_container {
-  margin-top: 9rem;
+  /* margin-top: 9rem;
   margin-left: 9rem;
-  margin-right: 9rem;
+  margin-right: 9rem; */
   display: flex;
   justify-content: space-between;
+  align-items: baseline;
   flex-direction: row;
+  width: 80%;
 }
 
 .contact_text {
@@ -967,6 +978,7 @@ footer {
 
 .contact_text p {
   font-size: 20px;
+  margin-top: 10px;
 }
 
 .sosmed {
@@ -975,14 +987,16 @@ footer {
   gap: 30px;
 }
 
-.wa_button {
+.sosmed_button {
   display: flex;
   transition: 0.3s;
   padding-top: 10px;
   margin-top: 10px;
 }
 
-.wa_button {
+.sosmed_button {
+  display: flex;
+  flex-direction: column;
   padding: 10px;
   padding-right: 20px;
   padding-left: 20px;
@@ -991,20 +1005,22 @@ footer {
   border-radius: 5px;
   text-decoration: none;
   font-weight: 500;
-  width: 3000px;
+  width: 300px;
   gap: 15px;
 }
 
-.wa_button i {
-  background-color: #25d366;
-  font-size: 45px;
+.sosmed_icon i {
+background-color: #25d366;
+  font-size: 25px;
 }
 
-.wa_button p {
-  font-size: 15px;
+.sosmed_button p {
+  display: flex;
+  flex-direction: column;
+  font-size: 20px;
 }
 
-.wa_button:hover {
+.sosmed_button:hover {
   transform: translateY(-3px);
   transition: 0.3s;
 }
@@ -2664,6 +2680,8 @@ textarea {
 
   /* Responsive contact */
 
+
+
   .contact_container {
     display: flex;
     flex-direction: column;
@@ -2671,12 +2689,13 @@ textarea {
 
   .contact_text {
     padding-bottom: 50px;
+    width: 100%;
   }
 
 input,
 textarea {
 
-  width: 500px;
+  width: 590px;
   padding: 20px;
   border-radius: 15px;
 }
@@ -2690,8 +2709,9 @@ textarea {
   background-color: #eb2125;
   border-radius: 5px;
   padding: 10px;
-  padding-left: 290px;
-  padding-right: 290px;
+  margin-left: 20px;
+  padding-left: 270px;
+  padding-right: 270px;
   transition: transform 0.3s;
 }
 
