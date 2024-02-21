@@ -1018,16 +1018,6 @@ footer {
 .form_outer i {
   font-size: 30px;
 }
-/* .form_title::before {
-  content: "";
-  position: absolute;
-  width: 70px;
-  height: 7px;
-  background-color: #EB2125;
-  border-radius: 10px;
-  left: calc(65%);
-  top: calc(31%);
-} */
 
 .contact_form {
   display: flex;
@@ -1103,9 +1093,10 @@ textarea {
   border-radius: 15px;
 }
 
-.button-contact {
+button .button-contact {
   color: #fff;
   background-color: #eb2125;
+
   border-radius: 5px;
   padding: 10px;
   padding-left: 290px;
@@ -1113,7 +1104,7 @@ textarea {
   transition: transform 0.3s;
 }
 
-.button-contact:hover {
+button .button-contact:hover {
   transform: translateY(-3px);
   transition: 0.3s;
 }
@@ -2128,6 +2119,8 @@ textarea {
     pointer-events: initial;
     transition: top 0.3s;
   }
+
+  
 }
 
 @media only screen and (max-width: 897px) {
@@ -2147,6 +2140,11 @@ textarea {
     flex-direction: column;
 
     justify-content: space-evenly;
+  }
+  #moreImage {  
+    grid-template-columns: repeat(3, 1fr);
+    margin-right: 22px;
+    margin-left: 22px;
   }
 }
 
@@ -2248,6 +2246,11 @@ textarea {
     color: azure;
     font-weight: bolder;
     transition: 0.3s;
+  }
+  #moreImage {  
+    grid-template-columns: repeat(3, 1fr);
+    margin-right: 22px;
+    margin-left: 22px;
   }
 
   .nav__toggle {
@@ -2662,41 +2665,6 @@ textarea {
   }
   /* TENTANG KITA END */
 
-  /* Responsive contact */
-
-  .contact_container {
-    display: flex;
-    flex-direction: column;
-  }
-
-  .contact_text {
-    padding-bottom: 50px;
-  }
-
-input,
-textarea {
-
-  width: 500px;
-  padding: 20px;
-  border-radius: 15px;
-}
-
-.contact_form {
-  
-}
-
-.button-contact {
-  color: #fff;
-  background-color: #eb2125;
-  border-radius: 5px;
-  padding: 10px;
-  padding-left: 290px;
-  padding-right: 290px;
-  transition: transform 0.3s;
-}
-
-  /* Responsive contact end */
-
   #moreImage {
     grid-template-columns: repeat(3, 1fr);
   }
@@ -3061,6 +3029,10 @@ textarea {
   }
   .box .dream {
     max-width: 100%;
+  }
+  #moreImage {  
+    margin-right: 22px;
+    margin-left: 22px;
   }
 }
 
