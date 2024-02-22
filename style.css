@@ -969,7 +969,7 @@ footer {
   flex-direction: column;
   justify-content: center;
   /* padding-top: 200px; */
-  width: 30%;
+  width: 40%;
 }
 
 .contact_text h1 {
@@ -987,14 +987,14 @@ footer {
   gap: 30px;
 }
 
-.sosmed_button {
+.wa_button {
   display: flex;
   transition: 0.3s;
   padding-top: 10px;
   margin-top: 10px;
 }
 
-.sosmed_button {
+.wa_button {
   display: flex;
   flex-direction: column;
   padding: 10px;
@@ -1009,18 +1009,18 @@ footer {
   gap: 15px;
 }
 
-.sosmed_icon i {
+.wa_button i {
 background-color: #25d366;
   font-size: 25px;
 }
 
-.sosmed_button p {
+.wa_button p {
   display: flex;
   flex-direction: column;
   font-size: 20px;
 }
 
-.sosmed_button:hover {
+.wa_button:hover {
   transform: translateY(-3px);
   transition: 0.3s;
 }
@@ -1112,8 +1112,7 @@ button {
 input,
 textarea {
   background-color: gainsboro;
-  width: 50%;
-  resize: none;
+
   width: 600px;
   padding: 20px;
   border-radius: 15px;
@@ -1123,8 +1122,8 @@ textarea {
   color: #fff;
   background-color: #eb2125;
   border-radius: 5px;
-  padding: 10px;
-  width: 93.73%;
+  padding: 10px 0;
+  width: 94%;
   text-align: center;
   transition: transform 0.3s;
 }
@@ -2151,6 +2150,23 @@ textarea {
     pointer-events: initial;
     transition: top 0.3s;
   }
+
+  /* Responsive Contact */
+
+  .contact_main {
+    min-height: 230vh;
+  }
+  .contact_form {
+    padding: 2px;
+  }
+
+  .form_title h1 {
+    padding-top: 10px;
+
+  }
+  
+  /* Responsive Contact end */
+
 }
 
 @media only screen and (max-width: 897px) {
@@ -2174,7 +2190,7 @@ textarea {
 }
 
 /* RESPONSIVE GALERI */
-@media only screen and (max-width: 769px) {
+@media screen and (max-width: 769px) {
   .nav {
     height: 5.5rem;
   }
@@ -2687,7 +2703,9 @@ textarea {
 
   /* Responsive contact */
 
-
+.contact_main {
+  min-height: 340vh;
+}
 
   .contact_container {
     display: flex;
@@ -2695,30 +2713,30 @@ textarea {
   }
 
   .contact_text {
-    padding-bottom: 50px;
+    width: 100%;
+    padding-bottom: 100px;
+
+  }
+
+  .contact_form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     width: 100%;
   }
 
-input,
-textarea {
+  .form_outer {
+    width: 100%;
+  }
 
-  width: 590px;
-  padding: 20px;
-  border-radius: 15px;
-}
-
-.contact_form {
-  
-}
+  .form_input {
+    width: 100%;
+  }
 
 .button-contact {
   color: #fff;
   background-color: #eb2125;
   border-radius: 5px;
-  padding: 10px;
-  margin-left: 20px;
-  padding-left: 270px;
-  padding-right: 270px;
   transition: transform 0.3s;
 }
 
@@ -3056,6 +3074,22 @@ textarea {
   .petinggi-text {
     text-align: center;
   }
+
+  /* Responsive Contact */
+
+  .contact_form {
+    width: 100%;
+  }
+
+  .form_outer {
+    width: 100%;
+  }
+
+  .form_input {
+    width: 100%;
+  }
+
+  /* Responsive Contact */
   
 }
 /*=============== RESPONSIVE CAROUSEL EVENTS END ===============*/
