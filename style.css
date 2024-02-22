@@ -40,7 +40,7 @@
 }
 
 /*========== Responsive typography ==========*/
-@media only screen and (min-width: 1024px) {
+@media screen and (min-width: 1024px) {
   :root {
     --normal-font-size: 1rem;
   }
@@ -1034,16 +1034,6 @@ background-color: #25d366;
 .form_outer i {
   font-size: 30px;
 }
-/* .form_title::before {
-  content: "";
-  position: absolute;
-  width: 70px;
-  height: 7px;
-  background-color: #EB2125;
-  border-radius: 10px;
-  left: calc(65%);
-  top: calc(31%);
-} */
 
 .contact_form {
   display: flex;
@@ -1121,6 +1111,7 @@ textarea {
 .button-contact, .my-btn {
   color: #fff;
   background-color: #eb2125;
+
   border-radius: 5px;
   padding: 10px 0;
   width: 94%;
@@ -1128,7 +1119,7 @@ textarea {
   transition: transform 0.3s;
 }
 
-.button-contact:hover {
+button .button-contact:hover {
   transform: translateY(-3px);
   transition: 0.3s;
 }
@@ -1190,11 +1181,21 @@ textarea {
 .np_1 {
   display: flex;
   flex-direction: row;
+  align-items: flex-start;
   gap: 10px;
 }
 
 .np_1 i {
   font-size: 2rem;
+}
+
+.np_2 h3 {
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+
+.np_2 p {
+  font-style: italic;
 }
 
 .hero_sejarah {
@@ -1329,6 +1330,12 @@ textarea {
   margin-bottom: 10px;
 }
 
+.timeline_date h1 {
+  font-size: 1.5rem;
+  font-weight: 600;
+  font-family: "Poppins";
+}
+
 .timeline_date i {
   font-size: 2rem;
 }
@@ -1338,12 +1345,11 @@ textarea {
   position: absolute;
   width: 0;
   height: 0;
-  border-top: 16px solid transparent;
-  border-right: 30px solid #252525;
-  border-bottom: 16px solid transparent;
-  rotate: -90deg;
+	border-left: 20px solid transparent;
+	border-right: 20px solid transparent;
+	border-top: 35px solid #252525;
   margin-top: 50px;
-  left: calc(50% - 13px);
+  left: calc(50% - 18px);
 }
 
 .hero_filosofi-logo {
@@ -2080,7 +2086,7 @@ textarea {
 }
 
 /* For large devices */
-@media only screen and (min-width: 1116px) {
+@media screen and (min-width: 1116px) {
   .container {
     margin-inline: 1rem;
   }
@@ -2169,7 +2175,7 @@ textarea {
 
 }
 
-@media only screen and (max-width: 897px) {
+@media screen and (max-width: 897px) {
   .wadah-U2 {
     margin-left: 3rem;
   }
@@ -2186,6 +2192,11 @@ textarea {
     flex-direction: column;
 
     justify-content: space-evenly;
+  }
+  #moreImage {  
+    grid-template-columns: repeat(3, 1fr);
+    margin-right: 22px;
+    margin-left: 22px;
   }
 }
 
@@ -2287,6 +2298,11 @@ textarea {
     color: azure;
     font-weight: bolder;
     transition: 0.3s;
+  }
+  #moreImage {  
+    grid-template-columns: repeat(3, 1fr);
+    margin-right: 22px;
+    margin-left: 22px;
   }
 
   .nav__toggle {
@@ -2423,7 +2439,7 @@ textarea {
     margin-left: 0;
   }
   .hero_sambutan {
-    min-height: 150vh;
+   height: 100vh;
   }
   .sambutan_content {
     flex-direction: column;
@@ -2447,7 +2463,7 @@ textarea {
   }
 
   .hero_sejarah {
-    min-height: 290vh;
+    min-height: 100vh;
   }
 
   .welcome_text {
@@ -2638,19 +2654,37 @@ textarea {
 
   /* TENTANG KITA */
   .hero_sambutan {
-    padding: 35px;
+    min-height: 175vh;
+  }
+
+  .sambutan_content {
+    flex-direction: column;
+  }
+
+  .foto_pembina {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .kata_sambutan {
+    width: 725px;
   }
 
   .isi_sambutan h2 {
     line-height: 55px;
   }
 
-  .hero_filosofi-logo {
-    min-height: 150vh;
+  .hero_sejarah {
+    min-height: 370vh;
   }
 
   .timeline_items {
     max-width: 750px;
+  }
+
+  .hero_filosofi-logo {
+    min-height: 160vh;
   }
 
   .container_makna-logo {
@@ -2682,7 +2716,7 @@ textarea {
   }
 
   .hero_petinggisangsaka {
-    min-height: 140vh;
+    min-height: 150vh;
   }
 
   .logo_sangsaka img {
@@ -3008,26 +3042,23 @@ textarea {
     justify-self: center;
     align-items: center;
     flex-direction: column;
-    width: 95%;
+    /* width: 1000px; */
   }
 
   .hero_sambutan {
     min-height: 190vh;
   }
 
-  .sambutan_content {
-    justify-self: center;
-    align-items: center;
-    flex-direction: column;
-    width: 95%;
+  .isi_sambutan {
+    width: 100%;
   }
 
-  .isi_sambutan {
-    width: 98%;
+  .kata_sambutan {
+    width: 75%;
   }
 
   .hero_sejarah {
-    min-height: 330vh;
+    min-height: 350vh;
     width: 90%;
   }
 
@@ -3048,7 +3079,7 @@ textarea {
   }
 
   .segitiga {
-    left: calc(6%);
+    left: calc(5% - 2px);
   }
 
   .hero_filosofi-logo {
@@ -3115,6 +3146,10 @@ textarea {
   .box .dream {
     max-width: 100%;
   }
+  #moreImage {  
+    margin-right: 22px;
+    margin-left: 22px;
+  }
 }
 
 /* RESPONSIVE GALERI KHUSUS END */
@@ -3122,7 +3157,11 @@ textarea {
 @media only screen and (max-width: 425px) {
   /* RESPONSIVE TENTANG KITA */
   .hero_sambutan {
-    min-height: 180vh;
+    min-height: 150vh;
+  }
+
+  .sambutan_content {
+    padding-top: 150px;
   }
 
   .foto_pembina img {
@@ -3131,15 +3170,15 @@ textarea {
   }
 
   .kata_sambutan {
-    width: 100%;
+    width: 85%;
   }
 
   .hero_sejarah {
-    min-height: 420vh;
+    min-height: 330vh;
   }
 
   .welcome_text {
-    padding-left: 0;
+    width: 100%;
   }
 
   .timeline_items::before {
@@ -3164,11 +3203,11 @@ textarea {
   }
 
   .segitiga {
-    left: calc(1%);
+    left: calc(1% - 6px);
   }
 
   .hero_filosofi-logo {
-    min-height: 210vh;
+    min-height: 175vh;
   }
 
   .title_filosofi-logo h2 {
@@ -3184,7 +3223,7 @@ textarea {
   }
 
   .hero_petinggisangsaka {
-    min-height: 180vh;
+    min-height: 145vh;
   }
 
   .title_petinggisangsaka {
