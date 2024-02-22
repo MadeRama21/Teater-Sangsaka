@@ -942,18 +942,17 @@ footer {
 .contact_main {
   display: flex;
   justify-content: center;
-  align-items: center;
+  margin: 10rem 0 0;
   width: 100%;
-  min-height: 180vh;
+  min-height: 110vh;
 }
 
 .contact_container {
-  margin: 10rem 2rem;
   display: flex;
-  justify-content: space-between;
   align-items: baseline;
   flex-direction: row;
-  width: 80%;
+  width: 85%;
+  gap: 9rem;
 }
 
 .contact_text {
@@ -965,11 +964,15 @@ footer {
 
 .contact_text h1 {
   font-size: 50px;
+  font-weight: 800;
+  line-height: 3.3rem;
+  margin-bottom: 1rem;
 }
 
 .contact_text p {
   font-size: 20px;
-  margin-top: 10px;
+  margin-top: 1px;
+  line-height: 1.5rem;
 }
 
 .sosmed {
@@ -999,7 +1002,7 @@ footer {
 
 .wa_button i {
 background-color: #25d366;
-  font-size: 25px;
+  font-size: 50px;
 }
 
 .wa_button p {
@@ -1089,6 +1092,7 @@ button {
 
 .forms1 {
   position: relative;
+  margin-bottom: 3rem;
 }
 
 .forms1 input, .forms1 textarea {
@@ -1143,16 +1147,14 @@ button {
 input,
 textarea {
   background-color: gainsboro;
-
   width: 600px;
   padding: 20px;
   border-radius: 15px;
 }
 
-.button-contact, .my-btn {
+.button-contact, .btn-loading {
   color: #fff;
   background-color: #eb2125;
-
   border-radius: 5px;
   padding: 10px 0;
   width: 94%;
@@ -1160,7 +1162,7 @@ textarea {
   transition: transform 0.3s;
 }
 
-button .button-contact:hover {
+button .button-contact:hover, button .btn-loading:hover {
   transform: translateY(-3px);
   transition: 0.3s;
 }
@@ -2200,9 +2202,9 @@ button .button-contact:hover {
 
   /* Responsive Contact */
 
-  .contact_main {
+  /* .contact_main {
     min-height: 230vh;
-  }
+  } */
   .contact_form {
     padding: 2px;
   }
