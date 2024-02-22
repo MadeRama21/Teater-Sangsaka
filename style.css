@@ -841,7 +841,7 @@ footer {
 }
 
 .heading h2 {
-  margin: 125px 0 25px;
+  margin: 125px 0 25px 0;
   font-family: "Poppins", sans-serif;
   font-weight: 700;
   font-size: 3rem;
@@ -2260,13 +2260,7 @@ button .button-contact:hover {
     font-size: 2px;
   }
   .heading {
-    margin: 120px 0 0 32px;
-    text-transform: uppercase;
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-    margin: 120px 0 40px 0;
-    font-size: 30px;
+    heading
   }
   .image p {
     opacity: 0;
