@@ -3122,7 +3122,11 @@ textarea {
 @media only screen and (max-width: 425px) {
   /* RESPONSIVE TENTANG KITA */
   .hero_sambutan {
-    min-height: 180vh;
+    min-height: 150vh;
+  }
+
+  .sambutan_content {
+    padding-top: 175px;
   }
 
   .foto_pembina img {
@@ -3135,7 +3139,7 @@ textarea {
   }
 
   .hero_sejarah {
-    min-height: 430vh;
+    min-height: 330vh;
   }
 
   .welcome_text {
@@ -3168,7 +3172,7 @@ textarea {
   }
 
   .hero_filosofi-logo {
-    min-height: 230vh;
+    min-height: 175vh;
   }
 
   .title_filosofi-logo h2 {
@@ -3184,7 +3188,7 @@ textarea {
   }
 
   .hero_petinggisangsaka {
-    min-height: 200vh;
+    min-height: 145vh;
   }
 
   .title_petinggisangsaka {
