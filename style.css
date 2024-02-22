@@ -779,7 +779,6 @@ footer {
   display: flex;
   flex-direction: column;
   padding: 1.5px;
-  width: 32.5%;
   width: 100%;
   margin: 1px;
   -webkit-filter: grayscale(1);
@@ -841,19 +840,14 @@ footer {
   opacity: 100;
 }
 
-.heading {
-  margin: 120px 0 0 32px;
-  text-transform: uppercase;
-  display: flex;
-  align-items: center;
-  flex-direction: column;
-  margin: 140px 0 40px 0;
-  font-size: 20px;
-  font-style: normal;
-  font-weight: 500;
-  line-height: normal;
-  letter-spacing: 2.4px;
+.heading h2 {
+  margin: 125px 0 25px 0;
   font-family: "Poppins", sans-serif;
+  font-weight: 700;
+  font-size: 3rem;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  color: #252525;
 }
 
 #image1 {
@@ -954,9 +948,7 @@ footer {
 }
 
 .contact_container {
-  /* margin-top: 9rem;
-  margin-left: 9rem;
-  margin-right: 9rem; */
+  margin: 10rem 2rem;
   display: flex;
   justify-content: space-between;
   align-items: baseline;
@@ -967,9 +959,8 @@ footer {
 .contact_text {
   display: flex;
   flex-direction: column;
-  justify-content: center;
   /* padding-top: 200px; */
-  width: 30%;
+  width: 45%;
 }
 
 .contact_text h1 {
@@ -987,40 +978,36 @@ footer {
   gap: 30px;
 }
 
-.sosmed_button {
+.wa_button {
   display: flex;
   transition: 0.3s;
   padding-top: 10px;
   margin-top: 10px;
+  text-align: center;
+  align-items: center;
 }
 
-.sosmed_button {
-  display: flex;
-  flex-direction: column;
-  padding: 10px;
-  padding-right: 20px;
-  padding-left: 20px;
+.wa_button {
+  padding: 10px 15px;
   color: white;
   background-color: #25d366;
   border-radius: 5px;
   text-decoration: none;
   font-weight: 500;
-  width: 300px;
   gap: 15px;
 }
 
-.sosmed_icon i {
+.wa_button i {
 background-color: #25d366;
   font-size: 25px;
 }
 
-.sosmed_button p {
-  display: flex;
-  flex-direction: column;
-  font-size: 20px;
+.wa_button p {
+  font-size: 15px;
+  margin: 0;
 }
 
-.sosmed_button:hover {
+.wa_button:hover {
   transform: translateY(-3px);
   transition: 0.3s;
 }
@@ -1065,6 +1052,7 @@ background-color: #25d366;
   display: flex;
   flex-direction: row;
   padding-left: 20px;
+  margin-top: 3rem;
   color: #eb2125;
 }
 
@@ -1096,14 +1084,66 @@ textarea {
 .form_alasan,
 button {
   display: block;
-  margin: 20px;
+  margin: 0 20px 20px;
+}
+
+.forms1 {
+  position: relative;
+}
+
+.forms1 input, .forms1 textarea {
+  display: block;
+  margin-bottom: 5px;
+  border: 2px solid #252525;
+}
+
+.forms1 input:focus, .forms1 textarea:focus {
+  outline: none;
+}
+
+.sukses input {
+  border-color: #2ecc71;
+}
+
+.sukses textarea {
+  border-color: #2ecc71;
+}
+
+.sukses i.bxs-check-circle {
+  color: #2ecc71;
+  visibility: visible;
+}
+
+.erorr input, .erorr textarea {
+  border-color: #eb2125;
+}
+
+.erorr i.bxs-error-circle {
+  color: #eb2125;
+  visibility: visible;
+}
+
+.forms1.erorr small {
+  color: #eb2125;
+  visibility: visible;
+}
+
+.forms1 .icon-validation {
+  visibility: hidden;
+  position: absolute;
+  top: 55px;
+  right: 10px;
+}
+
+.forms1 small {
+  visibility: hidden;
+  position: absolute;
 }
 
 input,
 textarea {
   background-color: gainsboro;
-  width: 50%;
-  resize: none;
+
   width: 600px;
   padding: 20px;
   border-radius: 15px;
@@ -1114,8 +1154,8 @@ textarea {
   background-color: #eb2125;
 
   border-radius: 5px;
-  padding: 10px;
-  width: 93.73%;
+  padding: 10px 0;
+  width: 94%;
   text-align: center;
   transition: transform 0.3s;
 }
@@ -2158,7 +2198,22 @@ button .button-contact:hover {
     transition: top 0.3s;
   }
 
+  /* Responsive Contact */
+
+  .contact_main {
+    min-height: 230vh;
+  }
+  .contact_form {
+    padding: 2px;
+  }
+
+  .form_title h1 {
+    padding-top: 10px;
+
+  }
   
+  /* Responsive Contact end */
+
 }
 
 @media screen and (max-width: 897px) {
@@ -2187,7 +2242,7 @@ button .button-contact:hover {
 }
 
 /* RESPONSIVE GALERI */
-@media only screen and (max-width: 769px) {
+@media screen and (max-width: 769px) {
   .nav {
     height: 5.5rem;
   }
@@ -2265,15 +2320,7 @@ button .button-contact:hover {
   .dream p {
     font-size: 2px;
   }
-  .heading {
-    margin: 120px 0 0 32px;
-    text-transform: uppercase;
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-    margin: 120px 0 40px 0;
-    font-size: 30px;
-  }
+  
   .image p {
     opacity: 0;
     z-index: 1;
@@ -2723,34 +2770,40 @@ button .button-contact:hover {
 
   /* Responsive contact */
 
+.contact_main {
+  min-height: 340vh;
+}
+
   .contact_container {
     display: flex;
     flex-direction: column;
   }
 
   .contact_text {
-    padding-bottom: 50px;
+    width: 100%;
+    padding-bottom: 100px;
+
   }
 
-input,
-textarea {
+  .contact_form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+  }
 
-  width: 500px;
-  padding: 20px;
-  border-radius: 15px;
-}
+  .form_outer {
+    width: 100%;
+  }
 
-.contact_form {
-  
-}
+  .form_input {
+    width: 100%;
+  }
 
 .button-contact {
   color: #fff;
   background-color: #eb2125;
   border-radius: 5px;
-  padding: 10px;
-  padding-left: 290px;
-  padding-right: 290px;
   transition: transform 0.3s;
 }
 
@@ -3085,6 +3138,22 @@ textarea {
   .petinggi-text {
     text-align: center;
   }
+
+  /* Responsive Contact */
+
+  .contact_form {
+    width: 100%;
+  }
+
+  .form_outer {
+    width: 100%;
+  }
+
+  .form_input {
+    width: 100%;
+  }
+
+  /* Responsive Contact */
   
 }
 /*=============== RESPONSIVE CAROUSEL EVENTS END ===============*/
@@ -3113,6 +3182,9 @@ textarea {
   #moreImage {  
     margin-right: 22px;
     margin-left: 22px;
+  }
+  .container1 {
+    margin: 5px 20px 0 20px;
   }
 }
 
