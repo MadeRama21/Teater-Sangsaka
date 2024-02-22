@@ -945,9 +945,7 @@ footer {
 
 /* ======== CONTACT ========= */
 .contact_container {
-  margin-top: 9rem;
-  margin-left: 9rem;
-  margin-right: 9rem;
+  margin: 10rem 2rem;
   display: flex;
   justify-content: space-between;
   flex-direction: row;
@@ -956,9 +954,8 @@ footer {
 .contact_text {
   display: flex;
   flex-direction: column;
-  justify-content: center;
   /* padding-top: 200px; */
-  width: 30%;
+  width: 45%;
 }
 
 .contact_text h1 {
@@ -980,18 +977,17 @@ footer {
   transition: 0.3s;
   padding-top: 10px;
   margin-top: 10px;
+  text-align: center;
+  align-items: center;
 }
 
 .wa_button {
-  padding: 10px;
-  padding-right: 20px;
-  padding-left: 20px;
+  padding: 10px 15px;
   color: white;
   background-color: #25d366;
   border-radius: 5px;
   text-decoration: none;
   font-weight: 500;
-  width: 3000px;
   gap: 15px;
 }
 
@@ -1002,6 +998,7 @@ footer {
 
 .wa_button p {
   font-size: 15px;
+  margin: 0;
 }
 
 .wa_button:hover {
@@ -1059,6 +1056,7 @@ footer {
   display: flex;
   flex-direction: row;
   padding-left: 20px;
+  margin-top: 3rem;
   color: #eb2125;
 }
 
@@ -1090,7 +1088,60 @@ textarea {
 .form_alasan,
 button {
   display: block;
-  margin: 20px;
+  margin: 0 20px 20px;
+}
+
+.forms1 {
+  position: relative;
+}
+
+.forms1 input, .forms1 textarea {
+  display: block;
+  margin-bottom: 5px;
+  border: 2px solid #252525;
+}
+
+.forms1 input:focus, .forms1 textarea:focus {
+  outline: none;
+}
+
+.sukses input {
+  border-color: #2ecc71;
+}
+
+.sukses textarea {
+  border-color: #2ecc71;
+}
+
+.sukses i.bxs-check-circle {
+  color: #2ecc71;
+  visibility: visible;
+}
+
+.erorr input, .erorr textarea {
+  border-color: #eb2125;
+}
+
+.erorr i.bxs-error-circle {
+  color: #eb2125;
+  visibility: visible;
+}
+
+.forms1.erorr small {
+  color: #eb2125;
+  visibility: visible;
+}
+
+.forms1 .icon-validation {
+  visibility: hidden;
+  position: absolute;
+  top: 55px;
+  right: 10px;
+}
+
+.forms1 small {
+  visibility: hidden;
+  position: absolute;
 }
 
 input,
