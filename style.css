@@ -3155,7 +3155,7 @@ button .button-contact:hover, button .btn-loading:hover {
     width: 100%;
   }
 
-  /* Responsive Contact */
+  /* Responsive Contact end*/
   
 }
 /*=============== RESPONSIVE CAROUSEL EVENTS END ===============*/
@@ -3170,6 +3170,26 @@ button .button-contact:hover, button .btn-loading:hover {
   .box .dream {
     max-width: 100%;
   }
+
+  /* Responsive contact */
+
+  .contact_text {
+    width: 50%;
+  }
+
+  .contact_form {
+    width: 50%;
+  }
+
+  .form_outer {
+    width: 50%;
+  }
+
+  .form_input {
+    width: 50%;
+  }
+
+  /* Responsive Contact end */
 }
 
 @media only screen and (max-width: 1395px) {
@@ -3280,4 +3300,20 @@ button .button-contact:hover, button .btn-loading:hover {
   .petinggi-text p {
     font-size: 0.85rem;
   }
+
+  /* Responsive Contact */
+
+  .contact_form {
+    width: 100%;
+  }
+
+  .form_outer {
+    width: 100%;
+  }
+
+  .form_input {
+    width: 100%;
+  }
+
+  /* Responsive Contact end*/
 }
