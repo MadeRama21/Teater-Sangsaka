@@ -1182,11 +1182,21 @@ button .button-contact:hover {
 .np_1 {
   display: flex;
   flex-direction: row;
+  align-items: flex-start;
   gap: 10px;
 }
 
 .np_1 i {
   font-size: 2rem;
+}
+
+.np_2 h3 {
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+
+.np_2 p {
+  font-style: italic;
 }
 
 .hero_sejarah {
@@ -1319,6 +1329,12 @@ button .button-contact:hover {
 .timeline_date {
   color: #252525;
   margin-bottom: 10px;
+}
+
+.timeline_date h1 {
+  font-size: 1.5rem;
+  font-weight: 600;
+  font-family: "Poppins";
 }
 
 .timeline_date i {
@@ -2410,7 +2426,7 @@ button .button-contact:hover {
     margin-left: 0;
   }
   .hero_sambutan {
-    min-height: 150vh;
+   height: 100vh;
   }
   .sambutan_content {
     flex-direction: column;
@@ -2434,7 +2450,7 @@ button .button-contact:hover {
   }
 
   .hero_sejarah {
-    min-height: 290vh;
+    min-height: 100vh;
   }
 
   .welcome_text {
@@ -2625,19 +2641,37 @@ button .button-contact:hover {
 
   /* TENTANG KITA */
   .hero_sambutan {
-    padding: 35px;
+    min-height: 175vh;
+  }
+
+  .sambutan_content {
+    flex-direction: column;
+  }
+
+  .foto_pembina {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .kata_sambutan {
+    width: 725px;
   }
 
   .isi_sambutan h2 {
     line-height: 55px;
   }
 
-  .hero_filosofi-logo {
-    min-height: 150vh;
+  .hero_sejarah {
+    min-height: 370vh;
   }
 
   .timeline_items {
     max-width: 750px;
+  }
+
+  .hero_filosofi-logo {
+    min-height: 160vh;
   }
 
   .container_makna-logo {
@@ -2669,7 +2703,7 @@ button .button-contact:hover {
   }
 
   .hero_petinggisangsaka {
-    min-height: 140vh;
+    min-height: 150vh;
   }
 
   .logo_sangsaka img {
@@ -2989,26 +3023,23 @@ textarea {
     justify-self: center;
     align-items: center;
     flex-direction: column;
-    width: 95%;
+    /* width: 1000px; */
   }
 
   .hero_sambutan {
     min-height: 190vh;
   }
 
-  .sambutan_content {
-    justify-self: center;
-    align-items: center;
-    flex-direction: column;
-    width: 95%;
+  .isi_sambutan {
+    width: 100%;
   }
 
-  .isi_sambutan {
-    width: 98%;
+  .kata_sambutan {
+    width: 75%;
   }
 
   .hero_sejarah {
-    min-height: 330vh;
+    min-height: 350vh;
     width: 90%;
   }
 
@@ -3100,15 +3131,15 @@ textarea {
   }
 
   .kata_sambutan {
-    width: 100%;
+    width: 85%;
   }
 
   .hero_sejarah {
-    min-height: 420vh;
+    min-height: 430vh;
   }
 
   .welcome_text {
-    padding-left: 0;
+    width: 100%;
   }
 
   .timeline_items::before {
@@ -3137,7 +3168,7 @@ textarea {
   }
 
   .hero_filosofi-logo {
-    min-height: 210vh;
+    min-height: 230vh;
   }
 
   .title_filosofi-logo h2 {
@@ -3153,7 +3184,7 @@ textarea {
   }
 
   .hero_petinggisangsaka {
-    min-height: 180vh;
+    min-height: 200vh;
   }
 
   .title_petinggisangsaka {
