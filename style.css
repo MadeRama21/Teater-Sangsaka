@@ -40,7 +40,7 @@
 }
 
 /*========== Responsive typography ==========*/
-@media only screen and (min-width: 1024px) {
+@media screen and (min-width: 1024px) {
   :root {
     --normal-font-size: 1rem;
   }
@@ -2087,7 +2087,7 @@ button .button-contact:hover {
 }
 
 /* For large devices */
-@media only screen and (min-width: 1116px) {
+@media screen and (min-width: 1116px) {
   .container {
     margin-inline: 1rem;
   }
@@ -2161,7 +2161,7 @@ button .button-contact:hover {
   
 }
 
-@media only screen and (max-width: 897px) {
+@media screen and (max-width: 897px) {
   .wadah-U2 {
     margin-left: 3rem;
   }
