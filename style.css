@@ -1346,12 +1346,11 @@ button .button-contact:hover {
   position: absolute;
   width: 0;
   height: 0;
-  border-top: 16px solid transparent;
-  border-right: 30px solid #252525;
-  border-bottom: 16px solid transparent;
-  rotate: -90deg;
+	border-left: 20px solid transparent;
+	border-right: 20px solid transparent;
+	border-top: 35px solid #252525;
   margin-top: 50px;
-  left: calc(50% - 13px);
+  left: calc(50% - 18px);
 }
 
 .hero_filosofi-logo {
@@ -3060,7 +3059,7 @@ textarea {
   }
 
   .segitiga {
-    left: calc(6%);
+    left: calc(5% - 2px);
   }
 
   .hero_filosofi-logo {
@@ -3126,7 +3125,7 @@ textarea {
   }
 
   .sambutan_content {
-    padding-top: 175px;
+    padding-top: 150px;
   }
 
   .foto_pembina img {
@@ -3168,7 +3167,7 @@ textarea {
   }
 
   .segitiga {
-    left: calc(1%);
+    left: calc(1% - 6px);
   }
 
   .hero_filosofi-logo {
