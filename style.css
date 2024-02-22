@@ -779,7 +779,6 @@ footer {
   display: flex;
   flex-direction: column;
   padding: 1.5px;
-  width: 32.5%;
   width: 100%;
   margin: 1px;
   -webkit-filter: grayscale(1);
@@ -841,19 +840,14 @@ footer {
   opacity: 100;
 }
 
-.heading {
-  margin: 120px 0 0 32px;
-  text-transform: uppercase;
-  display: flex;
-  align-items: center;
-  flex-direction: column;
-  margin: 140px 0 40px 0;
-  font-size: 20px;
-  font-style: normal;
-  font-weight: 500;
-  line-height: normal;
-  letter-spacing: 2.4px;
+.heading h2 {
+  margin: 125px 0 25px;
   font-family: "Poppins", sans-serif;
+  font-weight: 700;
+  font-size: 3rem;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  color: #252525;
 }
 
 #image1 {
@@ -3083,6 +3077,9 @@ textarea {
   #moreImage {  
     margin-right: 22px;
     margin-left: 22px;
+  }
+  .container1 {
+    margin: 5px 20px 0 20px;
   }
 }
 
