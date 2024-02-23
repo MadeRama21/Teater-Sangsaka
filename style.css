@@ -99,7 +99,7 @@ nav.scrolling-active {
   padding: 20px 0 20px 0;
 }
 
-.nav {
+.nav1 {
   height: var(--header-height);
 }
 nav img {
@@ -1828,7 +1828,7 @@ button .btn-loading:hover {
   .lihat-pementasan a {
     margin-left: 0;
   }
-  .nav {
+  .nav1 {
     height: 6.5rem;
   }
   .header-siapa h1 {
@@ -2142,7 +2142,7 @@ button .btn-loading:hover {
     margin-inline: 1rem;
   }
 
-  .nav {
+  .nav1 {
     height: calc(var(--header-height) + 2rem);
     display: flex;
     justify-content: space-between;
@@ -2251,7 +2251,7 @@ button .btn-loading:hover {
 
 /* RESPONSIVE GALERI */
 @media screen and (max-width: 769px) {
-  .nav {
+  .nav1 {
     height: 5.5rem;
   }
   .grid-content3 {
