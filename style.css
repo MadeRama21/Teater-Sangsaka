@@ -942,37 +942,36 @@ footer {
 .contact_main {
   display: flex;
   justify-content: center;
-  align-items: center;
+  margin: 10rem 0 0;
   width: 100%;
-  min-height: 180vh;
+  min-height: 110vh;
 }
 
 .contact_container {
-  /* margin-top: 9rem;
-  margin-left: 9rem;
-  margin-right: 9rem; */
   display: flex;
-  justify-content: space-between;
   align-items: baseline;
   flex-direction: row;
-  width: 80%;
+  width: 85%;
+  gap: 9rem;
 }
 
 .contact_text {
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  /* padding-top: 200px; */
-  width: 40%;
+  width: 45%;
 }
 
 .contact_text h1 {
   font-size: 50px;
+  font-weight: 800;
+  line-height: 3.3rem;
+  margin-bottom: 1rem;
 }
 
 .contact_text p {
   font-size: 20px;
-  margin-top: 10px;
+  margin-top: 1px;
+  line-height: 1.5rem;
 }
 
 .sosmed {
@@ -986,32 +985,28 @@ footer {
   transition: 0.3s;
   padding-top: 10px;
   margin-top: 10px;
+  text-align: center;
+  align-items: center;
 }
 
 .wa_button {
-  display: flex;
-  flex-direction: column;
-  padding: 10px;
-  padding-right: 20px;
-  padding-left: 20px;
+  padding: 10px 15px;
   color: white;
   background-color: #25d366;
   border-radius: 5px;
   text-decoration: none;
   font-weight: 500;
-  width: 300px;
   gap: 15px;
 }
 
 .wa_button i {
 background-color: #25d366;
-  font-size: 25px;
+  font-size: 50px;
 }
 
 .wa_button p {
-  display: flex;
-  flex-direction: column;
-  font-size: 20px;
+  font-size: 15px;
+  margin: 0;
 }
 
 .wa_button:hover {
@@ -1059,6 +1054,7 @@ background-color: #25d366;
   display: flex;
   flex-direction: row;
   padding-left: 20px;
+  margin-top: 3rem;
   color: #eb2125;
 }
 
@@ -1090,22 +1086,74 @@ textarea {
 .form_alasan,
 button {
   display: block;
-  margin: 20px;
+  margin: 0 20px 20px;
+}
+
+.forms1 {
+  position: relative;
+  margin-bottom: 3rem;
+}
+
+.forms1 input, .forms1 textarea {
+  display: block;
+  margin-bottom: 5px;
+  border: 2px solid #252525;
+}
+
+.forms1 input:focus, .forms1 textarea:focus {
+  outline: none;
+}
+
+.sukses input {
+  border-color: #2ecc71;
+}
+
+.sukses textarea {
+  border-color: #2ecc71;
+}
+
+.sukses i.bxs-check-circle {
+  color: #2ecc71;
+  visibility: visible;
+}
+
+.erorr input, .erorr textarea {
+  border-color: #eb2125;
+}
+
+.erorr i.bxs-error-circle {
+  color: #eb2125;
+  visibility: visible;
+}
+
+.forms1.erorr small {
+  color: #eb2125;
+  visibility: visible;
+}
+
+.forms1 .icon-validation {
+  visibility: hidden;
+  position: absolute;
+  top: 55px;
+  right: 10px;
+}
+
+.forms1 small {
+  visibility: hidden;
+  position: absolute;
 }
 
 input,
 textarea {
   background-color: gainsboro;
-
   width: 600px;
   padding: 20px;
   border-radius: 15px;
 }
 
-.button-contact, .my-btn {
+.button-contact, .btn-loading {
   color: #fff;
   background-color: #eb2125;
-
   border-radius: 5px;
   padding: 10px 0;
   width: 94%;
@@ -1113,7 +1161,7 @@ textarea {
   transition: transform 0.3s;
 }
 
-button .button-contact:hover {
+button .button-contact:hover, button .btn-loading:hover {
   transform: translateY(-3px);
   transition: 0.3s;
 }
@@ -2153,9 +2201,9 @@ button .button-contact:hover {
 
   /* Responsive Contact */
 
-  .contact_main {
+  /* .contact_main {
     min-height: 230vh;
-  }
+  } */
   .contact_form {
     padding: 2px;
   }
@@ -2273,10 +2321,7 @@ button .button-contact:hover {
   .dream p {
     font-size: 2px;
   }
-  .heading {
-    heading
-  }
-
+  
   .image p {
     opacity: 0;
     z-index: 1;
@@ -3104,7 +3149,7 @@ button .button-contact:hover {
     width: 100%;
   }
 
-  /* Responsive Contact */
+  /* Responsive Contact end*/
   
 }
 /*=============== RESPONSIVE CAROUSEL EVENTS END ===============*/
@@ -3119,6 +3164,26 @@ button .button-contact:hover {
   .box .dream {
     max-width: 100%;
   }
+
+  /* Responsive contact */
+
+  .contact_text {
+    width: 50%;
+  }
+
+  .contact_form {
+    width: 50%;
+  }
+
+  .form_outer {
+    width: 50%;
+  }
+
+  .form_input {
+    width: 50%;
+  }
+
+  /* Responsive Contact end */
 }
 
 @media only screen and (max-width: 1395px) {
@@ -3229,4 +3294,20 @@ button .button-contact:hover {
   .petinggi-text p {
     font-size: 0.85rem;
   }
+
+  /* Responsive Contact */
+
+  .contact_form {
+    width: 100%;
+  }
+
+  .form_outer {
+    width: 100%;
+  }
+
+  .form_input {
+    width: 100%;
+  }
+
+  /* Responsive Contact end*/
 }
