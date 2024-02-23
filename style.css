@@ -794,7 +794,7 @@ footer {
 
 #moreImage {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: 1fr 1fr 1fr;
   grid-gap: 4px;
   grid-auto-flow: dense;
   margin-left: 10px;
@@ -2188,7 +2188,7 @@ button .button-contact:hover {
     justify-content: space-evenly;
   }
   #moreImage {  
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: 1fr 1fr 1fr;
     margin-right: 22px;
     margin-left: 22px;
   }
@@ -2276,6 +2276,7 @@ button .button-contact:hover {
   .heading {
     heading
   }
+
   .image p {
     opacity: 0;
     z-index: 1;
@@ -2286,11 +2287,6 @@ button .button-contact:hover {
     color: azure;
     font-weight: bolder;
     transition: 0.3s;
-  }
-  #moreImage {  
-    grid-template-columns: repeat(3, 1fr);
-    margin-right: 22px;
-    margin-left: 22px;
   }
 
   .nav__toggle {
@@ -2765,7 +2761,7 @@ button .button-contact:hover {
   /* Responsive contact end */
 
   #moreImage {
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: 1fr 1fr;
   }
   .box .dream {
     max-width: 100%;
