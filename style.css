@@ -798,7 +798,7 @@ footer {
 
 #moreImage {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: 1fr 1fr 1fr;
   grid-gap: 4px;
   grid-auto-flow: dense;
   margin-left: 10px;
@@ -841,7 +841,8 @@ footer {
 }
 
 .image:hover p {
-  opacity: 100;
+  opacity: 1;
+  text-shadow: 2px 2px 30px rgba(0, 0, 0, 100);
 }
 
 .heading h2 {
@@ -962,7 +963,6 @@ footer {
 .contact_text {
   display: flex;
   flex-direction: column;
-  /* padding-top: 200px; */
   width: 45%;
 }
 
@@ -2242,8 +2242,8 @@ button .btn-loading:hover {
 
     justify-content: space-evenly;
   }
-  #moreImage {
-    grid-template-columns: repeat(3, 1fr);
+  #moreImage {  
+    grid-template-columns: 1fr 1fr 1fr;
     margin-right: 22px;
     margin-left: 22px;
   }
@@ -2339,8 +2339,8 @@ button .btn-loading:hover {
     font-weight: bolder;
     transition: 0.3s;
   }
-  #moreImage {
-    grid-template-columns: repeat(3, 1fr);
+  #moreImage {  
+    grid-template-columns: 1fr 1fr 1fr;
     margin-right: 22px;
     margin-left: 22px;
   }
@@ -2816,7 +2816,7 @@ button .btn-loading:hover {
   /* Responsive contact end */
 
   #moreImage {
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: 1fr 1fr;
   }
   .box .dream {
     max-width: 100%;
