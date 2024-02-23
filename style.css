@@ -837,7 +837,8 @@ footer {
 }
 
 .image:hover p {
-  opacity: 100;
+  opacity: 1;
+  text-shadow: 2px 2px 10px rgba(0, 0, 0, 1)
 }
 
 .heading h2 {
