@@ -959,7 +959,6 @@ footer {
 .contact_text {
   display: flex;
   flex-direction: column;
-  /* padding-top: 200px; */
   width: 45%;
 }
 
