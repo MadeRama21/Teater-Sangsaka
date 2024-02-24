@@ -948,17 +948,18 @@ footer {
 }
 
 .contact_container {
-  display: flex;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(40%, 1fr));
   align-items: baseline;
-  flex-direction: row;
+  column-gap: 3rem;
+  row-gap: 5rem;
   width: 85%;
-  gap: 9rem;
 }
 
 .contact_text {
   display: flex;
   flex-direction: column;
-  width: 45%;
+
 }
 
 .contact_text h1 {
@@ -1068,9 +1069,6 @@ background-color: #25d366;
   padding-left: 2px;
 }
 
-.form {
-  background-color: #fff;
-}
 
 .form,
 button,
@@ -1143,8 +1141,7 @@ button {
   position: absolute;
 }
 
-input,
-textarea {
+.form_input {
   background-color: gainsboro;
   width: 600px;
   padding: 20px;
@@ -1165,6 +1162,7 @@ button .button-contact:hover, button .btn-loading:hover {
   transform: translateY(-3px);
   transition: 0.3s;
 }
+
 
 /* ====== CONTACT end ======= */
 
@@ -1808,6 +1806,20 @@ button .button-contact:hover, button .btn-loading:hover {
 
 /*=============== BREAKPOINTS ===============*/
 
+/* Responsive Contact */
+@media only screen and (max-width: 1500px) {
+  .contact_container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(100%, 1fr));
+  align-items: baseline;
+  column-gap: 3rem;
+  row-gap: 5rem;
+  width: 85%;
+}
+}
+
+
+
 /* Navigation for mobile devices */
 @media screen and (max-width: 1117px) {
   .lihat-pementasan {
@@ -2204,14 +2216,15 @@ button .button-contact:hover, button .btn-loading:hover {
   /* .contact_main {
     min-height: 230vh;
   } */
-  .contact_form {
+  /* .contact_form {
     padding: 2px;
   }
+
 
   .form_title h1 {
     padding-top: 10px;
 
-  }
+  } */
   
   /* Responsive Contact end */
 
@@ -2775,10 +2788,6 @@ button .button-contact:hover, button .btn-loading:hover {
   min-height: 340vh;
 }
 
-  .contact_container {
-    display: flex;
-    flex-direction: column;
-  }
 
   .contact_text {
     width: 100%;
@@ -3172,21 +3181,6 @@ button .button-contact:hover, button .btn-loading:hover {
 
   /* Responsive contact */
 
-  .contact_text {
-    width: 50%;
-  }
-
-  .contact_form {
-    width: 50%;
-  }
-
-  .form_outer {
-    width: 50%;
-  }
-
-  .form_input {
-    width: 50%;
-  }
 
   /* Responsive Contact end */
 }
