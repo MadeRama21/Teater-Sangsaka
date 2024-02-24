@@ -835,14 +835,16 @@ footer {
   position: absolute;
   padding: 8px 0 0 8px;
   margin-left: 5px;
-  color: azure;
+  font-size: 15px;
+  font-weight: 900;
+  color: #fff;
   font-weight: bolder;
   transition: 0.3s;
 }
 
 .image:hover p {
   opacity: 1;
-  text-shadow: 2px 2px 30px rgba(0, 0, 0, 100);
+  text-shadow: 2px 2px 30px rgba(0, 0, 0, 1);
 }
 
 .heading h2 {
@@ -953,17 +955,18 @@ footer {
 }
 
 .contact_container {
-  display: flex;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(40%, 1fr));
   align-items: baseline;
-  flex-direction: row;
+  column-gap: 3rem;
+  row-gap: 5rem;
   width: 85%;
-  gap: 9rem;
 }
 
 .contact_text {
   display: flex;
   flex-direction: column;
-  width: 45%;
+
 }
 
 .contact_text h1 {
@@ -1073,9 +1076,6 @@ footer {
   padding-left: 2px;
 }
 
-.form {
-  background-color: #fff;
-}
 
 .form,
 button,
@@ -1151,8 +1151,7 @@ button {
   position: absolute;
 }
 
-input,
-textarea {
+.form_input {
   background-color: gainsboro;
   width: 600px;
   padding: 20px;
@@ -1175,6 +1174,7 @@ button .btn-loading:hover {
   transform: translateY(-3px);
   transition: 0.3s;
 }
+
 
 /* ====== CONTACT end ======= */
 
@@ -1818,6 +1818,20 @@ button .btn-loading:hover {
 
 /*=============== BREAKPOINTS ===============*/
 
+/* Responsive Contact */
+@media only screen and (max-width: 1500px) {
+  .contact_container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(100%, 1fr));
+  align-items: baseline;
+  column-gap: 3rem;
+  row-gap: 5rem;
+  width: 85%;
+}
+}
+
+
+
 /* Navigation for mobile devices */
 @media screen and (max-width: 1117px) {
   .lihat-pementasan {
@@ -2213,14 +2227,16 @@ button .btn-loading:hover {
   /* .contact_main {
     min-height: 230vh;
   } */
-  .contact_form {
+  /* .contact_form {
     padding: 2px;
   }
 
+
   .form_title h1 {
     padding-top: 10px;
-  }
 
+  } */
+  
   /* Responsive Contact end */
 }
 
@@ -2329,15 +2345,7 @@ button .btn-loading:hover {
   }
 
   .image p {
-    opacity: 0;
-    z-index: 1;
-    position: absolute;
-    font-size: 25px;
-    padding: 10px 0 0 8px;
-    margin-left: 5px;
-    color: azure;
-    font-weight: bolder;
-    transition: 0.3s;
+    font-size: 17px;
   }
   #moreImage {
     grid-template-columns: 1fr 1fr 1fr;
@@ -2781,10 +2789,6 @@ button .btn-loading:hover {
     min-height: 340vh;
   }
 
-  .contact_container {
-    display: flex;
-    flex-direction: column;
-  }
 
   .contact_text {
     width: 100%;
@@ -2896,9 +2900,7 @@ button .btn-loading:hover {
   .box .dream {
     max-width: 100%;
   }
-  .dream .image p {
-    font-size: 20px;
-  }
+
   .heading h2 {
     font-size: 30px;
   }
@@ -3175,21 +3177,6 @@ button .btn-loading:hover {
 
   /* Responsive contact */
 
-  .contact_text {
-    width: 50%;
-  }
-
-  .contact_form {
-    width: 50%;
-  }
-
-  .form_outer {
-    width: 50%;
-  }
-
-  .form_input {
-    width: 50%;
-  }
 
   /* Responsive Contact end */
 }
