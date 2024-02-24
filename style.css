@@ -99,7 +99,7 @@ nav.scrolling-active {
   padding: 20px 0 20px 0;
 }
 
-.nav {
+.nav1 {
   height: var(--header-height);
 }
 nav img {
@@ -453,12 +453,14 @@ nav img {
   font-family: "Poppins", sans-serif;
   text-transform: uppercase;
   font-weight: 800;
-  font-style: italic;
+  /* font-style: italic; */
+  line-height: 5.5rem;
   text-transform: uppercase;
   font-size: 5rem;
   letter-spacing: 8px;
   margin-left: 3rem;
-  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+  /* text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); */
+  filter: drop-shadow(2px 2px 4px rgba(0, 0, 0, 0.7));
 }
 .box-content h1 span {
   color: #fcfcfc;
@@ -526,6 +528,7 @@ nav img {
   padding: 2rem;
   border-radius: 20px;
   min-height: 350px;
+  cursor: pointer;
 }
 
 .hero-pementasan {
@@ -538,6 +541,7 @@ nav img {
   margin: 1rem 0;
   font-family: "Poppins", sans-serif;
   color: #eb2125;
+  font-size: 1.3rem;
   font-weight: bolder;
   /* margin: 1rem 0; */
 }
@@ -1003,7 +1007,7 @@ footer {
 }
 
 .wa_button i {
-background-color: #25d366;
+  background-color: #25d366;
   font-size: 50px;
 }
 
@@ -1097,13 +1101,15 @@ button {
   margin-bottom: 3rem;
 }
 
-.forms1 input, .forms1 textarea {
+.forms1 input,
+.forms1 textarea {
   display: block;
   margin-bottom: 5px;
   border: 2px solid #252525;
 }
 
-.forms1 input:focus, .forms1 textarea:focus {
+.forms1 input:focus,
+.forms1 textarea:focus {
   outline: none;
 }
 
@@ -1120,7 +1126,8 @@ button {
   visibility: visible;
 }
 
-.erorr input, .erorr textarea {
+.erorr input,
+.erorr textarea {
   border-color: #eb2125;
 }
 
@@ -1154,7 +1161,8 @@ textarea {
   border-radius: 15px;
 }
 
-.button-contact, .btn-loading {
+.button-contact,
+.btn-loading {
   color: #fff;
   background-color: #eb2125;
   border-radius: 5px;
@@ -1164,7 +1172,8 @@ textarea {
   transition: transform 0.3s;
 }
 
-button .button-contact:hover, button .btn-loading:hover {
+button .button-contact:hover,
+button .btn-loading:hover {
   transform: translateY(-3px);
   transition: 0.3s;
 }
@@ -1390,9 +1399,9 @@ button .button-contact:hover, button .btn-loading:hover {
   position: absolute;
   width: 0;
   height: 0;
-	border-left: 20px solid transparent;
-	border-right: 20px solid transparent;
-	border-top: 35px solid #252525;
+  border-left: 20px solid transparent;
+  border-right: 20px solid transparent;
+  border-top: 35px solid #252525;
   margin-top: 50px;
   left: calc(50% - 18px);
 }
@@ -1568,7 +1577,7 @@ button .button-contact:hover, button .btn-loading:hover {
   opacity: 1;
 }
 
-.petinggi-text > *{
+.petinggi-text > * {
   transform: translateY(25px);
   transition: transform 0.8s;
 }
@@ -1583,7 +1592,7 @@ button .button-contact:hover, button .btn-loading:hover {
   flex-direction: column;
   text-transform: uppercase;
   font-weight: 900;
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
   letter-spacing: 2px;
 }
 
@@ -1611,8 +1620,8 @@ button .button-contact:hover, button .btn-loading:hover {
   margin-right: 1.5rem;
   font-weight: 600;
   text-transform: capitalize;
-  filter: opacity(.5);
-  transition: .5s;
+  filter: opacity(0.5);
+  transition: 0.5s;
 }
 
 .main-vertical .button-see-more a:hover {
@@ -1767,7 +1776,7 @@ button .button-contact:hover, button .btn-loading:hover {
   height: 30%;
   aspect-ratio: 3 / 4;
   border-radius: 5px;
-  margin-bottom: .5rem;
+  margin-bottom: 0.5rem;
 }
 
 .name-of-events {
@@ -1778,7 +1787,7 @@ button .button-contact:hover, button .btn-loading:hover {
 }
 
 .name-of-event h1 {
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
   line-height: 1rem;
   margin-bottom: 3px;
   font-size: 1.3rem;
@@ -1788,7 +1797,7 @@ button .button-contact:hover, button .btn-loading:hover {
 }
 
 .name-of-event h4 {
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
   line-height: 1.5rem;
   margin-top: 5px;
   margin-bottom: 3px;
@@ -1821,7 +1830,7 @@ button .button-contact:hover, button .btn-loading:hover {
   .lihat-pementasan a {
     margin-left: 0;
   }
-  .nav {
+  .nav1 {
     height: 6.5rem;
   }
   .header-siapa h1 {
@@ -2127,7 +2136,6 @@ button .button-contact:hover, button .btn-loading:hover {
     color: white;
   }
   /* Footer end */
-
 }
 
 /* For large devices */
@@ -2136,7 +2144,7 @@ button .button-contact:hover, button .btn-loading:hover {
     margin-inline: 1rem;
   }
 
-  .nav {
+  .nav1 {
     height: calc(var(--header-height) + 2rem);
     display: flex;
     justify-content: space-between;
@@ -2213,11 +2221,9 @@ button .button-contact:hover, button .btn-loading:hover {
 
   .form_title h1 {
     padding-top: 10px;
-
   }
-  
-  /* Responsive Contact end */
 
+  /* Responsive Contact end */
 }
 
 @media screen and (max-width: 897px) {
@@ -2247,7 +2253,7 @@ button .button-contact:hover, button .btn-loading:hover {
 
 /* RESPONSIVE GALERI */
 @media screen and (max-width: 769px) {
-  .nav {
+  .nav1 {
     height: 5.5rem;
   }
   .grid-content3 {
@@ -2286,8 +2292,7 @@ button .button-contact:hover, button .btn-loading:hover {
     font-size: 4rem;
     color: #eb2125;
     font-weight: bolder;
-    font-style: italic;
-    line-height: 1.2em;
+    line-height: 4rem;
     text-transform: uppercase;
     letter-spacing: 8px;
     margin-left: 3rem;
@@ -2302,11 +2307,11 @@ button .button-contact:hover, button .btn-loading:hover {
   }
 
   .box-content p {
-    /* margin-top: 1rem; */
+    margin-top: 0.5rem;
     color: rgba(255, 255, 255, 0.847);
     font-size: 1rem;
     margin-left: 3rem;
-    letter-spacing: 5px;
+    letter-spacing: 3px;
     font-weight: 500;
   }
 
@@ -2324,9 +2329,14 @@ button .button-contact:hover, button .btn-loading:hover {
   .dream p {
     font-size: 2px;
   }
-  
+
   .image p {
     font-size: 17px;
+  }
+  #moreImage {  
+    grid-template-columns: 1fr 1fr 1fr;
+    margin-right: 22px;
+    margin-left: 22px;
   }
 
   .nav__toggle {
@@ -2463,7 +2473,7 @@ button .button-contact:hover, button .btn-loading:hover {
     margin-left: 0;
   }
   .hero_sambutan {
-   height: 100vh;
+    height: 100vh;
   }
   .sambutan_content {
     flex-direction: column;
@@ -2761,9 +2771,9 @@ button .button-contact:hover, button .btn-loading:hover {
 
   /* Responsive contact */
 
-.contact_main {
-  min-height: 340vh;
-}
+  .contact_main {
+    min-height: 340vh;
+  }
 
   .contact_container {
     display: flex;
@@ -2773,7 +2783,6 @@ button .button-contact:hover, button .btn-loading:hover {
   .contact_text {
     width: 100%;
     padding-bottom: 100px;
-
   }
 
   .contact_form {
@@ -2791,12 +2800,12 @@ button .button-contact:hover, button .btn-loading:hover {
     width: 100%;
   }
 
-.button-contact {
-  color: #fff;
-  background-color: #eb2125;
-  border-radius: 5px;
-  transition: transform 0.3s;
-}
+  .button-contact {
+    color: #fff;
+    background-color: #eb2125;
+    border-radius: 5px;
+    transition: transform 0.3s;
+  }
 
   /* Responsive contact end */
 
@@ -2844,7 +2853,7 @@ button .button-contact:hover, button .btn-loading:hover {
   }
 
   .name-of-event h4 {
-    font-size: .9rem;
+    font-size: 0.9rem;
   }
   /*=============== RESPONSIVE CAROUSEL EVENTS END ===============*/
 }
@@ -2860,7 +2869,6 @@ button .button-contact:hover, button .btn-loading:hover {
     font-size: 3rem;
     color: #eb2125;
     font-weight: bolder;
-    font-style: italic;
     text-transform: uppercase;
     letter-spacing: 8px;
     margin-left: 1.2rem;
@@ -2901,7 +2909,7 @@ button .button-contact:hover, button .btn-loading:hover {
   }
 
   .button-see-more {
-    font-size: .8rem;
+    font-size: 0.8rem;
   }
 
   .banner-events img {
@@ -2934,7 +2942,7 @@ button .button-contact:hover, button .btn-loading:hover {
   }
 
   .name-of-event h4 {
-    font-size: .7rem;
+    font-size: 0.7rem;
   }
 
   .container {
@@ -3143,7 +3151,6 @@ button .button-contact:hover, button .btn-loading:hover {
   }
 
   /* Responsive Contact end*/
-  
 }
 /*=============== RESPONSIVE CAROUSEL EVENTS END ===============*/
 
@@ -3188,7 +3195,7 @@ button .button-contact:hover, button .btn-loading:hover {
   .box .dream {
     max-width: 100%;
   }
-  #moreImage {  
+  #moreImage {
     margin-right: 22px;
     margin-left: 22px;
   }
