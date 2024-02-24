@@ -1838,6 +1838,12 @@ button .btn-loading:hover {
   .lihat-pementasan a {
     margin-left: 0;
   }
+
+  /* punya rama */
+  .bungkus-tampil figcaption:nth-child(2) {
+    margin-top: 2.5rem;
+    margin-bottom: 2.5rem;
+  }
   .nav1 {
     height: 6.5rem;
   }
