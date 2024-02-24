@@ -831,14 +831,16 @@ footer {
   position: absolute;
   padding: 8px 0 0 8px;
   margin-left: 5px;
-  color: azure;
+  font-size: 15px;
+  font-weight: 900;
+  color: #fff;
   font-weight: bolder;
   transition: 0.3s;
 }
 
 .image:hover p {
   opacity: 1;
-  text-shadow: 2px 2px 30px rgba(0, 0, 0, 100);
+  text-shadow: 2px 2px 25px rgba(0, 0, 0, 100);
 }
 
 .heading h2 {
@@ -2324,15 +2326,7 @@ button .button-contact:hover, button .btn-loading:hover {
   }
   
   .image p {
-    opacity: 0;
-    z-index: 1;
-    position: absolute;
-    font-size: 25px;
-    padding: 10px 0 0 8px;
-    margin-left: 5px;
-    color: azure;
-    font-weight: bolder;
-    transition: 0.3s;
+    font-size: 17px;
   }
 
   .nav__toggle {
@@ -2888,9 +2882,7 @@ button .button-contact:hover, button .btn-loading:hover {
   .box .dream {
     max-width: 100%;
   }
-  .dream .image p {
-    font-size: 20px;
-  }
+
   .heading h2 {
     font-size: 30px;
   }
