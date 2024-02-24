@@ -835,7 +835,7 @@ footer {
   position: absolute;
   padding: 8px 0 0 8px;
   margin-left: 5px;
-  font-size: 15px;
+  font-size: 18px;
   font-weight: 900;
   color: #fff;
   font-weight: bolder;
@@ -2331,6 +2331,7 @@ button .btn-loading:hover {
   }
 
   .image p {
+    font-weight: bolder;
     font-size: 17px;
   }
   #moreImage {  
