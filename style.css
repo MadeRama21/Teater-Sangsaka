@@ -2242,7 +2242,7 @@ button .btn-loading:hover {
 
     justify-content: space-evenly;
   }
-  #moreImage {  
+  #moreImage {
     grid-template-columns: 1fr 1fr 1fr;
     margin-right: 22px;
     margin-left: 22px;
@@ -2339,7 +2339,7 @@ button .btn-loading:hover {
     font-weight: bolder;
     transition: 0.3s;
   }
-  #moreImage {  
+  #moreImage {
     grid-template-columns: 1fr 1fr 1fr;
     margin-right: 22px;
     margin-left: 22px;
