@@ -99,7 +99,7 @@ nav.scrolling-active {
   padding: 20px 0 20px 0;
 }
 
-.nav {
+.nav1 {
   height: var(--header-height);
 }
 nav img {
@@ -453,12 +453,14 @@ nav img {
   font-family: "Poppins", sans-serif;
   text-transform: uppercase;
   font-weight: 800;
-  font-style: italic;
+  /* font-style: italic; */
+  line-height: 5.5rem;
   text-transform: uppercase;
   font-size: 5rem;
   letter-spacing: 8px;
   margin-left: 3rem;
-  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+  /* text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); */
+  filter: drop-shadow(2px 2px 4px rgba(0, 0, 0, 0.7));
 }
 .box-content h1 span {
   color: #fcfcfc;
@@ -526,6 +528,7 @@ nav img {
   padding: 2rem;
   border-radius: 20px;
   min-height: 350px;
+  cursor: pointer;
 }
 
 .hero-pementasan {
@@ -538,6 +541,7 @@ nav img {
   margin: 1rem 0;
   font-family: "Poppins", sans-serif;
   color: #eb2125;
+  font-size: 1.3rem;
   font-weight: bolder;
   /* margin: 1rem 0; */
 }
@@ -794,7 +798,7 @@ footer {
 
 #moreImage {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: 1fr 1fr 1fr;
   grid-gap: 4px;
   grid-auto-flow: dense;
   margin-left: 10px;
@@ -831,13 +835,16 @@ footer {
   position: absolute;
   padding: 8px 0 0 8px;
   margin-left: 5px;
-  color: azure;
+  font-size: 15px;
+  font-weight: 900;
+  color: #fff;
   font-weight: bolder;
   transition: 0.3s;
 }
 
 .image:hover p {
-  opacity: 100;
+  opacity: 1;
+  text-shadow: 2px 2px 25px rgba(0, 0, 0, 100);
 }
 
 .heading h2 {
@@ -942,34 +949,36 @@ footer {
 .contact_main {
   display: flex;
   justify-content: center;
-  align-items: center;
+  margin: 10rem 0 0;
   width: 100%;
-  min-height: 180vh;
+  min-height: 110vh;
 }
 
 .contact_container {
-  margin: 10rem 2rem;
   display: flex;
-  justify-content: space-between;
   align-items: baseline;
   flex-direction: row;
-  width: 80%;
+  width: 85%;
+  gap: 9rem;
 }
 
 .contact_text {
   display: flex;
   flex-direction: column;
-  /* padding-top: 200px; */
   width: 45%;
 }
 
 .contact_text h1 {
   font-size: 50px;
+  font-weight: 800;
+  line-height: 3.3rem;
+  margin-bottom: 1rem;
 }
 
 .contact_text p {
   font-size: 20px;
-  margin-top: 10px;
+  margin-top: 1px;
+  line-height: 1.5rem;
 }
 
 .sosmed {
@@ -998,8 +1007,8 @@ footer {
 }
 
 .wa_button i {
-background-color: #25d366;
-  font-size: 25px;
+  background-color: #25d366;
+  font-size: 50px;
 }
 
 .wa_button p {
@@ -1089,15 +1098,18 @@ button {
 
 .forms1 {
   position: relative;
+  margin-bottom: 3rem;
 }
 
-.forms1 input, .forms1 textarea {
+.forms1 input,
+.forms1 textarea {
   display: block;
   margin-bottom: 5px;
   border: 2px solid #252525;
 }
 
-.forms1 input:focus, .forms1 textarea:focus {
+.forms1 input:focus,
+.forms1 textarea:focus {
   outline: none;
 }
 
@@ -1114,7 +1126,8 @@ button {
   visibility: visible;
 }
 
-.erorr input, .erorr textarea {
+.erorr input,
+.erorr textarea {
   border-color: #eb2125;
 }
 
@@ -1143,16 +1156,15 @@ button {
 input,
 textarea {
   background-color: gainsboro;
-
   width: 600px;
   padding: 20px;
   border-radius: 15px;
 }
 
-.button-contact, .my-btn {
+.button-contact,
+.btn-loading {
   color: #fff;
   background-color: #eb2125;
-
   border-radius: 5px;
   padding: 10px 0;
   width: 94%;
@@ -1160,7 +1172,8 @@ textarea {
   transition: transform 0.3s;
 }
 
-button .button-contact:hover {
+button .button-contact:hover,
+button .btn-loading:hover {
   transform: translateY(-3px);
   transition: 0.3s;
 }
@@ -1386,9 +1399,9 @@ button .button-contact:hover {
   position: absolute;
   width: 0;
   height: 0;
-	border-left: 20px solid transparent;
-	border-right: 20px solid transparent;
-	border-top: 35px solid #252525;
+  border-left: 20px solid transparent;
+  border-right: 20px solid transparent;
+  border-top: 35px solid #252525;
   margin-top: 50px;
   left: calc(50% - 18px);
 }
@@ -1564,7 +1577,7 @@ button .button-contact:hover {
   opacity: 1;
 }
 
-.petinggi-text > *{
+.petinggi-text > * {
   transform: translateY(25px);
   transition: transform 0.8s;
 }
@@ -1579,7 +1592,7 @@ button .button-contact:hover {
   flex-direction: column;
   text-transform: uppercase;
   font-weight: 900;
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
   letter-spacing: 2px;
 }
 
@@ -1607,8 +1620,8 @@ button .button-contact:hover {
   margin-right: 1.5rem;
   font-weight: 600;
   text-transform: capitalize;
-  filter: opacity(.5);
-  transition: .5s;
+  filter: opacity(0.5);
+  transition: 0.5s;
 }
 
 .main-vertical .button-see-more a:hover {
@@ -1763,7 +1776,7 @@ button .button-contact:hover {
   height: 30%;
   aspect-ratio: 3 / 4;
   border-radius: 5px;
-  margin-bottom: .5rem;
+  margin-bottom: 0.5rem;
 }
 
 .name-of-events {
@@ -1774,7 +1787,7 @@ button .button-contact:hover {
 }
 
 .name-of-event h1 {
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
   line-height: 1rem;
   margin-bottom: 3px;
   font-size: 1.3rem;
@@ -1784,7 +1797,7 @@ button .button-contact:hover {
 }
 
 .name-of-event h4 {
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
   line-height: 1.5rem;
   margin-top: 5px;
   margin-bottom: 3px;
@@ -1817,7 +1830,7 @@ button .button-contact:hover {
   .lihat-pementasan a {
     margin-left: 0;
   }
-  .nav {
+  .nav1 {
     height: 6.5rem;
   }
   .header-siapa h1 {
@@ -2123,7 +2136,6 @@ button .button-contact:hover {
     color: white;
   }
   /* Footer end */
-
 }
 
 /* For large devices */
@@ -2132,7 +2144,7 @@ button .button-contact:hover {
     margin-inline: 1rem;
   }
 
-  .nav {
+  .nav1 {
     height: calc(var(--header-height) + 2rem);
     display: flex;
     justify-content: space-between;
@@ -2200,20 +2212,18 @@ button .button-contact:hover {
 
   /* Responsive Contact */
 
-  .contact_main {
+  /* .contact_main {
     min-height: 230vh;
-  }
+  } */
   .contact_form {
     padding: 2px;
   }
 
   .form_title h1 {
     padding-top: 10px;
-
   }
-  
-  /* Responsive Contact end */
 
+  /* Responsive Contact end */
 }
 
 @media screen and (max-width: 897px) {
@@ -2235,7 +2245,7 @@ button .button-contact:hover {
     justify-content: space-evenly;
   }
   #moreImage {  
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: 1fr 1fr 1fr;
     margin-right: 22px;
     margin-left: 22px;
   }
@@ -2243,7 +2253,7 @@ button .button-contact:hover {
 
 /* RESPONSIVE GALERI */
 @media screen and (max-width: 769px) {
-  .nav {
+  .nav1 {
     height: 5.5rem;
   }
   .grid-content3 {
@@ -2282,8 +2292,7 @@ button .button-contact:hover {
     font-size: 4rem;
     color: #eb2125;
     font-weight: bolder;
-    font-style: italic;
-    line-height: 1.2em;
+    line-height: 4rem;
     text-transform: uppercase;
     letter-spacing: 8px;
     margin-left: 3rem;
@@ -2298,11 +2307,11 @@ button .button-contact:hover {
   }
 
   .box-content p {
-    /* margin-top: 1rem; */
+    margin-top: 0.5rem;
     color: rgba(255, 255, 255, 0.847);
     font-size: 1rem;
     margin-left: 3rem;
-    letter-spacing: 5px;
+    letter-spacing: 3px;
     font-weight: 500;
   }
 
@@ -2320,20 +2329,12 @@ button .button-contact:hover {
   .dream p {
     font-size: 2px;
   }
-  
+
   .image p {
-    opacity: 0;
-    z-index: 1;
-    position: absolute;
-    font-size: 25px;
-    padding: 10px 0 0 8px;
-    margin-left: 5px;
-    color: azure;
-    font-weight: bolder;
-    transition: 0.3s;
+    font-size: 17px;
   }
   #moreImage {  
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: 1fr 1fr 1fr;
     margin-right: 22px;
     margin-left: 22px;
   }
@@ -2472,7 +2473,7 @@ button .button-contact:hover {
     margin-left: 0;
   }
   .hero_sambutan {
-   height: 100vh;
+    height: 100vh;
   }
   .sambutan_content {
     flex-direction: column;
@@ -2770,9 +2771,9 @@ button .button-contact:hover {
 
   /* Responsive contact */
 
-.contact_main {
-  min-height: 340vh;
-}
+  .contact_main {
+    min-height: 340vh;
+  }
 
   .contact_container {
     display: flex;
@@ -2782,7 +2783,6 @@ button .button-contact:hover {
   .contact_text {
     width: 100%;
     padding-bottom: 100px;
-
   }
 
   .contact_form {
@@ -2800,17 +2800,17 @@ button .button-contact:hover {
     width: 100%;
   }
 
-.button-contact {
-  color: #fff;
-  background-color: #eb2125;
-  border-radius: 5px;
-  transition: transform 0.3s;
-}
+  .button-contact {
+    color: #fff;
+    background-color: #eb2125;
+    border-radius: 5px;
+    transition: transform 0.3s;
+  }
 
   /* Responsive contact end */
 
   #moreImage {
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: 1fr 1fr;
   }
   .box .dream {
     max-width: 100%;
@@ -2853,7 +2853,7 @@ button .button-contact:hover {
   }
 
   .name-of-event h4 {
-    font-size: .9rem;
+    font-size: 0.9rem;
   }
   /*=============== RESPONSIVE CAROUSEL EVENTS END ===============*/
 }
@@ -2869,7 +2869,6 @@ button .button-contact:hover {
     font-size: 3rem;
     color: #eb2125;
     font-weight: bolder;
-    font-style: italic;
     text-transform: uppercase;
     letter-spacing: 8px;
     margin-left: 1.2rem;
@@ -2891,9 +2890,7 @@ button .button-contact:hover {
   .box .dream {
     max-width: 100%;
   }
-  .dream .image p {
-    font-size: 20px;
-  }
+
   .heading h2 {
     font-size: 30px;
   }
@@ -2912,7 +2909,7 @@ button .button-contact:hover {
   }
 
   .button-see-more {
-    font-size: .8rem;
+    font-size: 0.8rem;
   }
 
   .banner-events img {
@@ -2945,7 +2942,7 @@ button .button-contact:hover {
   }
 
   .name-of-event h4 {
-    font-size: .7rem;
+    font-size: 0.7rem;
   }
 
   .container {
@@ -3153,8 +3150,7 @@ button .button-contact:hover {
     width: 100%;
   }
 
-  /* Responsive Contact */
-  
+  /* Responsive Contact end*/
 }
 /*=============== RESPONSIVE CAROUSEL EVENTS END ===============*/
 
@@ -3168,6 +3164,26 @@ button .button-contact:hover {
   .box .dream {
     max-width: 100%;
   }
+
+  /* Responsive contact */
+
+  .contact_text {
+    width: 50%;
+  }
+
+  .contact_form {
+    width: 50%;
+  }
+
+  .form_outer {
+    width: 50%;
+  }
+
+  .form_input {
+    width: 50%;
+  }
+
+  /* Responsive Contact end */
 }
 
 @media only screen and (max-width: 1395px) {
@@ -3179,7 +3195,7 @@ button .button-contact:hover {
   .box .dream {
     max-width: 100%;
   }
-  #moreImage {  
+  #moreImage {
     margin-right: 22px;
     margin-left: 22px;
   }
@@ -3278,4 +3294,20 @@ button .button-contact:hover {
   .petinggi-text p {
     font-size: 0.85rem;
   }
+
+  /* Responsive Contact */
+
+  .contact_form {
+    width: 100%;
+  }
+
+  .form_outer {
+    width: 100%;
+  }
+
+  .form_input {
+    width: 100%;
+  }
+
+  /* Responsive Contact end*/
 }
