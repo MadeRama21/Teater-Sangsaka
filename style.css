@@ -61,6 +61,7 @@ body {
 }
 
 ul {
+  padding-left: 0;
   list-style: none;
   /* Color highlighting when pressed on mobile devices */
   /*-webkit-tap-highlight-color: transparent;*/
@@ -71,7 +72,7 @@ a {
 }
 
 /*=============== REUSABLE CSS CLASSES ===============*/
-.container {
+.container69 {
   max-width: 100%;
 }
 .nav__menu {
@@ -522,13 +523,47 @@ nav img {
 }
 .card-pementasan {
   display: flex;
+  align-items: center;
   flex-direction: column;
-  background-color: #252525;
+  background-color: #fcfcfc;
+  box-shadow: 5px 5px 10px 2px #888888;
   align-items: center;
   padding: 2rem;
   border-radius: 20px;
-  min-height: 350px;
+  height: 350px;
   cursor: pointer;
+  overflow: hidden;
+  position: relative;
+}
+
+.card-pementasan::before {
+  content: "";
+  background-image: conic-gradient(#eb2125 20deg, transparent 120deg);
+  width: 180%;
+  height: 100%;
+  position: absolute;
+  animation: rotate 2s linear infinite;
+}
+
+.card-pementasan::after {
+  content: "";
+  height: 95%;
+  width: 95%;
+  background: #252525;
+  border-radius: 20px;
+  position: absolute;
+  top: 50%; /* Disesuaikan */
+  left: 50%; /* Disesuaikan */
+  transform: translate(-50%, -50%); /* Disesuaikan */
+}
+
+@keyframes rotate {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(-360deg);
+  }
 }
 
 .hero-pementasan {
@@ -536,6 +571,7 @@ nav img {
   display: grid;
   place-items: center;
   width: 100%;
+  z-index: 9;
 }
 .card-pementasan h3 {
   margin: 1rem 0;
@@ -966,7 +1002,6 @@ footer {
 .contact_text {
   display: flex;
   flex-direction: column;
-
 }
 
 .contact_text h1 {
@@ -1073,7 +1108,6 @@ footer {
   margin: 0;
 }
 
-
 .form,
 button,
 input,
@@ -1171,7 +1205,6 @@ button .btn-loading:hover {
   transform: translateY(-3px);
   transition: 0.3s;
 }
-
 
 /* ====== CONTACT end ======= */
 
@@ -1819,16 +1852,14 @@ button .btn-loading:hover {
 /* Responsive Contact */
 @media only screen and (max-width: 1500px) {
   .contact_container {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(100%, 1fr));
-  align-items: baseline;
-  column-gap: 3rem;
-  row-gap: 5rem;
-  width: 85%;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(100%, 1fr));
+    align-items: baseline;
+    column-gap: 3rem;
+    row-gap: 5rem;
+    width: 85%;
+  }
 }
-}
-
-
 
 /* Navigation for mobile devices */
 @media screen and (max-width: 1117px) {
@@ -1839,6 +1870,12 @@ button .btn-loading:hover {
   }
   .lihat-pementasan a {
     margin-left: 0;
+  }
+
+  /* punya rama */
+  .bungkus-tampil figcaption:nth-child(2) {
+    margin-top: 2.5rem;
+    margin-bottom: 2.5rem;
   }
   .nav1 {
     height: 6.5rem;
@@ -2026,7 +2063,7 @@ button .btn-loading:hover {
     margin-top: 4rem;
   }
 
-  .container {
+  .container69 {
     margin-inline: 1rem;
   }
 
@@ -2150,7 +2187,7 @@ button .btn-loading:hover {
 
 /* For large devices */
 @media screen and (min-width: 1116px) {
-  .container {
+  .container69 {
     margin-inline: 1rem;
   }
 
@@ -2234,7 +2271,7 @@ button .btn-loading:hover {
     padding-top: 10px;
 
   } */
-  
+
   /* Responsive Contact end */
 }
 
@@ -2472,7 +2509,7 @@ button .btn-loading:hover {
   }
 
   /* footer */
-  .container {
+  .container69 {
     margin-inline: 1rem;
   }
 
@@ -2787,7 +2824,6 @@ button .btn-loading:hover {
     min-height: 190vh;
   }
 
-
   .contact_text {
     width: 100%;
   }
@@ -2952,7 +2988,7 @@ button .btn-loading:hover {
     font-size: 0.7rem;
   }
 
-  .container {
+  .container69 {
     margin-inline: 1rem;
   }
 
@@ -3173,7 +3209,6 @@ button .btn-loading:hover {
   }
 
   /* Responsive contact */
-
 
   /* Responsive Contact end */
 }
