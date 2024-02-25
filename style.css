@@ -61,6 +61,7 @@ body {
 }
 
 ul {
+  padding-left: 0;
   list-style: none;
   /* Color highlighting when pressed on mobile devices */
   /*-webkit-tap-highlight-color: transparent;*/
@@ -71,7 +72,7 @@ a {
 }
 
 /*=============== REUSABLE CSS CLASSES ===============*/
-.container {
+.container69 {
   max-width: 100%;
 }
 .nav__menu {
@@ -522,13 +523,47 @@ nav img {
 }
 .card-pementasan {
   display: flex;
+  align-items: center;
   flex-direction: column;
-  background-color: #252525;
+  background-color: #fcfcfc;
+  box-shadow: 5px 5px 10px 2px #888888;
   align-items: center;
   padding: 2rem;
   border-radius: 20px;
-  min-height: 350px;
+  height: 350px;
   cursor: pointer;
+  overflow: hidden;
+  position: relative;
+}
+
+.card-pementasan::before {
+  content: "";
+  background-image: conic-gradient(#eb2125 20deg, transparent 120deg);
+  width: 180%;
+  height: 100%;
+  position: absolute;
+  animation: rotate 2s linear infinite;
+}
+
+.card-pementasan::after {
+  content: "";
+  height: 95%;
+  width: 95%;
+  background: #252525;
+  border-radius: 20px;
+  position: absolute;
+  top: 50%; /* Disesuaikan */
+  left: 50%; /* Disesuaikan */
+  transform: translate(-50%, -50%); /* Disesuaikan */
+}
+
+@keyframes rotate {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(-360deg);
+  }
 }
 
 .hero-pementasan {
@@ -536,6 +571,7 @@ nav img {
   display: grid;
   place-items: center;
   width: 100%;
+  z-index: 9;
 }
 .card-pementasan h3 {
   margin: 1rem 0;
@@ -2030,7 +2066,7 @@ button .btn-loading:hover {
     margin-top: 4rem;
   }
 
-  .container {
+  .container69 {
     margin-inline: 1rem;
   }
 
@@ -2154,7 +2190,7 @@ button .btn-loading:hover {
 
 /* For large devices */
 @media screen and (min-width: 1116px) {
-  .container {
+  .container69 {
     margin-inline: 1rem;
   }
 
@@ -2476,7 +2512,7 @@ button .btn-loading:hover {
   }
 
   /* footer */
-  .container {
+  .container69 {
     margin-inline: 1rem;
   }
 
@@ -2956,7 +2992,7 @@ button .btn-loading:hover {
     font-size: 0.7rem;
   }
 
-  .container {
+  .container69 {
     margin-inline: 1rem;
   }
 
