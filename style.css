@@ -1061,19 +1061,16 @@ footer {
 .disclaimer_row {
   display: flex;
   flex-direction: row;
+  align-items: center;
   padding-left: 20px;
   margin-top: 3rem;
+  margin-bottom: 1rem;
+  gap: 3px;
   color: #eb2125;
 }
 
-.disclaimer_icon {
-  display: flex;
-}
-
-.disclaimer_text {
-  display: flex;
-  align-items: center;
-  padding-left: 2px;
+.disclaimer_row p {
+  margin: 0;
 }
 
 
@@ -2787,13 +2784,12 @@ button .btn-loading:hover {
   /* Responsive contact */
 
   .contact_main {
-    min-height: 340vh;
+    min-height: 190vh;
   }
 
 
   .contact_text {
     width: 100%;
-    padding-bottom: 100px;
   }
 
   .contact_form {
@@ -3303,6 +3299,13 @@ button .btn-loading:hover {
 
   .form_input {
     width: 100%;
+  }
+
+  .sosmed {
+    display: flex;
+    flex-direction: column;
+    width: 70%;
+    gap: 10px;
   }
 
   /* Responsive Contact end*/
