@@ -1619,13 +1619,18 @@ button .btn-loading:hover {
   font-family: "Poppins" sans-serif;
   margin-top: 30px;
 }
- .btn-primary {
+.fyi .btn-primary {
   --bs-btn-bg: #252525;
   --bs-btn-border-color: none;
   --bs-btn-hover-color: #fff;
   --bs-btn-hover-bg: #252525c4;
   --bs-btn-active-bg: #252525;
  }
+
+.fyi .card {
+  --bs-card-color: #fcfcfc;
+  --bs-card-bg: #252525;
+}
 
 /* =============EVENTS SANGSAKA==============  */
 .main-events {
