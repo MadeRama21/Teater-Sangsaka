@@ -158,7 +158,83 @@ nav img {
 }
 
 /* Beranda */
-
+/* Fitur sementara */
+.hero-ulasan {
+  display: grid;
+  place-items: center;
+}
+.section-header {
+  position: relative;
+  padding-bottom: 10px;
+  text-align: center;
+  text-transform: uppercase;
+  font-family: "Poppins", sans-serif;
+  font-weight: 700;
+  padding-bottom: 25px;
+  color: #252525;
+}
+.section-header:after {
+  content: "";
+  height: 4px;
+  width: 200px;
+  border-radius: 3px;
+  position: absolute;
+  bottom: 0;
+  left: calc(50% - 100px);
+  background: #eb2125;
+}
+.section-header span {
+  display: block;
+  font-size: 15px;
+  font-weight: 300;
+}
+.testimonials {
+  max-width: 1000px;
+  padding: 0 15px 50px;
+  margin: 0 auto 80px auto;
+}
+.single-item {
+  background: #fff;
+  color: #111;
+  padding: 15px;
+  margin: 50px 15px;
+}
+.profile {
+  margin-bottom: 30px;
+  text-align: center;
+}
+.img-area {
+  margin: 0 15px 15px 15px;
+}
+.img-area img {
+  height: 200px;
+  width: 200px;
+  border-radius: 50%;
+  border: 6px solid #252525;
+}
+.content {
+  font-size: 18px;
+}
+.content p {
+  text-align: justify;
+}
+.content p span {
+  font-size: 2rem;
+  margin-right: 20px;
+  color: #252525;
+}
+.socials i {
+  margin-right: 25px;
+}
+.bio h4 {
+  font-size: 1.2rem;
+  font-family: "Poppins", sans-serif;
+}
+.carousel-control-next-icon,
+.carousel-control-prev-icon {
+  background-color: #eb2125;
+}
+/* fitur sementara */
 .landing_video {
   position: absolute;
   top: 0;
@@ -507,6 +583,7 @@ nav img {
 }
 .main-grid3 {
   display: flex;
+  margin-bottom: 8rem;
   justify-content: center;
 }
 
@@ -519,7 +596,7 @@ nav img {
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
 }
 .main-pementasan {
-  margin-top: 8rem;
+  margin-top: 6rem;
 }
 .card-pementasan {
   display: flex;
@@ -530,7 +607,7 @@ nav img {
   align-items: center;
   padding: 2rem;
   border-radius: 20px;
-  height: 350px;
+  height: 360px;
   cursor: pointer;
   overflow: hidden;
   position: relative;
@@ -574,7 +651,7 @@ nav img {
   z-index: 9;
 }
 .card-pementasan h3 {
-  margin: 1rem 0;
+  margin: 0.5rem 0;
   font-family: "Poppins", sans-serif;
   color: #eb2125;
   font-size: 1.3rem;
@@ -2032,6 +2109,19 @@ button .btn-loading:hover {
 
 /* For small devices */
 @media screen and (max-width: 600px) {
+  .main-content-index {
+    padding-top: 5rem;
+  }
+  .main-quotes i {
+    font-size: 1.2rem;
+  }
+  .quotes p {
+    text-align: center;
+    font-size: 13px;
+  }
+  .main-quotes {
+    width: 80%;
+  }
   .grid-content3 {
     width: 80%;
   }
@@ -2496,6 +2586,9 @@ button .btn-loading:hover {
 
   /* Rotate dropdown icon */
   .dropdown__item:hover .dropdown__arrow {
+    transform: rotate(180deg);
+  }
+  .dropdown__item:hover .ri-arrow-down-s-line {
     transform: rotate(180deg);
   }
 
