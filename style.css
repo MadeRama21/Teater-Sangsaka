@@ -948,7 +948,7 @@ footer {
   position: absolute;
   padding: 8px 0 0 8px;
   margin-left: 5px;
-  font-size: 15px;
+  font-size: 18px;
   font-weight: 900;
   color: #fff;
   font-weight: bolder;
@@ -1714,7 +1714,6 @@ button .btn-loading:hover {
   display: flex;
   flex-direction: column;
   text-transform: uppercase;
-  font-weight: 900;
   font-family: "Poppins", sans-serif;
   letter-spacing: 2px;
 }
@@ -1730,6 +1729,7 @@ button .btn-loading:hover {
   text-align: center;
   align-items: center;
   margin-bottom: 3rem;
+  font-weight: 700;
 }
 
 .main-vertical .button-see-more {
@@ -1743,8 +1743,7 @@ button .btn-loading:hover {
   margin-right: 1.5rem;
   font-weight: 600;
   text-transform: capitalize;
-  filter: opacity(0.5);
-  transition: 0.5s;
+  filter: opacity(.5);
 }
 
 .main-vertical .button-see-more a:hover {
@@ -1764,13 +1763,14 @@ button .btn-loading:hover {
   display: grid;
   grid-auto-flow: column;
   grid-auto-columns: calc((100% / 4) - 9px);
-  gap: 15px;
+  gap: 23.8px;
   list-style: none;
-  /* margin: 0 5rem; */
+  margin: 0 0 5rem;
   overflow-x: auto;
   scroll-snap-type: x mandatory;
   scroll-behavior: smooth;
   scrollbar-width: 0;
+  width: 98%;
 }
 .carousel::-webkit-scrollbar {
   display: none;
@@ -1795,6 +1795,7 @@ button .btn-loading:hover {
 
 .carousel .card {
   cursor: pointer;
+  border: none;
   scroll-snap-align: start;
   display: flex;
   margin: 10px 0;
@@ -1802,12 +1803,8 @@ button .btn-loading:hover {
   align-items: center;
   justify-content: center;
   flex-direction: column;
-  width: 100%;
+  width: 90%;
   border-radius: 10px;
-}
-
-.carousel .img {
-  width: 85%;
 }
 
 .carousel .img img {
@@ -1830,7 +1827,7 @@ button .btn-loading:hover {
 
 .card .name-events {
   position: absolute;
-  width: 80%;
+  width: 95%;
   justify-content: center;
   align-items: center;
   text-align: center;
@@ -1850,6 +1847,8 @@ button .btn-loading:hover {
 }
 
 .card .name-events h4 {
+  font-family: "Poppins", sans-serif;
+  text-transform: capitalize;
   font-size: 0.8rem;
   color: white;
   letter-spacing: 2px;
@@ -1899,7 +1898,7 @@ button .btn-loading:hover {
   height: 30%;
   aspect-ratio: 3 / 4;
   border-radius: 5px;
-  margin-bottom: 0.5rem;
+  margin-bottom: .7rem;
 }
 
 .name-of-events {
@@ -1911,7 +1910,7 @@ button .btn-loading:hover {
 
 .name-of-event h1 {
   font-family: "Poppins", sans-serif;
-  line-height: 1rem;
+  line-height: 1.3rem;
   margin-bottom: 3px;
   font-size: 1.3rem;
   color: #eb2125;
@@ -1934,10 +1933,31 @@ button .btn-loading:hover {
   display: flex;
   flex-direction: column;
   align-items: center;
+  width: 100%;
 }
 
 .events-see-more {
   display: none;
+}
+
+.main-dropdown-events {
+  margin-bottom: 1rem;
+  display: flex;
+  justify-content: right;
+  width: 100%;
+  margin-right: 8rem;
+}
+
+.event-dropdown .btn{
+  background-color: #eb2125;
+}
+
+.dropdown-menu {
+  background-color: var(--body-color);
+}
+
+.dropdown-item:hover{
+  background-color: hsl(0, 0%, 78%);
 }
 /* =============EVENTS SANGSAKA==============  */
 
@@ -2487,6 +2507,7 @@ button .btn-loading:hover {
   }
 
   .image p {
+    font-weight: bolder;
     font-size: 17px;
   }
   #moreImage {
@@ -2980,6 +3001,7 @@ button .btn-loading:hover {
 
   .vertical-events .carousel {
     grid-auto-columns: calc((100% / 3) - 10px);
+    margin-left: 3px;
   }
 
   .card img {
@@ -3007,6 +3029,10 @@ button .btn-loading:hover {
 
   .name-of-event h4 {
     font-size: 0.9rem;
+  }
+
+  .main-dropdown-events {
+    margin-right: 5.9rem;
   }
   /*=============== RESPONSIVE CAROUSEL EVENTS END ===============*/
 }
@@ -3052,17 +3078,16 @@ button .btn-loading:hover {
     font-size: 1.8rem;
   }
 
-  /*=============== RESPONSIVE CAROUSEL EVENTS START ===============*/
   .main-events {
     margin-top: 2rem;
   }
 
   .main-events .h1 {
-    margin-bottom: 1rem;
+    margin-bottom: 2rem;
   }
 
   .button-see-more {
-    font-size: 0.8rem;
+    font-size: 0.7rem;
   }
 
   .banner-events img {
@@ -3071,6 +3096,11 @@ button .btn-loading:hover {
 
   .vertical-events .carousel {
     grid-auto-columns: calc((100% / 2) - 8px);
+    margin: 0 0 3rem 8px;
+  }
+
+  .main-dropdown-events {
+    margin-right: 5.5rem;
   }
 
   .card img {
