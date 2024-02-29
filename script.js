@@ -90,10 +90,85 @@ const content = document.querySelector(".main-vertical");
 const buttonSeeMoreMainContent = document.querySelector(".button-see-more");
 
 buttonSeeMoreMainContent.addEventListener('click', function(e) {
-  e.preventDefault();
-  seeMore.classList.toggle('events-see-more');
-  content.classList.toggle('events-see-more');
+  // Hanya menjalankan tindakan saat klik terjadi pada elemen <a>
+  if (e.target.tagName === 'A') {
+    e.preventDefault();
+    seeMore.classList.toggle('events-see-more');
+    content.classList.toggle('events-see-more');
+  }
 });
+
+const dropdown = document.querySelector('.event-dropdown');
+const dropdownItems = document.querySelectorAll('.dropdown-item');
+const anyCards = document.querySelectorAll('.main-photos .any-card');
+const dropdownToggle = document.querySelector('.dropdown-toggle');
+let lastSelectedText = '';
+let lastSelectedItem = null;
+
+// Menambahkan event listener untuk setiap item dropdown
+dropdownItems.forEach(item => {
+    item.addEventListener('click', function(e) {
+        e.preventDefault();
+        
+        // Menyimpan teks yang dipilih sebelumnya
+        lastSelectedText = dropdownToggle.textContent;
+        
+        // Menyembunyikan item yang dipilih sebelumnya
+        if (lastSelectedItem) {
+            lastSelectedItem.style.display = 'block';
+        }
+        
+        // Mengubah teks pada tombol dropdown
+        dropdownToggle.textContent = item.textContent;
+        
+        // Menyembunyikan item yang dipilih
+        item.style.display = 'none';
+        
+        // Menyimpan item yang dipilih saat ini
+        lastSelectedItem = item;
+        
+        // Menampilkan item "All" yang tersembunyi
+        dropdown.querySelector('.khusus').style.display = 'block';
+    });
+});
+
+// Menambahkan event listener untuk item "All"
+dropdown.querySelector('.khusus').addEventListener('click', function(e) {
+    e.preventDefault();
+    
+    // Mengembalikan teks yang dipilih sebelumnya
+    dropdownToggle.textContent = 'All';
+    
+    // Menampilkan kembali item yang sebelumnya dipilih
+    if (lastSelectedItem) {
+        lastSelectedItem.style.display = 'block';
+    }
+    
+    // Menyembunyikan item "All" kembali
+    this.style.display = 'none';
+});
+
+dropdownItems.forEach(item => {
+  item.addEventListener('click', function() {
+    const selectedEvent = item.textContent.trim();
+    const formattedEvent = formatClassName(selectedEvent);
+    anyCards.forEach(photo => {
+      // Periksa apakah elemen memiliki kelas yang sesuai dengan pilihan dropdown
+      if (photo.classList.contains(formattedEvent)) {
+        photo.style.display = 'block'; // Tampilkan elemen yang sesuai
+      } else {
+        photo.style.display = 'none'; // Sembunyikan elemen yang tidak sesuai
+      }
+    });
+  });
+});
+
+// Fungsi untuk memformat nama kelas
+function formatClassName(className) {
+  // Menghapus karakter asing dan mengganti spasi dengan tanda hubung
+  return className.toLowerCase().replace(/[^\w\s]/gi, '').replace(/\s+/g, '-');
+}
+
 /*=============== CAROUSEL EVENTS END ===============*/
 
 
@@ -113,3 +188,7 @@ function toggleText() {
       document.getElementById("textButton").innerText = "Show More";
   }
 }
+
+
+/*========================= CONTACT LOGIC =========================*/
+    

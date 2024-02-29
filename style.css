@@ -158,7 +158,83 @@ nav img {
 }
 
 /* Beranda */
-
+/* Fitur sementara */
+.hero-ulasan {
+  display: grid;
+  place-items: center;
+}
+.section-header {
+  position: relative;
+  padding-bottom: 10px;
+  text-align: center;
+  text-transform: uppercase;
+  font-family: "Poppins", sans-serif;
+  font-weight: 700;
+  padding-bottom: 25px;
+  color: #252525;
+}
+.section-header:after {
+  content: "";
+  height: 4px;
+  width: 200px;
+  border-radius: 3px;
+  position: absolute;
+  bottom: 0;
+  left: calc(50% - 100px);
+  background: #eb2125;
+}
+.section-header span {
+  display: block;
+  font-size: 15px;
+  font-weight: 300;
+}
+.testimonials {
+  max-width: 1000px;
+  padding: 0 15px 50px;
+  margin: 0 auto 80px auto;
+}
+.single-item {
+  background: #fff;
+  color: #111;
+  padding: 15px;
+  margin: 50px 15px;
+}
+.profile {
+  margin-bottom: 30px;
+  text-align: center;
+}
+.img-area {
+  margin: 0 15px 15px 15px;
+}
+.img-area img {
+  height: 200px;
+  width: 200px;
+  border-radius: 50%;
+  border: 6px solid #252525;
+}
+.content {
+  font-size: 18px;
+}
+.content p {
+  text-align: justify;
+}
+.content p span {
+  font-size: 2rem;
+  margin-right: 20px;
+  color: #252525;
+}
+.socials i {
+  margin-right: 25px;
+}
+.bio h4 {
+  font-size: 1.2rem;
+  font-family: "Poppins", sans-serif;
+}
+.carousel-control-next-icon,
+.carousel-control-prev-icon {
+  background-color: #eb2125;
+}
+/* fitur sementara */
 .landing_video {
   position: absolute;
   top: 0;
@@ -200,7 +276,7 @@ nav img {
   align-items: center;
 } */
 .quotes p {
-  font-weight: 500;
+  font-weight: 600;
   font-style: italic;
   text-align: center;
   letter-spacing: 2px;
@@ -507,6 +583,7 @@ nav img {
 }
 .main-grid3 {
   display: flex;
+  margin-bottom: 8rem;
   justify-content: center;
 }
 
@@ -519,7 +596,7 @@ nav img {
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
 }
 .main-pementasan {
-  margin-top: 8rem;
+  margin-top: 6rem;
 }
 .card-pementasan {
   display: flex;
@@ -530,7 +607,7 @@ nav img {
   align-items: center;
   padding: 2rem;
   border-radius: 20px;
-  height: 350px;
+  height: 360px;
   cursor: pointer;
   overflow: hidden;
   position: relative;
@@ -574,7 +651,7 @@ nav img {
   z-index: 9;
 }
 .card-pementasan h3 {
-  margin: 1rem 0;
+  margin: 0.5rem 0;
   font-family: "Poppins", sans-serif;
   color: #eb2125;
   font-size: 1.3rem;
@@ -871,7 +948,7 @@ footer {
   position: absolute;
   padding: 8px 0 0 8px;
   margin-left: 5px;
-  font-size: 15px;
+  font-size: 18px;
   font-weight: 900;
   color: #fff;
   font-weight: bolder;
@@ -1057,10 +1134,14 @@ footer {
   transition: 0.3s;
 }
 
+.form_title {
+  margin-bottom: 1rem;
+}
+
 .form_outer h1 {
   display: flex;
   justify-content: center;
-  margin-bottom: 60px;
+  margin-bottom: 1.5rem;
   font-weight: 700;
 }
 .form_outer i {
@@ -1204,6 +1285,11 @@ button .button-contact:hover,
 button .btn-loading:hover {
   transform: translateY(-3px);
   transition: 0.3s;
+}
+
+.alert-success {
+  width: 95%;
+  margin: auto;
 }
 
 /* ====== CONTACT end ======= */
@@ -1625,7 +1711,7 @@ button .btn-loading:hover {
   --bs-btn-hover-color: #fff;
   --bs-btn-hover-bg: #252525c4;
   --bs-btn-active-bg: #252525;
- }
+}
 
 .fyi .card {
   --bs-card-color: #fcfcfc;
@@ -1637,7 +1723,6 @@ button .btn-loading:hover {
   display: flex;
   flex-direction: column;
   text-transform: uppercase;
-  font-weight: 900;
   font-family: "Poppins", sans-serif;
   letter-spacing: 2px;
 }
@@ -1653,6 +1738,7 @@ button .btn-loading:hover {
   text-align: center;
   align-items: center;
   margin-bottom: 3rem;
+  font-weight: 700;
 }
 
 .main-vertical .button-see-more {
@@ -1666,8 +1752,7 @@ button .btn-loading:hover {
   margin-right: 1.5rem;
   font-weight: 600;
   text-transform: capitalize;
-  filter: opacity(0.5);
-  transition: 0.5s;
+  filter: opacity(.5);
 }
 
 .main-vertical .button-see-more a:hover {
@@ -1687,13 +1772,14 @@ button .btn-loading:hover {
   display: grid;
   grid-auto-flow: column;
   grid-auto-columns: calc((100% / 4) - 9px);
-  gap: 15px;
+  gap: 23.8px;
   list-style: none;
-  /* margin: 0 5rem; */
+  margin: 0 0 5rem;
   overflow-x: auto;
   scroll-snap-type: x mandatory;
   scroll-behavior: smooth;
   scrollbar-width: 0;
+  width: 98%;
 }
 .carousel::-webkit-scrollbar {
   display: none;
@@ -1718,6 +1804,7 @@ button .btn-loading:hover {
 
 .carousel .card {
   cursor: pointer;
+  border: none;
   scroll-snap-align: start;
   display: flex;
   margin: 10px 0;
@@ -1725,12 +1812,8 @@ button .btn-loading:hover {
   align-items: center;
   justify-content: center;
   flex-direction: column;
-  width: 100%;
+  width: 90%;
   border-radius: 10px;
-}
-
-.carousel .img {
-  width: 85%;
 }
 
 .carousel .img img {
@@ -1753,7 +1836,7 @@ button .btn-loading:hover {
 
 .card .name-events {
   position: absolute;
-  width: 80%;
+  width: 95%;
   justify-content: center;
   align-items: center;
   text-align: center;
@@ -1773,6 +1856,8 @@ button .btn-loading:hover {
 }
 
 .card .name-events h4 {
+  font-family: "Poppins", sans-serif;
+  text-transform: capitalize;
   font-size: 0.8rem;
   color: white;
   letter-spacing: 2px;
@@ -1812,6 +1897,11 @@ button .btn-loading:hover {
   margin: 0 1rem 1.5rem;
 }
 
+.carousel-see-more {
+  display: flex;
+  justify-content: center;
+}
+
 .any-card .img {
   display: flex;
   justify-content: center;
@@ -1822,7 +1912,7 @@ button .btn-loading:hover {
   height: 30%;
   aspect-ratio: 3 / 4;
   border-radius: 5px;
-  margin-bottom: 0.5rem;
+  margin-bottom: .7rem;
 }
 
 .name-of-events {
@@ -1834,7 +1924,7 @@ button .btn-loading:hover {
 
 .name-of-event h1 {
   font-family: "Poppins", sans-serif;
-  line-height: 1rem;
+  line-height: 1.3rem;
   margin-bottom: 3px;
   font-size: 1.3rem;
   color: #eb2125;
@@ -1857,10 +1947,31 @@ button .btn-loading:hover {
   display: flex;
   flex-direction: column;
   align-items: center;
+  width: 100%;
 }
 
 .events-see-more {
   display: none;
+}
+
+.main-dropdown-events {
+  margin-bottom: 1rem;
+  display: flex;
+  justify-content: right;
+  width: 100%;
+  margin-right: 8rem;
+}
+
+.event-dropdown .btn{
+  background-color: #eb2125;
+}
+
+.dropdown-menu {
+  background-color: var(--body-color);
+}
+
+.dropdown-item:hover{
+  background-color: hsl(0, 0%, 78%);
 }
 /* =============EVENTS SANGSAKA==============  */
 
@@ -2049,6 +2160,19 @@ button .btn-loading:hover {
 
 /* For small devices */
 @media screen and (max-width: 600px) {
+  .main-content-index {
+    padding-top: 5rem;
+  }
+  .main-quotes i {
+    font-size: 1.2rem;
+  }
+  .quotes p {
+    text-align: center;
+    font-size: 13px;
+  }
+  .main-quotes {
+    width: 80%;
+  }
   .grid-content3 {
     width: 80%;
   }
@@ -2397,6 +2521,7 @@ button .btn-loading:hover {
   }
 
   .image p {
+    font-weight: bolder;
     font-size: 17px;
   }
   #moreImage {
@@ -2513,6 +2638,9 @@ button .btn-loading:hover {
 
   /* Rotate dropdown icon */
   .dropdown__item:hover .dropdown__arrow {
+    transform: rotate(180deg);
+  }
+  .dropdown__item:hover .ri-arrow-down-s-line {
     transform: rotate(180deg);
   }
 
@@ -2888,6 +3016,7 @@ button .btn-loading:hover {
 
   .vertical-events .carousel {
     grid-auto-columns: calc((100% / 3) - 10px);
+    margin-left: 3px;
   }
 
   .card img {
@@ -2915,6 +3044,10 @@ button .btn-loading:hover {
 
   .name-of-event h4 {
     font-size: 0.9rem;
+  }
+
+  .main-dropdown-events {
+    margin-right: 5.9rem;
   }
   /*=============== RESPONSIVE CAROUSEL EVENTS END ===============*/
 }
@@ -2960,17 +3093,16 @@ button .btn-loading:hover {
     font-size: 1.8rem;
   }
 
-  /*=============== RESPONSIVE CAROUSEL EVENTS START ===============*/
   .main-events {
     margin-top: 2rem;
   }
 
   .main-events .h1 {
-    margin-bottom: 1rem;
+    margin-bottom: 2rem;
   }
 
   .button-see-more {
-    font-size: 0.8rem;
+    font-size: 0.7rem;
   }
 
   .banner-events img {
@@ -2979,6 +3111,11 @@ button .btn-loading:hover {
 
   .vertical-events .carousel {
     grid-auto-columns: calc((100% / 2) - 8px);
+    margin: 0 0 3rem 8px;
+  }
+
+  .main-dropdown-events {
+    margin-right: 5.5rem;
   }
 
   .card img {
