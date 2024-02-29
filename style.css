@@ -1134,10 +1134,14 @@ footer {
   transition: 0.3s;
 }
 
+.form_title {
+  margin-bottom: 1rem;
+}
+
 .form_outer h1 {
   display: flex;
   justify-content: center;
-  margin-bottom: 60px;
+  margin-bottom: 1.5rem;
   font-weight: 700;
 }
 .form_outer i {
@@ -1281,6 +1285,11 @@ button .button-contact:hover,
 button .btn-loading:hover {
   transform: translateY(-3px);
   transition: 0.3s;
+}
+
+.alert-success {
+  width: 95%;
+  margin: auto;
 }
 
 /* ====== CONTACT end ======= */
@@ -1886,6 +1895,11 @@ button .btn-loading:hover {
   grid-template-columns: repeat(4, 1fr);
   row-gap: 30px;
   margin: 0 1rem 1.5rem;
+}
+
+.carousel-see-more {
+  display: flex;
+  justify-content: center;
 }
 
 .any-card .img {
