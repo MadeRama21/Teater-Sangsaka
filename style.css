@@ -61,6 +61,7 @@ body {
 }
 
 ul {
+  padding-left: 0;
   list-style: none;
   /* Color highlighting when pressed on mobile devices */
   /*-webkit-tap-highlight-color: transparent;*/
@@ -71,7 +72,7 @@ a {
 }
 
 /*=============== REUSABLE CSS CLASSES ===============*/
-.container {
+.container69 {
   max-width: 100%;
 }
 .nav__menu {
@@ -157,7 +158,83 @@ nav img {
 }
 
 /* Beranda */
-
+/* Fitur sementara */
+.hero-ulasan {
+  display: grid;
+  place-items: center;
+}
+.section-header {
+  position: relative;
+  padding-bottom: 10px;
+  text-align: center;
+  text-transform: uppercase;
+  font-family: "Poppins", sans-serif;
+  font-weight: 700;
+  padding-bottom: 25px;
+  color: #252525;
+}
+.section-header:after {
+  content: "";
+  height: 4px;
+  width: 200px;
+  border-radius: 3px;
+  position: absolute;
+  bottom: 0;
+  left: calc(50% - 100px);
+  background: #eb2125;
+}
+.section-header span {
+  display: block;
+  font-size: 15px;
+  font-weight: 300;
+}
+.testimonials {
+  max-width: 1000px;
+  padding: 0 15px 50px;
+  margin: 0 auto 80px auto;
+}
+.single-item {
+  background: #fff;
+  color: #111;
+  padding: 15px;
+  margin: 50px 15px;
+}
+.profile {
+  margin-bottom: 30px;
+  text-align: center;
+}
+.img-area {
+  margin: 0 15px 15px 15px;
+}
+.img-area img {
+  height: 200px;
+  width: 200px;
+  border-radius: 50%;
+  border: 6px solid #252525;
+}
+.content {
+  font-size: 18px;
+}
+.content p {
+  text-align: justify;
+}
+.content p span {
+  font-size: 2rem;
+  margin-right: 20px;
+  color: #252525;
+}
+.socials i {
+  margin-right: 25px;
+}
+.bio h4 {
+  font-size: 1.2rem;
+  font-family: "Poppins", sans-serif;
+}
+.carousel-control-next-icon,
+.carousel-control-prev-icon {
+  background-color: #eb2125;
+}
+/* fitur sementara */
 .landing_video {
   position: absolute;
   top: 0;
@@ -506,6 +583,7 @@ nav img {
 }
 .main-grid3 {
   display: flex;
+  margin-bottom: 8rem;
   justify-content: center;
 }
 
@@ -518,17 +596,51 @@ nav img {
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
 }
 .main-pementasan {
-  margin-top: 8rem;
+  margin-top: 6rem;
 }
 .card-pementasan {
   display: flex;
+  align-items: center;
   flex-direction: column;
-  background-color: #252525;
+  background-color: #fcfcfc;
+  box-shadow: 5px 5px 10px 2px #888888;
   align-items: center;
   padding: 2rem;
   border-radius: 20px;
-  min-height: 350px;
+  height: 360px;
   cursor: pointer;
+  overflow: hidden;
+  position: relative;
+}
+
+.card-pementasan::before {
+  content: "";
+  background-image: conic-gradient(#eb2125 20deg, transparent 120deg);
+  width: 180%;
+  height: 100%;
+  position: absolute;
+  animation: rotate 2s linear infinite;
+}
+
+.card-pementasan::after {
+  content: "";
+  height: 95%;
+  width: 95%;
+  background: #252525;
+  border-radius: 20px;
+  position: absolute;
+  top: 50%; /* Disesuaikan */
+  left: 50%; /* Disesuaikan */
+  transform: translate(-50%, -50%); /* Disesuaikan */
+}
+
+@keyframes rotate {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(-360deg);
+  }
 }
 
 .hero-pementasan {
@@ -536,9 +648,10 @@ nav img {
   display: grid;
   place-items: center;
   width: 100%;
+  z-index: 9;
 }
 .card-pementasan h3 {
-  margin: 1rem 0;
+  margin: 0.5rem 0;
   font-family: "Poppins", sans-serif;
   color: #eb2125;
   font-size: 1.3rem;
@@ -955,17 +1068,17 @@ footer {
 }
 
 .contact_container {
-  display: flex;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(40%, 1fr));
   align-items: baseline;
-  flex-direction: row;
+  column-gap: 3rem;
+  row-gap: 5rem;
   width: 85%;
-  gap: 9rem;
 }
 
 .contact_text {
   display: flex;
   flex-direction: column;
-  width: 45%;
 }
 
 .contact_text h1 {
@@ -1060,23 +1173,16 @@ footer {
 .disclaimer_row {
   display: flex;
   flex-direction: row;
+  align-items: center;
   padding-left: 20px;
   margin-top: 3rem;
+  margin-bottom: 1rem;
+  gap: 3px;
   color: #eb2125;
 }
 
-.disclaimer_icon {
-  display: flex;
-}
-
-.disclaimer_text {
-  display: flex;
-  align-items: center;
-  padding-left: 2px;
-}
-
-.form {
-  background-color: #fff;
+.disclaimer_row p {
+  margin: 0;
 }
 
 .form,
@@ -1153,8 +1259,7 @@ button {
   position: absolute;
 }
 
-input,
-textarea {
+.form_input {
   background-color: gainsboro;
   width: 600px;
   padding: 20px;
@@ -1556,6 +1661,7 @@ button .btn-loading:hover {
   background: rgba(0, 0, 0, 0.6);
   color: #fcfcfc;
   display: flex;
+  text-align: center;
   justify-content: center;
   align-items: center;
   flex-direction: column;
@@ -1586,12 +1692,28 @@ button .btn-loading:hover {
   transform: translateY(0px);
 }
 
+.fyi {
+  font-family: "Poppins" sans-serif;
+  margin-top: 30px;
+}
+.fyi .btn-primary {
+  --bs-btn-bg: #252525;
+  --bs-btn-border-color: none;
+  --bs-btn-hover-color: #fff;
+  --bs-btn-hover-bg: #252525c4;
+  --bs-btn-active-bg: #252525;
+ }
+
+.fyi .card {
+  --bs-card-color: #fcfcfc;
+  --bs-card-bg: #252525;
+}
+
 /* =============EVENTS SANGSAKA==============  */
 .main-events {
   display: flex;
   flex-direction: column;
   text-transform: uppercase;
-  font-weight: 900;
   font-family: "Poppins", sans-serif;
   letter-spacing: 2px;
 }
@@ -1607,6 +1729,7 @@ button .btn-loading:hover {
   text-align: center;
   align-items: center;
   margin-bottom: 3rem;
+  font-weight: 700;
 }
 
 .main-vertical .button-see-more {
@@ -1620,8 +1743,7 @@ button .btn-loading:hover {
   margin-right: 1.5rem;
   font-weight: 600;
   text-transform: capitalize;
-  filter: opacity(0.5);
-  transition: 0.5s;
+  filter: opacity(.5);
 }
 
 .main-vertical .button-see-more a:hover {
@@ -1641,13 +1763,14 @@ button .btn-loading:hover {
   display: grid;
   grid-auto-flow: column;
   grid-auto-columns: calc((100% / 4) - 9px);
-  gap: 15px;
+  gap: 23.8px;
   list-style: none;
-  /* margin: 0 5rem; */
+  margin: 0 0 5rem;
   overflow-x: auto;
   scroll-snap-type: x mandatory;
   scroll-behavior: smooth;
   scrollbar-width: 0;
+  width: 98%;
 }
 .carousel::-webkit-scrollbar {
   display: none;
@@ -1672,6 +1795,7 @@ button .btn-loading:hover {
 
 .carousel .card {
   cursor: pointer;
+  border: none;
   scroll-snap-align: start;
   display: flex;
   margin: 10px 0;
@@ -1679,12 +1803,8 @@ button .btn-loading:hover {
   align-items: center;
   justify-content: center;
   flex-direction: column;
-  width: 100%;
+  width: 90%;
   border-radius: 10px;
-}
-
-.carousel .img {
-  width: 85%;
 }
 
 .carousel .img img {
@@ -1707,7 +1827,7 @@ button .btn-loading:hover {
 
 .card .name-events {
   position: absolute;
-  width: 80%;
+  width: 95%;
   justify-content: center;
   align-items: center;
   text-align: center;
@@ -1727,6 +1847,8 @@ button .btn-loading:hover {
 }
 
 .card .name-events h4 {
+  font-family: "Poppins", sans-serif;
+  text-transform: capitalize;
   font-size: 0.8rem;
   color: white;
   letter-spacing: 2px;
@@ -1776,7 +1898,7 @@ button .btn-loading:hover {
   height: 30%;
   aspect-ratio: 3 / 4;
   border-radius: 5px;
-  margin-bottom: 0.5rem;
+  margin-bottom: .7rem;
 }
 
 .name-of-events {
@@ -1788,7 +1910,7 @@ button .btn-loading:hover {
 
 .name-of-event h1 {
   font-family: "Poppins", sans-serif;
-  line-height: 1rem;
+  line-height: 1.3rem;
   margin-bottom: 3px;
   font-size: 1.3rem;
   color: #eb2125;
@@ -1811,14 +1933,47 @@ button .btn-loading:hover {
   display: flex;
   flex-direction: column;
   align-items: center;
+  width: 100%;
 }
 
 .events-see-more {
   display: none;
 }
+
+.main-dropdown-events {
+  margin-bottom: 1rem;
+  display: flex;
+  justify-content: right;
+  width: 100%;
+  margin-right: 8rem;
+}
+
+.event-dropdown .btn{
+  background-color: #eb2125;
+}
+
+.dropdown-menu {
+  background-color: var(--body-color);
+}
+
+.dropdown-item:hover{
+  background-color: hsl(0, 0%, 78%);
+}
 /* =============EVENTS SANGSAKA==============  */
 
 /*=============== BREAKPOINTS ===============*/
+
+/* Responsive Contact */
+@media only screen and (max-width: 1500px) {
+  .contact_container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(100%, 1fr));
+    align-items: baseline;
+    column-gap: 3rem;
+    row-gap: 5rem;
+    width: 85%;
+  }
+}
 
 /* Navigation for mobile devices */
 @media screen and (max-width: 1117px) {
@@ -1829,6 +1984,12 @@ button .btn-loading:hover {
   }
   .lihat-pementasan a {
     margin-left: 0;
+  }
+
+  /* punya rama */
+  .bungkus-tampil figcaption:nth-child(2) {
+    margin-top: 2.5rem;
+    margin-bottom: 2.5rem;
   }
   .nav1 {
     height: 6.5rem;
@@ -1985,6 +2146,19 @@ button .btn-loading:hover {
 
 /* For small devices */
 @media screen and (max-width: 600px) {
+  .main-content-index {
+    padding-top: 5rem;
+  }
+  .main-quotes i {
+    font-size: 1.2rem;
+  }
+  .quotes p {
+    text-align: center;
+    font-size: 13px;
+  }
+  .main-quotes {
+    width: 80%;
+  }
   .grid-content3 {
     width: 80%;
   }
@@ -2016,7 +2190,7 @@ button .btn-loading:hover {
     margin-top: 4rem;
   }
 
-  .container {
+  .container69 {
     margin-inline: 1rem;
   }
 
@@ -2140,7 +2314,7 @@ button .btn-loading:hover {
 
 /* For large devices */
 @media screen and (min-width: 1116px) {
-  .container {
+  .container69 {
     margin-inline: 1rem;
   }
 
@@ -2215,13 +2389,15 @@ button .btn-loading:hover {
   /* .contact_main {
     min-height: 230vh;
   } */
-  .contact_form {
+  /* .contact_form {
     padding: 2px;
   }
 
+
   .form_title h1 {
     padding-top: 10px;
-  }
+
+  } */
 
   /* Responsive Contact end */
 }
@@ -2244,7 +2420,7 @@ button .btn-loading:hover {
 
     justify-content: space-evenly;
   }
-  #moreImage {  
+  #moreImage {
     grid-template-columns: 1fr 1fr 1fr;
     margin-right: 22px;
     margin-left: 22px;
@@ -2334,7 +2510,7 @@ button .btn-loading:hover {
     font-weight: bolder;
     font-size: 17px;
   }
-  #moreImage {  
+  #moreImage {
     grid-template-columns: 1fr 1fr 1fr;
     margin-right: 22px;
     margin-left: 22px;
@@ -2450,6 +2626,9 @@ button .btn-loading:hover {
   .dropdown__item:hover .dropdown__arrow {
     transform: rotate(180deg);
   }
+  .dropdown__item:hover .ri-arrow-down-s-line {
+    transform: rotate(180deg);
+  }
 
   /*=============== DROPDOWN SUBMENU ===============*/
   .dropdown__add {
@@ -2461,7 +2640,7 @@ button .btn-loading:hover {
   }
 
   /* footer */
-  .container {
+  .container69 {
     margin-inline: 1rem;
   }
 
@@ -2773,17 +2952,11 @@ button .btn-loading:hover {
   /* Responsive contact */
 
   .contact_main {
-    min-height: 340vh;
-  }
-
-  .contact_container {
-    display: flex;
-    flex-direction: column;
+    min-height: 190vh;
   }
 
   .contact_text {
     width: 100%;
-    padding-bottom: 100px;
   }
 
   .contact_form {
@@ -2828,6 +3001,7 @@ button .btn-loading:hover {
 
   .vertical-events .carousel {
     grid-auto-columns: calc((100% / 3) - 10px);
+    margin-left: 3px;
   }
 
   .card img {
@@ -2855,6 +3029,10 @@ button .btn-loading:hover {
 
   .name-of-event h4 {
     font-size: 0.9rem;
+  }
+
+  .main-dropdown-events {
+    margin-right: 5.9rem;
   }
   /*=============== RESPONSIVE CAROUSEL EVENTS END ===============*/
 }
@@ -2900,17 +3078,16 @@ button .btn-loading:hover {
     font-size: 1.8rem;
   }
 
-  /*=============== RESPONSIVE CAROUSEL EVENTS START ===============*/
   .main-events {
     margin-top: 2rem;
   }
 
   .main-events .h1 {
-    margin-bottom: 1rem;
+    margin-bottom: 2rem;
   }
 
   .button-see-more {
-    font-size: 0.8rem;
+    font-size: 0.7rem;
   }
 
   .banner-events img {
@@ -2919,6 +3096,11 @@ button .btn-loading:hover {
 
   .vertical-events .carousel {
     grid-auto-columns: calc((100% / 2) - 8px);
+    margin: 0 0 3rem 8px;
+  }
+
+  .main-dropdown-events {
+    margin-right: 5.5rem;
   }
 
   .card img {
@@ -2946,7 +3128,7 @@ button .btn-loading:hover {
     font-size: 0.7rem;
   }
 
-  .container {
+  .container69 {
     margin-inline: 1rem;
   }
 
@@ -3168,22 +3350,6 @@ button .btn-loading:hover {
 
   /* Responsive contact */
 
-  .contact_text {
-    width: 50%;
-  }
-
-  .contact_form {
-    width: 50%;
-  }
-
-  .form_outer {
-    width: 50%;
-  }
-
-  .form_input {
-    width: 50%;
-  }
-
   /* Responsive Contact end */
 }
 
@@ -3308,6 +3474,13 @@ button .btn-loading:hover {
 
   .form_input {
     width: 100%;
+  }
+
+  .sosmed {
+    display: flex;
+    flex-direction: column;
+    width: 70%;
+    gap: 10px;
   }
 
   /* Responsive Contact end*/
