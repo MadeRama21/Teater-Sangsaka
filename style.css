@@ -1768,7 +1768,7 @@ button .btn-loading:hover {
   margin-right: 1.5rem;
   font-weight: 600;
   text-transform: capitalize;
-  filter: opacity(.5);
+  filter: opacity(0.5);
 }
 
 .main-vertical .button-see-more a:hover {
@@ -1928,7 +1928,7 @@ button .btn-loading:hover {
   height: 30%;
   aspect-ratio: 3 / 4;
   border-radius: 5px;
-  margin-bottom: .7rem;
+  margin-bottom: 0.7rem;
 }
 
 .name-of-events {
@@ -1978,7 +1978,7 @@ button .btn-loading:hover {
   margin-right: 8rem;
 }
 
-.event-dropdown .btn{
+.event-dropdown .btn {
   background-color: #eb2125;
 }
 
@@ -1986,7 +1986,7 @@ button .btn-loading:hover {
   background-color: var(--body-color);
 }
 
-.dropdown-item:hover{
+.dropdown-item:hover {
   background-color: hsl(0, 0%, 78%);
 }
 /* =============EVENTS SANGSAKA==============  */
@@ -2018,8 +2018,8 @@ button .btn-loading:hover {
 
   /* punya rama */
   .bungkus-tampil figcaption:nth-child(2) {
-    margin-top: 2.5rem;
-    margin-bottom: 2.5rem;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
   }
   .nav1 {
     height: 6.5rem;
@@ -2217,7 +2217,7 @@ button .btn-loading:hover {
     justify-content: space-evenly;
   }
   .bungkus-tampil figcaption:nth-child(2) {
-    margin-top: 4rem;
+    margin-top: 1rem;
   }
 
   .container69 {
