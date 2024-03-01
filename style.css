@@ -913,6 +913,12 @@ footer {
   width: 100%;
 }
 
+.carousel-inner img {
+  height: 500px;
+  overflow: hidden;
+  object-fit: cover;
+}
+
 #seemore {
   display: none;
   justify-content: center;
@@ -3091,6 +3097,13 @@ button .btn-loading:hover {
   .carousel-inner {
     margin-top: 85px;
   }
+
+  .carousel-inner img {
+    height: 250px;
+    overflow: hidden;
+    object-fit: cover;
+  }
+
   .box {
     flex-direction: column;
     max-width: 100%;
