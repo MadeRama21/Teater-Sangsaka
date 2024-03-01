@@ -230,10 +230,14 @@ nav img {
   font-size: 1.2rem;
   font-family: "Poppins", sans-serif;
 }
-.carousel-control-next-icon,
-.carousel-control-prev-icon {
+.testimonials .carousel-control-prev-icon {
   background-color: #eb2125;
 }
+
+.testimonials .carousel-control-next-icon {
+  background-color: #eb2125;
+}
+
 /* fitur sementara */
 .landing_video {
   position: absolute;
@@ -866,7 +870,7 @@ footer {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  margin: 5px 20px 0 20px;
+  margin: 0px 20px 0 20px;
 }
 
 .container1 .box {
@@ -901,6 +905,12 @@ footer {
   -webkit-filter: grayscale(1);
   filter: grayscale(1);
   transition: 0.3s;
+}
+
+.carousel-inner {
+  margin-top: 100px;
+  max-height: 500px;
+  width: 100%;
 }
 
 #seemore {
@@ -961,7 +971,7 @@ footer {
 }
 
 .heading h2 {
-  margin: 125px 0 25px 0;
+  margin: 25px 0 25px 0;
   font-family: "Poppins", sans-serif;
   font-weight: 700;
   font-size: 3rem;
@@ -3061,6 +3071,10 @@ button .btn-loading:hover {
     grid-template-columns: repeat(1, 1fr);
     margin-left: 22px;
     margin-right: 22px;
+  }
+
+  .carousel-inner {
+    margin-top: 85px;
   }
   .box {
     flex-direction: column;
