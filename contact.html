@@ -152,7 +152,7 @@
                                     <i class="ph ph-graduation-cap"></i>
                                 </div>
                                 <div class="label_text">
-                                    <label for="kelas">
+                                    <label for="Kelas">
                                         Kelas
                                     </label>
                                 </div>
@@ -168,7 +168,7 @@
                                     <i class="ph ph-phone"></i>
                                 </div>
                                 <div class="label_text">
-                                    <label for="nomor">
+                                    <label for="Nomor">
                                         No. Telepon
                                     </label>
                                 </div>
@@ -184,7 +184,7 @@
                                     <i class="ph ph-question"></i>
                                 </div>
                                 <div class="label_text">
-                                    <label for="alasan">
+                                    <label for="pesan">
                                         Alasan Bergabung
                                     </label>
                                 </div>
@@ -323,7 +323,7 @@
         crossorigin="anonymous"></script>
     <script src="https://unpkg.com/@phosphor-icons/web@2.0.3"></script>
     <script>
-    const scriptURL = 'https://script.google.com/macros/s/AKfycbx7SOkWaYWdhRMMyFsjI_IGmmlKUV_Mco6mBqZ0diyDLAwTsBn_olw_MnYF-i2VnFrM/exec'
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbx7SOkWaYWdhRMMyFsjI_IGmmlKUV_Mco6mBqZ0diyDLAwTsBn_olw_MnYF-i2VnFrM/exec';
     const form = document.forms['sangsaka-contact-form'];
     const btnKirim = document.querySelector('.btn-kirim');
     const btnLoading = document.querySelector('.btn-loading');
@@ -338,17 +338,29 @@
     const kelasRegex = /^(X{0,2}|XI{1,2}|XII)\s[A-Za-z]{2,4}\s[1-3]$/;
     const telpRegex = /^(?:\+62|62|0)8[1-9][0-9]{8,12}$/;
 
-    // Menambahkan event listener blur untuk setiap input
+    // Menambahkan event listener untuk setiap input
     namaInput.querySelector('input').addEventListener('blur', handleInputBlur);
     kelasInput.querySelector('input').addEventListener('blur', handleInputBlur);
     telpInput.querySelector('input').addEventListener('blur', handleInputBlur);
     pesanInput.querySelector('textarea').addEventListener('blur', handleInputBlur);
 
     form.addEventListener('submit', e => {
-        e.preventDefault()
+        e.preventDefault();
 
         // validasi
-        if (!validateForm()) return;
+        if (!validateForm()) {
+            // Tampilkan pesan error pada setiap input yang tidak valid
+            Array.from(massage).forEach(msg => {
+                if (msg.innerHTML.trim() === '') {
+                    const input = msg.parentElement.querySelector('input');
+                    if (input && !input.value.trim()) {
+                        msg.innerHTML = 'Harap isi bidang ini';
+                        input.parentElement.classList.add('erorr');
+                    }
+                }
+            });
+            return;
+        }
 
         // ketika tombol sumbit di klik
         // tampilkan tombol loading, hilangkan tombol kirim
@@ -380,70 +392,57 @@
     });
 
     function validateForm() {
+        let isValid = true;
 
-    if (!namaInput.querySelector('input').value.trim()) {
-        massage[0].innerHTML = 'Nama lengkap harus diisi';
-        namaInput.classList.add('erorr');
-        return false;
-    } else {
-        massage[0].innerHTML = '';
-        namaInput.classList.remove('erorr');
-        namaInput.classList.add('sukses');
-    }
-
-    if (!kelasInput.querySelector('input').value.trim()) {
-        massage[1].innerHTML = 'Kelas harus diisi.';
-        kelasInput.classList.add('erorr');
-        return false;
-    } else if (!kelasRegex.test(kelasInput.querySelector('input').value.trim())) {
-        massage[1].innerHTML = 'Format kelas tidak valid.';
-        kelasInput.classList.add('erorr');
-        return false;
-    } else {
-        massage[1].innerHTML = '';
-        kelasInput.classList.remove('erorr');
-        kelasInput.classList.add('sukses');
-    }
-
-    if (!telpInput.querySelector('input').value.trim()) {
-        massage[2].innerHTML = 'Nomor telepon harus diisi';
-        telpInput.classList.add('erorr');
-        return false;
-    } else if (!telpRegex.test(telpInput.querySelector('input').value.trim())) {
-        massage[2].innerHTML = 'Format nomor telepon tidak valid';
-        telpInput.classList.add('erorr');
-        return false;
-    } else {
-        massage[2].innerHTML = '';
-        telpInput.classList.remove('erorr');
-        telpInput.classList.add('sukses');
-    }
-
-    if (!pesanInput.querySelector('textarea').value.trim()) {
-        massage[3].innerHTML = 'Alasan bergabung harus diisi';
-        pesanInput.classList.add('erorr');
-        return false;
-    } else {
-        massage[3].innerHTML = '';
-        pesanInput.classList.remove('erorr');
-        pesanInput.classList.add('sukses');
-    }
-
-    return true;
-    }
-
-    function handleInputBlur(event) {
-        const input = event.target;
-        const parentDiv = input.parentElement;
-        const small = parentDiv.querySelector('small');
-
-        // Memeriksa apakah nilai input tidak kosong
-        if (input.value.trim() !== '') {
-            // Menetapkan kelas 'sukses' jika input tidak kosong
-            parentDiv.classList.remove('erorr');
-            parentDiv.classList.add('sukses');
-            small.innerHTML = ''; // Membersihkan pesan error jika ada
+        if (!namaInput.querySelector('input').value.trim()) {
+            massage[0].innerHTML = 'Nama lengkap harus diisi';
+            namaInput.classList.add('erorr');
+            isValid = false;
+        } else {
+            massage[0].innerHTML = '';
+            namaInput.classList.remove('erorr');
+            namaInput.classList.add('sukses');
         }
+
+        if (!kelasInput.querySelector('input').value.trim()) {
+            massage[1].innerHTML = 'Kelas harus diisi.';
+            kelasInput.classList.add('erorr');
+            isValid = false;
+        } else if (!kelasRegex.test(kelasInput.querySelector('input').value.trim())) {
+            massage[1].innerHTML = 'Format kelas tidak valid.';
+            kelasInput.classList.add('erorr');
+            isValid = false;
+        } else {
+            massage[1].innerHTML = '';
+            kelasInput.classList.remove('erorr');
+            kelasInput.classList.add('sukses');
+        }
+
+        if (!telpInput.querySelector('input').value.trim()) {
+            massage[2].innerHTML = 'Nomor telepon harus diisi';
+            telpInput.classList.add('erorr');
+            isValid = false;
+        } else if (!telpRegex.test(telpInput.querySelector('input').value.trim())) {
+            massage[2].innerHTML = 'Format nomor telepon tidak valid';
+            telpInput.classList.add('erorr');
+            isValid = false;
+        } else {
+            massage[2].innerHTML = '';
+            telpInput.classList.remove('erorr');
+            telpInput.classList.add('sukses');
+        }
+
+        if (!pesanInput.querySelector('textarea').value.trim()) {
+            massage[3].innerHTML = 'Alasan bergabung harus diisi';
+            pesanInput.classList.add('erorr');
+            isValid = false;
+        } else {
+            massage[3].innerHTML = '';
+            pesanInput.classList.remove('erorr');
+            pesanInput.classList.add('sukses');
+        }
+
+        return isValid;
     }
 
     function handleInputBlur(event) {
@@ -527,6 +526,7 @@
         return isValid;
     }
     </script>
+    <script src="script.js"></script>
 
 </body>
 
