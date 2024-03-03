@@ -216,6 +216,7 @@ nav img {
   font-size: 18px;
 }
 .content p {
+  font-family: "Poppins", sans-serif;
   text-align: justify;
 }
 .content p span {
@@ -280,7 +281,8 @@ nav img {
   align-items: center;
 } */
 .quotes p {
-  font-weight: 600;
+  font-weight: 500;
+  font-family: "Poppins", sans-serif;
   font-style: italic;
   text-align: center;
   letter-spacing: 2px;
@@ -310,6 +312,7 @@ nav img {
 }
 .mengapa-text p {
   margin-bottom: 10px;
+  font-family: "Poppins", sans-serif;
   line-height: 25px;
   text-align: right;
 }
@@ -430,6 +433,7 @@ nav img {
   margin-bottom: 10px;
 }
 .siapa-text p {
+  font-family: "Poppins", sans-serif;
   margin-bottom: 10px;
   line-height: 25px;
 }
@@ -597,6 +601,9 @@ nav img {
   column-gap: 3rem;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
 }
+.grid-content3 p {
+  font-family: "Poppins", sans-serif;
+}
 .main-pementasan {
   margin-top: 6rem;
 }
@@ -700,7 +707,7 @@ footer {
 .footer-U1 p {
   font-size: 0.8rem;
   margin-top: 5px;
-  font-family: "Urbanist", sans-serif;
+  font-family: "Poppins", sans-serif;
   color: #fcfcfc;
 }
 
@@ -792,11 +799,13 @@ footer {
 
 .copyrigth p {
   color: white;
+  font-family: "Poppins", sans-serif;
   margin-right: 10px;
 }
 
 .copyrigth a {
   color: white;
+  font-family: "Poppins", sans-serif;
 }
 /* Footer end */
 
@@ -2251,7 +2260,7 @@ button .btn-loading:hover {
   .footer-U1 p {
     font-size: 1rem;
     margin-top: 25px;
-    font-family: "Urbanist", sans-serif;
+    font-family: "Poppins", sans-serif;
     text-align: justify;
     text-transform: uppercase;
     font-weight: bold;
@@ -2792,7 +2801,7 @@ button .btn-loading:hover {
   .footer-U1 p {
     font-size: 1rem;
     margin-top: 25px;
-    font-family: "Urbanist", sans-serif;
+    font-family: "Poppins", sans-serif;
     text-transform: uppercase;
     font-weight: bold;
     color: #fcfcfc;
@@ -3206,7 +3215,7 @@ button .btn-loading:hover {
   .footer-U1 p {
     font-size: 1rem;
     margin-top: 25px;
-    font-family: "Urbanist", sans-serif;
+    font-family: "Poppins", sans-serif;
     text-align: justify;
     text-transform: uppercase;
     font-weight: bold;
