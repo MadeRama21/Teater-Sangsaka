@@ -536,11 +536,9 @@ nav img {
   font-weight: 800;
   /* font-style: italic; */
   line-height: 5.5rem;
-  text-transform: uppercase;
   font-size: 5rem;
   letter-spacing: 8px;
   margin-left: 3rem;
-  /* text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); */
   filter: drop-shadow(2px 2px 4px rgba(0, 0, 0, 0.7));
 }
 .box-content h1 span {
@@ -2497,7 +2495,7 @@ button .btn-loading:hover {
   .box-content h1 {
     font-size: 4rem;
     color: #eb2125;
-    font-weight: bolder;
+    font-weight: 800;
     line-height: 4rem;
     text-transform: uppercase;
     letter-spacing: 8px;
@@ -3078,7 +3076,7 @@ button .btn-loading:hover {
   .box-content h1 {
     font-size: 3rem;
     color: #eb2125;
-    font-weight: bolder;
+    font-weight: 850;
     text-transform: uppercase;
     letter-spacing: 8px;
     margin-left: 1.2rem;
