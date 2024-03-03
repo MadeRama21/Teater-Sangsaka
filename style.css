@@ -1987,6 +1987,7 @@ button .btn-loading:hover {
 
 .event-dropdown .btn {
   background-color: #eb2125;
+  border-radius: 5px;
 }
 
 .dropdown-menu {
@@ -3154,7 +3155,7 @@ button .btn-loading:hover {
   }
 
   .main-dropdown-events {
-    margin-right: 5.5rem;
+    margin-right: 3rem;
   }
 
   .card img {
@@ -3374,8 +3375,17 @@ button .btn-loading:hover {
 
   /* Responsive Contact */
 
+  .contact_main {
+    margin-top: 6.5rem;
+  }
+
+  .form_title h1 {
+    margin-top: 1rem;
+  }
+
   .contact_form {
     width: 100%;
+    padding: 0;
   }
 
   .form_outer {
@@ -3385,6 +3395,14 @@ button .btn-loading:hover {
   .form_input {
     width: 100%;
   }
+
+  .button-contact {
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    margin-left: .6rem;
+    margin-bottom: 1rem;
+   }
 
   /* Responsive Contact end*/
 }
