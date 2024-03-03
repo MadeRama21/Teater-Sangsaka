@@ -3418,6 +3418,23 @@ button .btn-loading:hover {
 /* RESPONSIVE GALERI KHUSUS END */
 
 @media only screen and (max-width: 425px) {
+  /* Rama */
+  .box-content h1 {
+    font-size: 2.6rem;
+    color: #eb2125;
+    font-weight: 800;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    line-height: 3rem;
+    margin-left: 1.6rem;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+  }
+  .box-content p {
+    margin-left: 1.1rem;
+    letter-spacing: 2px;
+    margin-left: 1.6rem;
+    font-size: 1rem;
+  }
   /* RESPONSIVE TENTANG KITA */
   .hero_sambutan {
     min-height: 145vh;
