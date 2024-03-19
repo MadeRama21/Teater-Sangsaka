@@ -1,8 +1,8 @@
 {
-    "redirects": [
-      { "source": "/media", "destination": "/media.html", "permanent": true },
-      { "source": "/tentangkami", "destination": "/tentang_kami.html", "permanent": true },
-      { "source": "/acara", "destination": "/event.html", "permanent": true },
-      { "source": "/kontak", "destination": "/contact.html", "permanent": true }
+    "rewrites": [
+      { "source": "/media", "destination": "/media.html" },
+      { "source": "/tentangkami", "destination": "/tentang_kami.html" },
+      { "source": "/acara", "destination": "/event.html" },
+      { "source": "/kontak", "destination": "/contact.html" }
     ]
   }
